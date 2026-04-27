@@ -1,18 +1,24 @@
-# Daily Classic Games
+# 데일리 클래식 게임
 
-Small classic browser games collected by date. Each game stays intentionally simple: static HTML, CSS, and JavaScript with no new dependencies.
+날짜별로 작은 클래식 브라우저 게임을 모아두는 저장소입니다. 각 게임은 새 의존성 없이 정적 HTML, CSS, JavaScript만 사용합니다.
 
-## Games
+## 게임 목록
 
-| Date | Game | Description | Open |
+| 날짜 | 게임 | 설명 | 열기 |
 | --- | --- | --- | --- |
-| 2026-04-24 | Tic Tac Toe | 3x3 board game for two alternating marks. | `daily/2026-04-24-tic-tac-toe/index.html` |
-| 2026-04-27 | Memory Match | Flip cards and match every hidden pair. | `daily/2026-04-27-memory-match/index.html` |
-| 2026-04-27 | Rock Paper Scissors | Pick one move and score rounds against the computer. | `daily/2026-04-27-rock-paper-scissors/index.html` |
+| 2026-04-24 | 틱택토 | 두 플레이어가 번갈아 3x3 칸에 표시를 놓는 게임입니다. | [열기](daily/2026-04-24-tic-tac-toe/index.html) |
+| 2026-04-27 | 메모리 매치 | 카드를 뒤집어 같은 짝을 모두 찾는 게임입니다. | [열기](daily/2026-04-27-memory-match/index.html) |
+| 2026-04-27 | 가위바위보 | 하나의 수를 골라 컴퓨터와 라운드 점수를 겨루는 게임입니다. | [열기](daily/2026-04-27-rock-paper-scissors/index.html) |
 
-## Tests
+## 게임 화면
 
-The logic tests use only Node.js built-in modules.
+가위바위보를 실제로 한 판 진행한 화면입니다.
+
+![가위바위보 게임 화면](daily/2026-04-27-rock-paper-scissors/screenshot.png)
+
+## 테스트
+
+로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
 node daily/2026-04-24-tic-tac-toe/game-logic.test.js

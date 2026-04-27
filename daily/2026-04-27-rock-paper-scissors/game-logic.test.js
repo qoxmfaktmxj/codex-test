@@ -47,9 +47,18 @@ test('adds one computer point when computer choice beats player choice', () => {
   assert.deepEqual(game.score, { player: 0, computer: 1 });
 });
 
+test('keeps score across rounds', () => {
+  const firstRound = playRound(createGame(), 'paper', () => 'rock');
+  const secondRound = playRound(firstRound, 'scissors', () => 'rock');
+
+  assert.equal(secondRound.result, 'lose');
+  assert.deepEqual(secondRound.score, { player: 1, computer: 1 });
+});
+
 test('rejects moves outside the choice set', () => {
   const game = createGame();
 
   assert.deepEqual(playRound(game, 'lizard', () => 'rock'), game);
+  assert.deepEqual(playRound(game, 'rock', () => 'lizard'), game);
   assert.deepEqual(CHOICES, ['rock', 'paper', 'scissors']);
 });
