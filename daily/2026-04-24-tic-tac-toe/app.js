@@ -17,14 +17,14 @@ const cells = Array.from({ length: 9 }, (_, index) => {
 
 function statusText() {
   if (game.status === 'won') {
-    return `${game.winner} wins`;
+    return `${game.winner} 승리`;
   }
 
   if (game.status === 'draw') {
-    return 'Draw';
+    return '무승부';
   }
 
-  return `${game.currentPlayer} turn`;
+  return `${game.currentPlayer} 차례`;
 }
 
 function render() {
@@ -33,7 +33,7 @@ function render() {
   game.board.forEach((cell, index) => {
     const button = cells[index];
     button.textContent = cell || '';
-    button.setAttribute('aria-label', cell ? `Cell ${index + 1}: ${cell}` : `Cell ${index + 1}`);
+    button.setAttribute('aria-label', cell ? `${index + 1}번 칸: ${cell}` : `${index + 1}번 칸`);
     button.disabled = Boolean(cell) || game.status !== 'playing';
   });
 }

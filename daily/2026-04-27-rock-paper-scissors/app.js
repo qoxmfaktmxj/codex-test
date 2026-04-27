@@ -11,25 +11,29 @@ function chooseComputer() {
 }
 
 function labelChoice(choice) {
-  return choice.charAt(0).toUpperCase() + choice.slice(1);
+  return {
+    rock: '바위',
+    paper: '보',
+    scissors: '가위',
+  }[choice];
 }
 
 function statusText() {
   if (!game.result) {
-    return 'Choose a move';
+    return '수를 고르세요';
   }
 
   const resultText = {
-    win: 'You win',
-    lose: 'Computer wins',
-    draw: 'Draw',
+    win: '승리',
+    lose: '컴퓨터 승리',
+    draw: '무승부',
   }[game.result];
 
-  return `${resultText}: ${labelChoice(game.playerChoice)} vs ${labelChoice(game.computerChoice)}`;
+  return `${resultText}: ${labelChoice(game.playerChoice)} 대 ${labelChoice(game.computerChoice)}`;
 }
 
 function render() {
-  scoreElement.textContent = `Player ${game.score.player} - Computer ${game.score.computer}`;
+  scoreElement.textContent = `플레이어 ${game.score.player} - 컴퓨터 ${game.score.computer}`;
   statusElement.textContent = statusText();
 }
 

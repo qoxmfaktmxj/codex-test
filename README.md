@@ -12,7 +12,17 @@
 
 ## 게임 화면
 
-가위바위보를 실제로 한 판 진행한 화면입니다.
+세 게임을 실제로 진행한 화면입니다.
+
+### 틱택토
+
+![틱택토 게임 화면](daily/2026-04-24-tic-tac-toe/screenshot.png)
+
+### 메모리 매치
+
+![메모리 매치 게임 화면](daily/2026-04-27-memory-match/screenshot.png)
+
+### 가위바위보
 
 ![가위바위보 게임 화면](daily/2026-04-27-rock-paper-scissors/screenshot.png)
 

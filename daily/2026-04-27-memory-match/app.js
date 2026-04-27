@@ -1,27 +1,20 @@
-const {
-  createGame,
-  flipCard,
-  hideUnmatched,
-  shuffledValues,
-} = window.gameLogic;
-
 const board = document.querySelector('[data-board]');
 const statusText = document.querySelector('[data-status]');
 const resetButton = document.querySelector('[data-reset]');
 
-let game = createGame(shuffledValues());
+let game = window.gameLogic.createGame(window.gameLogic.shuffledValues());
 let hideTimer = null;
 
 function getStatusMessage() {
   if (game.status === 'won') {
-    return `Cleared in ${game.moves} moves`;
+    return `${game.moves}번 만에 완료`;
   }
 
   if (game.flippedIds.length === 2) {
-    return 'No match';
+    return '짝이 아닙니다';
   }
 
-  return `Moves: ${game.moves}`;
+  return `이동 횟수: ${game.moves}`;
 }
 
 function render() {
@@ -35,7 +28,7 @@ function render() {
     button.dataset.cardId = String(card.id);
     button.textContent = card.isFaceUp || card.isMatched ? card.value : '?';
     button.disabled = game.status === 'won' || card.isMatched;
-    button.setAttribute('aria-label', card.isFaceUp || card.isMatched ? `Card ${card.value}` : 'Hidden card');
+    button.setAttribute('aria-label', card.isFaceUp || card.isMatched ? `카드 ${card.value}` : '숨겨진 카드');
     board.append(button);
   }
 }
@@ -47,7 +40,7 @@ function scheduleHide() {
   }
 
   hideTimer = setTimeout(() => {
-    game = hideUnmatched(game);
+    game = window.gameLogic.hideUnmatched(game);
     render();
   }, 700);
 }
@@ -58,15 +51,15 @@ board.addEventListener('click', (event) => {
     return;
   }
 
-  game = hideUnmatched(game);
-  game = flipCard(game, Number(button.dataset.cardId));
+  game = window.gameLogic.hideUnmatched(game);
+  game = window.gameLogic.flipCard(game, Number(button.dataset.cardId));
   render();
   scheduleHide();
 });
 
 resetButton.addEventListener('click', () => {
   clearTimeout(hideTimer);
-  game = createGame(shuffledValues());
+  game = window.gameLogic.createGame(window.gameLogic.shuffledValues());
   render();
 });
 
