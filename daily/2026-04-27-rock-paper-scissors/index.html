@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game" aria-labelledby="title">
+      <h1 id="title">Rock Paper Scissors</h1>
+      <p class="score" data-score>Player 0 - Computer 0</p>
+      <p class="status" data-status aria-live="polite">Choose a move</p>
+      <div class="choices" data-choices aria-label="Choices"></div>
+      <button class="reset" type="button" data-reset>Reset</button>
+    </main>
+    <script src="./game-logic.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
