@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">숫자 야구 게임 화면</title>
+  <desc id="desc">숫자 야구 게임에서 추측과 스트라이크, 볼 힌트를 보여주는 화면</desc>
+  <rect width="800" height="600" fill="#f4f7f5"/>
+  <g fill="#1f2933" font-family="Malgun Gothic, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="135" font-size="42" font-weight="700">숫자 야구</text>
+    <text x="400" y="190" font-size="24">1 스트라이크, 1 볼</text>
+  </g>
+  <rect x="245" y="225" width="195" height="50" fill="#fff" stroke="#2f4858" stroke-width="3"/>
+  <rect x="455" y="225" width="100" height="50" fill="#2f4858"/>
+  <g font-family="Malgun Gothic, Arial, sans-serif" font-size="24" text-anchor="middle">
+    <text x="342" y="258" fill="#1f2933">123</text>
+    <text x="505" y="258" fill="#fff">입력</text>
+  </g>
+  <g fill="#1f2933" font-family="Malgun Gothic, Arial, sans-serif" font-size="22">
+    <text x="285" y="345">456: 0 스트라이크, 0 볼</text>
+    <text x="285" y="383">132: 1 스트라이크, 2 볼</text>
+  </g>
+  <rect x="330" y="430" width="140" height="48" fill="#2f4858"/>
+  <text x="400" y="462" fill="#fff" font-family="Malgun Gothic, Arial, sans-serif" font-size="22" text-anchor="middle">다시 시작</text>
+</svg>

@@ -1,2 +1,4 @@
 .omx/
 .playwright-mcp/
+.chrome-profile/
+.edge-profile/

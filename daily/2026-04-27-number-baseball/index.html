@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>숫자 야구</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game" aria-labelledby="title">
+      <h1 id="title">숫자 야구</h1>
+      <p class="status" data-status aria-live="polite"></p>
+      <form class="guess-form" data-form>
+        <input
+          data-guess
+          aria-label="추측 숫자"
+          inputmode="numeric"
+          maxlength="3"
+          pattern="[0-9]{3}"
+          autocomplete="off"
+          placeholder="123"
+        >
+        <button type="submit">입력</button>
+      </form>
+      <ol class="attempts" data-attempts aria-label="시도 기록"></ol>
+      <button class="reset" type="button" data-reset>다시 시작</button>
+    </main>
+    <script src="./game-logic.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
