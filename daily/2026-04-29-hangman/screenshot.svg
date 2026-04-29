@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="480" viewBox="0 0 760 480" role="img" aria-labelledby="title desc">
+  <title id="title">행맨 게임 화면</title>
+  <desc id="desc">숨겨진 단어와 한글 글자 선택 버튼이 보이는 행맨 게임 화면입니다.</desc>
+  <rect width="760" height="480" fill="#f4f1ea"/>
+  <rect x="220" y="46" width="320" height="388" fill="#ffffff" stroke="#171717" stroke-width="3"/>
+  <text x="380" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#171717">행맨</text>
+  <text x="380" y="162" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" fill="#171717">_  _  _</text>
+  <text x="380" y="206" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#171717">남은 기회: 6</text>
+  <text x="380" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#9a3412">틀린 글자가 여기에 표시됩니다</text>
+  <g font-family="Arial, sans-serif" font-size="23" text-anchor="middle" fill="#171717">
+    <rect x="278" y="276" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="297" y="303">바</text>
+    <rect x="324" y="276" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="343" y="303">나</text>
+    <rect x="370" y="276" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="389" y="303">사</text>
+    <rect x="416" y="276" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="435" y="303">과</text>
+    <rect x="462" y="276" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="481" y="303">구</text>
+    <rect x="278" y="322" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="297" y="349">름</text>
+    <rect x="324" y="322" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="343" y="349">학</text>
+    <rect x="370" y="322" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="389" y="349">교</text>
+    <rect x="416" y="322" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="435" y="349">라</text>
+    <rect x="462" y="322" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="481" y="349">디</text>
+    <rect x="278" y="368" width="38" height="38" fill="#ffffff" stroke="#171717" stroke-width="2"/><text x="297" y="395">오</text>
+  </g>
+  <rect x="314" y="414" width="132" height="38" fill="#171717"/>
+  <text x="380" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">다시 시작</text>
+</svg>

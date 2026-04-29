@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>행맨</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game" aria-labelledby="title">
+      <h1 id="title">행맨</h1>
+      <p class="word" data-word aria-label="숨겨진 단어"></p>
+      <p class="status" data-status aria-live="polite"></p>
+      <div class="gallows" data-gallows aria-label="틀린 횟수"></div>
+      <div class="keyboard" data-keyboard aria-label="글자 선택"></div>
+      <button class="reset" type="button" data-reset>다시 시작</button>
+    </main>
+    <script src="./game-logic.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
