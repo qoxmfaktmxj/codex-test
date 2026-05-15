@@ -12,6 +12,7 @@
 | 2026-04-27 | 숫자 야구 | 서로 다른 세 자리 숫자를 추측해 스트라이크와 볼 힌트로 정답을 찾는 게임입니다. |
 | 2026-04-29 | 행맨 | 한글 글자를 골라 숨겨진 단어를 맞히는 게임입니다. |
 | 2026-05-11 | 불 끄기 | 칸을 눌러 주변 불을 함께 바꾸고 모든 불을 끄는 퍼즐입니다. |
+| 2026-05-15 | 사이먼 기억력 | 표시된 한글 색 순서를 외워 같은 순서로 누르는 기억력 게임입니다. |
 
 ## 게임 화면
 
@@ -41,6 +42,10 @@
 
 ![불 끄기 게임 화면](daily/2026-05-11-lights-out/screenshot.svg)
 
+### 사이먼 기억력
+
+![사이먼 기억력 게임 화면](daily/2026-05-15-simon-memory/screenshot.png)
+
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
@@ -52,4 +57,5 @@ node daily/2026-04-27-rock-paper-scissors/game-logic.test.js
 node daily/2026-04-27-number-baseball/game-logic.test.js
 node daily/2026-04-29-hangman/game-logic.test.js
 node daily/2026-05-11-lights-out/game-logic.test.js
+node daily/2026-05-15-simon-memory/game-logic.test.js
 ```
