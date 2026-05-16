@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>스네이크</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game" aria-labelledby="title">
+      <p class="eyebrow">데일리 클래식 게임</p>
+      <h1 id="title">스네이크</h1>
+      <p class="rule">방향을 바꾸며 먹이를 먹고 뱀을 8칸까지 키우세요.</p>
+
+      <section class="scoreboard" aria-label="현재 정보">
+        <p>점수 <strong data-score>0</strong></p>
+        <p>방향 <strong data-direction>오른쪽</strong></p>
+        <p>목표 <strong>8칸</strong></p>
+      </section>
+
+      <p class="status" data-status aria-live="polite"></p>
+      <div class="board" data-board aria-label="스네이크 게임판"></div>
+
+      <div class="controls" aria-label="방향 조작">
+        <button type="button" data-direction-button="up">위</button>
+        <button type="button" data-direction-button="left">왼쪽</button>
+        <button type="button" data-step>한 칸 이동</button>
+        <button type="button" data-direction-button="right">오른쪽</button>
+        <button type="button" data-direction-button="down">아래</button>
+      </div>
+
+      <button class="reset" type="button" data-reset>다시 시작</button>
+    </main>
+    <script src="./game-logic.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
