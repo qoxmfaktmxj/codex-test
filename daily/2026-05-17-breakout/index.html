@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>벽돌 깨기</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game" aria-labelledby="title">
+      <h1 id="title">벽돌 깨기</h1>
+      <p class="intro">좌우 방향키로 받침대를 움직여 모든 벽돌을 깨세요.</p>
+      <p class="score" data-score aria-live="polite">점수: 0</p>
+      <div class="board" data-board aria-label="벽돌 깨기 게임판"></div>
+      <p class="status" data-status aria-live="polite">상태: 진행 중</p>
+      <div class="controls" aria-label="조작 버튼">
+        <button type="button" data-left>왼쪽</button>
+        <button type="button" data-right>오른쪽</button>
+        <button type="button" data-reset>다시 시작</button>
+      </div>
+    </main>
+    <script src="./game-logic.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
