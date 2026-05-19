@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>우주 침략자</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">우주 침략자</h1>
+        <p class="summary">좌우로 움직이고 레이저를 쏴 내려오는 침략자를 모두 막으세요.</p>
+      </section>
+
+      <section class="panel" aria-label="게임 정보">
+        <div>
+          <span>점수</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span>상태</span>
+          <strong id="status">진행 중</strong>
+        </div>
+      </section>
+
+      <p id="message" class="message" aria-live="polite">침략자가 내려오기 전에 막으세요!</p>
+      <div id="board" class="board" aria-label="우주 침략자 게임판"></div>
+
+      <div class="controls" aria-label="조작">
+        <button id="left-button" type="button">왼쪽</button>
+        <button id="fire-button" type="button">발사</button>
+        <button id="right-button" type="button">오른쪽</button>
+        <button id="reset-button" type="button">다시 시작</button>
+      </div>
+
+      <p class="hint">키보드: ← → 이동, 스페이스 발사</p>
+    </main>
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
