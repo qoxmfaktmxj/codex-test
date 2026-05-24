@@ -1,0 +1,221 @@
+:root {
+  color-scheme: dark;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  background: #111827;
+  color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at top left, rgba(250, 204, 21, 0.2), transparent 34rem),
+    radial-gradient(circle at bottom right, rgba(248, 113, 113, 0.18), transparent 30rem),
+    #111827;
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(94vw, 760px);
+  padding: 28px;
+}
+
+.hero,
+.status-card,
+.board-wrap,
+.message,
+.help,
+.footer-actions {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.hero {
+  padding: 28px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.82), rgba(15, 23, 42, 0.92));
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #fde68a;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+  line-height: 1;
+}
+
+.intro {
+  margin: 16px 0 0;
+  color: #dbeafe;
+  font-size: 1.1rem;
+}
+
+.status-card {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(15, 23, 42, 0.76);
+}
+
+.status-card div {
+  display: grid;
+  gap: 6px;
+}
+
+.status-card span {
+  color: #94a3b8;
+  font-size: 0.88rem;
+}
+
+.status-card strong {
+  font-size: 1.14rem;
+}
+
+.yellow {
+  color: #facc15;
+}
+
+.red {
+  color: #fb7185;
+}
+
+.message {
+  margin: 18px 0 14px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(30, 41, 59, 0.86);
+  color: #fef3c7;
+  font-weight: 800;
+  text-align: center;
+}
+
+.column-buttons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.column-buttons button,
+#reset-button {
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 6px;
+  cursor: pointer;
+  background: #f8fafc;
+  color: #1e293b;
+  font-weight: 900;
+}
+
+.column-buttons button:hover:not(:disabled),
+#reset-button:hover {
+  transform: translateY(-1px);
+  background: #fde68a;
+}
+
+.column-buttons button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.board-wrap {
+  padding: 18px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #2563eb, #1d4ed8);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #1e3a8a;
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.36);
+}
+
+.disc {
+  width: 82%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: block;
+  background: #0f172a;
+  box-shadow: inset 0 -8px 18px rgba(0, 0, 0, 0.36);
+}
+
+.disc.yellow {
+  background: radial-gradient(circle at 30% 24%, #fef9c3, #facc15 48%, #ca8a04 100%);
+}
+
+.disc.red {
+  background: radial-gradient(circle at 30% 24%, #ffe4e6, #fb7185 50%, #be123c 100%);
+}
+
+.disc.winner {
+  outline: 4px solid #ffffff;
+  outline-offset: -4px;
+}
+
+.footer-actions {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.78);
+  text-align: center;
+}
+
+#reset-button {
+  min-width: 140px;
+}
+
+.help {
+  margin: 14px 0 0;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.7);
+  color: #cbd5e1;
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  .game-shell {
+    padding: 14px;
+  }
+
+  .status-card {
+    grid-template-columns: 1fr;
+  }
+
+  .board,
+  .column-buttons {
+    gap: 5px;
+  }
+
+  .column-buttons button {
+    padding: 10px 2px;
+    font-size: 0.8rem;
+  }
+}

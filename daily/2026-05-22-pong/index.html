@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>퐁</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">퐁</h1>
+        <p class="intro">위아래로 받침대를 움직여 공을 받아치고 세 점을 먼저 얻으세요.</p>
+      </section>
+
+      <section class="score-panel" aria-label="점수판">
+        <div>
+          <span>나</span>
+          <strong id="player-score">0</strong>
+        </div>
+        <div>
+          <span>상대</span>
+          <strong id="opponent-score">0</strong>
+        </div>
+      </section>
+
+      <section class="board-wrap" aria-label="퐁 경기장">
+        <div id="board" class="board"></div>
+      </section>
+
+      <p id="message" class="message" role="status">위아래로 움직여 공을 세 번 먼저 받아치세요.</p>
+
+      <section class="controls" aria-label="조작">
+        <button id="up-button" type="button">위로</button>
+        <button id="pause-button" type="button">일시정지</button>
+        <button id="down-button" type="button">아래로</button>
+        <button id="reset-button" type="button">처음부터</button>
+      </section>
+
+      <p class="help">키보드 ↑ ↓ 또는 화면 버튼으로 움직입니다.</p>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
