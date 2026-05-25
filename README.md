@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-05-25 | 2048 퍼즐 | 같은 숫자 타일을 밀어 합치고 2048 타일을 만드는 숫자 퍼즐입니다. |
 | 2026-05-24 | 네 줄 잇기 | 열을 골라 말을 떨어뜨리고 같은 색 말 네 개를 먼저 잇는 보드 게임입니다. |
 | 2026-05-23 | 블랙잭 21 | 카드를 받아 21에 가깝게 만들고 딜러보다 높은 점수로 승부하는 카드 게임입니다. |
 | 2026-05-22 | 퐁 | 위아래 받침대로 공을 받아치며 세 점을 먼저 노리는 고전 탁구 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-05-18 | 두더지 잡기 | 튀어나온 두더지를 눌러 점수를 올리고 실수 다섯 번 전에 오래 버티는 게임입니다. |
 | 2026-05-17 | 벽돌 깨기 | 좌우로 받침대를 움직여 공을 튕기고 모든 벽돌을 깨는 게임입니다. |
 | 2026-05-16 | 스네이크 | 방향을 바꾸며 먹이를 먹고 목표 길이까지 버티는 게임입니다. |
-| 2026-05-15 | 사이먼 기억력 | 표시된 한글 색 순서를 외워 같은 순서로 누르는 기억력 게임입니다. |
 
 ## 최근 게임 화면
+
+### 2048 퍼즐
+
+![2048 퍼즐 게임 화면](daily/2026-05-25-2048-puzzle/screenshot.png)
 
 ### 네 줄 잇기
 
@@ -57,15 +61,12 @@
 
 ![스네이크 게임 화면](daily/2026-05-16-snake/screenshot.png)
 
-### 사이먼 기억력
-
-![사이먼 기억력 게임 화면](daily/2026-05-15-simon-memory/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-05-25-2048-puzzle/game-logic.test.js
 node daily/2026-05-24-connect-four/game-logic.test.js
 node daily/2026-05-23-blackjack/game-logic.test.js
 node daily/2026-05-22-pong/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-05-19-space-invaders/game-logic.test.js
 node daily/2026-05-18-whack-a-mole/game-logic.test.js
 node daily/2026-05-17-breakout/game-logic.test.js
 node daily/2026-05-16-snake/game-logic.test.js
-node daily/2026-05-15-simon-memory/game-logic.test.js
 ```

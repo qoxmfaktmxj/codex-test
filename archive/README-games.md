@@ -14,6 +14,7 @@
 | 2026-05-11 | 불 끄기 | 칸을 눌러 주변 불을 함께 바꾸고 모든 불을 끄는 퍼즐입니다. |
 | 2026-05-15 | 숫자 퍼즐 | 빈 칸 옆 숫자를 밀어 1부터 8까지 순서대로 맞추는 퍼즐입니다. |
 | 2026-05-15 | 스네이크 | 방향으로 뱀을 움직여 먹이를 먹고 점수를 올리는 게임입니다. |
+| 2026-05-15 | 사이먼 기억력 | 표시된 한글 색 순서를 외워 같은 순서로 누르는 기억력 게임입니다. |
 
 ## 게임 화면
 
@@ -49,6 +50,10 @@
 
 ![스네이크 게임 화면](../daily/2026-05-15-snake/screenshot.svg)
 
+### 사이먼 기억력
+
+![사이먼 기억력 게임 화면](../daily/2026-05-15-simon-memory/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -60,4 +65,5 @@ node daily/2026-04-29-hangman/game-logic.test.js
 node daily/2026-05-11-lights-out/game-logic.test.js
 node daily/2026-05-15-number-puzzle/game-logic.test.js
 node daily/2026-05-15-snake/game-logic.test.js
+node daily/2026-05-15-simon-memory/game-logic.test.js
 ```
