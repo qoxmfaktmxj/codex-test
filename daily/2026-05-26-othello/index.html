@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오셀로</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero">
+      <p class="eyebrow">2026-05-26 데일리 클래식 게임</p>
+      <h1>오셀로</h1>
+      <p class="intro">상대 돌을 내 돌 사이에 끼워 뒤집고, 마지막에 더 많은 돌을 차지하는 전략 보드 게임입니다.</p>
+    </section>
+
+    <section class="score-card" aria-live="polite">
+      <div>
+        <span>흑돌</span>
+        <strong id="black-count">2</strong>
+      </div>
+      <div>
+        <span>백돌</span>
+        <strong id="white-count">2</strong>
+      </div>
+      <div>
+        <span>빈칸</span>
+        <strong id="empty-count">60</strong>
+      </div>
+    </section>
+
+    <p id="message" class="message">흑돌 차례입니다.</p>
+
+    <section id="board" class="board" aria-label="오셀로 게임판"></section>
+
+    <section class="footer-actions">
+      <button type="button" id="reset-button">새 게임</button>
+      <p class="help">초록 점이 놓을 수 있는 칸입니다. 돌을 놓으면 가로, 세로, 대각선으로 끼인 상대 돌이 모두 뒤집힙니다.</p>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
