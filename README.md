@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-05 | 님 게임 | 돌을 1개부터 3개까지 가져가며 마지막 돌을 가져가기 위해 컴퓨터와 수 싸움을 하는 게임입니다. |
 | 2026-06-01 | 소코반 창고 정리 | 상자를 밀어 모든 목표 칸 위에 올리는 창고 정리 퍼즐 게임입니다. |
 | 2026-05-31 | 미로 탈출 | 열쇠를 찾아 출구 문을 열고 짧은 미로를 빠져나가는 퍼즐 게임입니다. |
 | 2026-05-28 | 낙하 블록 | 떨어지는 블록을 회전하고 옮겨 가로줄을 채우며 점수를 올리는 퍼즐 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-05-23 | 블랙잭 21 | 카드를 받아 21에 가깝게 만들고 딜러보다 높은 점수로 승부하는 카드 게임입니다. |
 | 2026-05-22 | 퐁 | 위아래 받침대로 공을 받아치며 세 점을 먼저 노리는 고전 탁구 게임입니다. |
 | 2026-05-21 | 지뢰 찾기 | 숨어 있는 지뢰를 피해 모든 안전한 칸을 여는 추리 게임입니다. |
-| 2026-05-20 | 개구리 건너기 | 자동차가 오가는 길을 피해 개구리를 위쪽 연못까지 보내는 게임입니다. |
 
 ## 최근 게임 화면
+
+### 님 게임
+
+![님 게임 화면](daily/2026-06-05-nim/screenshot.png)
 
 ### 소코반 창고 정리
 
@@ -57,15 +61,12 @@
 
 ![지뢰 찾기 게임 화면](daily/2026-05-21-minesweeper/screenshot.png)
 
-### 개구리 건너기
-
-![개구리 건너기 게임 화면](daily/2026-05-20-frogger/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-05-nim/game-logic.test.js
 node daily/2026-06-01-sokoban/game-logic.test.js
 node daily/2026-05-31-maze-escape/game-logic.test.js
 node daily/2026-05-28-falling-blocks/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-05-24-connect-four/game-logic.test.js
 node daily/2026-05-23-blackjack/game-logic.test.js
 node daily/2026-05-22-pong/game-logic.test.js
 node daily/2026-05-21-minesweeper/game-logic.test.js
-node daily/2026-05-20-frogger/game-logic.test.js
 ```
