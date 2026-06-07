@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>하노이의 탑</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="panel" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">하노이의 탑</h1>
+        <p class="intro">작은 원반 위에 큰 원반을 올리지 않도록 모든 원반을 오른쪽 기둥으로 옮기세요.</p>
+
+        <div class="status-bar" aria-live="polite">
+          <span id="status">진행 중</span>
+          <span id="moves">이동 0회 · 최소 7회</span>
+        </div>
+
+        <div id="board" class="board" aria-label="하노이의 탑 게임판"></div>
+
+        <p id="message" class="message">시작 기둥을 고른 뒤 옮길 기둥을 고르세요.</p>
+
+        <div class="controls">
+          <label for="disk-count">원반 수</label>
+          <select id="disk-count">
+            <option value="3">3개</option>
+            <option value="4">4개</option>
+            <option value="5">5개</option>
+          </select>
+          <button id="reset" type="button">새 게임</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

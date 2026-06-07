@@ -20,6 +20,8 @@
 | 2026-05-18 | 두더지 잡기 | 튀어나온 두더지를 눌러 점수를 올리고 실수 다섯 번 전에 오래 버티는 게임입니다. |
 | 2026-05-19 | 우주 침략자 | 좌우로 움직이며 레이저를 쏴 내려오는 침략자를 모두 막는 게임입니다. |
 | 2026-05-20 | 개구리 건너기 | 자동차가 오가는 길을 피해 개구리를 위쪽 연못까지 보내는 게임입니다. |
+| 2026-05-21 | 지뢰 찾기 | 숨어 있는 지뢰를 피해 모든 안전한 칸을 여는 추리 게임입니다. |
+| 2026-05-22 | 퐁 | 위아래 받침대로 공을 받아치며 세 점을 먼저 노리는 고전 탁구 게임입니다. |
 
 ## 게임 화면
 
@@ -79,6 +81,14 @@
 
 ![개구리 건너기 게임 화면](../daily/2026-05-20-frogger/screenshot.png)
 
+### 지뢰 찾기
+
+![지뢰 찾기 게임 화면](../daily/2026-05-21-minesweeper/screenshot.png)
+
+### 퐁
+
+![퐁 게임 화면](../daily/2026-05-22-pong/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -96,4 +106,6 @@ node daily/2026-05-17-breakout/game-logic.test.js
 node daily/2026-05-18-whack-a-mole/game-logic.test.js
 node daily/2026-05-19-space-invaders/game-logic.test.js
 node daily/2026-05-20-frogger/game-logic.test.js
+node daily/2026-05-21-minesweeper/game-logic.test.js
+node daily/2026-05-22-pong/game-logic.test.js
 ```
