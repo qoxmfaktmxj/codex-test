@@ -22,6 +22,7 @@
 | 2026-05-20 | 개구리 건너기 | 자동차가 오가는 길을 피해 개구리를 위쪽 연못까지 보내는 게임입니다. |
 | 2026-05-21 | 지뢰 찾기 | 숨어 있는 지뢰를 피해 모든 안전한 칸을 여는 추리 게임입니다. |
 | 2026-05-22 | 퐁 | 위아래 받침대로 공을 받아치며 세 점을 먼저 노리는 고전 탁구 게임입니다. |
+| 2026-05-23 | 블랙잭 21 | 카드를 받아 21에 가깝게 만들고 딜러보다 높은 점수로 승부하는 카드 게임입니다. |
 
 ## 게임 화면
 
@@ -89,6 +90,10 @@
 
 ![퐁 게임 화면](../daily/2026-05-22-pong/screenshot.png)
 
+### 블랙잭 21
+
+![블랙잭 21 게임 화면](../daily/2026-05-23-blackjack/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -108,4 +113,5 @@ node daily/2026-05-19-space-invaders/game-logic.test.js
 node daily/2026-05-20-frogger/game-logic.test.js
 node daily/2026-05-21-minesweeper/game-logic.test.js
 node daily/2026-05-22-pong/game-logic.test.js
+node daily/2026-05-23-blackjack/game-logic.test.js
 ```
