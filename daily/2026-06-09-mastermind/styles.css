@@ -1,0 +1,254 @@
+:root {
+  color-scheme: light;
+  --ink: #1f2937;
+  --muted: #667085;
+  --line: #d0d5dd;
+  --paper: #fffaf0;
+  --panel: #ffffff;
+  --accent: #2457a6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background:
+    linear-gradient(120deg, rgba(36, 87, 166, 0.14), rgba(198, 139, 43, 0.16)),
+    var(--paper);
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(960px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 32px 18px;
+  display: grid;
+  place-items: center;
+}
+
+.panel {
+  width: min(720px, 100%);
+  padding: 28px;
+  border: 1px solid rgba(31, 41, 55, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 46px rgba(31, 41, 55, 0.16);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  letter-spacing: 0;
+}
+
+.intro {
+  margin: 10px 0 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+  font-weight: 700;
+}
+
+.board-wrap {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.history {
+  min-height: 238px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fcfcfd;
+}
+
+.empty-history {
+  margin: 96px 0 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+.history-row {
+  display: grid;
+  grid-template-columns: 44px 1fr 128px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.history-row:last-child {
+  border-bottom: 0;
+}
+
+.turn,
+.hints {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.guess,
+.current,
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.current {
+  justify-content: center;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f2f4f7;
+}
+
+.peg,
+.slot,
+.color-button {
+  display: inline-grid;
+  place-items: center;
+  min-width: 64px;
+  height: 42px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 800;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.34);
+}
+
+.slot,
+.color-button {
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.slot.active {
+  border-color: #111827;
+  box-shadow: 0 0 0 3px rgba(36, 87, 166, 0.18);
+}
+
+.palette {
+  justify-content: center;
+}
+
+.color-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+}
+
+.red {
+  background: #dc2626;
+}
+
+.blue {
+  background: #2563eb;
+}
+
+.green {
+  background: #16a34a;
+}
+
+.yellow {
+  background: #d97706;
+}
+
+.purple {
+  background: #7c3aed;
+}
+
+.black {
+  background: #111827;
+}
+
+.empty {
+  color: var(--muted);
+  background: #ffffff;
+  border-color: #98a2b3;
+  text-shadow: none;
+}
+
+.message {
+  min-height: 28px;
+  margin: 16px 0;
+  color: #344054;
+  font-weight: 700;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button {
+  min-width: 112px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  background: var(--accent);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.controls button:last-child {
+  color: var(--ink);
+  background: #e4e7ec;
+}
+
+.controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+@media (max-width: 640px) {
+  .game-shell {
+    padding: 16px 10px;
+  }
+
+  .panel {
+    padding: 20px 14px;
+  }
+
+  .history-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .peg,
+  .slot,
+  .color-button {
+    min-width: 54px;
+    height: 38px;
+    font-size: 0.86rem;
+  }
+}

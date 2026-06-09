@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-09 | 마스터마인드 | 여섯 색 중 네 칸의 비밀 코드를 추리하고 위치와 색 힌트로 정답을 좁혀 가는 추리 게임입니다. |
 | 2026-06-08 | 페그 솔리테어 | 말 하나를 건너 빈칸으로 뛰어넘으며 말을 제거하고 마지막 말 하나를 남기는 퍼즐 게임입니다. |
 | 2026-06-07 | 달 착륙선 | 제한된 연료로 추력을 조절해 안전 속도로 달 표면에 내려앉는 고전 착륙 게임입니다. |
 | 2026-06-06 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 모든 원반을 오른쪽 기둥으로 옮기는 퍼즐 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-05-28 | 낙하 블록 | 떨어지는 블록을 회전하고 옮겨 가로줄을 채우며 점수를 올리는 퍼즐 게임입니다. |
 | 2026-05-26 | 오셀로 | 흑돌과 백돌을 번갈아 놓고 상대 돌을 뒤집어 더 많은 돌을 남기는 보드 게임입니다. |
 | 2026-05-25 | 2048 퍼즐 | 같은 숫자 타일을 밀어 합치고 2048 타일을 만드는 숫자 퍼즐입니다. |
-| 2026-05-24 | 네 줄 잇기 | 열을 골라 말을 떨어뜨리고 같은 색 말 네 개를 먼저 잇는 보드 게임입니다. |
 
 ## 최근 게임 화면
+
+### 마스터마인드
+
+![마스터마인드 게임 화면](daily/2026-06-09-mastermind/screenshot.png)
 
 ### 페그 솔리테어
 
@@ -57,15 +61,12 @@
 
 ![2048 퍼즐 게임 화면](daily/2026-05-25-2048-puzzle/screenshot.png)
 
-### 네 줄 잇기
-
-![네 줄 잇기 게임 화면](daily/2026-05-24-connect-four/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-09-mastermind/game-logic.test.js
 node daily/2026-06-08-peg-solitaire/game-logic.test.js
 node daily/2026-06-07-lunar-lander/game-logic.test.js
 node daily/2026-06-06-tower-of-hanoi/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-05-31-maze-escape/game-logic.test.js
 node daily/2026-05-28-falling-blocks/game-logic.test.js
 node daily/2026-05-26-othello/game-logic.test.js
 node daily/2026-05-25-2048-puzzle/game-logic.test.js
-node daily/2026-05-24-connect-four/game-logic.test.js
 ```
