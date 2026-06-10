@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>님 게임</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">님 게임</h1>
+        <p class="intro">한 더미에서 원하는 만큼 돌을 가져가고, 마지막 돌을 가져가면 이깁니다.</p>
+      </section>
+
+      <section class="status-panel" aria-label="게임 상태">
+        <div>
+          <span class="label">차례</span>
+          <strong id="player">나</strong>
+        </div>
+        <div>
+          <span class="label">상태</span>
+          <strong id="status">진행 중</strong>
+        </div>
+        <div>
+          <span class="label">승자</span>
+          <strong id="winner">-</strong>
+        </div>
+      </section>
+
+      <p id="message" class="message" role="status">돌을 가져갈 더미와 개수를 고르세요.</p>
+      <section id="piles" class="piles" aria-label="돌 더미"></section>
+
+      <section class="controls" aria-label="선택">
+        <label>
+          더미
+          <select id="pile-select"></select>
+        </label>
+        <label>
+          개수
+          <input id="count-input" type="number" min="1" value="1" />
+        </label>
+        <button type="button" id="take-button">가져가기</button>
+        <button type="button" id="reset-button">다시 시작</button>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

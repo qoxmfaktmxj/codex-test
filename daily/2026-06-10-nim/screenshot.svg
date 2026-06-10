@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="title desc">
+  <title id="title">님 게임 화면</title>
+  <desc id="desc">세 개의 돌 더미와 한글 상태판이 보이는 님 게임 화면</desc>
+  <rect width="960" height="620" fill="#d9e7dd"/>
+  <rect x="140" y="54" width="680" height="512" rx="18" fill="#f8f5ea" stroke="#31413f" stroke-width="8"/>
+  <text x="480" y="120" text-anchor="middle" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#66746e">데일리 클래식 게임</text>
+  <text x="480" y="178" text-anchor="middle" font-family="Malgun Gothic, sans-serif" font-size="58" font-weight="800" fill="#20252d">님 게임</text>
+  <text x="480" y="224" text-anchor="middle" font-family="Malgun Gothic, sans-serif" font-size="24" fill="#20252d">마지막 돌을 가져가면 이깁니다.</text>
+  <g font-family="Malgun Gothic, sans-serif" text-anchor="middle">
+    <rect x="190" y="254" width="180" height="76" rx="12" fill="#fffaf0" stroke="#d8cda7" stroke-width="3"/>
+    <text x="280" y="284" font-size="18" font-weight="700" fill="#67716c">차례</text>
+    <text x="280" y="314" font-size="26" font-weight="800" fill="#20252d">나</text>
+    <rect x="390" y="254" width="180" height="76" rx="12" fill="#fffaf0" stroke="#d8cda7" stroke-width="3"/>
+    <text x="480" y="284" font-size="18" font-weight="700" fill="#67716c">상태</text>
+    <text x="480" y="314" font-size="26" font-weight="800" fill="#20252d">진행 중</text>
+    <rect x="590" y="254" width="180" height="76" rx="12" fill="#fffaf0" stroke="#d8cda7" stroke-width="3"/>
+    <text x="680" y="284" font-size="18" font-weight="700" fill="#67716c">승자</text>
+    <text x="680" y="314" font-size="26" font-weight="800" fill="#20252d">-</text>
+  </g>
+  <text x="480" y="372" text-anchor="middle" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#20252d">돌을 가져갈 더미와 개수를 고르세요.</text>
+  <g fill="#fffdf7" stroke="#d8cda7" stroke-width="3">
+    <rect x="210" y="400" width="540" height="50" rx="10"/>
+    <rect x="210" y="462" width="540" height="50" rx="10"/>
+    <rect x="210" y="524" width="540" height="50" rx="10"/>
+  </g>
+  <g fill="#3b424c">
+    <circle cx="340" cy="425" r="14"/><circle cx="380" cy="425" r="14"/><circle cx="420" cy="425" r="14"/>
+    <circle cx="340" cy="487" r="14"/><circle cx="380" cy="487" r="14"/><circle cx="420" cy="487" r="14"/><circle cx="460" cy="487" r="14"/>
+    <circle cx="340" cy="549" r="14"/><circle cx="380" cy="549" r="14"/><circle cx="420" cy="549" r="14"/><circle cx="460" cy="549" r="14"/><circle cx="500" cy="549" r="14"/>
+  </g>
+  <g font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="800" fill="#20252d">
+    <text x="250" y="433">1번 더미</text>
+    <text x="250" y="495">2번 더미</text>
+    <text x="250" y="557">3번 더미</text>
+  </g>
+</svg>
