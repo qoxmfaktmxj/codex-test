@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>달 착륙선</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="panel" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">달 착륙선</h1>
+        <p class="intro">스페이스바 또는 엔진 버튼으로 추력을 켜고, 안전 속도로 달 표면에 착륙하세요.</p>
+
+        <div class="status-bar" aria-live="polite">
+          <span id="status">고도 120.0m · 속도 0.0m/s · 연료 60</span>
+          <span id="result">진행 중 · 안전 속도</span>
+        </div>
+
+        <div class="sky" aria-label="달 착륙 화면">
+          <div class="stars" aria-hidden="true"></div>
+          <div id="lander" class="lander" aria-label="착륙선">
+            <span class="body"></span>
+            <span class="leg left"></span>
+            <span class="leg right"></span>
+            <span id="flame" class="flame"></span>
+          </div>
+          <div class="moon">
+            <span>착륙 지점</span>
+          </div>
+        </div>
+
+        <div class="gauges">
+          <div>
+            <strong>엔진</strong>
+            <span id="thrust">엔진 대기</span>
+          </div>
+          <div>
+            <strong>기준</strong>
+            <span>속도 4.0m/s 이하</span>
+          </div>
+          <div>
+            <strong>시간</strong>
+            <span id="timer">0초</span>
+          </div>
+        </div>
+
+        <p id="message" class="message">추력을 조절해 천천히 달 표면에 착륙하세요.</p>
+
+        <div class="controls">
+          <button id="thrust-button" type="button">엔진 누르기</button>
+          <button id="reset" type="button">새 게임</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

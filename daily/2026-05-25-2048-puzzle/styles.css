@@ -1,0 +1,179 @@
+:root {
+  color-scheme: dark;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  background: #17120d;
+  color: #fff7ed;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(251, 146, 60, 0.28), transparent 30rem),
+    radial-gradient(circle at 82% 90%, rgba(253, 186, 116, 0.18), transparent 34rem),
+    linear-gradient(135deg, #1c1917, #292524 55%, #120c08);
+}
+
+button { font: inherit; }
+
+.game-shell {
+  width: min(94vw, 720px);
+  padding: 28px;
+}
+
+.hero,
+.score-card,
+.board,
+.message,
+.controls,
+.footer-actions {
+  border: 1px solid rgba(255, 247, 237, 0.14);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.hero {
+  padding: 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(120, 53, 15, 0.86), rgba(67, 20, 7, 0.92));
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #fed7aa;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 10vw, 5rem);
+  line-height: 0.95;
+}
+
+.intro {
+  margin: 16px 0 0;
+  color: #ffedd5;
+  font-size: 1.08rem;
+}
+
+.score-card {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  background: rgba(41, 37, 36, 0.86);
+}
+
+.score-card div {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(120, 53, 15, 0.34);
+  display: grid;
+  gap: 4px;
+  text-align: center;
+}
+
+.score-card span { color: #fed7aa; font-size: 0.84rem; }
+.score-card strong { font-size: 1.35rem; }
+
+.message {
+  margin: 18px 0 14px;
+  padding: 16px;
+  border-radius: 18px;
+  text-align: center;
+  font-weight: 900;
+  background: rgba(67, 20, 7, 0.78);
+  color: #fef3c7;
+}
+
+.board {
+  padding: 14px;
+  border-radius: 28px;
+  background: #7c5f45;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.tile {
+  aspect-ratio: 1;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: clamp(1.6rem, 8vw, 3.4rem);
+  font-weight: 1000;
+  color: #422006;
+  background: #a18872;
+  box-shadow: inset 0 -8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.tile.empty { color: transparent; background: rgba(255, 237, 213, 0.24); }
+.tile.v2 { background: #ffedd5; }
+.tile.v4 { background: #fed7aa; }
+.tile.v8 { background: #fdba74; color: #fff7ed; }
+.tile.v16 { background: #fb923c; color: #fff7ed; }
+.tile.v32 { background: #f97316; color: #fff7ed; }
+.tile.v64 { background: #ea580c; color: #fff7ed; }
+.tile.v128 { background: #facc15; font-size: clamp(1.3rem, 6vw, 2.8rem); }
+.tile.v256 { background: #eab308; font-size: clamp(1.3rem, 6vw, 2.8rem); }
+.tile.v512 { background: #ca8a04; color: #fff7ed; font-size: clamp(1.3rem, 6vw, 2.8rem); }
+.tile.v1024, .tile.v2048 { background: #a16207; color: #fff7ed; font-size: clamp(1.05rem, 5vw, 2.3rem); }
+.tile.v4096 { background: #7f1d1d; color: #fff7ed; font-size: clamp(1.05rem, 5vw, 2.3rem); }
+
+.controls {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 22px;
+  background: rgba(41, 37, 36, 0.8);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.controls button,
+#reset-button {
+  border: 0;
+  border-radius: 16px;
+  padding: 13px 10px;
+  cursor: pointer;
+  font-weight: 1000;
+  background: #ffedd5;
+  color: #431407;
+}
+
+.controls button:hover,
+#reset-button:hover {
+  transform: translateY(-1px);
+  background: #fdba74;
+}
+
+.footer-actions {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 22px;
+  text-align: center;
+  background: rgba(28, 25, 23, 0.82);
+}
+
+#reset-button { min-width: 140px; }
+
+.help {
+  margin: 12px 0 0;
+  color: #fed7aa;
+  line-height: 1.6;
+}
+
+@media (max-width: 620px) {
+  .game-shell { padding: 14px; }
+  .score-card { grid-template-columns: 1fr; }
+  .board { gap: 8px; padding: 10px; }
+  .tile { border-radius: 13px; }
+  .controls { grid-template-columns: repeat(2, 1fr); }
+}

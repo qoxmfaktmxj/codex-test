@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>마스터마인드</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="panel" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">마스터마인드</h1>
+        <p class="intro">네 칸의 비밀 색을 추리하세요. 검은 힌트는 위치까지 맞은 색, 흰 힌트는 색만 맞은 수입니다.</p>
+
+        <div class="status-bar" aria-live="polite">
+          <span id="remaining">남은 기회 8번 · 기록 0줄</span>
+          <span id="result">진행 중 · 색 네 칸을 추리하세요</span>
+        </div>
+
+        <div class="board-wrap">
+          <div id="history" class="history" aria-label="추측 기록"></div>
+          <div id="current" class="current" aria-label="현재 추측"></div>
+        </div>
+
+        <div id="palette" class="palette" aria-label="색 선택"></div>
+
+        <p id="message" class="message">색 네 칸을 채우고 정답을 확인하세요.</p>
+
+        <div class="controls">
+          <button id="submit" type="button">정답 확인</button>
+          <button id="reset" type="button">새 게임</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

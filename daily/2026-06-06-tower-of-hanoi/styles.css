@@ -1,0 +1,240 @@
+:root {
+  color-scheme: light;
+  --ink: #17212b;
+  --muted: #5d6978;
+  --paper: #f8f6ef;
+  --panel: #ffffff;
+  --line: #d8d1c3;
+  --accent: #1d7a8c;
+  --accent-dark: #155968;
+  --warn: #c2693a;
+  --disk: #f0b949;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background:
+    linear-gradient(135deg, rgba(29, 122, 140, 0.14), transparent 32%),
+    linear-gradient(225deg, rgba(194, 105, 58, 0.18), transparent 36%),
+    var(--paper);
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(960px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.panel {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: clamp(20px, 4vw, 36px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 50px rgba(41, 32, 20, 0.14);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: -10px 0 0;
+  font-size: clamp(2rem, 7vw, 4rem);
+  line-height: 1;
+}
+
+.intro {
+  max-width: 620px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.status-bar,
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-bar span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf8;
+  font-weight: 800;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(8px, 2vw, 16px);
+  min-height: 360px;
+  padding: 18px;
+  border: 1px solid #d7c7ae;
+  border-radius: 8px;
+  background: #efe5d4;
+}
+
+.peg {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 320px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.42);
+  cursor: pointer;
+}
+
+.peg:hover,
+.peg:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.peg.selected {
+  border-color: var(--warn);
+  background: rgba(255, 244, 228, 0.9);
+}
+
+.rod {
+  position: absolute;
+  bottom: 46px;
+  width: 12px;
+  height: 250px;
+  border-radius: 999px 999px 0 0;
+  background: #8b6d4c;
+}
+
+.disk-stack {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 244px;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.disk {
+  display: flex;
+  width: var(--disk-width);
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+  border: 2px solid #8e5d1b;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffd979, var(--disk));
+  color: #38270c;
+  font-weight: 900;
+  box-shadow: inset 0 -4px 0 rgba(126, 80, 20, 0.18);
+}
+
+.peg-label {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 24px);
+  min-height: 34px;
+  margin: 12px;
+  border-top: 6px solid #8b6d4c;
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 34px;
+}
+
+.message {
+  min-height: 48px;
+  margin: 0;
+  padding: 14px 16px;
+  border-left: 5px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: #eef8f6;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.controls label {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+select,
+.controls button {
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf8;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+select {
+  padding: 0 12px;
+}
+
+.controls button {
+  padding: 0 16px;
+  border-color: var(--accent-dark);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.controls button:hover,
+.controls button:focus-visible {
+  background: var(--accent-dark);
+  outline: none;
+}
+
+@media (max-width: 680px) {
+  .panel {
+    min-height: auto;
+  }
+
+  .board {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .peg {
+    min-height: 220px;
+  }
+
+  .rod {
+    height: 162px;
+  }
+
+  .disk-stack {
+    height: 160px;
+  }
+}

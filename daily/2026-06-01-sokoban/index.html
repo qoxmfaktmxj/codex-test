@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>소코반 창고 정리</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow">데일리 클래식 게임</p>
+      <h1 id="title">소코반 창고 정리</h1>
+      <p class="intro">상자를 벽에 막히지 않게 밀어 모든 목표 칸 위에 올리세요.</p>
+    </section>
+
+    <section class="panel" aria-label="소코반 게임판">
+      <div class="status-row">
+        <strong id="status">진행 중</strong>
+        <button id="reset-button" type="button">처음부터</button>
+      </div>
+      <div id="board" class="board" role="grid" aria-label="창고 지도"></div>
+      <p id="message" class="message">상자를 목표 칸으로 밀어 창고를 정리하세요.</p>
+      <div class="controls" aria-label="이동 버튼">
+        <button type="button" data-direction="up">위</button>
+        <button type="button" data-direction="left">왼쪽</button>
+        <button type="button" data-direction="right">오른쪽</button>
+        <button type="button" data-direction="down">아래</button>
+      </div>
+      <p class="hint">키보드 방향키로도 움직일 수 있습니다.</p>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

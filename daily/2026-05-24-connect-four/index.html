@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>네 줄 잇기</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">네 줄 잇기</h1>
+        <p class="intro">열을 골라 말을 떨어뜨리고 같은 색 말 네 개를 먼저 이어 보세요.</p>
+      </section>
+
+      <section class="status-card" aria-label="현재 상태">
+        <div>
+          <span>현재 차례</span>
+          <strong id="turn-label">노랑</strong>
+        </div>
+        <div>
+          <span>목표</span>
+          <strong>가로·세로·대각선 4개</strong>
+        </div>
+      </section>
+
+      <p id="message" class="message" role="status">노란 말 차례입니다.</p>
+
+      <section class="controls" aria-label="열 선택">
+        <div id="column-buttons" class="column-buttons"></div>
+      </section>
+
+      <section class="board-wrap" aria-label="네 줄 잇기 판">
+        <div id="board" class="board"></div>
+      </section>
+
+      <section class="footer-actions" aria-label="게임 조작">
+        <button id="reset-button" type="button">새 게임</button>
+      </section>
+
+      <p class="help">두 사람이 번갈아 한 기기에서 즐기는 고전 보드 게임입니다.</p>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

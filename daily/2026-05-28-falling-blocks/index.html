@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>낙하 블록</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">데일리 클래식 게임</p>
+      <h1 id="game-title">낙하 블록</h1>
+      <p class="summary">떨어지는 블록을 돌리고 옮겨 가로줄을 가득 채우세요.</p>
+    </section>
+
+    <section class="play-area" aria-label="낙하 블록 게임판">
+      <div id="board" class="board" aria-label="게임판"></div>
+      <aside class="panel">
+        <div class="stats" aria-label="점수판">
+          <div>
+            <span>점수</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span>제거한 줄</span>
+            <strong id="lines">0</strong>
+          </div>
+          <div>
+            <span>단계</span>
+            <strong id="level">1</strong>
+          </div>
+        </div>
+        <p id="message" class="message" role="status">블록을 내려 줄을 지우세요.</p>
+        <div class="controls" aria-label="조작 버튼">
+          <button type="button" id="left-button">왼쪽</button>
+          <button type="button" id="rotate-button">회전</button>
+          <button type="button" id="right-button">오른쪽</button>
+          <button type="button" id="down-button">아래</button>
+          <button type="button" id="drop-button">바로 내리기</button>
+          <button type="button" id="reset-button">다시 시작</button>
+        </div>
+        <p class="help">키보드: 방향키로 이동, 위쪽 방향키로 회전, 스페이스바로 바로 내리기</p>
+      </aside>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

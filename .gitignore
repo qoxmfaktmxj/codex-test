@@ -2,3 +2,15 @@
 .playwright-mcp/
 .chrome-profile/
 .edge-profile/
+
+# OpenClaw local workspace/bootstrap files
+.openclaw/
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+SOUL.md
+TOOLS.md
+USER.md
+memory/
