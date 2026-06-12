@@ -8,6 +8,8 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-12 | 높낮이 카드 | 현재 카드보다 다음 카드가 높을지 낮을지 맞히며 연속 정답 기록에 도전하는 카드 게임입니다. |
+| 2026-06-11 | 돼지 주사위 | 주사위를 굴려 점수를 쌓고 1이 나오기 전에 저장해 먼저 100점에 도달하는 게임입니다. |
 | 2026-06-10 | 님 게임 | 한 더미에서 원하는 만큼 돌을 가져가며 마지막 돌을 가져가는 사람이 이기는 게임입니다. |
 | 2026-06-09 | 마스터마인드 | 여섯 색 중 네 칸의 비밀 코드를 추리하고 위치와 색 힌트로 정답을 좁혀 가는 추리 게임입니다. |
 | 2026-06-08 | 페그 솔리테어 | 말 하나를 건너 빈칸으로 뛰어넘으며 말을 제거하고 마지막 말 하나를 남기는 퍼즐 게임입니다. |
@@ -16,10 +18,16 @@
 | 2026-06-05 | 님 게임 | 돌을 1개부터 3개까지 가져가며 마지막 돌을 가져가기 위해 컴퓨터와 수 싸움을 하는 게임입니다. |
 | 2026-06-01 | 소코반 창고 정리 | 상자를 밀어 모든 목표 칸 위에 올리는 창고 정리 퍼즐 게임입니다. |
 | 2026-05-31 | 미로 탈출 | 열쇠를 찾아 출구 문을 열고 짧은 미로를 빠져나가는 퍼즐 게임입니다. |
-| 2026-05-28 | 낙하 블록 | 떨어지는 블록을 회전하고 옮겨 가로줄을 채우며 점수를 올리는 퍼즐 게임입니다. |
-| 2026-05-26 | 오셀로 | 흑돌과 백돌을 번갈아 놓고 상대 돌을 뒤집어 더 많은 돌을 남기는 보드 게임입니다. |
 
 ## 최근 게임 화면
+
+### 높낮이 카드
+
+![높낮이 카드 게임 화면](daily/2026-06-12-high-low-card/screenshot.png)
+
+### 돼지 주사위
+
+![돼지 주사위 게임 화면](daily/2026-06-11-pig-dice/screenshot.png)
 
 ### 님 게임
 
@@ -53,19 +61,13 @@
 
 ![미로 탈출 게임 화면](daily/2026-05-31-maze-escape/screenshot.png)
 
-### 낙하 블록
-
-![낙하 블록 게임 화면](daily/2026-05-28-falling-blocks/screenshot.png)
-
-### 오셀로
-
-![오셀로 게임 화면](daily/2026-05-26-othello/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-12-high-low-card/game-logic.test.js
+node daily/2026-06-11-pig-dice/game-logic.test.js
 node daily/2026-06-10-nim/game-logic.test.js
 node daily/2026-06-09-mastermind/game-logic.test.js
 node daily/2026-06-08-peg-solitaire/game-logic.test.js
@@ -74,6 +76,4 @@ node daily/2026-06-06-tower-of-hanoi/game-logic.test.js
 node daily/2026-06-05-nim/game-logic.test.js
 node daily/2026-06-01-sokoban/game-logic.test.js
 node daily/2026-05-31-maze-escape/game-logic.test.js
-node daily/2026-05-28-falling-blocks/game-logic.test.js
-node daily/2026-05-26-othello/game-logic.test.js
 ```

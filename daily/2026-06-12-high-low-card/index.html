@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>높낮이 카드</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">높낮이 카드</h1>
+        <p class="intro">현재 카드와 다음 카드를 비교해 더 높을지, 낮을지, 같을지 맞히는 카드 게임입니다.</p>
+      </section>
+
+      <section class="score-panel" aria-label="게임 상태">
+        <div>
+          <span class="label">연속 정답</span>
+          <strong id="streak">0</strong>
+        </div>
+        <div>
+          <span class="label">최고 기록</span>
+          <strong id="best-streak">0</strong>
+        </div>
+        <div>
+          <span class="label">기회</span>
+          <strong id="lives">3</strong>
+        </div>
+        <div>
+          <span class="label">남은 카드</span>
+          <strong id="remaining">51</strong>
+        </div>
+      </section>
+
+      <section class="table" aria-label="카드 테이블">
+        <div class="card-area">
+          <span class="label">현재 카드</span>
+          <strong id="current-card" class="card">7</strong>
+        </div>
+        <p id="message" class="message" role="status">다음 카드가 더 높을지 낮을지 맞혀 보세요.</p>
+      </section>
+
+      <section class="controls" aria-label="예측 선택">
+        <button type="button" data-guess="higher">높다</button>
+        <button type="button" data-guess="lower">낮다</button>
+        <button type="button" data-guess="same">같다</button>
+        <button type="button" id="reset-button">다시 시작</button>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

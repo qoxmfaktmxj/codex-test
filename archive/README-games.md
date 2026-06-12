@@ -25,6 +25,8 @@
 | 2026-05-23 | 블랙잭 21 | 카드를 받아 21에 가깝게 만들고 딜러보다 높은 점수로 승부하는 카드 게임입니다. |
 | 2026-05-24 | 네 줄 잇기 | 열을 골라 말을 떨어뜨리고 같은 색 말 네 개를 먼저 잇는 보드 게임입니다. |
 | 2026-05-25 | 2048 퍼즐 | 같은 숫자 타일을 밀어 합치고 2048 타일을 만드는 숫자 퍼즐입니다. |
+| 2026-05-26 | 오셀로 | 흑돌과 백돌을 번갈아 놓고 상대 돌을 뒤집어 더 많은 돌을 남기는 보드 게임입니다. |
+| 2026-05-28 | 낙하 블록 | 떨어지는 블록을 회전하고 옮겨 가로줄을 채우며 점수를 올리는 퍼즐 게임입니다. |
 
 ## 게임 화면
 
@@ -104,6 +106,14 @@
 
 ![2048 퍼즐 게임 화면](../daily/2026-05-25-2048-puzzle/screenshot.png)
 
+### 오셀로
+
+![오셀로 게임 화면](../daily/2026-05-26-othello/screenshot.png)
+
+### 낙하 블록
+
+![낙하 블록 게임 화면](../daily/2026-05-28-falling-blocks/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -126,4 +136,6 @@ node daily/2026-05-22-pong/game-logic.test.js
 node daily/2026-05-23-blackjack/game-logic.test.js
 node daily/2026-05-24-connect-four/game-logic.test.js
 node daily/2026-05-25-2048-puzzle/game-logic.test.js
+node daily/2026-05-26-othello/game-logic.test.js
+node daily/2026-05-28-falling-blocks/game-logic.test.js
 ```
