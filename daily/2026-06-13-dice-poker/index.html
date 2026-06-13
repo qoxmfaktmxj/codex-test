@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>주사위 포커</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">주사위 포커</h1>
+        <p class="intro">다섯 주사위를 세 번까지 굴려 가장 높은 포커 조합을 노리는 고전 주사위 게임입니다.</p>
+      </section>
+
+      <section class="score-panel" aria-label="게임 상태">
+        <div>
+          <span class="label">남은 굴리기</span>
+          <strong id="rolls-left">3</strong>
+        </div>
+        <div>
+          <span class="label">추천 조합</span>
+          <strong id="best-category">찬스</strong>
+        </div>
+        <div>
+          <span class="label">예상 점수</span>
+          <strong id="best-score">5</strong>
+        </div>
+        <div>
+          <span class="label">기록 점수</span>
+          <strong id="score">0</strong>
+        </div>
+      </section>
+
+      <section class="table" aria-label="주사위 테이블">
+        <div id="dice-grid" class="dice-grid"></div>
+        <p id="message" class="message" role="status">주사위를 굴려 최고의 조합을 만드세요.</p>
+      </section>
+
+      <section class="actions" aria-label="게임 조작">
+        <button type="button" id="roll-button">굴리기</button>
+        <button type="button" id="reset-button">다시 시작</button>
+      </section>
+
+      <section class="category-panel" aria-label="점수 조합">
+        <h2>조합 선택</h2>
+        <div id="category-list" class="category-list"></div>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

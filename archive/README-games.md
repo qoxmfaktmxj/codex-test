@@ -27,6 +27,7 @@
 | 2026-05-25 | 2048 퍼즐 | 같은 숫자 타일을 밀어 합치고 2048 타일을 만드는 숫자 퍼즐입니다. |
 | 2026-05-26 | 오셀로 | 흑돌과 백돌을 번갈아 놓고 상대 돌을 뒤집어 더 많은 돌을 남기는 보드 게임입니다. |
 | 2026-05-28 | 낙하 블록 | 떨어지는 블록을 회전하고 옮겨 가로줄을 채우며 점수를 올리는 퍼즐 게임입니다. |
+| 2026-05-31 | 미로 탈출 | 열쇠를 찾아 출구 문을 열고 짧은 미로를 빠져나가는 퍼즐 게임입니다. |
 
 ## 게임 화면
 
@@ -114,6 +115,10 @@
 
 ![낙하 블록 게임 화면](../daily/2026-05-28-falling-blocks/screenshot.png)
 
+### 미로 탈출
+
+![미로 탈출 게임 화면](../daily/2026-05-31-maze-escape/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -138,4 +143,5 @@ node daily/2026-05-24-connect-four/game-logic.test.js
 node daily/2026-05-25-2048-puzzle/game-logic.test.js
 node daily/2026-05-26-othello/game-logic.test.js
 node daily/2026-05-28-falling-blocks/game-logic.test.js
+node daily/2026-05-31-maze-escape/game-logic.test.js
 ```
