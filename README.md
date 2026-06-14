@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-14 | 미니 스도쿠 | 4x4 칸에 1부터 4까지 숫자를 채워 행, 열, 작은 구역이 겹치지 않게 만드는 퍼즐입니다. |
 | 2026-06-13 | 주사위 포커 | 다섯 주사위를 세 번까지 굴리고 고전 포커 조합을 골라 최고 점수를 노리는 게임입니다. |
 | 2026-06-12 | 높낮이 카드 | 현재 카드보다 다음 카드가 높을지 낮을지 맞히며 연속 정답 기록에 도전하는 카드 게임입니다. |
 | 2026-06-11 | 돼지 주사위 | 주사위를 굴려 점수를 쌓고 1이 나오기 전에 저장해 먼저 100점에 도달하는 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-06-07 | 달 착륙선 | 제한된 연료로 추력을 조절해 안전 속도로 달 표면에 내려앉는 고전 착륙 게임입니다. |
 | 2026-06-06 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 모든 원반을 오른쪽 기둥으로 옮기는 퍼즐 게임입니다. |
 | 2026-06-05 | 님 게임 | 돌을 1개부터 3개까지 가져가며 마지막 돌을 가져가기 위해 컴퓨터와 수 싸움을 하는 게임입니다. |
-| 2026-06-01 | 소코반 창고 정리 | 상자를 밀어 모든 목표 칸 위에 올리는 창고 정리 퍼즐 게임입니다. |
 
 ## 최근 게임 화면
+
+### 미니 스도쿠
+
+![미니 스도쿠 게임 화면](daily/2026-06-14-mini-sudoku/screenshot.png)
 
 ### 주사위 포커
 
@@ -57,15 +61,12 @@
 
 ![님 게임 화면](daily/2026-06-05-nim/screenshot.png)
 
-### 소코반 창고 정리
-
-![소코반 창고 정리 게임 화면](daily/2026-06-01-sokoban/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-14-mini-sudoku/game-logic.test.js
 node daily/2026-06-13-dice-poker/game-logic.test.js
 node daily/2026-06-12-high-low-card/game-logic.test.js
 node daily/2026-06-11-pig-dice/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-06-08-peg-solitaire/game-logic.test.js
 node daily/2026-06-07-lunar-lander/game-logic.test.js
 node daily/2026-06-06-tower-of-hanoi/game-logic.test.js
 node daily/2026-06-05-nim/game-logic.test.js
-node daily/2026-06-01-sokoban/game-logic.test.js
 ```
