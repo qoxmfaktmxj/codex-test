@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>만칼라</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">만칼라</h1>
+        <p class="intro">내 쪽 홈의 돌을 반시계 방향으로 나누어 놓고, 저장소에 더 많은 돌을 모으는 고전 보드 게임입니다.</p>
+      </section>
+
+      <section class="score-panel" aria-label="게임 상태">
+        <div>
+          <span class="label">현재 차례</span>
+          <strong id="turn">남쪽</strong>
+        </div>
+        <div>
+          <span class="label">남쪽 저장소</span>
+          <strong id="south-store">0</strong>
+        </div>
+        <div>
+          <span class="label">북쪽 저장소</span>
+          <strong id="north-store">0</strong>
+        </div>
+        <div>
+          <span class="label">진행 수</span>
+          <strong id="moves">0</strong>
+        </div>
+      </section>
+
+      <section class="board-panel" aria-label="만칼라 판">
+        <div class="board">
+          <div class="store north-store">
+            <span>북쪽</span>
+            <strong id="north-store-board">0</strong>
+          </div>
+          <div id="north-pits" class="pits north-pits"></div>
+          <div id="south-pits" class="pits south-pits"></div>
+          <div class="store south-store">
+            <span>남쪽</span>
+            <strong id="south-store-board">0</strong>
+          </div>
+        </div>
+        <p id="message" class="message" role="status">내 쪽 칸을 골라 돌을 반시계 방향으로 나누어 놓으세요.</p>
+      </section>
+
+      <section class="actions" aria-label="게임 조작">
+        <button type="button" id="reset-button">다시 시작</button>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

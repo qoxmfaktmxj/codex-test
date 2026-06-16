@@ -30,6 +30,7 @@
 | 2026-05-31 | 미로 탈출 | 열쇠를 찾아 출구 문을 열고 짧은 미로를 빠져나가는 퍼즐 게임입니다. |
 | 2026-06-01 | 소코반 창고 정리 | 상자를 밀어 모든 목표 칸 위에 올리는 창고 정리 퍼즐 게임입니다. |
 | 2026-06-05 | 님 게임 | 돌을 1개부터 3개까지 가져가며 마지막 돌을 가져가기 위해 컴퓨터와 수 싸움을 하는 게임입니다. |
+| 2026-06-06 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 모든 원반을 오른쪽 기둥으로 옮기는 퍼즐 게임입니다. |
 
 ## 게임 화면
 
@@ -129,6 +130,10 @@
 
 ![님 게임 화면](../daily/2026-06-05-nim/screenshot.png)
 
+### 하노이의 탑
+
+![하노이의 탑 게임 화면](../daily/2026-06-06-tower-of-hanoi/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -156,4 +161,5 @@ node daily/2026-05-28-falling-blocks/game-logic.test.js
 node daily/2026-05-31-maze-escape/game-logic.test.js
 node daily/2026-06-01-sokoban/game-logic.test.js
 node daily/2026-06-05-nim/game-logic.test.js
+node daily/2026-06-06-tower-of-hanoi/game-logic.test.js
 ```

@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-16 | 만칼라 | 내 쪽 홈의 돌을 반시계 방향으로 나누어 놓고 저장소에 더 많은 돌을 모으는 고전 보드 게임입니다. |
 | 2026-06-15 | 점과 상자 | 점 사이에 선을 번갈아 긋고 네 변이 닫힌 칸을 차지해 더 많은 상자를 모으는 종이 게임입니다. |
 | 2026-06-14 | 미니 스도쿠 | 4x4 칸에 1부터 4까지 숫자를 채워 행, 열, 작은 구역이 겹치지 않게 만드는 퍼즐입니다. |
 | 2026-06-13 | 주사위 포커 | 다섯 주사위를 세 번까지 굴리고 고전 포커 조합을 골라 최고 점수를 노리는 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-06-09 | 마스터마인드 | 여섯 색 중 네 칸의 비밀 코드를 추리하고 위치와 색 힌트로 정답을 좁혀 가는 추리 게임입니다. |
 | 2026-06-08 | 페그 솔리테어 | 말 하나를 건너 빈칸으로 뛰어넘으며 말을 제거하고 마지막 말 하나를 남기는 퍼즐 게임입니다. |
 | 2026-06-07 | 달 착륙선 | 제한된 연료로 추력을 조절해 안전 속도로 달 표면에 내려앉는 고전 착륙 게임입니다. |
-| 2026-06-06 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 모든 원반을 오른쪽 기둥으로 옮기는 퍼즐 게임입니다. |
 
 ## 최근 게임 화면
+
+### 만칼라
+
+![만칼라 게임 화면](daily/2026-06-16-mancala/screenshot.png)
 
 ### 점과 상자
 
@@ -57,15 +61,12 @@
 
 ![달 착륙선 게임 화면](daily/2026-06-07-lunar-lander/screenshot.png)
 
-### 하노이의 탑
-
-![하노이의 탑 게임 화면](daily/2026-06-06-tower-of-hanoi/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-16-mancala/game-logic.test.js
 node daily/2026-06-15-dots-and-boxes/game-logic.test.js
 node daily/2026-06-14-mini-sudoku/game-logic.test.js
 node daily/2026-06-13-dice-poker/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-06-10-nim/game-logic.test.js
 node daily/2026-06-09-mastermind/game-logic.test.js
 node daily/2026-06-08-peg-solitaire/game-logic.test.js
 node daily/2026-06-07-lunar-lander/game-logic.test.js
-node daily/2026-06-06-tower-of-hanoi/game-logic.test.js
 ```
