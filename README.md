@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-18 | 색깔 채우기 | 왼쪽 위 영역의 색을 바꾸며 이어진 칸을 흡수해 제한 이동 안에 모든 칸을 같은 색으로 만드는 퍼즐입니다. |
 | 2026-06-17 | 카드 전쟁 | 나와 컴퓨터가 한 장씩 카드를 뽑아 더 높은 등급으로 라운드 점수를 가져가는 고전 카드 게임입니다. |
 | 2026-06-16 | 만칼라 | 내 쪽 홈의 돌을 반시계 방향으로 나누어 놓고 저장소에 더 많은 돌을 모으는 고전 보드 게임입니다. |
 | 2026-06-15 | 점과 상자 | 점 사이에 선을 번갈아 긋고 네 변이 닫힌 칸을 차지해 더 많은 상자를 모으는 종이 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-06-11 | 돼지 주사위 | 주사위를 굴려 점수를 쌓고 1이 나오기 전에 저장해 먼저 100점에 도달하는 게임입니다. |
 | 2026-06-10 | 님 게임 | 한 더미에서 원하는 만큼 돌을 가져가며 마지막 돌을 가져가는 사람이 이기는 게임입니다. |
 | 2026-06-09 | 마스터마인드 | 여섯 색 중 네 칸의 비밀 코드를 추리하고 위치와 색 힌트로 정답을 좁혀 가는 추리 게임입니다. |
-| 2026-06-08 | 페그 솔리테어 | 말 하나를 건너 빈칸으로 뛰어넘으며 말을 제거하고 마지막 말 하나를 남기는 퍼즐 게임입니다. |
 
 ## 최근 게임 화면
+
+### 색깔 채우기
+
+![색깔 채우기 게임 화면](daily/2026-06-18-color-flood/screenshot.png)
 
 ### 카드 전쟁
 
@@ -57,15 +61,12 @@
 
 ![마스터마인드 게임 화면](daily/2026-06-09-mastermind/screenshot.png)
 
-### 페그 솔리테어
-
-![페그 솔리테어 게임 화면](daily/2026-06-08-peg-solitaire/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-18-color-flood/game-logic.test.js
 node daily/2026-06-17-card-war/game-logic.test.js
 node daily/2026-06-16-mancala/game-logic.test.js
 node daily/2026-06-15-dots-and-boxes/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-06-12-high-low-card/game-logic.test.js
 node daily/2026-06-11-pig-dice/game-logic.test.js
 node daily/2026-06-10-nim/game-logic.test.js
 node daily/2026-06-09-mastermind/game-logic.test.js
-node daily/2026-06-08-peg-solitaire/game-logic.test.js
 ```
