@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-19 | 뱀과 사다리 | 주사위를 굴려 사다리는 오르고 뱀은 피하며 36번 칸에 먼저 도착하는 고전 보드 게임입니다. |
 | 2026-06-18 | 색깔 채우기 | 왼쪽 위 영역의 색을 바꾸며 이어진 칸을 흡수해 제한 이동 안에 모든 칸을 같은 색으로 만드는 퍼즐입니다. |
 | 2026-06-17 | 카드 전쟁 | 나와 컴퓨터가 한 장씩 카드를 뽑아 더 높은 등급으로 라운드 점수를 가져가는 고전 카드 게임입니다. |
 | 2026-06-16 | 만칼라 | 내 쪽 홈의 돌을 반시계 방향으로 나누어 놓고 저장소에 더 많은 돌을 모으는 고전 보드 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-06-12 | 높낮이 카드 | 현재 카드보다 다음 카드가 높을지 낮을지 맞히며 연속 정답 기록에 도전하는 카드 게임입니다. |
 | 2026-06-11 | 돼지 주사위 | 주사위를 굴려 점수를 쌓고 1이 나오기 전에 저장해 먼저 100점에 도달하는 게임입니다. |
 | 2026-06-10 | 님 게임 | 한 더미에서 원하는 만큼 돌을 가져가며 마지막 돌을 가져가는 사람이 이기는 게임입니다. |
-| 2026-06-09 | 마스터마인드 | 여섯 색 중 네 칸의 비밀 코드를 추리하고 위치와 색 힌트로 정답을 좁혀 가는 추리 게임입니다. |
 
 ## 최근 게임 화면
+
+### 뱀과 사다리
+
+![뱀과 사다리 게임 화면](daily/2026-06-19-snakes-and-ladders/screenshot.png)
 
 ### 색깔 채우기
 
@@ -57,15 +61,12 @@
 
 ![님 게임 화면](daily/2026-06-10-nim/screenshot.svg)
 
-### 마스터마인드
-
-![마스터마인드 게임 화면](daily/2026-06-09-mastermind/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-19-snakes-and-ladders/game-logic.test.js
 node daily/2026-06-18-color-flood/game-logic.test.js
 node daily/2026-06-17-card-war/game-logic.test.js
 node daily/2026-06-16-mancala/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-06-13-dice-poker/game-logic.test.js
 node daily/2026-06-12-high-low-card/game-logic.test.js
 node daily/2026-06-11-pig-dice/game-logic.test.js
 node daily/2026-06-10-nim/game-logic.test.js
-node daily/2026-06-09-mastermind/game-logic.test.js
 ```
