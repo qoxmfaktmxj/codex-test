@@ -34,6 +34,8 @@
 | 2026-06-07 | 달 착륙선 | 제한된 연료로 추력을 조절해 안전 속도로 달 표면에 내려앉는 고전 착륙 게임입니다. |
 | 2026-06-08 | 페그 솔리테어 | 말 하나를 건너 빈칸으로 뛰어넘으며 말을 제거하고 마지막 말 하나를 남기는 퍼즐 게임입니다. |
 | 2026-06-09 | 마스터마인드 | 여섯 색 중 네 칸의 비밀 코드를 추리하고 위치와 색 힌트로 정답을 좁혀 가는 추리 게임입니다. |
+| 2026-06-10 | 님 게임 | 한 더미에서 원하는 만큼 돌을 가져가며 마지막 돌을 가져가는 사람이 이기는 게임입니다. |
+| 2026-06-11 | 돼지 주사위 | 주사위를 굴려 점수를 쌓고 1이 나오기 전에 저장해 먼저 100점에 도달하는 게임입니다. |
 
 ## 게임 화면
 
@@ -149,6 +151,14 @@
 
 ![마스터마인드 게임 화면](../daily/2026-06-09-mastermind/screenshot.png)
 
+### 님 게임
+
+![님 게임 화면](../daily/2026-06-10-nim/screenshot.svg)
+
+### 돼지 주사위
+
+![돼지 주사위 게임 화면](../daily/2026-06-11-pig-dice/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -180,4 +190,6 @@ node daily/2026-06-06-tower-of-hanoi/game-logic.test.js
 node daily/2026-06-07-lunar-lander/game-logic.test.js
 node daily/2026-06-08-peg-solitaire/game-logic.test.js
 node daily/2026-06-09-mastermind/game-logic.test.js
+node daily/2026-06-10-nim/game-logic.test.js
+node daily/2026-06-11-pig-dice/game-logic.test.js
 ```
