@@ -37,6 +37,8 @@
 | 2026-06-10 | 님 게임 | 한 더미에서 원하는 만큼 돌을 가져가며 마지막 돌을 가져가는 사람이 이기는 게임입니다. |
 | 2026-06-11 | 돼지 주사위 | 주사위를 굴려 점수를 쌓고 1이 나오기 전에 저장해 먼저 100점에 도달하는 게임입니다. |
 | 2026-06-12 | 높낮이 카드 | 현재 카드보다 다음 카드가 높을지 낮을지 맞히며 연속 정답 기록에 도전하는 카드 게임입니다. |
+| 2026-06-13 | 주사위 포커 | 다섯 주사위를 세 번까지 굴리고 고전 포커 조합을 골라 최고 점수를 노리는 게임입니다. |
+| 2026-06-14 | 미니 스도쿠 | 4x4 칸에 1부터 4까지 숫자를 채워 행, 열, 작은 구역이 겹치지 않게 만드는 퍼즐입니다. |
 
 ## 게임 화면
 
@@ -164,6 +166,14 @@
 
 ![높낮이 카드 게임 화면](../daily/2026-06-12-high-low-card/screenshot.png)
 
+### 주사위 포커
+
+![주사위 포커 게임 화면](../daily/2026-06-13-dice-poker/screenshot.png)
+
+### 미니 스도쿠
+
+![미니 스도쿠 게임 화면](../daily/2026-06-14-mini-sudoku/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -198,4 +208,6 @@ node daily/2026-06-09-mastermind/game-logic.test.js
 node daily/2026-06-10-nim/game-logic.test.js
 node daily/2026-06-11-pig-dice/game-logic.test.js
 node daily/2026-06-12-high-low-card/game-logic.test.js
+node daily/2026-06-13-dice-poker/game-logic.test.js
+node daily/2026-06-14-mini-sudoku/game-logic.test.js
 ```
