@@ -1,0 +1,247 @@
+:root {
+  color-scheme: light;
+  font-family: "Pretendard", "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f7f4;
+  color: #17201a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(64, 121, 85, 0.16), transparent 34%),
+    linear-gradient(315deg, rgba(40, 124, 166, 0.16), transparent 36%),
+    #f5f7f4;
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #356449;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 9vw, 4.8rem);
+  line-height: 1;
+}
+
+.summary {
+  max-width: 680px;
+  margin: 16px 0 0;
+  color: #435247;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.panel {
+  border: 2px solid #274835;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 16px 40px rgba(23, 32, 26, 0.12);
+  padding: 20px;
+}
+
+.status-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.label {
+  display: block;
+  color: #667568;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 1.24rem;
+}
+
+#restart-button,
+.controls button {
+  min-height: 44px;
+  border: 2px solid #274835;
+  border-radius: 8px;
+  background: #fff;
+  color: #17201a;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+#restart-button {
+  padding: 0 18px;
+}
+
+.message {
+  min-height: 30px;
+  margin: 18px 0;
+  color: #1e5f78;
+  font-weight: 800;
+}
+
+.river-scene {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) minmax(140px, 0.9fr) minmax(160px, 1fr);
+  min-height: 330px;
+  border: 2px solid #d7dfd4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bank {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  background: linear-gradient(#d7ebc3, #b7d899);
+}
+
+.bank h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.item-list {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  min-height: 230px;
+}
+
+.item {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(39, 72, 53, 0.45);
+  border-radius: 8px;
+  background: #fffdf8;
+  color: #17201a;
+  font-weight: 900;
+}
+
+.farmer {
+  background: #ffe3aa;
+}
+
+.wolf {
+  background: #d9dde2;
+}
+
+.goat {
+  background: #fff8d7;
+}
+
+.cabbage {
+  background: #c6ecb6;
+}
+
+.river {
+  position: relative;
+  min-height: 100%;
+  background:
+    repeating-linear-gradient(160deg, rgba(255, 255, 255, 0.2) 0 16px, transparent 16px 34px),
+    linear-gradient(#6ab6d7, #2f87aa);
+}
+
+.boat {
+  position: absolute;
+  bottom: 34px;
+  width: 78px;
+  height: 38px;
+  border-radius: 0 0 24px 24px;
+  background: #7b5132;
+  color: #fff7ec;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  transition: left 180ms ease;
+}
+
+.boat.left {
+  left: 10px;
+}
+
+.boat.right {
+  left: calc(100% - 88px);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.controls button {
+  padding: 0 10px;
+}
+
+.controls button:hover:not(:disabled),
+#restart-button:hover {
+  background: #edf6e8;
+}
+
+.controls button:disabled {
+  border-color: #c7cec9;
+  color: #8a968d;
+  cursor: not-allowed;
+}
+
+@media (max-width: 720px) {
+  .game-shell {
+    width: min(100% - 20px, 980px);
+    padding: 24px 0;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+
+  .status-row,
+  .controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #restart-button {
+    grid-column: 1 / -1;
+  }
+
+  .river-scene {
+    grid-template-columns: 1fr;
+  }
+
+  .river {
+    min-height: 110px;
+  }
+
+  .item-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 112px;
+  }
+}

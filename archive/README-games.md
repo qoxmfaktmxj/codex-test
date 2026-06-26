@@ -39,6 +39,8 @@
 | 2026-06-12 | 높낮이 카드 | 현재 카드보다 다음 카드가 높을지 낮을지 맞히며 연속 정답 기록에 도전하는 카드 게임입니다. |
 | 2026-06-13 | 주사위 포커 | 다섯 주사위를 세 번까지 굴리고 고전 포커 조합을 골라 최고 점수를 노리는 게임입니다. |
 | 2026-06-14 | 미니 스도쿠 | 4x4 칸에 1부터 4까지 숫자를 채워 행, 열, 작은 구역이 겹치지 않게 만드는 퍼즐입니다. |
+| 2026-06-15 | 점과 상자 | 점 사이에 선을 번갈아 긋고 네 변이 닫힌 칸을 차지해 더 많은 상자를 모으는 종이 게임입니다. |
+| 2026-06-16 | 만칼라 | 내 쪽 홈의 돌을 반시계 방향으로 나누어 놓고 저장소에 더 많은 돌을 모으는 고전 보드 게임입니다. |
 
 ## 게임 화면
 
@@ -174,6 +176,14 @@
 
 ![미니 스도쿠 게임 화면](../daily/2026-06-14-mini-sudoku/screenshot.png)
 
+### 점과 상자
+
+![점과 상자 게임 화면](../daily/2026-06-15-dots-and-boxes/screenshot.png)
+
+### 만칼라
+
+![만칼라 게임 화면](../daily/2026-06-16-mancala/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -210,4 +220,6 @@ node daily/2026-06-11-pig-dice/game-logic.test.js
 node daily/2026-06-12-high-low-card/game-logic.test.js
 node daily/2026-06-13-dice-poker/game-logic.test.js
 node daily/2026-06-14-mini-sudoku/game-logic.test.js
+node daily/2026-06-15-dots-and-boxes/game-logic.test.js
+node daily/2026-06-16-mancala/game-logic.test.js
 ```

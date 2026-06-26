@@ -8,6 +8,8 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-26 | 24 만들기 | 네 숫자를 한 번씩 쓰고 사칙연산을 조합해 정확히 24를 만드는 고전 숫자 퍼즐입니다. |
+| 2026-06-25 | 강 건너기 | 농부가 작은 배로 늑대, 염소, 양배추를 모두 안전하게 오른쪽 강가로 옮기는 고전 퍼즐입니다. |
 | 2026-06-24 | 여덟 퀸 | 체스 말판에 여덟 퀸을 놓아 서로 같은 가로, 세로, 대각선에서 공격하지 못하게 만드는 고전 퍼즐입니다. |
 | 2026-06-23 | 기사 순회 | 체스 기사를 ㄱ자 모양으로 움직여 5x5 말판의 모든 칸을 한 번씩 방문하는 고전 퍼즐입니다. |
 | 2026-06-22 | 같은 블록 지우기 | 붙어 있는 같은 색 블록 2개 이상을 골라 지우고 남은 블록을 아래와 왼쪽으로 모아 점수를 쌓는 퍼즐입니다. |
@@ -16,10 +18,16 @@
 | 2026-06-19 | 뱀과 사다리 | 주사위를 굴려 사다리는 오르고 뱀은 피하며 36번 칸에 먼저 도착하는 고전 보드 게임입니다. |
 | 2026-06-18 | 색깔 채우기 | 왼쪽 위 영역의 색을 바꾸며 이어진 칸을 흡수해 제한 이동 안에 모든 칸을 같은 색으로 만드는 퍼즐입니다. |
 | 2026-06-17 | 카드 전쟁 | 나와 컴퓨터가 한 장씩 카드를 뽑아 더 높은 등급으로 라운드 점수를 가져가는 고전 카드 게임입니다. |
-| 2026-06-16 | 만칼라 | 내 쪽 홈의 돌을 반시계 방향으로 나누어 놓고 저장소에 더 많은 돌을 모으는 고전 보드 게임입니다. |
-| 2026-06-15 | 점과 상자 | 점 사이에 선을 번갈아 긋고 네 변이 닫힌 칸을 차지해 더 많은 상자를 모으는 종이 게임입니다. |
 
 ## 최근 게임 화면
+
+### 24 만들기
+
+![24 만들기 게임 화면](daily/2026-06-26-make-24/screenshot.png)
+
+### 강 건너기
+
+![강 건너기 게임 화면](daily/2026-06-25-river-crossing/screenshot.png)
 
 ### 여덟 퀸
 
@@ -53,19 +61,13 @@
 
 ![카드 전쟁 게임 화면](daily/2026-06-17-card-war/screenshot.png)
 
-### 만칼라
-
-![만칼라 게임 화면](daily/2026-06-16-mancala/screenshot.png)
-
-### 점과 상자
-
-![점과 상자 게임 화면](daily/2026-06-15-dots-and-boxes/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-26-make-24/game-logic.test.js
+node daily/2026-06-25-river-crossing/game-logic.test.js
 node daily/2026-06-24-eight-queens/game-logic.test.js
 node daily/2026-06-23-knights-tour/game-logic.test.js
 node daily/2026-06-22-samegame/game-logic.test.js
@@ -74,6 +76,4 @@ node daily/2026-06-20-gomoku/game-logic.test.js
 node daily/2026-06-19-snakes-and-ladders/game-logic.test.js
 node daily/2026-06-18-color-flood/game-logic.test.js
 node daily/2026-06-17-card-war/game-logic.test.js
-node daily/2026-06-16-mancala/game-logic.test.js
-node daily/2026-06-15-dots-and-boxes/game-logic.test.js
 ```
