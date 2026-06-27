@@ -1,0 +1,198 @@
+:root {
+  color-scheme: light;
+  --ink: #20242a;
+  --muted: #65707c;
+  --paper: #eef2ed;
+  --panel: #fffdf7;
+  --line: #d4d9d0;
+  --felt: #24765b;
+  --felt-dark: #18523f;
+  --red: #c1463b;
+  --gold: #d7a63a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgb(36 118 91 / 16%) 0%, rgb(215 166 58 / 18%) 100%),
+    var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 34px 0;
+}
+
+.hero {
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--felt-dark);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 5.1rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.summary {
+  max-width: 660px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.panel {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 18px 48px rgb(31 38 46 / 14%);
+}
+
+.score-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.score-row > div,
+.history {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #faf8ef;
+}
+
+.score-row > div {
+  padding: 14px;
+}
+
+.label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 1.24rem;
+}
+
+.dice-board {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 136px));
+  justify-content: center;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 50%, rgb(255 255 255 / 8%) 0 12%, transparent 13%),
+    var(--felt);
+  box-shadow: inset 0 0 0 6px rgb(24 82 63 / 24%);
+}
+
+.die {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border: 2px solid #d8d8d8;
+  border-radius: 8px;
+  background: #fffdf8;
+  color: var(--red);
+  font-size: clamp(3rem, 10vw, 5.4rem);
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: inset 0 -7px 0 rgb(32 36 42 / 10%);
+}
+
+.message {
+  min-height: 28px;
+  margin: 0;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.actions button {
+  min-height: 46px;
+  border: 1px solid var(--felt);
+  border-radius: 8px;
+  background: white;
+  color: var(--felt-dark);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  background: var(--felt);
+  color: white;
+}
+
+.actions button:disabled {
+  border-color: var(--line);
+  background: #e8e8e8;
+  color: #818181;
+  cursor: not-allowed;
+}
+
+.history {
+  min-height: 92px;
+  margin: 0;
+  padding: 12px 12px 12px 34px;
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.history:empty::before {
+  content: "아직 굴림 기록이 없습니다.";
+  margin-left: -18px;
+}
+
+@media (max-width: 620px) {
+  .game-shell {
+    width: min(100% - 20px, 520px);
+    padding: 18px 0;
+  }
+
+  .panel {
+    padding: 12px;
+  }
+
+  .dice-board {
+    grid-template-columns: repeat(2, minmax(0, 112px));
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .actions {
+    grid-template-columns: 1fr;
+  }
+}

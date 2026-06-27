@@ -41,6 +41,7 @@
 | 2026-06-14 | 미니 스도쿠 | 4x4 칸에 1부터 4까지 숫자를 채워 행, 열, 작은 구역이 겹치지 않게 만드는 퍼즐입니다. |
 | 2026-06-15 | 점과 상자 | 점 사이에 선을 번갈아 긋고 네 변이 닫힌 칸을 차지해 더 많은 상자를 모으는 종이 게임입니다. |
 | 2026-06-16 | 만칼라 | 내 쪽 홈의 돌을 반시계 방향으로 나누어 놓고 저장소에 더 많은 돌을 모으는 고전 보드 게임입니다. |
+| 2026-06-17 | 카드 전쟁 | 나와 컴퓨터가 한 장씩 카드를 뽑아 더 높은 등급으로 라운드 점수를 가져가는 고전 카드 게임입니다. |
 
 ## 게임 화면
 
@@ -184,6 +185,10 @@
 
 ![만칼라 게임 화면](../daily/2026-06-16-mancala/screenshot.png)
 
+### 카드 전쟁
+
+![카드 전쟁 게임 화면](../daily/2026-06-17-card-war/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -222,4 +227,5 @@ node daily/2026-06-13-dice-poker/game-logic.test.js
 node daily/2026-06-14-mini-sudoku/game-logic.test.js
 node daily/2026-06-15-dots-and-boxes/game-logic.test.js
 node daily/2026-06-16-mancala/game-logic.test.js
+node daily/2026-06-17-card-war/game-logic.test.js
 ```
