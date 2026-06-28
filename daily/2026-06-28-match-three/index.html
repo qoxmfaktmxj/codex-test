@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>보석 맞추기</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">보석 맞추기</h1>
+        <p class="summary">붙어 있는 보석 두 개를 바꿔 같은 색 보석 3개를 한 줄로 만들고 제한된 이동 안에 점수를 쌓는 고전 퍼즐입니다.</p>
+      </section>
+
+      <section class="panel" aria-label="게임판">
+        <div class="score-row">
+          <div>
+            <span class="label">상태</span>
+            <strong id="status">진행 중</strong>
+          </div>
+          <div>
+            <span class="label">점수</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span class="label">남은 이동</span>
+            <strong id="moves">12</strong>
+          </div>
+        </div>
+
+        <div id="board" class="board" aria-label="보석판"></div>
+
+        <p id="message" class="message" aria-live="polite">붙어 있는 보석 두 개를 바꿔 같은 보석 3개를 맞추세요.</p>
+
+        <div class="actions">
+          <button id="hint-button" type="button">처음 선택 지우기</button>
+          <button id="reset-button" type="button">새 판</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
