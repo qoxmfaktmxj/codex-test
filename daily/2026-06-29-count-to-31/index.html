@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서른하나 세기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">고전 숫자 게임</p>
+      <h1 id="game-title">서른하나 세기</h1>
+      <p class="summary">1개부터 3개까지 이어 부르며 31을 피하세요.</p>
+    </section>
+
+    <section class="score-panel" aria-label="게임 상태">
+      <div>
+        <span class="label">현재 숫자</span>
+        <strong id="total">0</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+      <div>
+        <span class="label">승자</span>
+        <strong id="winner">-</strong>
+      </div>
+    </section>
+
+    <section class="track" aria-label="숫자 진행판">
+      <div id="number-track" class="number-track"></div>
+    </section>
+
+    <section class="controls" aria-label="선택">
+      <p id="message" class="message">1부터 3까지 골라 숫자를 이어 부르세요. 31을 부르면 집니다.</p>
+      <div class="pick-buttons">
+        <button type="button" data-count="1">1개</button>
+        <button type="button" data-count="2">2개</button>
+        <button type="button" data-count="3">3개</button>
+      </div>
+      <button id="reset-button" class="reset-button" type="button">새 판</button>
+    </section>
+
+    <section class="history-panel" aria-label="기록">
+      <h2>기록</h2>
+      <ol id="history"></ol>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

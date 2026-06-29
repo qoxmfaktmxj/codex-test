@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-06-29 | 서른하나 세기 | 1개부터 3개까지 숫자를 이어 부르며 31을 말하지 않도록 수를 조절하는 고전 숫자 게임입니다. |
 | 2026-06-28 | 보석 맞추기 | 붙어 있는 보석 두 개를 바꿔 같은 색 보석 3개를 한 줄로 만들고 제한된 이동 안에 점수를 쌓는 고전 퍼즐입니다. |
 | 2026-06-27 | 크랩스 주사위 | 두 주사위를 굴려 첫 굴림의 행운을 노리거나, 정해진 포인트를 7보다 먼저 다시 만드는 고전 주사위 게임입니다. |
 | 2026-06-26 | 24 만들기 | 네 숫자를 한 번씩 쓰고 사칙연산을 조합해 정확히 24를 만드는 고전 숫자 퍼즐입니다. |
@@ -17,9 +18,12 @@
 | 2026-06-22 | 같은 블록 지우기 | 붙어 있는 같은 색 블록 2개 이상을 골라 지우고 남은 블록을 아래와 왼쪽으로 모아 점수를 쌓는 퍼즐입니다. |
 | 2026-06-21 | 컵 속 공 찾기 | 세 개의 컵을 섞은 뒤 공이 숨어 있는 컵을 기억해 맞히는 고전 셸 게임입니다. |
 | 2026-06-20 | 오목 | 흑돌과 백돌을 번갈아 놓고 가로, 세로, 대각선으로 다섯 돌을 먼저 잇는 고전 바둑판 게임입니다. |
-| 2026-06-19 | 뱀과 사다리 | 주사위를 굴려 사다리는 오르고 뱀은 피하며 36번 칸에 먼저 도착하는 고전 보드 게임입니다. |
 
 ## 최근 게임 화면
+
+### 서른하나 세기
+
+![서른하나 세기 게임 화면](daily/2026-06-29-count-to-31/screenshot.png)
 
 ### 보석 맞추기
 
@@ -57,15 +61,12 @@
 
 ![오목 게임 화면](daily/2026-06-20-gomoku/screenshot.png)
 
-### 뱀과 사다리
-
-![뱀과 사다리 게임 화면](daily/2026-06-19-snakes-and-ladders/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-06-29-count-to-31/game-logic.test.js
 node daily/2026-06-28-match-three/game-logic.test.js
 node daily/2026-06-27-craps-dice/game-logic.test.js
 node daily/2026-06-26-make-24/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-06-23-knights-tour/game-logic.test.js
 node daily/2026-06-22-samegame/game-logic.test.js
 node daily/2026-06-21-shell-game/game-logic.test.js
 node daily/2026-06-20-gomoku/game-logic.test.js
-node daily/2026-06-19-snakes-and-ladders/game-logic.test.js
 ```
