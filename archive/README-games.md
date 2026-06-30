@@ -44,6 +44,7 @@
 | 2026-06-17 | 카드 전쟁 | 나와 컴퓨터가 한 장씩 카드를 뽑아 더 높은 등급으로 라운드 점수를 가져가는 고전 카드 게임입니다. |
 | 2026-06-18 | 색깔 채우기 | 왼쪽 위 영역의 색을 바꾸며 이어진 칸을 흡수해 제한 이동 안에 모든 칸을 같은 색으로 만드는 퍼즐입니다. |
 | 2026-06-19 | 뱀과 사다리 | 주사위를 굴려 사다리는 오르고 뱀은 피하며 36번 칸에 먼저 도착하는 고전 보드 게임입니다. |
+| 2026-06-20 | 오목 | 흑돌과 백돌을 번갈아 놓고 가로, 세로, 대각선으로 다섯 돌을 먼저 잇는 고전 바둑판 게임입니다. |
 
 ## 게임 화면
 
@@ -199,6 +200,10 @@
 
 ![뱀과 사다리 게임 화면](../daily/2026-06-19-snakes-and-ladders/screenshot.png)
 
+### 오목
+
+![오목 게임 화면](../daily/2026-06-20-gomoku/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -240,4 +245,5 @@ node daily/2026-06-16-mancala/game-logic.test.js
 node daily/2026-06-17-card-war/game-logic.test.js
 node daily/2026-06-18-color-flood/game-logic.test.js
 node daily/2026-06-19-snakes-and-ladders/game-logic.test.js
+node daily/2026-06-20-gomoku/game-logic.test.js
 ```
