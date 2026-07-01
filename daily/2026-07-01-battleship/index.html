@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전함 찾기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">고전 해전 추리</p>
+      <h1 id="game-title">전함 찾기</h1>
+      <p class="summary">5x5 바다에 숨은 세 척의 전함을 포탄 15발 안에 모두 찾아 격침하세요.</p>
+    </section>
+
+    <section class="status-panel" aria-label="게임 상태">
+      <div>
+        <span class="label">남은 포탄</span>
+        <strong id="shots-left">15</strong>
+      </div>
+      <div>
+        <span class="label">명중</span>
+        <strong id="hits">0</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+    </section>
+
+    <section class="board-panel" aria-label="전함 찾기 격자">
+      <div class="axis top" aria-hidden="true">
+        <span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+      </div>
+      <div class="board-wrap">
+        <div class="axis side" aria-hidden="true">
+          <span>가</span><span>나</span><span>다</span><span>라</span><span>마</span>
+        </div>
+        <div id="board" class="board"></div>
+      </div>
+    </section>
+
+    <section class="fleet-panel" aria-label="전함 목록">
+      <h2>함대 상태</h2>
+      <ul id="fleet-list"></ul>
+    </section>
+
+    <section class="controls" aria-label="조작">
+      <p id="message" class="message">좌표를 골라 숨은 전함을 모두 찾으세요.</p>
+      <button id="reset-button" class="reset-button" type="button">새 판</button>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

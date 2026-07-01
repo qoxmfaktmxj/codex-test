@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-07-01 | 전함 찾기 | 5x5 바다 격자에 숨은 세 척의 전함을 제한된 포탄 안에 모두 찾아 격침하는 고전 해전 추리 게임입니다. |
 | 2026-06-30 | 불 끄기 | 칸을 누르면 십자 모양의 불이 함께 바뀌는 5x5 말판에서 모든 불을 끄는 고전 논리 퍼즐입니다. |
 | 2026-06-29 | 서른하나 세기 | 1개부터 3개까지 숫자를 이어 부르며 31을 말하지 않도록 수를 조절하는 고전 숫자 게임입니다. |
 | 2026-06-28 | 보석 맞추기 | 붙어 있는 보석 두 개를 바꿔 같은 색 보석 3개를 한 줄로 만들고 제한된 이동 안에 점수를 쌓는 고전 퍼즐입니다. |
@@ -17,9 +18,12 @@
 | 2026-06-24 | 여덟 퀸 | 체스 말판에 여덟 퀸을 놓아 서로 같은 가로, 세로, 대각선에서 공격하지 못하게 만드는 고전 퍼즐입니다. |
 | 2026-06-23 | 기사 순회 | 체스 기사를 ㄱ자 모양으로 움직여 5x5 말판의 모든 칸을 한 번씩 방문하는 고전 퍼즐입니다. |
 | 2026-06-22 | 같은 블록 지우기 | 붙어 있는 같은 색 블록 2개 이상을 골라 지우고 남은 블록을 아래와 왼쪽으로 모아 점수를 쌓는 퍼즐입니다. |
-| 2026-06-21 | 컵 속 공 찾기 | 세 개의 컵을 섞은 뒤 공이 숨어 있는 컵을 기억해 맞히는 고전 셸 게임입니다. |
 
 ## 최근 게임 화면
+
+### 전함 찾기
+
+![전함 찾기 게임 화면](daily/2026-07-01-battleship/screenshot.png)
 
 ### 불 끄기
 
@@ -57,15 +61,12 @@
 
 ![같은 블록 지우기 게임 화면](daily/2026-06-22-samegame/screenshot.png)
 
-### 컵 속 공 찾기
-
-![컵 속 공 찾기 게임 화면](daily/2026-06-21-shell-game/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-07-01-battleship/game-logic.test.js
 node daily/2026-06-30-lights-out/game-logic.test.js
 node daily/2026-06-29-count-to-31/game-logic.test.js
 node daily/2026-06-28-match-three/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-06-25-river-crossing/game-logic.test.js
 node daily/2026-06-24-eight-queens/game-logic.test.js
 node daily/2026-06-23-knights-tour/game-logic.test.js
 node daily/2026-06-22-samegame/game-logic.test.js
-node daily/2026-06-21-shell-game/game-logic.test.js
 ```
