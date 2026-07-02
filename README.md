@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-07-02 | 독 초콜릿 피하기 | 고른 조각부터 오른쪽 아래가 모두 사라지는 초콜릿 판에서 독이 든 왼쪽 위 조각을 피하는 고전 전략 게임입니다. |
 | 2026-07-01 | 전함 찾기 | 5x5 바다 격자에 숨은 세 척의 전함을 제한된 포탄 안에 모두 찾아 격침하는 고전 해전 추리 게임입니다. |
 | 2026-06-30 | 불 끄기 | 칸을 누르면 십자 모양의 불이 함께 바뀌는 5x5 말판에서 모든 불을 끄는 고전 논리 퍼즐입니다. |
 | 2026-06-29 | 서른하나 세기 | 1개부터 3개까지 숫자를 이어 부르며 31을 말하지 않도록 수를 조절하는 고전 숫자 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-06-25 | 강 건너기 | 농부가 작은 배로 늑대, 염소, 양배추를 모두 안전하게 오른쪽 강가로 옮기는 고전 퍼즐입니다. |
 | 2026-06-24 | 여덟 퀸 | 체스 말판에 여덟 퀸을 놓아 서로 같은 가로, 세로, 대각선에서 공격하지 못하게 만드는 고전 퍼즐입니다. |
 | 2026-06-23 | 기사 순회 | 체스 기사를 ㄱ자 모양으로 움직여 5x5 말판의 모든 칸을 한 번씩 방문하는 고전 퍼즐입니다. |
-| 2026-06-22 | 같은 블록 지우기 | 붙어 있는 같은 색 블록 2개 이상을 골라 지우고 남은 블록을 아래와 왼쪽으로 모아 점수를 쌓는 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 독 초콜릿 피하기
+
+![독 초콜릿 피하기 게임 화면](daily/2026-07-02-chomp/screenshot.png)
 
 ### 전함 찾기
 
@@ -57,15 +61,12 @@
 
 ![기사 순회 게임 화면](daily/2026-06-23-knights-tour/screenshot.png)
 
-### 같은 블록 지우기
-
-![같은 블록 지우기 게임 화면](daily/2026-06-22-samegame/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-07-02-chomp/game-logic.test.js
 node daily/2026-07-01-battleship/game-logic.test.js
 node daily/2026-06-30-lights-out/game-logic.test.js
 node daily/2026-06-29-count-to-31/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-06-26-make-24/game-logic.test.js
 node daily/2026-06-25-river-crossing/game-logic.test.js
 node daily/2026-06-24-eight-queens/game-logic.test.js
 node daily/2026-06-23-knights-tour/game-logic.test.js
-node daily/2026-06-22-samegame/game-logic.test.js
 ```
