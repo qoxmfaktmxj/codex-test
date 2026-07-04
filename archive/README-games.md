@@ -48,6 +48,7 @@
 | 2026-06-21 | 컵 속 공 찾기 | 세 개의 컵을 섞은 뒤 공이 숨어 있는 컵을 기억해 맞히는 고전 셸 게임입니다. |
 | 2026-06-22 | 같은 블록 지우기 | 붙어 있는 같은 색 블록 2개 이상을 골라 지우고 남은 블록을 아래와 왼쪽으로 모아 점수를 쌓는 퍼즐입니다. |
 | 2026-06-23 | 기사 순회 | 체스 기사를 ㄱ자 모양으로 움직여 5x5 말판의 모든 칸을 한 번씩 방문하는 고전 퍼즐입니다. |
+| 2026-06-24 | 여덟 퀸 | 체스 말판에 여덟 퀸을 놓아 서로 같은 가로, 세로, 대각선에서 공격하지 못하게 만드는 고전 퍼즐입니다. |
 
 ## 게임 화면
 
@@ -219,6 +220,10 @@
 
 ![기사 순회 게임 화면](../daily/2026-06-23-knights-tour/screenshot.png)
 
+### 여덟 퀸
+
+![여덟 퀸 게임 화면](../daily/2026-06-24-eight-queens/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -264,4 +269,5 @@ node daily/2026-06-20-gomoku/game-logic.test.js
 node daily/2026-06-21-shell-game/game-logic.test.js
 node daily/2026-06-22-samegame/game-logic.test.js
 node daily/2026-06-23-knights-tour/game-logic.test.js
+node daily/2026-06-24-eight-queens/game-logic.test.js
 ```

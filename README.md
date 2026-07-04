@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-07-04 | 301 다트 | 한 라운드에 세 번 던져 301점을 정확히 0점까지 줄이고, 마지막 점수는 더블 구역으로 끝내는 고전 펍 다트 게임입니다. |
 | 2026-07-03 | 상자 닫기 | 두 주사위의 합과 같은 열린 숫자를 골라 닫고, 더 이상 조합이 없기 전에 모든 숫자를 없애는 고전 주사위 게임입니다. |
 | 2026-07-02 | 독 초콜릿 피하기 | 고른 조각부터 오른쪽 아래가 모두 사라지는 초콜릿 판에서 독이 든 왼쪽 위 조각을 피하는 고전 전략 게임입니다. |
 | 2026-07-01 | 전함 찾기 | 5x5 바다 격자에 숨은 세 척의 전함을 제한된 포탄 안에 모두 찾아 격침하는 고전 해전 추리 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-06-27 | 크랩스 주사위 | 두 주사위를 굴려 첫 굴림의 행운을 노리거나, 정해진 포인트를 7보다 먼저 다시 만드는 고전 주사위 게임입니다. |
 | 2026-06-26 | 24 만들기 | 네 숫자를 한 번씩 쓰고 사칙연산을 조합해 정확히 24를 만드는 고전 숫자 퍼즐입니다. |
 | 2026-06-25 | 강 건너기 | 농부가 작은 배로 늑대, 염소, 양배추를 모두 안전하게 오른쪽 강가로 옮기는 고전 퍼즐입니다. |
-| 2026-06-24 | 여덟 퀸 | 체스 말판에 여덟 퀸을 놓아 서로 같은 가로, 세로, 대각선에서 공격하지 못하게 만드는 고전 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 301 다트
+
+![301 다트 게임 화면](daily/2026-07-04-darts-301/screenshot.png)
 
 ### 상자 닫기
 
@@ -57,15 +61,12 @@
 
 ![강 건너기 게임 화면](daily/2026-06-25-river-crossing/screenshot.png)
 
-### 여덟 퀸
-
-![여덟 퀸 게임 화면](daily/2026-06-24-eight-queens/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-07-04-darts-301/game-logic.test.js
 node daily/2026-07-03-shut-the-box/game-logic.test.js
 node daily/2026-07-02-chomp/game-logic.test.js
 node daily/2026-07-01-battleship/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-06-28-match-three/game-logic.test.js
 node daily/2026-06-27-craps-dice/game-logic.test.js
 node daily/2026-06-26-make-24/game-logic.test.js
 node daily/2026-06-25-river-crossing/game-logic.test.js
-node daily/2026-06-24-eight-queens/game-logic.test.js
 ```
