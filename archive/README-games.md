@@ -49,6 +49,8 @@
 | 2026-06-22 | 같은 블록 지우기 | 붙어 있는 같은 색 블록 2개 이상을 골라 지우고 남은 블록을 아래와 왼쪽으로 모아 점수를 쌓는 퍼즐입니다. |
 | 2026-06-23 | 기사 순회 | 체스 기사를 ㄱ자 모양으로 움직여 5x5 말판의 모든 칸을 한 번씩 방문하는 고전 퍼즐입니다. |
 | 2026-06-24 | 여덟 퀸 | 체스 말판에 여덟 퀸을 놓아 서로 같은 가로, 세로, 대각선에서 공격하지 못하게 만드는 고전 퍼즐입니다. |
+| 2026-06-25 | 강 건너기 | 농부가 작은 배로 늑대, 염소, 양배추를 모두 안전하게 오른쪽 강가로 옮기는 고전 퍼즐입니다. |
+| 2026-06-26 | 24 만들기 | 네 숫자를 한 번씩 쓰고 사칙연산을 조합해 정확히 24를 만드는 고전 숫자 퍼즐입니다. |
 
 ## 게임 화면
 
@@ -224,6 +226,14 @@
 
 ![여덟 퀸 게임 화면](../daily/2026-06-24-eight-queens/screenshot.png)
 
+### 강 건너기
+
+![강 건너기 게임 화면](../daily/2026-06-25-river-crossing/screenshot.png)
+
+### 24 만들기
+
+![24 만들기 게임 화면](../daily/2026-06-26-make-24/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -270,4 +280,6 @@ node daily/2026-06-21-shell-game/game-logic.test.js
 node daily/2026-06-22-samegame/game-logic.test.js
 node daily/2026-06-23-knights-tour/game-logic.test.js
 node daily/2026-06-24-eight-queens/game-logic.test.js
+node daily/2026-06-25-river-crossing/game-logic.test.js
+node daily/2026-06-26-make-24/game-logic.test.js
 ```

@@ -1,0 +1,249 @@
+:root {
+  color-scheme: light;
+  --ink: #20232a;
+  --muted: #626a76;
+  --paper: #f5f2e9;
+  --panel: #fffdf8;
+  --line: #d7d0c1;
+  --charcoal: #2c3038;
+  --accent: #0f766e;
+  --shadow: rgba(38, 42, 50, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.16), transparent 35%),
+    linear-gradient(315deg, rgba(173, 79, 62, 0.14), transparent 32%),
+    var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(940px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.hero {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 7vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.summary {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.status-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.status-panel > div,
+.board-panel,
+.history-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.92);
+  box-shadow: 0 14px 34px var(--shadow);
+}
+
+.status-panel > div {
+  display: grid;
+  gap: 3px;
+  min-height: 74px;
+  padding: 14px;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.status-panel strong {
+  font-size: 1.45rem;
+}
+
+.board-panel {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+}
+
+.guess-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(56px, 1fr));
+  gap: 12px;
+}
+
+.slot,
+.peg {
+  border: 2px solid rgba(44, 48, 56, 0.18);
+  border-radius: 8px;
+  background: #ece7dc;
+}
+
+.slot {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  min-height: 74px;
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.slot.is-filled,
+.peg {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.peg {
+  min-height: 54px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.message {
+  min-height: 28px;
+  margin: 0;
+  color: var(--charcoal);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.controls button {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 16px;
+  background: var(--charcoal);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.history-panel {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 18px;
+}
+
+.history-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.history-list li {
+  line-height: 1.5;
+}
+
+.mini-pegs {
+  display: inline-flex;
+  gap: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.mini-peg {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(44, 48, 56, 0.26);
+  border-radius: 50%;
+}
+
+[data-color="빨강"] {
+  background: #d94141;
+}
+
+[data-color="파랑"] {
+  background: #2f6fd6;
+}
+
+[data-color="초록"] {
+  background: #24875b;
+}
+
+[data-color="노랑"] {
+  background: #d8a81f;
+}
+
+[data-color="보라"] {
+  background: #7c4dcc;
+}
+
+[data-color="주황"] {
+  background: #df762f;
+}
+
+@media (max-width: 700px) {
+  .game-shell {
+    width: min(100% - 20px, 940px);
+    padding: 22px 0;
+  }
+
+  .status-panel,
+  .palette {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .guess-row {
+    gap: 8px;
+  }
+
+  .board-panel {
+    padding: 16px;
+  }
+}
