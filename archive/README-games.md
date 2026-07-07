@@ -51,6 +51,7 @@
 | 2026-06-24 | 여덟 퀸 | 체스 말판에 여덟 퀸을 놓아 서로 같은 가로, 세로, 대각선에서 공격하지 못하게 만드는 고전 퍼즐입니다. |
 | 2026-06-25 | 강 건너기 | 농부가 작은 배로 늑대, 염소, 양배추를 모두 안전하게 오른쪽 강가로 옮기는 고전 퍼즐입니다. |
 | 2026-06-26 | 24 만들기 | 네 숫자를 한 번씩 쓰고 사칙연산을 조합해 정확히 24를 만드는 고전 숫자 퍼즐입니다. |
+| 2026-06-27 | 크랩스 주사위 | 두 주사위를 굴려 첫 굴림의 행운을 노리거나, 정해진 포인트를 7보다 먼저 다시 만드는 고전 주사위 게임입니다. |
 
 ## 게임 화면
 
@@ -234,6 +235,10 @@
 
 ![24 만들기 게임 화면](../daily/2026-06-26-make-24/screenshot.png)
 
+### 크랩스 주사위
+
+![크랩스 주사위 게임 화면](../daily/2026-06-27-craps-dice/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -282,4 +287,5 @@ node daily/2026-06-23-knights-tour/game-logic.test.js
 node daily/2026-06-24-eight-queens/game-logic.test.js
 node daily/2026-06-25-river-crossing/game-logic.test.js
 node daily/2026-06-26-make-24/game-logic.test.js
+node daily/2026-06-27-craps-dice/game-logic.test.js
 ```
