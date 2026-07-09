@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-07-09 | 거위 게임 | 두 주사위를 굴려 특수 칸을 지나며 32번 칸에 정확히 도착해야 하는 고전 경주 보드게임입니다. |
 | 2026-07-08 | 십오 퍼즐 | 빈칸 옆 숫자를 밀어 4x4 말판의 숫자를 1부터 15까지 차례대로 맞추는 고전 슬라이딩 퍼즐입니다. |
 | 2026-07-07 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 세 기둥 사이에서 모든 원반을 오른쪽으로 옮기는 고전 퍼즐 게임입니다. |
 | 2026-07-06 | 마스터마인드 | 여섯 가지 색으로 된 네 칸 암호를 추리하고, 정확한 위치와 색만 맞은 힌트로 정답을 좁히는 고전 추리 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-07-02 | 독 초콜릿 피하기 | 고른 조각부터 오른쪽 아래가 모두 사라지는 초콜릿 판에서 독이 든 왼쪽 위 조각을 피하는 고전 전략 게임입니다. |
 | 2026-07-01 | 전함 찾기 | 5x5 바다 격자에 숨은 세 척의 전함을 제한된 포탄 안에 모두 찾아 격침하는 고전 해전 추리 게임입니다. |
 | 2026-06-30 | 불 끄기 | 칸을 누르면 십자 모양의 불이 함께 바뀌는 5x5 말판에서 모든 불을 끄는 고전 논리 퍼즐입니다. |
-| 2026-06-29 | 서른하나 세기 | 1개부터 3개까지 숫자를 이어 부르며 31을 말하지 않도록 수를 조절하는 고전 숫자 게임입니다. |
 
 ## 최근 게임 화면
+
+### 거위 게임
+
+![거위 게임 화면](daily/2026-07-09-game-of-goose/screenshot.png)
 
 ### 십오 퍼즐
 
@@ -57,15 +61,12 @@
 
 ![불 끄기 게임 화면](daily/2026-06-30-lights-out/screenshot.png)
 
-### 서른하나 세기
-
-![서른하나 세기 게임 화면](daily/2026-06-29-count-to-31/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-07-09-game-of-goose/game-logic.test.js
 node daily/2026-07-08-fifteen-puzzle/game-logic.test.js
 node daily/2026-07-07-tower-of-hanoi/game-logic.test.js
 node daily/2026-07-06-mastermind/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-07-03-shut-the-box/game-logic.test.js
 node daily/2026-07-02-chomp/game-logic.test.js
 node daily/2026-07-01-battleship/game-logic.test.js
 node daily/2026-06-30-lights-out/game-logic.test.js
-node daily/2026-06-29-count-to-31/game-logic.test.js
 ```
