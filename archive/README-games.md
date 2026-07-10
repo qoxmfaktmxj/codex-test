@@ -54,6 +54,7 @@
 | 2026-06-27 | 크랩스 주사위 | 두 주사위를 굴려 첫 굴림의 행운을 노리거나, 정해진 포인트를 7보다 먼저 다시 만드는 고전 주사위 게임입니다. |
 | 2026-06-28 | 보석 맞추기 | 붙어 있는 보석 두 개를 바꿔 같은 색 보석 3개를 한 줄로 만들고 제한된 이동 안에 점수를 쌓는 고전 퍼즐입니다. |
 | 2026-06-29 | 서른하나 세기 | 1개부터 3개까지 숫자를 이어 부르며 31을 말하지 않도록 수를 조절하는 고전 숫자 게임입니다. |
+| 2026-06-30 | 불 끄기 | 칸을 누르면 십자 모양의 불이 함께 바뀌는 5x5 말판에서 모든 불을 끄는 고전 논리 퍼즐입니다. |
 
 ## 게임 화면
 
@@ -249,6 +250,10 @@
 
 ![서른하나 세기 게임 화면](../daily/2026-06-29-count-to-31/screenshot.png)
 
+### 불 끄기
+
+![불 끄기 게임 화면](../daily/2026-06-30-lights-out/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -300,4 +305,5 @@ node daily/2026-06-26-make-24/game-logic.test.js
 node daily/2026-06-27-craps-dice/game-logic.test.js
 node daily/2026-06-28-match-three/game-logic.test.js
 node daily/2026-06-29-count-to-31/game-logic.test.js
+node daily/2026-06-30-lights-out/game-logic.test.js
 ```

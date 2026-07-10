@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>헥사폰</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="intro" aria-labelledby="game-title">
+      <p class="eyebrow">고전 미니 체스</p>
+      <h1 id="game-title">헥사폰</h1>
+      <p class="summary">세 개의 졸로 겨루는 3x3 체스입니다. 앞으로 전진하거나 대각선으로 잡고, 먼저 끝줄에 닿으면 승리합니다.</p>
+    </section>
+
+    <section class="score-strip" aria-label="게임 상태">
+      <div>
+        <span class="label">차례</span>
+        <strong id="turn">나</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+      <div>
+        <span class="label">목표</span>
+        <strong>끝줄</strong>
+      </div>
+    </section>
+
+    <section class="play-area" aria-label="헥사폰 말판">
+      <div class="rank-label computer-goal">컴퓨터 도착줄</div>
+      <div id="board" class="board" aria-label="헥사폰 말판"></div>
+      <div class="rank-label player-goal">내 도착줄</div>
+      <p id="message" class="message">내 말을 골라 앞으로 전진하거나 대각선으로 잡으세요.</p>
+      <div class="controls">
+        <button id="reset-button" type="button">새 게임</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
