@@ -55,6 +55,7 @@
 | 2026-06-28 | 보석 맞추기 | 붙어 있는 보석 두 개를 바꿔 같은 색 보석 3개를 한 줄로 만들고 제한된 이동 안에 점수를 쌓는 고전 퍼즐입니다. |
 | 2026-06-29 | 서른하나 세기 | 1개부터 3개까지 숫자를 이어 부르며 31을 말하지 않도록 수를 조절하는 고전 숫자 게임입니다. |
 | 2026-06-30 | 불 끄기 | 칸을 누르면 십자 모양의 불이 함께 바뀌는 5x5 말판에서 모든 불을 끄는 고전 논리 퍼즐입니다. |
+| 2026-07-01 | 전함 찾기 | 5x5 바다 격자에 숨은 세 척의 전함을 제한된 포탄 안에 모두 찾아 격침하는 고전 해전 추리 게임입니다. |
 
 ## 게임 화면
 
@@ -254,6 +255,10 @@
 
 ![불 끄기 게임 화면](../daily/2026-06-30-lights-out/screenshot.png)
 
+### 전함 찾기
+
+![전함 찾기 게임 화면](../daily/2026-07-01-battleship/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -306,4 +311,5 @@ node daily/2026-06-27-craps-dice/game-logic.test.js
 node daily/2026-06-28-match-three/game-logic.test.js
 node daily/2026-06-29-count-to-31/game-logic.test.js
 node daily/2026-06-30-lights-out/game-logic.test.js
+node daily/2026-07-01-battleship/game-logic.test.js
 ```

@@ -1,0 +1,259 @@
+:root {
+  color: #25231f;
+  background: #f2f5ed;
+  font-family: "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background:
+    linear-gradient(135deg, rgba(66, 107, 91, 0.2), transparent 34%),
+    linear-gradient(315deg, rgba(177, 74, 64, 0.16), transparent 38%),
+    #f2f5ed;
+}
+
+.game-shell {
+  width: min(960px, 100%);
+  display: grid;
+  grid-template-columns: minmax(240px, 0.9fr) minmax(360px, 1.1fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.intro {
+  padding: 18px 4px;
+}
+
+.date {
+  margin: 0 0 12px;
+  color: #5e6758;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(3rem, 10vw, 5.8rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+  color: #263d35;
+}
+
+.intro p:last-child {
+  max-width: 420px;
+  margin: 0;
+  color: #4b5149;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+
+.panel {
+  border: 2px solid #25231f;
+  border-radius: 8px;
+  padding: 22px;
+  background: rgba(255, 252, 245, 0.92);
+  box-shadow: 10px 10px 0 #263d35;
+}
+
+.status-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.status-row > div {
+  min-height: 72px;
+  padding: 10px;
+  border: 1px solid #cfd7c2;
+  border-radius: 6px;
+  background: #f7f3e8;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #626b5d;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+strong {
+  display: block;
+  font-size: 1rem;
+  word-break: keep-all;
+}
+
+.board-wrap {
+  position: relative;
+  width: min(100%, 430px);
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.lines,
+.board {
+  position: absolute;
+  inset: 0;
+}
+
+.line {
+  position: absolute;
+  display: block;
+  background: #36564a;
+  transform-origin: center;
+}
+
+.line.row {
+  left: 14%;
+  width: 72%;
+  height: 4px;
+}
+
+.line.col {
+  top: 14%;
+  width: 4px;
+  height: 72%;
+}
+
+.line.top { top: 14%; }
+.line.middle { top: calc(50% - 2px); }
+.line.bottom { bottom: 14%; }
+.line.left { left: 14%; }
+.line.center { left: calc(50% - 2px); }
+.line.right { right: 14%; }
+
+.line.diag {
+  left: 14%;
+  top: calc(50% - 2px);
+  width: 72%;
+  height: 4px;
+}
+
+.line.diag.down {
+  transform: rotate(45deg);
+}
+
+.line.diag.up {
+  transform: rotate(-45deg);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 5%;
+  z-index: 2;
+}
+
+.point {
+  justify-self: center;
+  align-self: center;
+  width: min(76px, 20vw);
+  aspect-ratio: 1;
+  border: 3px solid #263d35;
+  border-radius: 50%;
+  background: #fffaf0;
+  color: #25231f;
+  font-size: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 140ms ease, background 140ms ease, box-shadow 140ms ease;
+}
+
+.point:hover:not(:disabled),
+.point:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 rgba(38, 61, 53, 0.24);
+  outline: none;
+}
+
+.point.player {
+  background: #d94f45;
+  color: #fffaf0;
+}
+
+.point.computer {
+  background: #2f6f89;
+  color: #fffaf0;
+}
+
+.point.selected {
+  outline: 4px solid #e6b84c;
+  outline-offset: 4px;
+}
+
+.point.target {
+  border-color: #e6b84c;
+  background: #fff4c7;
+}
+
+.message {
+  min-height: 52px;
+  margin: 20px 0 16px;
+  padding: 13px 14px;
+  border-radius: 6px;
+  background: #263d35;
+  color: #fffaf0;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 18px;
+  background: #d94f45;
+  color: #fffaf0;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:hover:not(:disabled),
+button:focus-visible {
+  background: #b93e36;
+  outline: none;
+}
+
+@media (max-width: 760px) {
+  body {
+    padding: 18px;
+  }
+
+  .game-shell {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .panel {
+    padding: 16px;
+    box-shadow: 6px 6px 0 #263d35;
+  }
+
+  .status-row {
+    grid-template-columns: 1fr;
+  }
+
+  .status-row > div {
+    min-height: auto;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타파탄</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="intro" aria-labelledby="title">
+      <p class="date">2026년 7월 11일</p>
+      <h1 id="title">타파탄</h1>
+      <p>세 개의 말을 놓고 선을 따라 움직여 가로, 세로, 대각선 한 줄을 먼저 완성하세요.</p>
+    </section>
+
+    <section class="panel" aria-label="타파탄 게임판">
+      <div class="status-row">
+        <div>
+          <span class="label">단계</span>
+          <strong id="phase">놓기</strong>
+        </div>
+        <div>
+          <span class="label">차례</span>
+          <strong id="turn">나</strong>
+        </div>
+        <div>
+          <span class="label">남은 말</span>
+          <strong id="remaining">나 3 · 컴퓨터 3</strong>
+        </div>
+      </div>
+
+      <div class="board-wrap">
+        <div class="lines" aria-hidden="true">
+          <span class="line row top"></span>
+          <span class="line row middle"></span>
+          <span class="line row bottom"></span>
+          <span class="line col left"></span>
+          <span class="line col center"></span>
+          <span class="line col right"></span>
+          <span class="line diag down"></span>
+          <span class="line diag up"></span>
+        </div>
+        <div id="board" class="board" aria-label="아홉 점 말판"></div>
+      </div>
+
+      <p id="message" class="message" aria-live="polite">내 말을 빈 점에 놓으세요.</p>
+
+      <div class="actions">
+        <button id="reset" type="button">새 판</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
