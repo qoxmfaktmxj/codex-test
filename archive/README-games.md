@@ -56,6 +56,8 @@
 | 2026-06-29 | 서른하나 세기 | 1개부터 3개까지 숫자를 이어 부르며 31을 말하지 않도록 수를 조절하는 고전 숫자 게임입니다. |
 | 2026-06-30 | 불 끄기 | 칸을 누르면 십자 모양의 불이 함께 바뀌는 5x5 말판에서 모든 불을 끄는 고전 논리 퍼즐입니다. |
 | 2026-07-01 | 전함 찾기 | 5x5 바다 격자에 숨은 세 척의 전함을 제한된 포탄 안에 모두 찾아 격침하는 고전 해전 추리 게임입니다. |
+| 2026-07-02 | 독 초콜릿 피하기 | 고른 조각부터 오른쪽 아래가 모두 사라지는 초콜릿 판에서 독이 든 왼쪽 위 조각을 피하는 고전 전략 게임입니다. |
+| 2026-07-03 | 상자 닫기 | 두 주사위의 합과 같은 열린 숫자를 골라 닫고, 더 이상 조합이 없기 전에 모든 숫자를 없애는 고전 주사위 게임입니다. |
 
 ## 게임 화면
 
@@ -259,6 +261,14 @@
 
 ![전함 찾기 게임 화면](../daily/2026-07-01-battleship/screenshot.png)
 
+### 독 초콜릿 피하기
+
+![독 초콜릿 피하기 게임 화면](../daily/2026-07-02-chomp/screenshot.png)
+
+### 상자 닫기
+
+![상자 닫기 게임 화면](../daily/2026-07-03-shut-the-box/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -312,4 +322,6 @@ node daily/2026-06-28-match-three/game-logic.test.js
 node daily/2026-06-29-count-to-31/game-logic.test.js
 node daily/2026-06-30-lights-out/game-logic.test.js
 node daily/2026-07-01-battleship/game-logic.test.js
+node daily/2026-07-02-chomp/game-logic.test.js
+node daily/2026-07-03-shut-the-box/game-logic.test.js
 ```

@@ -1,0 +1,250 @@
+:root {
+  color-scheme: light;
+  --bg: #eef2e6;
+  --ink: #17212b;
+  --muted: #687076;
+  --panel: #fffdf6;
+  --line: #c8c1a8;
+  --gold: #c9972f;
+  --teal: #1f7a76;
+  --red: #b4483e;
+  --blue: #315f9f;
+  --shadow: 0 18px 45px rgba(34, 39, 35, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(90deg, rgba(31, 122, 118, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(31, 122, 118, 0.08) 1px, transparent 1px),
+    var(--bg);
+  background-size: 34px 34px;
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  background: var(--ink);
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.game-shell {
+  width: min(960px, 100%);
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.header,
+.status-panel,
+.message-area,
+.piece-yards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header {
+  margin-bottom: 18px;
+}
+
+.eyebrow,
+.label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 4px 0 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1;
+}
+
+.status-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8f1df;
+}
+
+.status-panel > div,
+.yard {
+  display: grid;
+  gap: 4px;
+}
+
+.message-area {
+  margin: 18px 0;
+  padding: 16px;
+  border-radius: 8px;
+  background: #17313a;
+  color: white;
+}
+
+#messageText {
+  flex: 1;
+  min-width: 220px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.dice-faces {
+  display: flex;
+  gap: 6px;
+  min-width: 96px;
+}
+
+.die {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.die.on {
+  background: var(--gold);
+}
+
+.board-wrap {
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(14, minmax(58px, 1fr));
+  min-width: 812px;
+  gap: 6px;
+}
+
+.cell {
+  position: relative;
+  display: grid;
+  align-content: space-between;
+  min-height: 104px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #f4ebd7;
+}
+
+.cell.shared {
+  background: #e5eee9;
+}
+
+.cell.rosette {
+  border-color: var(--gold);
+  background: #fff4c7;
+}
+
+.cell-number {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.rosette-mark {
+  color: var(--gold);
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-align: right;
+}
+
+.cell-tokens,
+.tokens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 32px;
+}
+
+.token {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.token.player {
+  background: var(--blue);
+}
+
+.token.computer {
+  background: var(--red);
+}
+
+.token.clickable {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+button.token {
+  min-height: 30px;
+  padding: 0;
+}
+
+.piece-yards {
+  margin-top: 16px;
+}
+
+.yard {
+  flex: 1;
+  min-height: 68px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8f1df;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 12px;
+  }
+
+  .game-shell {
+    padding: 16px;
+  }
+
+  .header,
+  .message-area,
+  .piece-yards {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .status-panel {
+    grid-template-columns: 1fr;
+  }
+}
