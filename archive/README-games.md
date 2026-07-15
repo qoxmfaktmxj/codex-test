@@ -59,6 +59,7 @@
 | 2026-07-02 | 독 초콜릿 피하기 | 고른 조각부터 오른쪽 아래가 모두 사라지는 초콜릿 판에서 독이 든 왼쪽 위 조각을 피하는 고전 전략 게임입니다. |
 | 2026-07-03 | 상자 닫기 | 두 주사위의 합과 같은 열린 숫자를 골라 닫고, 더 이상 조합이 없기 전에 모든 숫자를 없애는 고전 주사위 게임입니다. |
 | 2026-07-04 | 301 다트 | 한 라운드에 세 번 던져 301점을 정확히 0점까지 줄이고, 마지막 점수는 더블 구역으로 끝내는 고전 펍 다트 게임입니다. |
+| 2026-07-05 | 에이스 듀스 | 펼쳐진 두 카드 사이에 다음 카드 숫자가 들어올지 배팅하며 목표 칩을 모으는 고전 카드 게임입니다. |
 
 ## 게임 화면
 
@@ -274,6 +275,10 @@
 
 ![301 다트 게임 화면](../daily/2026-07-04-darts-301/screenshot.png)
 
+### 에이스 듀스
+
+![에이스 듀스 게임 화면](../daily/2026-07-05-acey-deucey/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -330,4 +335,5 @@ node daily/2026-07-01-battleship/game-logic.test.js
 node daily/2026-07-02-chomp/game-logic.test.js
 node daily/2026-07-03-shut-the-box/game-logic.test.js
 node daily/2026-07-04-darts-301/game-logic.test.js
+node daily/2026-07-05-acey-deucey/game-logic.test.js
 ```
