@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>돼지 주사위</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="table" aria-labelledby="game-title">
+      <div class="title-row">
+        <div>
+          <p class="eyebrow">데일리 클래식 게임</p>
+          <h1 id="game-title">돼지 주사위</h1>
+        </div>
+        <div class="target">목표 30점</div>
+      </div>
+
+      <div class="scoreboard" aria-label="점수판">
+        <article class="player active" data-player-card="0">
+          <span>플레이어 1</span>
+          <strong data-score="0">0</strong>
+        </article>
+        <article class="player" data-player-card="1">
+          <span>플레이어 2</span>
+          <strong data-score="1">0</strong>
+        </article>
+      </div>
+
+      <div class="dice-area">
+        <div class="turn-box">
+          <span>이번 차례</span>
+          <strong data-turn-total>0</strong>
+        </div>
+        <div class="die" data-die aria-label="마지막 주사위">?</div>
+      </div>
+
+      <p class="message" data-message>플레이어 1 차례입니다. 굴리거나 멈추세요.</p>
+
+      <div class="actions">
+        <button type="button" data-roll>굴리기</button>
+        <button type="button" data-hold>멈추기</button>
+        <button type="button" class="secondary" data-reset>새 판</button>
+      </div>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

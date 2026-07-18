@@ -8,6 +8,8 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-07-18 | 돼지 주사위 | 주사위를 굴려 이번 차례 점수를 쌓고, 1이 나오기 전에 멈춰 저장하며 먼저 30점에 도달하는 고전 주사위 게임입니다. |
+| 2026-07-17 | 시계 솔리테어 | 왕 더미에서 시작해 열린 카드 숫자의 더미로 이동하며, 왕 네 장이 먼저 나오기 전에 모든 카드를 여는 고전 카드 운세 게임입니다. |
 | 2026-07-16 | 루도 미니 | 주사위에서 6을 굴려 말을 출발시키고, 상대 말을 잡으며 한 바퀴를 정확히 돌아 모든 말을 먼저 도착시키는 고전 경주 게임입니다. |
 | 2026-07-15 | 불가리아 솔리테어 | 45장의 카드를 여러 더미로 나누고, 매 차례 각 더미에서 한 장씩 빼 새 더미를 만들며 1부터 9까지 계단 모양을 완성하는 고전 카드 퍼즐입니다. |
 | 2026-07-14 | 몬테카를로 솔리테어 | 5x5 카드판에서 같은 숫자의 이웃한 두 장을 치우고 남은 카드를 당겨 채우며 모든 카드를 없애는 고전 카드 퍼즐입니다. |
@@ -16,10 +18,16 @@
 | 2026-07-11 | 타파탄 | 세 개의 말을 3x3 교차점에 놓고 선을 따라 움직여 한 줄을 먼저 완성하는 고전 삼목 보드게임입니다. |
 | 2026-07-10 | 헥사폰 | 세 개의 졸로 3x3 말판에서 전진과 대각선 잡기를 겨루며, 먼저 끝줄에 닿거나 상대를 막는 고전 미니 체스 게임입니다. |
 | 2026-07-09 | 거위 게임 | 두 주사위를 굴려 특수 칸을 지나며 32번 칸에 정확히 도착해야 하는 고전 경주 보드게임입니다. |
-| 2026-07-08 | 십오 퍼즐 | 빈칸 옆 숫자를 밀어 4x4 말판의 숫자를 1부터 15까지 차례대로 맞추는 고전 슬라이딩 퍼즐입니다. |
-| 2026-07-07 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 세 기둥 사이에서 모든 원반을 오른쪽으로 옮기는 고전 퍼즐 게임입니다. |
 
 ## 최근 게임 화면
+
+### 돼지 주사위
+
+![돼지 주사위 게임 화면](daily/2026-07-18-pig-dice/screenshot.png)
+
+### 시계 솔리테어
+
+![시계 솔리테어 게임 화면](daily/2026-07-17-clock-solitaire/screenshot.png)
 
 ### 루도 미니
 
@@ -53,19 +61,13 @@
 
 ![거위 게임 화면](daily/2026-07-09-game-of-goose/screenshot.png)
 
-### 십오 퍼즐
-
-![십오 퍼즐 게임 화면](daily/2026-07-08-fifteen-puzzle/screenshot.png)
-
-### 하노이의 탑
-
-![하노이의 탑 게임 화면](daily/2026-07-07-tower-of-hanoi/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-07-18-pig-dice/game-logic.test.js
+node daily/2026-07-17-clock-solitaire/game-logic.test.js
 node daily/2026-07-16-mini-ludo/game-logic.test.js
 node daily/2026-07-15-bulgarian-solitaire/game-logic.test.js
 node daily/2026-07-14-monte-carlo-solitaire/game-logic.test.js
@@ -74,6 +76,4 @@ node daily/2026-07-12-royal-ur/game-logic.test.js
 node daily/2026-07-11-tapatan/game-logic.test.js
 node daily/2026-07-10-hexapawn/game-logic.test.js
 node daily/2026-07-09-game-of-goose/game-logic.test.js
-node daily/2026-07-08-fifteen-puzzle/game-logic.test.js
-node daily/2026-07-07-tower-of-hanoi/game-logic.test.js
 ```

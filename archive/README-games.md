@@ -61,6 +61,8 @@
 | 2026-07-04 | 301 다트 | 한 라운드에 세 번 던져 301점을 정확히 0점까지 줄이고, 마지막 점수는 더블 구역으로 끝내는 고전 펍 다트 게임입니다. |
 | 2026-07-05 | 에이스 듀스 | 펼쳐진 두 카드 사이에 다음 카드 숫자가 들어올지 배팅하며 목표 칩을 모으는 고전 카드 게임입니다. |
 | 2026-07-06 | 마스터마인드 | 여섯 가지 색으로 된 네 칸 암호를 추리하고, 정확한 위치와 색만 맞은 힌트로 정답을 좁히는 고전 추리 게임입니다. |
+| 2026-07-07 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 세 기둥 사이에서 모든 원반을 오른쪽으로 옮기는 고전 퍼즐 게임입니다. |
+| 2026-07-08 | 십오 퍼즐 | 빈칸 옆 숫자를 밀어 4x4 말판의 숫자를 1부터 15까지 차례대로 맞추는 고전 슬라이딩 퍼즐입니다. |
 
 ## 게임 화면
 
@@ -284,6 +286,14 @@
 
 ![마스터마인드 게임 화면](../daily/2026-07-06-mastermind/screenshot.png)
 
+### 하노이의 탑
+
+![하노이의 탑 게임 화면](../daily/2026-07-07-tower-of-hanoi/screenshot.png)
+
+### 십오 퍼즐
+
+![십오 퍼즐 게임 화면](../daily/2026-07-08-fifteen-puzzle/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -342,4 +352,6 @@ node daily/2026-07-03-shut-the-box/game-logic.test.js
 node daily/2026-07-04-darts-301/game-logic.test.js
 node daily/2026-07-05-acey-deucey/game-logic.test.js
 node daily/2026-07-06-mastermind/game-logic.test.js
+node daily/2026-07-07-tower-of-hanoi/game-logic.test.js
+node daily/2026-07-08-fifteen-puzzle/game-logic.test.js
 ```
