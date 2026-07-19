@@ -63,6 +63,7 @@
 | 2026-07-06 | 마스터마인드 | 여섯 가지 색으로 된 네 칸 암호를 추리하고, 정확한 위치와 색만 맞은 힌트로 정답을 좁히는 고전 추리 게임입니다. |
 | 2026-07-07 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 세 기둥 사이에서 모든 원반을 오른쪽으로 옮기는 고전 퍼즐 게임입니다. |
 | 2026-07-08 | 십오 퍼즐 | 빈칸 옆 숫자를 밀어 4x4 말판의 숫자를 1부터 15까지 차례대로 맞추는 고전 슬라이딩 퍼즐입니다. |
+| 2026-07-09 | 거위 게임 | 두 주사위를 굴려 특수 칸을 지나며 32번 칸에 정확히 도착해야 하는 고전 경주 보드게임입니다. |
 
 ## 게임 화면
 
@@ -294,6 +295,10 @@
 
 ![십오 퍼즐 게임 화면](../daily/2026-07-08-fifteen-puzzle/screenshot.png)
 
+### 거위 게임
+
+![거위 게임 화면](../daily/2026-07-09-game-of-goose/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -354,4 +359,5 @@ node daily/2026-07-05-acey-deucey/game-logic.test.js
 node daily/2026-07-06-mastermind/game-logic.test.js
 node daily/2026-07-07-tower-of-hanoi/game-logic.test.js
 node daily/2026-07-08-fifteen-puzzle/game-logic.test.js
+node daily/2026-07-09-game-of-goose/game-logic.test.js
 ```
