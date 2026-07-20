@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>마방진 15</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="table" aria-labelledby="game-title">
+      <div class="title-row">
+        <div>
+          <p class="eyebrow">데일리 클래식 게임</p>
+          <h1 id="game-title">마방진 15</h1>
+        </div>
+        <div class="target">목표 합 <strong>15</strong></div>
+      </div>
+
+      <div class="play-area">
+        <div>
+          <div class="board" data-board aria-label="마방진 말판"></div>
+          <div class="line-hints" data-line-hints aria-label="줄 합계"></div>
+        </div>
+
+        <aside class="side-panel">
+          <div class="score-card">
+            <span>완성한 줄</span>
+            <strong><span data-score>0</span>/8</strong>
+          </div>
+          <div class="number-palette" data-numbers aria-label="놓을 숫자"></div>
+          <p class="message" data-message>숫자를 고르세요.</p>
+          <button type="button" data-reset>새 판</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

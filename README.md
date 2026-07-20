@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-07-20 | 마방진 15 | 1부터 9까지 숫자를 3x3 말판에 한 번씩 놓아 모든 가로, 세로, 대각선의 합을 15로 맞추는 고전 숫자 퍼즐입니다. |
 | 2026-07-19 | 카드 열 맞추기 | 5x5 말판에 카드를 한 장씩 놓아 각 행과 열을 포커 족보로 만들고, 열 줄의 점수 합계를 높이는 고전 카드 퍼즐입니다. |
 | 2026-07-18 | 돼지 주사위 | 주사위를 굴려 이번 차례 점수를 쌓고, 1이 나오기 전에 멈춰 저장하며 먼저 30점에 도달하는 고전 주사위 게임입니다. |
 | 2026-07-17 | 시계 솔리테어 | 왕 더미에서 시작해 열린 카드 숫자의 더미로 이동하며, 왕 네 장이 먼저 나오기 전에 모든 카드를 여는 고전 카드 운세 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-07-13 | 여우와 사냥개 | 여우를 대각선으로 움직여 사냥개 네 마리의 포위망을 빠져나가고, 사냥개는 아래쪽 대각선 이동으로 여우를 가두는 고전 추격 게임입니다. |
 | 2026-07-12 | 왕실 우르 게임 | 네 개의 이진 주사위를 굴려 다섯 말을 전진시키고, 꽃무늬 칸의 추가 차례와 잡기를 활용해 먼저 모두 도착시키는 고대 경주 게임입니다. |
 | 2026-07-11 | 타파탄 | 세 개의 말을 3x3 교차점에 놓고 선을 따라 움직여 한 줄을 먼저 완성하는 고전 삼목 보드게임입니다. |
-| 2026-07-10 | 헥사폰 | 세 개의 졸로 3x3 말판에서 전진과 대각선 잡기를 겨루며, 먼저 끝줄에 닿거나 상대를 막는 고전 미니 체스 게임입니다. |
 
 ## 최근 게임 화면
+
+### 마방진 15
+
+![마방진 15 게임 화면](daily/2026-07-20-magic-square/screenshot.png)
 
 ### 카드 열 맞추기
 
@@ -57,15 +61,12 @@
 
 ![타파탄 게임 화면](daily/2026-07-11-tapatan/screenshot.png)
 
-### 헥사폰
-
-![헥사폰 게임 화면](daily/2026-07-10-hexapawn/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-07-20-magic-square/game-logic.test.js
 node daily/2026-07-19-poker-squares/game-logic.test.js
 node daily/2026-07-18-pig-dice/game-logic.test.js
 node daily/2026-07-17-clock-solitaire/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-07-14-monte-carlo-solitaire/game-logic.test.js
 node daily/2026-07-13-fox-and-hounds/game-logic.test.js
 node daily/2026-07-12-royal-ur/game-logic.test.js
 node daily/2026-07-11-tapatan/game-logic.test.js
-node daily/2026-07-10-hexapawn/game-logic.test.js
 ```

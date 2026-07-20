@@ -64,6 +64,7 @@
 | 2026-07-07 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 세 기둥 사이에서 모든 원반을 오른쪽으로 옮기는 고전 퍼즐 게임입니다. |
 | 2026-07-08 | 십오 퍼즐 | 빈칸 옆 숫자를 밀어 4x4 말판의 숫자를 1부터 15까지 차례대로 맞추는 고전 슬라이딩 퍼즐입니다. |
 | 2026-07-09 | 거위 게임 | 두 주사위를 굴려 특수 칸을 지나며 32번 칸에 정확히 도착해야 하는 고전 경주 보드게임입니다. |
+| 2026-07-10 | 헥사폰 | 세 개의 졸로 3x3 말판에서 전진과 대각선 잡기를 겨루며, 먼저 끝줄에 닿거나 상대를 막는 고전 미니 체스 게임입니다. |
 
 ## 게임 화면
 
@@ -299,6 +300,10 @@
 
 ![거위 게임 화면](../daily/2026-07-09-game-of-goose/screenshot.png)
 
+### 헥사폰
+
+![헥사폰 게임 화면](../daily/2026-07-10-hexapawn/screenshot.png)
+
 ## 테스트
 
 ```bash
@@ -360,4 +365,5 @@ node daily/2026-07-06-mastermind/game-logic.test.js
 node daily/2026-07-07-tower-of-hanoi/game-logic.test.js
 node daily/2026-07-08-fifteen-puzzle/game-logic.test.js
 node daily/2026-07-09-game-of-goose/game-logic.test.js
+node daily/2026-07-10-hexapawn/game-logic.test.js
 ```
