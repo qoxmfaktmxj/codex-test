@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-label="오목 게임 화면">
+  <rect width="960" height="640" fill="#d7e3d5"/>
+  <rect x="130" y="42" width="700" height="556" rx="18" fill="#f6efe1" stroke="#29382e" stroke-width="6"/>
+  <text x="480" y="96" text-anchor="middle" fill="#637063" font-family="Malgun Gothic, sans-serif" font-size="20" font-weight="700">데일리 클래식 게임</text>
+  <text x="480" y="148" text-anchor="middle" fill="#1f2520" font-family="Malgun Gothic, sans-serif" font-size="56" font-weight="800">오목</text>
+  <text x="480" y="188" text-anchor="middle" fill="#344037" font-family="Malgun Gothic, sans-serif" font-size="22">다섯 돌을 먼저 한 줄로 이으세요</text>
+  <g font-family="Malgun Gothic, sans-serif" text-anchor="middle">
+    <rect x="180" y="218" width="170" height="70" rx="12" fill="#fffaf0" stroke="#cdb98d" stroke-width="3"/>
+    <text x="265" y="245" fill="#64705f" font-size="17" font-weight="700">차례</text>
+    <text x="265" y="273" fill="#1f2520" font-size="24" font-weight="800">흑</text>
+    <rect x="395" y="218" width="170" height="70" rx="12" fill="#fffaf0" stroke="#cdb98d" stroke-width="3"/>
+    <text x="480" y="245" fill="#64705f" font-size="17" font-weight="700">상태</text>
+    <text x="480" y="273" fill="#1f2520" font-size="24" font-weight="800">진행 중</text>
+    <rect x="610" y="218" width="170" height="70" rx="12" fill="#fffaf0" stroke="#cdb98d" stroke-width="3"/>
+    <text x="695" y="245" fill="#64705f" font-size="17" font-weight="700">승자</text>
+    <text x="695" y="273" fill="#1f2520" font-size="24" font-weight="800">-</text>
+  </g>
+  <text x="480" y="324" text-anchor="middle" fill="#1f2520" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="700">흑돌을 놓을 칸을 고르세요.</text>
+  <rect x="300" y="330" width="360" height="240" fill="#d9a85f" stroke="#7a5530" stroke-width="4"/>
+  <g stroke="#7a5530" stroke-width="1.5" opacity="0.85">
+    <path d="M340 330v240M380 330v240M420 330v240M460 330v240M500 330v240M540 330v240M580 330v240M620 330v240"/>
+    <path d="M300 360h360M300 390h360M300 420h360M300 450h360M300 480h360M300 510h360M300 540h360"/>
+  </g>
+  <g>
+    <circle cx="340" cy="360" r="12" fill="#1d1d1d"/>
+    <circle cx="380" cy="360" r="12" fill="#f7f5ec" stroke="#c8c8c8"/>
+    <circle cx="380" cy="390" r="12" fill="#1d1d1d"/>
+    <circle cx="420" cy="390" r="12" fill="#f7f5ec" stroke="#c8c8c8"/>
+    <circle cx="420" cy="420" r="12" fill="#1d1d1d"/>
+    <circle cx="460" cy="420" r="12" fill="#f7f5ec" stroke="#c8c8c8"/>
+    <circle cx="460" cy="450" r="12" fill="#1d1d1d"/>
+    <circle cx="500" cy="450" r="12" fill="#f7f5ec" stroke="#c8c8c8"/>
+    <circle cx="500" cy="480" r="12" fill="#1d1d1d"/>
+  </g>
+</svg>
