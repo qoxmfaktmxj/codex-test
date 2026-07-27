@@ -1,0 +1,252 @@
+:root {
+  color-scheme: light;
+  --ink: #171717;
+  --muted: #5b616a;
+  --paper: #f4f7f5;
+  --panel: #ffffff;
+  --line: #222222;
+  --red: #c93c35;
+  --teal: #008575;
+  --blue: #315ea8;
+  --yellow: #efc84a;
+  --shadow: rgba(23, 23, 23, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, rgba(23, 23, 23, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(23, 23, 23, 0.05) 1px, transparent 1px),
+    var(--paper);
+  background-size: 28px 28px;
+  color: var(--ink);
+  font-family: "Trebuchet MS", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(900px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.intro {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  padding: 24px 0 18px;
+}
+
+.intro::before {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 118px;
+  height: 118px;
+  border: 4px solid var(--line);
+  background:
+    linear-gradient(90deg, transparent 48%, var(--line) 48%, var(--line) 52%, transparent 52%),
+    linear-gradient(0deg, transparent 48%, var(--line) 48%, var(--line) 52%, transparent 52%),
+    var(--yellow);
+  content: "";
+  transform: rotate(5deg);
+  z-index: -1;
+}
+
+.eyebrow,
+.label {
+  margin: 0;
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", "Malgun Gothic", serif;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.summary {
+  max-width: 640px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.score-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 6px 0 14px;
+}
+
+.score-strip > div {
+  min-height: 72px;
+  border: 3px solid var(--line);
+  background: var(--panel);
+  box-shadow: 6px 6px 0 var(--line);
+  padding: 12px;
+}
+
+.score-strip strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 1.45rem;
+}
+
+.play-area {
+  display: grid;
+  gap: 14px;
+  border: 3px solid var(--line);
+  background: var(--panel);
+  box-shadow: 8px 8px 0 var(--line);
+  padding: 18px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  width: min(100%, 560px);
+  aspect-ratio: 1;
+  align-self: center;
+  justify-self: center;
+  border: 4px solid var(--line);
+  background: var(--line);
+  padding: 8px;
+}
+
+.tile {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  border: 3px solid var(--line);
+  background: #f8f1dc;
+  color: var(--ink);
+  cursor: default;
+  font-family: Georgia, "Times New Roman", "Malgun Gothic", serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: inset -5px -5px 0 rgba(23, 23, 23, 0.08);
+}
+
+.tile:nth-child(4n + 1) {
+  background: #f6d154;
+}
+
+.tile:nth-child(4n + 2) {
+  background: #f4f7f5;
+}
+
+.tile:nth-child(4n + 3) {
+  background: #b9d8d3;
+}
+
+.tile:nth-child(4n) {
+  background: #f0aaa2;
+}
+
+button.tile {
+  cursor: pointer;
+}
+
+button.tile:disabled {
+  cursor: not-allowed;
+}
+
+.tile.is-movable {
+  background: var(--teal);
+  color: #ffffff;
+}
+
+.tile.is-movable:hover {
+  background: var(--blue);
+}
+
+.tile-blank {
+  border-style: dashed;
+  background:
+    linear-gradient(135deg, transparent 44%, rgba(255, 255, 255, 0.35) 44%, rgba(255, 255, 255, 0.35) 56%, transparent 56%),
+    var(--red);
+  box-shadow: none;
+}
+
+.message {
+  min-height: 30px;
+  margin: 0;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.controls button {
+  min-width: 120px;
+  border: 3px solid var(--line);
+  background: var(--yellow);
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 900;
+  padding: 10px 16px;
+  box-shadow: 4px 4px 0 var(--line);
+}
+
+.controls button:hover {
+  background: var(--red);
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .game-shell {
+    width: min(100% - 20px, 900px);
+    padding: 22px 0;
+  }
+
+  .intro::before {
+    width: 76px;
+    height: 76px;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .score-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .play-area {
+    padding: 12px;
+  }
+
+  .board {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .tile {
+    border-width: 2px;
+    font-size: 1.4rem;
+  }
+}

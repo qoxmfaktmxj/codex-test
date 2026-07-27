@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>색깔 채우기</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">색깔 채우기</h1>
+        <p class="intro">왼쪽 위 영역의 색을 바꾸며 이어진 칸을 흡수해 제한 이동 안에 모든 칸을 같은 색으로 만드는 퍼즐입니다.</p>
+      </section>
+
+      <section class="status-panel" aria-label="게임 상태">
+        <div>
+          <span class="label">이동</span>
+          <strong><span id="moves">0</span>/<span id="move-limit">14</span></strong>
+        </div>
+        <div>
+          <span class="label">현재 색</span>
+          <strong id="current-color">빨강</strong>
+        </div>
+        <div>
+          <span class="label">상태</span>
+          <strong id="status">진행 중</strong>
+        </div>
+      </section>
+
+      <section class="board-panel" aria-label="색깔 채우기 판">
+        <div id="board" class="board"></div>
+        <p id="message" class="message" role="status">왼쪽 위와 이어진 영역을 한 가지 색으로 채우세요.</p>
+      </section>
+
+      <section class="palette-panel" aria-label="색 고르기">
+        <div id="palette" class="palette"></div>
+        <button type="button" id="reset-button">다시 시작</button>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>몬테카를로 솔리테어</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="intro" aria-labelledby="title">
+      <p class="date">2026년 7월 14일</p>
+      <h1 id="title">몬테카를로 솔리테어</h1>
+      <p>5x5로 펼친 카드에서 같은 숫자의 이웃한 두 장을 치우고, 남은 카드를 차례대로 당겨 빈자리를 채우세요.</p>
+    </section>
+
+    <section class="panel" aria-label="몬테카를로 솔리테어 카드판">
+      <div class="status-row">
+        <div>
+          <span class="label">치운 쌍</span>
+          <strong id="pairs">0쌍</strong>
+        </div>
+        <div>
+          <span class="label">남은 더미</span>
+          <strong id="stock">27장</strong>
+        </div>
+        <div>
+          <span class="label">상태</span>
+          <strong id="status">진행 중</strong>
+        </div>
+      </div>
+
+      <div id="board" class="board" aria-label="다섯 줄 카드판"></div>
+
+      <p id="message" class="message" aria-live="polite">같은 숫자의 가로, 세로, 대각선 이웃 카드 두 장을 고르세요.</p>
+
+      <div class="actions">
+        <button id="hint" type="button">힌트</button>
+        <button id="reset" type="button">새 판</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

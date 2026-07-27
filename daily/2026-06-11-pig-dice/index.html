@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>돼지 주사위</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="panel" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">돼지 주사위</h1>
+        <p class="intro">주사위를 굴려 이번 차례 점수를 쌓고, 1이 나오기 전에 저장해 먼저 100점에 도달하세요.</p>
+
+        <div class="scoreboard" aria-label="점수판">
+          <div>
+            <span>나</span>
+            <strong id="player-score">0</strong>
+          </div>
+          <div>
+            <span>컴퓨터</span>
+            <strong id="computer-score">0</strong>
+          </div>
+        </div>
+
+        <div class="play-area">
+          <div id="die" class="die" aria-label="주사위">?</div>
+          <div class="turn-card">
+            <span id="turn-label">내 차례</span>
+            <strong id="turn-total">이번 차례 0점</strong>
+            <p id="message" aria-live="polite">주사위를 굴리거나 점수를 저장하세요.</p>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="roll" type="button">굴리기</button>
+          <button id="hold" type="button">저장</button>
+          <button id="reset" type="button">새 게임</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

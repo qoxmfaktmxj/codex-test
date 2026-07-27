@@ -1,0 +1,215 @@
+:root {
+  color-scheme: light;
+  --ink: #1c2430;
+  --muted: #627083;
+  --paper: #f2f4f0;
+  --panel: #fffdf8;
+  --line: #d3d8cc;
+  --accent: #2c6b5a;
+  --accent-strong: #204f45;
+  --gold: #d99b2b;
+  --tile: #f7e2b7;
+  --tile-line: #c9892e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgb(44 107 90 / 14%) 0%, rgb(217 155 43 / 18%) 100%),
+    var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(940px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 34px 0;
+}
+
+.hero {
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 5.3rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.summary {
+  max-width: 640px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.panel {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 18px 48px rgb(31 38 46 / 14%);
+}
+
+.status-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 1.15rem;
+}
+
+.message {
+  min-height: 28px;
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.tile {
+  display: grid;
+  gap: 6px;
+  min-height: 138px;
+  padding: 14px;
+  border: 2px solid var(--tile-line);
+  border-radius: 8px;
+  background: var(--tile);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: inset 0 -5px 0 rgb(201 137 46 / 18%);
+}
+
+.tile span {
+  align-self: end;
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.tile small {
+  overflow-wrap: anywhere;
+  color: #6e4a16;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.tile.selected {
+  border-color: var(--accent-strong);
+  outline: 4px solid rgb(44 107 90 / 22%);
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.operators button,
+.actions button,
+#next-button {
+  min-height: 44px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: white;
+  color: var(--accent-strong);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.operators button {
+  font-size: 1.6rem;
+}
+
+.operators button.selected,
+.actions button:first-child,
+#next-button {
+  background: var(--accent);
+  color: white;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.history {
+  min-height: 78px;
+  margin: 0;
+  padding: 12px 12px 12px 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #faf7ef;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.history:empty::before {
+  content: "아직 계산 기록이 없습니다.";
+  margin-left: -18px;
+}
+
+@media (max-width: 640px) {
+  .game-shell {
+    width: min(100% - 20px, 520px);
+    padding: 18px 0;
+  }
+
+  .panel {
+    padding: 12px;
+  }
+
+  .status-row,
+  .tiles,
+  .actions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #next-button,
+  .actions button:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .tile {
+    min-height: 112px;
+  }
+}

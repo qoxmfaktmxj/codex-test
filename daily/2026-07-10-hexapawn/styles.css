@@ -1,0 +1,253 @@
+:root {
+  color-scheme: light;
+  --ink: #161616;
+  --muted: #5b6168;
+  --paper: #f3f0e8;
+  --panel: #fffdf7;
+  --line: #1d1d1d;
+  --red: #c64f45;
+  --green: #137a63;
+  --blue: #2d5f9a;
+  --gold: #e6b843;
+  --cream: #f8ead0;
+  --shadow: rgba(22, 22, 22, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(198, 79, 69, 0.12) 0 80px, transparent 82px),
+    linear-gradient(90deg, rgba(22, 22, 22, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(22, 22, 22, 0.05) 1px, transparent 1px),
+    var(--paper);
+  background-size: auto, 30px 30px, 30px 30px;
+  color: var(--ink);
+  font-family: "Trebuchet MS", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(900px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.intro {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  padding: 24px 0 18px;
+}
+
+.intro::before {
+  position: absolute;
+  top: 14px;
+  right: 8px;
+  width: 136px;
+  height: 136px;
+  border: 4px solid var(--line);
+  background:
+    linear-gradient(45deg, transparent 46%, var(--line) 46%, var(--line) 54%, transparent 54%),
+    linear-gradient(-45deg, transparent 46%, var(--line) 46%, var(--line) 54%, transparent 54%),
+    var(--gold);
+  content: "";
+  transform: rotate(7deg);
+  z-index: -1;
+}
+
+.eyebrow,
+.label {
+  margin: 0;
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", "Malgun Gothic", serif;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.summary {
+  max-width: 690px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.score-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 6px 0 14px;
+}
+
+.score-strip > div {
+  min-height: 72px;
+  border: 3px solid var(--line);
+  background: var(--panel);
+  box-shadow: 6px 6px 0 var(--line);
+  padding: 12px;
+}
+
+.score-strip strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 1.45rem;
+}
+
+.play-area {
+  display: grid;
+  gap: 12px;
+  border: 3px solid var(--line);
+  background: var(--panel);
+  box-shadow: 8px 8px 0 var(--line);
+  padding: 18px;
+}
+
+.rank-label {
+  justify-self: center;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  width: min(100%, 520px);
+  aspect-ratio: 1;
+  justify-self: center;
+  border: 5px solid var(--line);
+  background: var(--line);
+  gap: 5px;
+  padding: 5px;
+}
+
+.square {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  border: 0;
+  background: #d9b989;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.square.is-light {
+  background: var(--cream);
+}
+
+.square.is-selected {
+  outline: 6px solid var(--gold);
+  outline-offset: -9px;
+}
+
+.square.is-move {
+  box-shadow: inset 0 0 0 8px rgba(19, 122, 99, 0.72);
+}
+
+.square.is-capture {
+  box-shadow: inset 0 0 0 8px rgba(198, 79, 69, 0.76);
+}
+
+.piece {
+  display: grid;
+  place-items: center;
+  width: min(70%, 92px);
+  aspect-ratio: 1;
+  border: 4px solid var(--line);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: clamp(1.2rem, 8vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 5px 5px 0 var(--line);
+}
+
+.piece-player {
+  background: var(--green);
+}
+
+.piece-computer {
+  background: var(--red);
+}
+
+.message {
+  min-height: 30px;
+  margin: 0;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.controls button {
+  min-width: 120px;
+  border: 3px solid var(--line);
+  background: var(--gold);
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 900;
+  padding: 10px 16px;
+  box-shadow: 4px 4px 0 var(--line);
+}
+
+.controls button:hover {
+  background: var(--blue);
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .game-shell {
+    width: min(100% - 20px, 900px);
+    padding: 22px 0;
+  }
+
+  .intro::before {
+    width: 82px;
+    height: 82px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .score-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .play-area {
+    padding: 12px;
+  }
+
+  .board {
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .piece {
+    border-width: 3px;
+    box-shadow: 3px 3px 0 var(--line);
+  }
+}

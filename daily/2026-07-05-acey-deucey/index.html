@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>에이스 듀스</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">고전 카드 배팅 게임</p>
+      <h1 id="game-title">에이스 듀스</h1>
+      <p class="summary">펼쳐진 두 카드 사이에 다음 카드의 숫자가 들어올지 예측해 칩을 모으세요. 같은 숫자나 바깥 숫자는 실패입니다.</p>
+    </section>
+
+    <section class="status-panel" aria-label="게임 상태">
+      <div>
+        <span class="label">보유 칩</span>
+        <strong id="chips">20</strong>
+      </div>
+      <div>
+        <span class="label">목표 칩</span>
+        <strong id="target">40</strong>
+      </div>
+      <div>
+        <span class="label">라운드</span>
+        <strong id="round">1</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+    </section>
+
+    <section class="table-panel" aria-label="카드 테이블">
+      <div class="card-row">
+        <div class="card open-card" id="low-card" aria-label="낮은 카드"></div>
+        <div class="card reveal-card" id="last-card" aria-label="공개 카드">?</div>
+        <div class="card open-card" id="high-card" aria-label="높은 카드"></div>
+      </div>
+      <p id="message" class="message">두 카드 사이에 다음 카드가 들어갈지 배팅하세요.</p>
+      <div class="controls">
+        <label class="bet-label" for="bet-input">배팅</label>
+        <input id="bet-input" type="number" min="1" max="20" value="5">
+        <button id="bet-button" type="button">승부</button>
+        <button id="pass-button" type="button">패스</button>
+        <button id="reset-button" type="button">새 판</button>
+      </div>
+    </section>
+
+    <section class="history-panel" aria-label="진행 기록">
+      <span class="label">최근 기록</span>
+      <ol id="history" class="history-list"></ol>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

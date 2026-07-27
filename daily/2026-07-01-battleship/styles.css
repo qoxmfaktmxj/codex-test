@@ -1,0 +1,273 @@
+:root {
+  color-scheme: light;
+  --ink: #17212b;
+  --muted: #637285;
+  --paper: #f7fbff;
+  --panel: #ffffff;
+  --sea: #b9dff2;
+  --sea-dark: #2d7694;
+  --hit: #e05245;
+  --miss: #477fb5;
+  --line: #d7e3ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  color: var(--ink);
+  background:
+    linear-gradient(135deg, rgba(63, 130, 155, 0.16), transparent 34%),
+    linear-gradient(180deg, #eef7fb 0%, #f8faf5 100%);
+}
+
+button {
+  font: inherit;
+}
+
+.game-shell {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.hero {
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--sea-dark);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.3rem, 8vw, 4.4rem);
+  line-height: 1;
+}
+
+.summary {
+  max-width: 640px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.status-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.status-panel > div,
+.fleet-panel,
+.controls {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 16px 35px rgba(23, 33, 43, 0.08);
+}
+
+.status-panel > div {
+  padding: 14px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.status-panel strong {
+  font-size: 1.45rem;
+}
+
+.board-panel {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #eef9ff, #d6eef8);
+}
+
+.axis {
+  display: grid;
+  color: var(--sea-dark);
+  font-weight: 700;
+}
+
+.axis.top {
+  grid-template-columns: 34px repeat(5, 1fr);
+  width: min(100%, 554px);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.board-wrap {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 8px;
+  width: min(100%, 554px);
+}
+
+.axis.side {
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  min-height: min(70vw, 520px);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  aspect-ratio: 1;
+  max-height: 520px;
+}
+
+.cell {
+  min-width: 0;
+  min-height: 0;
+  border: 2px solid rgba(45, 118, 148, 0.42);
+  border-radius: 8px;
+  color: transparent;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.42), transparent 45%),
+    var(--sea);
+  cursor: pointer;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.cell:not(:disabled):hover {
+  border-color: var(--sea-dark);
+  transform: translateY(-2px);
+}
+
+.cell:disabled {
+  cursor: default;
+}
+
+.cell.is-hit,
+.cell.is-miss {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.cell.is-hit {
+  border-color: #ba382d;
+  background: var(--hit);
+}
+
+.cell.is-miss {
+  border-color: #2c6597;
+  background: var(--miss);
+}
+
+.fleet-panel {
+  margin-top: 14px;
+  padding: 16px;
+}
+
+.fleet-panel h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+#fleet-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ship {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #eef7fb;
+  color: var(--ink);
+}
+
+.ship.is-sunk {
+  color: #ffffff;
+  background: #425160;
+}
+
+.ship-name,
+.ship-status {
+  overflow-wrap: anywhere;
+}
+
+.ship-name {
+  font-weight: 800;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 14px;
+  padding: 16px;
+}
+
+.message {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.reset-button {
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 18px;
+  color: #ffffff;
+  background: var(--sea-dark);
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background: #235f78;
+}
+
+@media (max-width: 640px) {
+  .game-shell {
+    width: min(100% - 20px, 560px);
+    padding: 24px 0;
+  }
+
+  .status-panel,
+  #fleet-list {
+    grid-template-columns: 1fr;
+  }
+
+  .board-panel {
+    padding: 12px;
+  }
+
+  .board {
+    gap: 5px;
+  }
+
+  .cell {
+    border-radius: 6px;
+    font-size: 0.72rem;
+  }
+
+  .controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

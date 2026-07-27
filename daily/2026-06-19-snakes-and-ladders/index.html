@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>뱀과 사다리</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">뱀과 사다리</h1>
+        <p class="intro">주사위를 굴려 사다리는 오르고 뱀은 피하며 36번 칸에 먼저 도착하는 고전 보드 게임입니다.</p>
+      </section>
+
+      <section class="status-panel" aria-label="게임 상태">
+        <div>
+          <span class="label">차례</span>
+          <strong id="turn">나</strong>
+        </div>
+        <div>
+          <span class="label">주사위</span>
+          <strong id="last-roll">-</strong>
+        </div>
+        <div>
+          <span class="label">상태</span>
+          <strong id="status">진행 중</strong>
+        </div>
+      </section>
+
+      <section class="board-panel" aria-label="뱀과 사다리 판">
+        <div id="board" class="board"></div>
+        <p id="message" class="message" role="status">주사위를 굴려 36번 칸에 먼저 도착하세요.</p>
+      </section>
+
+      <section class="control-panel" aria-label="게임 조작">
+        <div class="player-strip">
+          <span>나 <strong id="player-position">1</strong></span>
+          <span>컴퓨터 <strong id="computer-position">1</strong></span>
+        </div>
+        <div class="actions">
+          <button type="button" id="roll-button">주사위 굴리기</button>
+          <button type="button" id="reset-button">다시 시작</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

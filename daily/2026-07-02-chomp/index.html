@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>독 초콜릿 피하기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">고전 초콜릿 게임</p>
+      <h1 id="game-title">독 초콜릿 피하기</h1>
+      <p class="summary">고른 조각부터 오른쪽 아래 초콜릿이 모두 사라집니다. 마지막 독 조각을 먹는 쪽이 집니다.</p>
+    </section>
+
+    <section class="status-panel" aria-label="게임 상태">
+      <div>
+        <span class="label">남은 안전 조각</span>
+        <strong id="safe-count">19</strong>
+      </div>
+      <div>
+        <span class="label">차례</span>
+        <strong id="turn">사람</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+    </section>
+
+    <section class="board-panel" aria-label="초콜릿 판">
+      <div id="board" class="board"></div>
+    </section>
+
+    <section class="controls" aria-label="조작">
+      <p id="message" class="message">독이 든 왼쪽 위 조각을 피해서 초콜릿을 고르세요.</p>
+      <button id="reset-button" class="reset-button" type="button">새 판</button>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

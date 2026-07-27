@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  color: #1f2933;
+  background: linear-gradient(135deg, #f5f0e8 0%, #d7e9dd 48%, #f6d7b0 100%);
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background: #23645a;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: #6b7280;
+  background: #d9dedb;
+  cursor: not-allowed;
+}
+
+.game-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.panel {
+  width: min(720px, 100%);
+  padding: 28px;
+  border: 2px solid #263238;
+  border-radius: 8px;
+  background: rgba(255, 252, 246, 0.94);
+  box-shadow: 10px 10px 0 #263238;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #b14a2f;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.intro {
+  margin: 12px 0 24px;
+  line-height: 1.6;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.scoreboard div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+  padding: 16px;
+  border: 2px solid #263238;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.scoreboard span {
+  font-weight: 800;
+}
+
+.scoreboard strong {
+  font-size: 32px;
+}
+
+.play-area {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.die {
+  display: grid;
+  place-items: center;
+  min-height: 160px;
+  border: 3px solid #263238;
+  border-radius: 8px;
+  color: #263238;
+  background: #fff7d6;
+  font-size: 74px;
+  font-weight: 900;
+}
+
+.die.danger {
+  color: #ffffff;
+  background: #c04435;
+}
+
+.turn-card {
+  min-height: 160px;
+  padding: 20px;
+  border: 2px solid #263238;
+  border-radius: 8px;
+  background: #f8fbff;
+}
+
+.turn-card span {
+  display: block;
+  margin-bottom: 12px;
+  color: #23645a;
+  font-weight: 800;
+}
+
+.turn-card strong {
+  display: block;
+  font-size: 30px;
+}
+
+.turn-card p {
+  margin: 14px 0 0;
+  line-height: 1.5;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.controls button:nth-child(2) {
+  background: #b14a2f;
+}
+
+.controls button:nth-child(3) {
+  color: #263238;
+  background: #f4c95d;
+}
+
+.controls button:disabled {
+  color: #6b7280;
+  background: #d9dedb;
+}
+
+@media (max-width: 560px) {
+  .game-shell {
+    padding: 14px;
+  }
+
+  .panel {
+    padding: 20px;
+    box-shadow: 6px 6px 0 #263238;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .play-area {
+    grid-template-columns: 1fr;
+  }
+
+  .die {
+    min-height: 132px;
+  }
+}

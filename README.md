@@ -8,72 +8,72 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
-| 2026-07-08 | 오목 | 흑돌과 백돌을 번갈아 놓고 가로, 세로, 대각선 중 한 줄에 다섯 돌을 먼저 잇는 보드 게임입니다. |
-| 2026-06-10 | 님 게임 | 한 더미에서 원하는 만큼 돌을 가져가며 마지막 돌을 가져가는 사람이 이기는 게임입니다. |
-| 2026-06-09 | 마스터마인드 | 여섯 색 중 네 칸의 비밀 코드를 추리하고 위치와 색 힌트로 정답을 좁혀 가는 추리 게임입니다. |
-| 2026-06-08 | 페그 솔리테어 | 말 하나를 건너 빈칸으로 뛰어넘으며 말을 제거하고 마지막 말 하나를 남기는 퍼즐 게임입니다. |
-| 2026-06-07 | 달 착륙선 | 제한된 연료로 추력을 조절해 안전 속도로 달 표면에 내려앉는 고전 착륙 게임입니다. |
-| 2026-06-06 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 모든 원반을 오른쪽 기둥으로 옮기는 퍼즐 게임입니다. |
-| 2026-06-05 | 님 게임 | 돌을 1개부터 3개까지 가져가며 마지막 돌을 가져가기 위해 컴퓨터와 수 싸움을 하는 게임입니다. |
-| 2026-06-01 | 소코반 창고 정리 | 상자를 밀어 모든 목표 칸 위에 올리는 창고 정리 퍼즐 게임입니다. |
-| 2026-05-31 | 미로 탈출 | 열쇠를 찾아 출구 문을 열고 짧은 미로를 빠져나가는 퍼즐 게임입니다. |
-| 2026-05-28 | 낙하 블록 | 떨어지는 블록을 회전하고 옮겨 가로줄을 채우며 점수를 올리는 퍼즐 게임입니다. |
+| 2026-07-21 | 라틴 사각형 | 4x4 말판에 1부터 4까지 숫자를 채워 각 행과 열에 같은 숫자가 한 번씩만 나오게 만드는 고전 숫자 퍼즐입니다. |
+| 2026-07-20 | 마방진 15 | 1부터 9까지 숫자를 3x3 말판에 한 번씩 놓아 모든 가로, 세로, 대각선의 합을 15로 맞추는 고전 숫자 퍼즐입니다. |
+| 2026-07-19 | 카드 열 맞추기 | 5x5 말판에 카드를 한 장씩 놓아 각 행과 열을 포커 족보로 만들고, 열 줄의 점수 합계를 높이는 고전 카드 퍼즐입니다. |
+| 2026-07-18 | 돼지 주사위 | 주사위를 굴려 이번 차례 점수를 쌓고, 1이 나오기 전에 멈춰 저장하며 먼저 30점에 도달하는 고전 주사위 게임입니다. |
+| 2026-07-17 | 시계 솔리테어 | 왕 더미에서 시작해 열린 카드 숫자의 더미로 이동하며, 왕 네 장이 먼저 나오기 전에 모든 카드를 여는 고전 카드 운세 게임입니다. |
+| 2026-07-16 | 루도 미니 | 주사위에서 6을 굴려 말을 출발시키고, 상대 말을 잡으며 한 바퀴를 정확히 돌아 모든 말을 먼저 도착시키는 고전 경주 게임입니다. |
+| 2026-07-15 | 불가리아 솔리테어 | 45장의 카드를 여러 더미로 나누고, 매 차례 각 더미에서 한 장씩 빼 새 더미를 만들며 1부터 9까지 계단 모양을 완성하는 고전 카드 퍼즐입니다. |
+| 2026-07-14 | 몬테카를로 솔리테어 | 5x5 카드판에서 같은 숫자의 이웃한 두 장을 치우고 남은 카드를 당겨 채우며 모든 카드를 없애는 고전 카드 퍼즐입니다. |
+| 2026-07-13 | 여우와 사냥개 | 여우를 대각선으로 움직여 사냥개 네 마리의 포위망을 빠져나가고, 사냥개는 아래쪽 대각선 이동으로 여우를 가두는 고전 추격 게임입니다. |
+| 2026-07-12 | 왕실 우르 게임 | 네 개의 이진 주사위를 굴려 다섯 말을 전진시키고, 꽃무늬 칸의 추가 차례와 잡기를 활용해 먼저 모두 도착시키는 고대 경주 게임입니다. |
 
 ## 최근 게임 화면
 
-### 오목
+### 라틴 사각형
 
-![오목 게임 화면](daily/2026-07-08-gomoku/screenshot.svg)
+![라틴 사각형 게임 화면](daily/2026-07-21-latin-square/screenshot.png)
 
-### 님 게임
+### 마방진 15
 
-![님 게임 화면](daily/2026-06-10-nim/screenshot.svg)
+![마방진 15 게임 화면](daily/2026-07-20-magic-square/screenshot.png)
 
-### 마스터마인드
+### 카드 열 맞추기
 
-![마스터마인드 게임 화면](daily/2026-06-09-mastermind/screenshot.png)
+![카드 열 맞추기 게임 화면](daily/2026-07-19-poker-squares/screenshot.png)
 
-### 페그 솔리테어
+### 돼지 주사위
 
-![페그 솔리테어 게임 화면](daily/2026-06-08-peg-solitaire/screenshot.png)
+![돼지 주사위 게임 화면](daily/2026-07-18-pig-dice/screenshot.png)
 
-### 달 착륙선
+### 시계 솔리테어
 
-![달 착륙선 게임 화면](daily/2026-06-07-lunar-lander/screenshot.png)
+![시계 솔리테어 게임 화면](daily/2026-07-17-clock-solitaire/screenshot.png)
 
-### 하노이의 탑
+### 루도 미니
 
-![하노이의 탑 게임 화면](daily/2026-06-06-tower-of-hanoi/screenshot.png)
+![루도 미니 게임 화면](daily/2026-07-16-mini-ludo/screenshot.png)
 
-### 님 게임
+### 불가리아 솔리테어
 
-![님 게임 화면](daily/2026-06-05-nim/screenshot.png)
+![불가리아 솔리테어 게임 화면](daily/2026-07-15-bulgarian-solitaire/screenshot.png)
 
-### 소코반 창고 정리
+### 몬테카를로 솔리테어
 
-![소코반 창고 정리 게임 화면](daily/2026-06-01-sokoban/screenshot.png)
+![몬테카를로 솔리테어 게임 화면](daily/2026-07-14-monte-carlo-solitaire/screenshot.png)
 
-### 미로 탈출
+### 여우와 사냥개
 
-![미로 탈출 게임 화면](daily/2026-05-31-maze-escape/screenshot.png)
+![여우와 사냥개 게임 화면](daily/2026-07-13-fox-and-hounds/screenshot.png)
 
-### 낙하 블록
+### 왕실 우르 게임
 
-![낙하 블록 게임 화면](daily/2026-05-28-falling-blocks/screenshot.png)
+![왕실 우르 게임 화면](daily/2026-07-12-royal-ur/screenshot.png)
 
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
-node daily/2026-07-08-gomoku/game-logic.test.js
-node daily/2026-06-10-nim/game-logic.test.js
-node daily/2026-06-09-mastermind/game-logic.test.js
-node daily/2026-06-08-peg-solitaire/game-logic.test.js
-node daily/2026-06-07-lunar-lander/game-logic.test.js
-node daily/2026-06-06-tower-of-hanoi/game-logic.test.js
-node daily/2026-06-05-nim/game-logic.test.js
-node daily/2026-06-01-sokoban/game-logic.test.js
-node daily/2026-05-31-maze-escape/game-logic.test.js
-node daily/2026-05-28-falling-blocks/game-logic.test.js
+node daily/2026-07-21-latin-square/game-logic.test.js
+node daily/2026-07-20-magic-square/game-logic.test.js
+node daily/2026-07-19-poker-squares/game-logic.test.js
+node daily/2026-07-18-pig-dice/game-logic.test.js
+node daily/2026-07-17-clock-solitaire/game-logic.test.js
+node daily/2026-07-16-mini-ludo/game-logic.test.js
+node daily/2026-07-15-bulgarian-solitaire/game-logic.test.js
+node daily/2026-07-14-monte-carlo-solitaire/game-logic.test.js
+node daily/2026-07-13-fox-and-hounds/game-logic.test.js
+node daily/2026-07-12-royal-ur/game-logic.test.js
 ```

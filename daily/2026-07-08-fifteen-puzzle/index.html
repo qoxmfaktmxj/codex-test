@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>십오 퍼즐</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="intro" aria-labelledby="game-title">
+      <p class="eyebrow">고전 슬라이딩 퍼즐</p>
+      <h1 id="game-title">십오 퍼즐</h1>
+      <p class="summary">빈칸과 맞닿은 숫자를 밀어 1부터 15까지 차례대로 정렬하세요. 짧은 수로 완성할수록 좋습니다.</p>
+    </section>
+
+    <section class="score-strip" aria-label="게임 상태">
+      <div>
+        <span class="label">이동</span>
+        <strong id="moves">0</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+      <div>
+        <span class="label">목표</span>
+        <strong>1-15</strong>
+      </div>
+    </section>
+
+    <section class="play-area" aria-label="십오 퍼즐 판">
+      <div id="board" class="board" aria-label="퍼즐 타일"></div>
+      <p id="message" class="message">빈칸 옆의 숫자를 눌러 순서대로 맞추세요.</p>
+      <div class="controls">
+        <button id="shuffle-button" type="button">섞기</button>
+        <button id="reset-button" type="button">처음 배치</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

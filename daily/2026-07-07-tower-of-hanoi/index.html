@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하노이의 탑</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">고전 원반 이동 퍼즐</p>
+      <h1 id="game-title">하노이의 탑</h1>
+      <p class="summary">작은 원반 위에 큰 원반을 올리지 않으며, 모든 원반을 오른쪽 기둥으로 옮기세요. 원반 하나씩만 움직일 수 있습니다.</p>
+    </section>
+
+    <section class="status-panel" aria-label="게임 상태">
+      <div>
+        <span class="label">원반</span>
+        <strong id="disk-count">4</strong>
+      </div>
+      <div>
+        <span class="label">이동</span>
+        <strong id="moves">0</strong>
+      </div>
+      <div>
+        <span class="label">최소 이동</span>
+        <strong id="minimum-moves">15</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+    </section>
+
+    <section class="board-panel" aria-label="하노이의 탑 말판">
+      <div id="board" class="board"></div>
+      <p id="message" class="message">옮길 원반이 있는 기둥을 고르세요.</p>
+      <div class="controls">
+        <label for="disk-select">원반 수</label>
+        <select id="disk-select">
+          <option value="3">3개</option>
+          <option value="4" selected>4개</option>
+          <option value="5">5개</option>
+          <option value="6">6개</option>
+        </select>
+        <button id="reset-button" type="button">새 게임</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

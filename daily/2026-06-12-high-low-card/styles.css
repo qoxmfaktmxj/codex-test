@@ -1,0 +1,168 @@
+:root {
+  color-scheme: light;
+  --ink: #202328;
+  --paper: #fffdf5;
+  --line: #d8cab1;
+  --green: #236b4f;
+  --red: #b84a4a;
+  --gold: #d6a23c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #e7efe8;
+  color: var(--ink);
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+}
+
+.game-shell {
+  width: min(94vw, 760px);
+  padding: 24px;
+  border: 4px solid #263932;
+  border-radius: 18px;
+  background: var(--paper);
+  box-shadow: 0 18px 44px rgba(38, 57, 50, 0.22);
+}
+
+.hero {
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #66746d;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.7rem;
+}
+
+.intro {
+  max-width: 560px;
+  margin: 10px auto 18px;
+  line-height: 1.55;
+}
+
+.score-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.score-panel div,
+.table {
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  background: #fff8e9;
+}
+
+.score-panel div {
+  padding: 10px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #68736b;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.table {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+  padding: 22px;
+  background:
+    linear-gradient(135deg, rgba(35, 107, 79, 0.12), rgba(214, 162, 60, 0.13)),
+    #fffaf0;
+}
+
+.card-area {
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  width: 140px;
+  aspect-ratio: 3 / 4;
+  border: 4px solid #2b342f;
+  border-radius: 16px;
+  background: #ffffff;
+  color: var(--red);
+  font-size: clamp(2.2rem, 8vw, 4rem);
+  box-shadow: 0 10px 0 #e9dfcf;
+}
+
+.message {
+  min-height: 28px;
+  margin: 0;
+  text-align: center;
+  font-weight: 800;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+button {
+  min-width: 116px;
+  min-height: 44px;
+  border: 2px solid #263932;
+  border-radius: 10px;
+  padding: 9px 14px;
+  background: var(--green);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+button:nth-child(2) {
+  background: #315c8a;
+}
+
+button:nth-child(3) {
+  background: var(--gold);
+  color: #1f241f;
+}
+
+#reset-button {
+  background: #3f4744;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+@media (max-width: 620px) {
+  .score-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    width: 118px;
+  }
+}

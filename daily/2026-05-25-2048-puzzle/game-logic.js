@@ -90,6 +90,7 @@ function emptyCells(board) {
 
 function pickRandom(randoms) {
   if (Array.isArray(randoms) && randoms.length > 0) return randoms.shift();
+  if (Array.isArray(randoms)) return 0;
   return Math.random();
 }
 

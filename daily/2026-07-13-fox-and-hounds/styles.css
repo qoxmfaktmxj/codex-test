@@ -1,0 +1,214 @@
+:root {
+  color: #242526;
+  background: #eef2f3;
+  font-family: "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background:
+    linear-gradient(140deg, rgba(28, 99, 126, 0.18), transparent 34%),
+    linear-gradient(320deg, rgba(199, 91, 58, 0.18), transparent 38%),
+    #eef2f3;
+}
+
+.game-shell {
+  width: min(980px, 100%);
+  display: grid;
+  grid-template-columns: minmax(250px, 0.85fr) minmax(380px, 1.15fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.intro {
+  padding: 18px 4px;
+}
+
+.date {
+  margin: 0 0 12px;
+  color: #5e6367;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 16px;
+  color: #1f4655;
+  font-size: clamp(3rem, 9vw, 5.8rem);
+  line-height: 0.96;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+
+.intro p:last-child {
+  max-width: 420px;
+  margin: 0;
+  color: #4a5155;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+
+.panel {
+  border: 2px solid #242526;
+  border-radius: 8px;
+  padding: 22px;
+  background: rgba(255, 253, 247, 0.94);
+  box-shadow: 10px 10px 0 #1f4655;
+}
+
+.status-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.status-row > div {
+  min-height: 72px;
+  padding: 10px;
+  border: 1px solid #d8d3c6;
+  border-radius: 6px;
+  background: #f5efe2;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #687074;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+strong {
+  display: block;
+  font-size: 1rem;
+  word-break: keep-all;
+}
+
+.board {
+  width: min(100%, 520px);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border: 3px solid #242526;
+  background: #242526;
+  gap: 2px;
+}
+
+.square {
+  min-width: 0;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  display: grid;
+  place-items: center;
+  color: #fffdf7;
+  font-size: clamp(1rem, 4vw, 2rem);
+  font-weight: 900;
+  line-height: 1;
+  cursor: default;
+}
+
+.square.light {
+  background: #efe2cc;
+}
+
+.square.dark {
+  background: #42606d;
+}
+
+.square.fox {
+  background: #c85f3d;
+}
+
+.square.hound {
+  background: #293d46;
+}
+
+.square.target {
+  color: #242526;
+  background: #f4c95d;
+  cursor: pointer;
+}
+
+.square.last {
+  box-shadow: inset 0 0 0 4px #f4c95d;
+}
+
+.square:hover:not(:disabled),
+.square:focus-visible {
+  outline: 3px solid #c85f3d;
+  outline-offset: -5px;
+}
+
+.message {
+  min-height: 52px;
+  margin: 20px 0 16px;
+  padding: 13px 14px;
+  border-radius: 6px;
+  background: #1f4655;
+  color: #fffdf7;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 18px;
+  background: #c85f3d;
+  color: #fffdf7;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background: #a9492e;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+@media (max-width: 760px) {
+  body {
+    padding: 18px;
+    place-items: start center;
+  }
+
+  .game-shell {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  h1 {
+    font-size: clamp(2.8rem, 16vw, 4.2rem);
+  }
+
+  .status-row {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 16px;
+    box-shadow: 6px 6px 0 #1f4655;
+  }
+}

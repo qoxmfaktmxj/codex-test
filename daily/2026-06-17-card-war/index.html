@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>카드 전쟁</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">카드 전쟁</h1>
+        <p class="intro">나와 컴퓨터가 한 장씩 카드를 뽑아 더 높은 등급으로 라운드 점수를 가져가는 고전 카드 게임입니다.</p>
+      </section>
+
+      <section class="score-panel" aria-label="게임 상태">
+        <div>
+          <span class="label">라운드</span>
+          <strong><span id="round">0</span>/<span id="round-limit">10</span></strong>
+        </div>
+        <div>
+          <span class="label">내 점수</span>
+          <strong id="player-score">0</strong>
+        </div>
+        <div>
+          <span class="label">컴퓨터 점수</span>
+          <strong id="computer-score">0</strong>
+        </div>
+        <div>
+          <span class="label">남은 카드</span>
+          <strong id="remaining-cards">52</strong>
+        </div>
+      </section>
+
+      <section class="table-panel" aria-label="카드 전쟁 판">
+        <div class="duel">
+          <article class="side">
+            <span class="side-label">나</span>
+            <div id="player-card" class="card back">?</div>
+          </article>
+          <div class="versus">대결</div>
+          <article class="side">
+            <span class="side-label">컴퓨터</span>
+            <div id="computer-card" class="card back">?</div>
+          </article>
+        </div>
+        <p id="message" class="message" role="status">카드 뽑기를 눌러 더 높은 카드를 겨루세요.</p>
+      </section>
+
+      <section class="actions" aria-label="게임 조작">
+        <button type="button" id="draw-button">카드 뽑기</button>
+        <button type="button" id="reset-button">다시 시작</button>
+      </section>
+
+      <section class="history-panel" aria-label="최근 라운드">
+        <h2>최근 라운드</h2>
+        <ol id="history-list"></ol>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

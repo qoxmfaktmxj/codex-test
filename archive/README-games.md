@@ -26,8 +26,54 @@
 | 2026-05-24 | 네 줄 잇기 | 열을 골라 말을 떨어뜨리고 같은 색 말 네 개를 먼저 잇는 보드 게임입니다. |
 | 2026-05-25 | 2048 퍼즐 | 같은 숫자 타일을 밀어 합치고 2048 타일을 만드는 숫자 퍼즐입니다. |
 | 2026-05-26 | 오셀로 | 흑돌과 백돌을 번갈아 놓고 상대 돌을 뒤집어 더 많은 돌을 남기는 보드 게임입니다. |
+| 2026-05-28 | 낙하 블록 | 떨어지는 블록을 회전하고 옮겨 가로줄을 채우며 점수를 올리는 퍼즐 게임입니다. |
+| 2026-05-31 | 미로 탈출 | 열쇠를 찾아 출구 문을 열고 짧은 미로를 빠져나가는 퍼즐 게임입니다. |
+| 2026-06-01 | 소코반 창고 정리 | 상자를 밀어 모든 목표 칸 위에 올리는 창고 정리 퍼즐 게임입니다. |
+| 2026-06-05 | 님 게임 | 돌을 1개부터 3개까지 가져가며 마지막 돌을 가져가기 위해 컴퓨터와 수 싸움을 하는 게임입니다. |
+| 2026-06-06 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 모든 원반을 오른쪽 기둥으로 옮기는 퍼즐 게임입니다. |
+| 2026-06-07 | 달 착륙선 | 제한된 연료로 추력을 조절해 안전 속도로 달 표면에 내려앉는 고전 착륙 게임입니다. |
+| 2026-06-08 | 페그 솔리테어 | 말 하나를 건너 빈칸으로 뛰어넘으며 말을 제거하고 마지막 말 하나를 남기는 퍼즐 게임입니다. |
+| 2026-06-09 | 마스터마인드 | 여섯 색 중 네 칸의 비밀 코드를 추리하고 위치와 색 힌트로 정답을 좁혀 가는 추리 게임입니다. |
+| 2026-06-10 | 님 게임 | 한 더미에서 원하는 만큼 돌을 가져가며 마지막 돌을 가져가는 사람이 이기는 게임입니다. |
+| 2026-06-11 | 돼지 주사위 | 주사위를 굴려 점수를 쌓고 1이 나오기 전에 저장해 먼저 100점에 도달하는 게임입니다. |
+| 2026-06-12 | 높낮이 카드 | 현재 카드보다 다음 카드가 높을지 낮을지 맞히며 연속 정답 기록에 도전하는 카드 게임입니다. |
+| 2026-06-13 | 주사위 포커 | 다섯 주사위를 세 번까지 굴리고 고전 포커 조합을 골라 최고 점수를 노리는 게임입니다. |
+| 2026-06-14 | 미니 스도쿠 | 4x4 칸에 1부터 4까지 숫자를 채워 행, 열, 작은 구역이 겹치지 않게 만드는 퍼즐입니다. |
+| 2026-06-15 | 점과 상자 | 점 사이에 선을 번갈아 긋고 네 변이 닫힌 칸을 차지해 더 많은 상자를 모으는 종이 게임입니다. |
+| 2026-06-16 | 만칼라 | 내 쪽 홈의 돌을 반시계 방향으로 나누어 놓고 저장소에 더 많은 돌을 모으는 고전 보드 게임입니다. |
+| 2026-06-17 | 카드 전쟁 | 나와 컴퓨터가 한 장씩 카드를 뽑아 더 높은 등급으로 라운드 점수를 가져가는 고전 카드 게임입니다. |
+| 2026-06-18 | 색깔 채우기 | 왼쪽 위 영역의 색을 바꾸며 이어진 칸을 흡수해 제한 이동 안에 모든 칸을 같은 색으로 만드는 퍼즐입니다. |
+| 2026-06-19 | 뱀과 사다리 | 주사위를 굴려 사다리는 오르고 뱀은 피하며 36번 칸에 먼저 도착하는 고전 보드 게임입니다. |
+| 2026-06-20 | 오목 | 흑돌과 백돌을 번갈아 놓고 가로, 세로, 대각선으로 다섯 돌을 먼저 잇는 고전 바둑판 게임입니다. |
+| 2026-06-21 | 컵 속 공 찾기 | 세 개의 컵을 섞은 뒤 공이 숨어 있는 컵을 기억해 맞히는 고전 셸 게임입니다. |
+| 2026-06-22 | 같은 블록 지우기 | 붙어 있는 같은 색 블록 2개 이상을 골라 지우고 남은 블록을 아래와 왼쪽으로 모아 점수를 쌓는 퍼즐입니다. |
+| 2026-06-23 | 기사 순회 | 체스 기사를 ㄱ자 모양으로 움직여 5x5 말판의 모든 칸을 한 번씩 방문하는 고전 퍼즐입니다. |
+| 2026-06-24 | 여덟 퀸 | 체스 말판에 여덟 퀸을 놓아 서로 같은 가로, 세로, 대각선에서 공격하지 못하게 만드는 고전 퍼즐입니다. |
+| 2026-06-25 | 강 건너기 | 농부가 작은 배로 늑대, 염소, 양배추를 모두 안전하게 오른쪽 강가로 옮기는 고전 퍼즐입니다. |
+| 2026-06-26 | 24 만들기 | 네 숫자를 한 번씩 쓰고 사칙연산을 조합해 정확히 24를 만드는 고전 숫자 퍼즐입니다. |
+| 2026-06-27 | 크랩스 주사위 | 두 주사위를 굴려 첫 굴림의 행운을 노리거나, 정해진 포인트를 7보다 먼저 다시 만드는 고전 주사위 게임입니다. |
+| 2026-06-28 | 보석 맞추기 | 붙어 있는 보석 두 개를 바꿔 같은 색 보석 3개를 한 줄로 만들고 제한된 이동 안에 점수를 쌓는 고전 퍼즐입니다. |
+| 2026-06-29 | 서른하나 세기 | 1개부터 3개까지 숫자를 이어 부르며 31을 말하지 않도록 수를 조절하는 고전 숫자 게임입니다. |
+| 2026-06-30 | 불 끄기 | 칸을 누르면 십자 모양의 불이 함께 바뀌는 5x5 말판에서 모든 불을 끄는 고전 논리 퍼즐입니다. |
+| 2026-07-01 | 전함 찾기 | 5x5 바다 격자에 숨은 세 척의 전함을 제한된 포탄 안에 모두 찾아 격침하는 고전 해전 추리 게임입니다. |
+| 2026-07-02 | 독 초콜릿 피하기 | 고른 조각부터 오른쪽 아래가 모두 사라지는 초콜릿 판에서 독이 든 왼쪽 위 조각을 피하는 고전 전략 게임입니다. |
+| 2026-07-03 | 상자 닫기 | 두 주사위의 합과 같은 열린 숫자를 골라 닫고, 더 이상 조합이 없기 전에 모든 숫자를 없애는 고전 주사위 게임입니다. |
+| 2026-07-04 | 301 다트 | 한 라운드에 세 번 던져 301점을 정확히 0점까지 줄이고, 마지막 점수는 더블 구역으로 끝내는 고전 펍 다트 게임입니다. |
+| 2026-07-05 | 에이스 듀스 | 펼쳐진 두 카드 사이에 다음 카드 숫자가 들어올지 배팅하며 목표 칩을 모으는 고전 카드 게임입니다. |
+| 2026-07-06 | 마스터마인드 | 여섯 가지 색으로 된 네 칸 암호를 추리하고, 정확한 위치와 색만 맞은 힌트로 정답을 좁히는 고전 추리 게임입니다. |
+| 2026-07-07 | 하노이의 탑 | 작은 원반 위에 큰 원반을 올리지 않으며 세 기둥 사이에서 모든 원반을 오른쪽으로 옮기는 고전 퍼즐 게임입니다. |
+| 2026-07-08 | 십오 퍼즐 | 빈칸 옆 숫자를 밀어 4x4 말판의 숫자를 1부터 15까지 차례대로 맞추는 고전 슬라이딩 퍼즐입니다. |
+| 2026-07-09 | 거위 게임 | 두 주사위를 굴려 특수 칸을 지나며 32번 칸에 정확히 도착해야 하는 고전 경주 보드게임입니다. |
+| 2026-07-10 | 헥사폰 | 세 개의 졸로 3x3 말판에서 전진과 대각선 잡기를 겨루며, 먼저 끝줄에 닿거나 상대를 막는 고전 미니 체스 게임입니다. |
+| 2026-07-11 | 타파탄 | 세 개의 말을 3x3 교차점에 놓고 선을 따라 움직여 한 줄을 먼저 완성하는 고전 삼목 보드게임입니다. |
+
+| 2026-07-08 | 오목 | 흑돌과 백돌을 번갈아 놓고 가로, 세로, 대각선 중 한 줄에 다섯 돌을 먼저 잇는 보드 게임입니다. |
 
 ## 게임 화면
+
+### 오목
+
+![오목 게임 화면](../daily/2026-07-08-gomoku/screenshot.svg)
 
 ### 틱택토
 
@@ -109,9 +155,170 @@
 
 ![오셀로 게임 화면](../daily/2026-05-26-othello/screenshot.png)
 
+### 낙하 블록
+
+![낙하 블록 게임 화면](../daily/2026-05-28-falling-blocks/screenshot.png)
+
+### 미로 탈출
+
+![미로 탈출 게임 화면](../daily/2026-05-31-maze-escape/screenshot.png)
+
+### 소코반 창고 정리
+
+![소코반 창고 정리 게임 화면](../daily/2026-06-01-sokoban/screenshot.png)
+
+### 님 게임
+
+![님 게임 화면](../daily/2026-06-05-nim/screenshot.png)
+
+### 하노이의 탑
+
+![하노이의 탑 게임 화면](../daily/2026-06-06-tower-of-hanoi/screenshot.png)
+
+### 달 착륙선
+
+![달 착륙선 게임 화면](../daily/2026-06-07-lunar-lander/screenshot.png)
+
+### 페그 솔리테어
+
+![페그 솔리테어 게임 화면](../daily/2026-06-08-peg-solitaire/screenshot.png)
+
+### 마스터마인드
+
+![마스터마인드 게임 화면](../daily/2026-06-09-mastermind/screenshot.png)
+
+### 님 게임
+
+![님 게임 화면](../daily/2026-06-10-nim/screenshot.svg)
+
+### 돼지 주사위
+
+![돼지 주사위 게임 화면](../daily/2026-06-11-pig-dice/screenshot.png)
+
+### 높낮이 카드
+
+![높낮이 카드 게임 화면](../daily/2026-06-12-high-low-card/screenshot.png)
+
+### 주사위 포커
+
+![주사위 포커 게임 화면](../daily/2026-06-13-dice-poker/screenshot.png)
+
+### 미니 스도쿠
+
+![미니 스도쿠 게임 화면](../daily/2026-06-14-mini-sudoku/screenshot.png)
+
+### 점과 상자
+
+![점과 상자 게임 화면](../daily/2026-06-15-dots-and-boxes/screenshot.png)
+
+### 만칼라
+
+![만칼라 게임 화면](../daily/2026-06-16-mancala/screenshot.png)
+
+### 카드 전쟁
+
+![카드 전쟁 게임 화면](../daily/2026-06-17-card-war/screenshot.png)
+
+### 색깔 채우기
+
+![색깔 채우기 게임 화면](../daily/2026-06-18-color-flood/screenshot.png)
+
+### 뱀과 사다리
+
+![뱀과 사다리 게임 화면](../daily/2026-06-19-snakes-and-ladders/screenshot.png)
+
+### 오목
+
+![오목 게임 화면](../daily/2026-06-20-gomoku/screenshot.png)
+
+### 컵 속 공 찾기
+
+![컵 속 공 찾기 게임 화면](../daily/2026-06-21-shell-game/screenshot.png)
+
+### 같은 블록 지우기
+
+![같은 블록 지우기 게임 화면](../daily/2026-06-22-samegame/screenshot.png)
+
+### 기사 순회
+
+![기사 순회 게임 화면](../daily/2026-06-23-knights-tour/screenshot.png)
+
+### 여덟 퀸
+
+![여덟 퀸 게임 화면](../daily/2026-06-24-eight-queens/screenshot.png)
+
+### 강 건너기
+
+![강 건너기 게임 화면](../daily/2026-06-25-river-crossing/screenshot.png)
+
+### 24 만들기
+
+![24 만들기 게임 화면](../daily/2026-06-26-make-24/screenshot.png)
+
+### 크랩스 주사위
+
+![크랩스 주사위 게임 화면](../daily/2026-06-27-craps-dice/screenshot.png)
+
+### 보석 맞추기
+
+![보석 맞추기 게임 화면](../daily/2026-06-28-match-three/screenshot.png)
+
+### 서른하나 세기
+
+![서른하나 세기 게임 화면](../daily/2026-06-29-count-to-31/screenshot.png)
+
+### 불 끄기
+
+![불 끄기 게임 화면](../daily/2026-06-30-lights-out/screenshot.png)
+
+### 전함 찾기
+
+![전함 찾기 게임 화면](../daily/2026-07-01-battleship/screenshot.png)
+
+### 독 초콜릿 피하기
+
+![독 초콜릿 피하기 게임 화면](../daily/2026-07-02-chomp/screenshot.png)
+
+### 상자 닫기
+
+![상자 닫기 게임 화면](../daily/2026-07-03-shut-the-box/screenshot.png)
+
+### 301 다트
+
+![301 다트 게임 화면](../daily/2026-07-04-darts-301/screenshot.png)
+
+### 에이스 듀스
+
+![에이스 듀스 게임 화면](../daily/2026-07-05-acey-deucey/screenshot.png)
+
+### 마스터마인드
+
+![마스터마인드 게임 화면](../daily/2026-07-06-mastermind/screenshot.png)
+
+### 하노이의 탑
+
+![하노이의 탑 게임 화면](../daily/2026-07-07-tower-of-hanoi/screenshot.png)
+
+### 십오 퍼즐
+
+![십오 퍼즐 게임 화면](../daily/2026-07-08-fifteen-puzzle/screenshot.png)
+
+### 거위 게임
+
+![거위 게임 화면](../daily/2026-07-09-game-of-goose/screenshot.png)
+
+### 헥사폰
+
+![헥사폰 게임 화면](../daily/2026-07-10-hexapawn/screenshot.png)
+
+### 타파탄
+
+![타파탄 게임 화면](../daily/2026-07-11-tapatan/screenshot.png)
+
 ## 테스트
 
 ```bash
+node daily/2026-07-08-gomoku/game-logic.test.js
 node daily/2026-04-24-tic-tac-toe/game-logic.test.js
 node daily/2026-04-27-memory-match/game-logic.test.js
 node daily/2026-04-27-number-baseball/game-logic.test.js
@@ -132,4 +339,44 @@ node daily/2026-05-23-blackjack/game-logic.test.js
 node daily/2026-05-24-connect-four/game-logic.test.js
 node daily/2026-05-25-2048-puzzle/game-logic.test.js
 node daily/2026-05-26-othello/game-logic.test.js
+node daily/2026-05-28-falling-blocks/game-logic.test.js
+node daily/2026-05-31-maze-escape/game-logic.test.js
+node daily/2026-06-01-sokoban/game-logic.test.js
+node daily/2026-06-05-nim/game-logic.test.js
+node daily/2026-06-06-tower-of-hanoi/game-logic.test.js
+node daily/2026-06-07-lunar-lander/game-logic.test.js
+node daily/2026-06-08-peg-solitaire/game-logic.test.js
+node daily/2026-06-09-mastermind/game-logic.test.js
+node daily/2026-06-10-nim/game-logic.test.js
+node daily/2026-06-11-pig-dice/game-logic.test.js
+node daily/2026-06-12-high-low-card/game-logic.test.js
+node daily/2026-06-13-dice-poker/game-logic.test.js
+node daily/2026-06-14-mini-sudoku/game-logic.test.js
+node daily/2026-06-15-dots-and-boxes/game-logic.test.js
+node daily/2026-06-16-mancala/game-logic.test.js
+node daily/2026-06-17-card-war/game-logic.test.js
+node daily/2026-06-18-color-flood/game-logic.test.js
+node daily/2026-06-19-snakes-and-ladders/game-logic.test.js
+node daily/2026-06-20-gomoku/game-logic.test.js
+node daily/2026-06-21-shell-game/game-logic.test.js
+node daily/2026-06-22-samegame/game-logic.test.js
+node daily/2026-06-23-knights-tour/game-logic.test.js
+node daily/2026-06-24-eight-queens/game-logic.test.js
+node daily/2026-06-25-river-crossing/game-logic.test.js
+node daily/2026-06-26-make-24/game-logic.test.js
+node daily/2026-06-27-craps-dice/game-logic.test.js
+node daily/2026-06-28-match-three/game-logic.test.js
+node daily/2026-06-29-count-to-31/game-logic.test.js
+node daily/2026-06-30-lights-out/game-logic.test.js
+node daily/2026-07-01-battleship/game-logic.test.js
+node daily/2026-07-02-chomp/game-logic.test.js
+node daily/2026-07-03-shut-the-box/game-logic.test.js
+node daily/2026-07-04-darts-301/game-logic.test.js
+node daily/2026-07-05-acey-deucey/game-logic.test.js
+node daily/2026-07-06-mastermind/game-logic.test.js
+node daily/2026-07-07-tower-of-hanoi/game-logic.test.js
+node daily/2026-07-08-fifteen-puzzle/game-logic.test.js
+node daily/2026-07-09-game-of-goose/game-logic.test.js
+node daily/2026-07-10-hexapawn/game-logic.test.js
+node daily/2026-07-11-tapatan/game-logic.test.js
 ```

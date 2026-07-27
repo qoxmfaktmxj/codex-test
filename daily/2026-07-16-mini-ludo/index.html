@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>루도 미니</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="intro" aria-labelledby="title">
+      <p class="date">2026년 7월 16일</p>
+      <h1 id="title">루도 미니</h1>
+      <p>주사위로 말을 출발시키고 한 바퀴를 정확히 돌아 모든 말을 먼저 도착시키는 고전 경주 게임입니다.</p>
+    </section>
+
+    <section class="panel" aria-label="루도 미니 말판">
+      <div class="status-row">
+        <div>
+          <span class="label">차례</span>
+          <strong id="turn">빨강</strong>
+        </div>
+        <div>
+          <span class="label">주사위</span>
+          <strong id="roll">대기</strong>
+        </div>
+        <div>
+          <span class="label">상태</span>
+          <strong id="status">진행 중</strong>
+        </div>
+      </div>
+
+      <div id="board" class="board" aria-label="20칸 루도 길"></div>
+
+      <div class="player-area">
+        <section class="player-card red" aria-label="빨강 말">
+          <h2>빨강</h2>
+          <div id="red-pieces" class="pieces"></div>
+        </section>
+        <section class="player-card blue" aria-label="파랑 말">
+          <h2>파랑</h2>
+          <div id="blue-pieces" class="pieces"></div>
+        </section>
+      </div>
+
+      <p id="message" class="message" aria-live="polite">주사위를 굴려 말을 출발시키세요. 6이 나오면 한 번 더 합니다.</p>
+
+      <div class="actions">
+        <button id="roll-button" type="button">주사위 굴리기</button>
+        <button id="reset-button" type="button">새 판</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

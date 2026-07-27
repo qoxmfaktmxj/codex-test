@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>카드 열 맞추기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="table" aria-labelledby="game-title">
+      <div class="title-row">
+        <div>
+          <p class="eyebrow">데일리 클래식 게임</p>
+          <h1 id="game-title">카드 열 맞추기</h1>
+        </div>
+        <div class="score-badge">총점 <strong data-total-score>0</strong></div>
+      </div>
+
+      <div class="play-area">
+        <div>
+          <div class="board" data-board aria-label="카드 말판"></div>
+          <div class="column-scores" data-column-scores aria-label="열 점수"></div>
+        </div>
+
+        <aside class="side-panel">
+          <div class="current-card">
+            <span>현재 카드</span>
+            <strong data-current-card>준비 중</strong>
+          </div>
+          <p class="message" data-message>카드를 빈칸에 놓으세요.</p>
+          <div class="row-scores" data-row-scores aria-label="행 점수"></div>
+          <button type="button" data-reset>새 판</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

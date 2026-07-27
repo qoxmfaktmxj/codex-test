@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마스터마인드</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">고전 암호 추리 게임</p>
+      <h1 id="game-title">마스터마인드</h1>
+      <p class="summary">여섯 가지 색으로 된 네 칸 암호를 제한된 기회 안에 맞히세요. 정확한 위치와 색만 맞은 개수를 보고 다음 추리를 좁혀 갑니다.</p>
+    </section>
+
+    <section class="status-panel" aria-label="게임 상태">
+      <div>
+        <span class="label">차례</span>
+        <strong id="turn">1</strong>
+      </div>
+      <div>
+        <span class="label">남은 기회</span>
+        <strong id="remaining">8</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+    </section>
+
+    <section class="board-panel" aria-label="암호 입력">
+      <div id="guess-row" class="guess-row" aria-label="현재 추리"></div>
+      <div id="palette" class="palette" aria-label="색 선택"></div>
+      <p id="message" class="message">네 칸의 색을 고르고 암호를 추리하세요.</p>
+      <div class="controls">
+        <button id="submit-button" type="button">추리하기</button>
+        <button id="clear-button" type="button">지우기</button>
+        <button id="reset-button" type="button">새 암호</button>
+      </div>
+    </section>
+
+    <section class="history-panel" aria-label="추리 기록">
+      <span class="label">추리 기록</span>
+      <ol id="history" class="history-list"></ol>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

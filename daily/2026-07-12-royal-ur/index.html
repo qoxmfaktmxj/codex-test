@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>왕실 우르 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="header">
+      <div>
+        <p class="eyebrow">2026-07-12 데일리 클래식</p>
+        <h1>왕실 우르 게임</h1>
+      </div>
+      <button id="resetButton" type="button">새 게임</button>
+    </section>
+
+    <section class="status-panel" aria-live="polite">
+      <div>
+        <span class="label">현재 차례</span>
+        <strong id="turnText">내 차례</strong>
+      </div>
+      <div>
+        <span class="label">주사위</span>
+        <strong id="diceText">대기</strong>
+      </div>
+      <div>
+        <span class="label">도착</span>
+        <strong id="scoreText">나 0 · 컴퓨터 0</strong>
+      </div>
+    </section>
+
+    <section class="message-area">
+      <p id="messageText">주사위를 굴려 말을 전진하세요.</p>
+      <div id="diceFaces" class="dice-faces" aria-label="주사위 눈"></div>
+      <button id="rollButton" type="button">주사위 굴리기</button>
+    </section>
+
+    <section class="board-wrap" aria-label="왕실 우르 게임판">
+      <div id="board" class="board"></div>
+    </section>
+
+    <section class="piece-yards">
+      <div class="yard">
+        <span class="label">내 시작 말</span>
+        <div id="playerHome" class="tokens"></div>
+      </div>
+      <div class="yard">
+        <span class="label">컴퓨터 시작 말</span>
+        <div id="computerHome" class="tokens"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

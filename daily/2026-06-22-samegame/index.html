@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>같은 블록 지우기</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="intro" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">같은 블록 지우기</h1>
+        <p class="summary">붙어 있는 같은 색 블록을 골라 지우고, 남은 블록을 아래와 왼쪽으로 모아 높은 점수를 노리세요.</p>
+      </section>
+
+      <section class="score-panel" aria-label="게임 상태">
+        <div>
+          <span>점수</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span>최근 제거</span>
+          <strong id="removed">0</strong>
+        </div>
+        <button id="restart-button" type="button">새 판</button>
+      </section>
+
+      <p id="status-message" class="status" role="status">붙어 있는 같은 색 블록을 지우세요.</p>
+      <section id="board" class="board" aria-label="같은 블록 지우기 판"></section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

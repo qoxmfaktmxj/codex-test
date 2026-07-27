@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>불 끄기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">고전 논리 퍼즐</p>
+      <h1 id="game-title">불 끄기</h1>
+      <p class="summary">칸을 누르면 그 칸과 위, 아래, 왼쪽, 오른쪽 불이 함께 바뀝니다.</p>
+    </section>
+
+    <section class="status-panel" aria-label="게임 상태">
+      <div>
+        <span class="label">남은 불</span>
+        <strong id="light-count">13</strong>
+      </div>
+      <div>
+        <span class="label">누른 횟수</span>
+        <strong id="moves">0</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+    </section>
+
+    <section class="board-panel" aria-label="불 끄기 말판">
+      <div id="board" class="board"></div>
+    </section>
+
+    <section class="controls" aria-label="조작">
+      <p id="message" class="message">켜진 칸을 모두 끄세요. 칸을 누르면 십자 모양으로 바뀝니다.</p>
+      <button id="reset-button" class="reset-button" type="button">새 판</button>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

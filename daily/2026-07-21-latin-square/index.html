@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>라틴 사각형</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="game-panel" aria-labelledby="game-title">
+      <div class="title-row">
+        <div>
+          <p class="eyebrow">데일리 클래식 게임</p>
+          <h1 id="game-title">라틴 사각형</h1>
+        </div>
+        <div class="progress"><strong data-filled>6</strong><span>/16칸</span></div>
+      </div>
+
+      <div class="play-area">
+        <div>
+          <div class="board" data-board aria-label="라틴 사각형 말판"></div>
+          <p class="rule">각 행과 열에 1, 2, 3, 4가 한 번씩 들어가야 합니다.</p>
+        </div>
+
+        <aside class="side-panel">
+          <div class="numbers" data-numbers aria-label="놓을 숫자"></div>
+          <p class="message" data-message>숫자를 고르세요.</p>
+          <div class="actions">
+            <button type="button" data-clear>칸 비우기</button>
+            <button type="button" data-reset>새 판</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

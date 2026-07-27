@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>24 만들기</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <p class="eyebrow">데일리 클래식 게임</p>
+        <h1 id="game-title">24 만들기</h1>
+        <p class="summary">네 숫자를 한 번씩 쓰고 사칙연산을 조합해 정확히 24를 만드는 고전 숫자 퍼즐입니다.</p>
+      </section>
+
+      <section class="panel" aria-label="게임판">
+        <div class="status-row">
+          <div>
+            <span class="label">남은 숫자</span>
+            <strong id="tile-count">4개</strong>
+          </div>
+          <div>
+            <span class="label">상태</span>
+            <strong id="game-status">진행 중</strong>
+          </div>
+          <button id="next-button" type="button">새 문제</button>
+        </div>
+
+        <p id="message" class="message" aria-live="polite">숫자 두 개와 연산을 골라 24를 만드세요.</p>
+
+        <div id="tiles" class="tiles" aria-label="숫자 타일"></div>
+
+        <div id="operators" class="operators" aria-label="연산 선택">
+          <button type="button" data-operator="+">+</button>
+          <button type="button" data-operator="-">-</button>
+          <button type="button" data-operator="*">×</button>
+          <button type="button" data-operator="/">÷</button>
+        </div>
+
+        <div class="actions">
+          <button id="combine-button" type="button">계산하기</button>
+          <button id="undo-button" type="button">되돌리기</button>
+          <button id="reset-button" type="button">다시 시작</button>
+        </div>
+
+        <ol id="history" class="history" aria-label="계산 기록"></ol>
+      </section>
+    </main>
+
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상자 닫기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero" aria-labelledby="game-title">
+      <p class="eyebrow">고전 주사위 숫자 게임</p>
+      <h1 id="game-title">상자 닫기</h1>
+      <p class="summary">주사위 합계와 같은 열린 숫자를 골라 닫으세요. 더 이상 닫을 조합이 없으면 남은 숫자의 합이 점수가 됩니다.</p>
+    </section>
+
+    <section class="status-panel" aria-label="게임 상태">
+      <div>
+        <span class="label">주사위</span>
+        <strong id="dice-total">2</strong>
+      </div>
+      <div>
+        <span class="label">남은 점수</span>
+        <strong id="score">45</strong>
+      </div>
+      <div>
+        <span class="label">상태</span>
+        <strong id="status">진행 중</strong>
+      </div>
+    </section>
+
+    <section class="dice-panel" aria-label="주사위">
+      <div id="dice" class="dice-row"></div>
+      <button id="roll-button" class="primary-button" type="button">주사위 굴리기</button>
+    </section>
+
+    <section class="board-panel" aria-label="숫자 상자">
+      <div id="tiles" class="tiles"></div>
+    </section>
+
+    <section class="controls" aria-label="조작">
+      <p id="message" class="message">주사위를 굴리고 합계와 같은 열린 숫자를 닫으세요.</p>
+      <div class="button-row">
+        <button id="close-button" class="primary-button" type="button">선택 닫기</button>
+        <button id="hint-button" class="secondary-button" type="button">힌트</button>
+        <button id="reset-button" class="secondary-button" type="button">새 판</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

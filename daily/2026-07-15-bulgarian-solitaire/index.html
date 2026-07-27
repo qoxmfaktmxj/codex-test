@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>불가리아 솔리테어</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="intro" aria-labelledby="title">
+      <p class="date">2026년 7월 15일</p>
+      <h1 id="title">불가리아 솔리테어</h1>
+      <p>45장의 카드를 여러 더미로 나눈 뒤, 매 차례 각 더미에서 한 장씩 빼 새 더미를 만드세요.</p>
+    </section>
+
+    <section class="panel" aria-label="불가리아 솔리테어 카드 더미">
+      <div class="status-row">
+        <div>
+          <span class="label">이동</span>
+          <strong id="moves">0회</strong>
+        </div>
+        <div>
+          <span class="label">더미</span>
+          <strong id="pile-count">0개</strong>
+        </div>
+        <div>
+          <span class="label">상태</span>
+          <strong id="status">진행 중</strong>
+        </div>
+      </div>
+
+      <div id="piles" class="piles" aria-label="카드 더미"></div>
+
+      <p id="message" class="message" aria-live="polite">각 더미에서 한 장씩 빼고 새 더미로 모으세요.</p>
+
+      <div class="actions">
+        <button id="move" type="button">한 차례 진행</button>
+        <button id="reset" type="button">새 판</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
