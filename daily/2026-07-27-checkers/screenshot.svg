@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+  <rect width="960" height="640" fill="#f4f1e9"/>
+  <text x="480" y="72" text-anchor="middle" font-family="Arial" font-size="18" fill="#9b3d25">DAILY CLASSIC</text>
+  <text x="480" y="118" text-anchor="middle" font-family="Arial" font-size="42" font-weight="700" fill="#202124">미니 체커</text>
+  <text x="480" y="155" text-anchor="middle" font-family="Arial" font-size="18" fill="#202124">대각선으로 말을 움직여 상대 말을 모두 잡으세요.</text>
+  <text x="395" y="202" text-anchor="middle" font-family="Arial" font-size="20" fill="#202124">흑돌 6</text>
+  <text x="565" y="202" text-anchor="middle" font-family="Arial" font-size="20" fill="#202124">백돌 6</text>
+  <rect x="282" y="228" width="396" height="396" fill="#4d3328"/>
+  <g transform="translate(294 240)">
+    <path d="M0 0h60v60H0zm120 0h60v60h-60zm120 0h60v60h-60zm120 0h60v60h-60zM60 60h60v60H60zm120 0h60v60h-60zm120 0h60v60h-60zM0 120h60v60H0zm120 0h60v60h-60zm120 0h60v60h-60zM60 180h60v60H60zm120 0h60v60h-60zm120 0h60v60h-60zM0 240h60v60H0zm120 0h60v60h-60zm120 0h60v60h-60zM60 300h60v60H60zm120 0h60v60h-60zm120 0h60v60h-60z" fill="#a15b3c"/>
+    <g fill="#252525" stroke="#111" stroke-width="3"><circle cx="30" cy="30" r="20"/><circle cx="150" cy="30" r="20"/><circle cx="270" cy="30" r="20"/><circle cx="90" cy="90" r="20"/><circle cx="210" cy="90" r="20"/><circle cx="330" cy="90" r="20"/></g>
+    <g fill="#fbfbf6" stroke="#c6c0b4" stroke-width="3"><circle cx="30" cy="270" r="20"/><circle cx="150" cy="270" r="20"/><circle cx="270" cy="270" r="20"/><circle cx="90" cy="330" r="20"/><circle cx="210" cy="330" r="20"/><circle cx="330" cy="330" r="20"/></g>
+  </g>
+</svg>
