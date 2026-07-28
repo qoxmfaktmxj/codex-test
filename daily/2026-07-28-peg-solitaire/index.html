@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>페그 솔리테어</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="eyebrow">오늘의 고전 게임</p>
+      <h1>페그 솔리테어</h1>
+      <p>말 하나를 뛰어넘어 없애고, 마지막에 말 하나만 남기세요.</p>
+    </header>
+    <section class="summary" aria-label="게임 현황">
+      <span>남은 말 <strong data-remaining>32</strong>개</span>
+      <span data-status>진행 중</span>
+    </section>
+    <div class="board" data-board aria-label="페그 솔리테어 말판"></div>
+    <p class="message" data-message aria-live="polite"></p>
+    <button type="button" class="reset" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

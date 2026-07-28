@@ -1,0 +1,19 @@
+:root { color: #263238; background: #eef3eb; font-family: Arial, sans-serif; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; display: grid; place-items: center; margin: 0; padding: 24px; }
+.game { width: min(100%, 520px); text-align: center; }
+header h1 { margin: 6px 0; font-size: 32px; }
+header p { margin: 0; line-height: 1.5; }
+.eyebrow { color: #6a7f48; font-size: 12px; font-weight: 700; letter-spacing: 1px; }
+.summary { display: flex; justify-content: center; gap: 24px; margin: 20px 0; font-size: 17px; font-weight: 700; }
+.board { display: grid; grid-template-columns: repeat(7, 1fr); width: min(100%, 440px); aspect-ratio: 1; margin: 0 auto; padding: 10px; border: 8px solid #65513b; border-radius: 12px; background: #a87d50; box-shadow: inset 0 0 0 3px #d9b178; }
+.slot { display: grid; place-items: center; }
+.slot.invalid { background: #68744e; opacity: .28; }
+.cell { width: 76%; aspect-ratio: 1; border: 0; border-radius: 50%; cursor: pointer; }
+.cell.empty { background: #4f3c2c; box-shadow: inset 0 3px 5px #2a1d14; }
+.cell.peg { background: radial-gradient(circle at 32% 26%, #fff4cc, #d7ae64 35%, #7a4e22 74%); box-shadow: 0 3px 3px #543619; }
+.cell.selected { outline: 4px solid #f5df63; outline-offset: 3px; }
+.message { min-height: 24px; margin: 20px 0 14px; font-weight: 700; }
+.reset { border: 0; padding: 11px 18px; background: #405d46; color: #fff; font: inherit; cursor: pointer; }
+.reset:hover { background: #304936; }
+@media (max-width: 420px) { body { padding: 16px; } header h1 { font-size: 28px; } }
