@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>알케르케</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="eyebrow">오늘의 고전 게임 · 5×5 말잡기</p>
+      <h1>알케르케</h1>
+      <p>연결선을 따라 말을 옮기고, 상대 말을 뛰어넘어 모두 잡으세요.</p>
+    </header>
+    <section class="summary" aria-label="게임 현황">
+      <span>백돌이 잡은 말 <strong data-white-captured>0</strong></span>
+      <span>흑돌이 잡은 말 <strong data-black-captured>0</strong></span>
+      <strong class="turn" data-turn>백돌 차례</strong>
+    </section>
+    <div class="board-wrap">
+      <div class="board" data-board aria-label="알케르케 말판"></div>
+    </div>
+    <p class="message" data-message aria-live="polite"></p>
+    <p class="hint">잡을 수 있는 상대 말이 있으면 반드시 잡아야 합니다.</p>
+    <button type="button" class="reset" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

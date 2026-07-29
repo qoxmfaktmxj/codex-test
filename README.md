@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-07-29 | 알케르케 | 5x5 연결선 위에서 말을 한 칸 옮기거나 상대 말을 뛰어넘어 잡으며, 상대 말을 모두 없애는 고전 말잡기 게임입니다. |
 | 2026-07-28 | 페그 솔리테어 | 십자형 말판에서 말 하나를 뛰어넘어 없애며 마지막에 말 하나만 남기는 고전 퍼즐입니다. |
 | 2026-07-27 | 미니 체커 | 킹 승격과 필수·연속 잡기를 뺀 간단 규칙으로, 흑돌과 백돌을 대각선으로 움직여 상대 말을 모두 잡는 고전 보드게임입니다. |
 | 2026-07-21 | 라틴 사각형 | 4x4 말판에 1부터 4까지 숫자를 채워 각 행과 열에 같은 숫자가 한 번씩만 나오게 만드는 고전 숫자 퍼즐입니다. |
@@ -17,9 +18,12 @@
 | 2026-07-17 | 시계 솔리테어 | 왕 더미에서 시작해 열린 카드 숫자의 더미로 이동하며, 왕 네 장이 먼저 나오기 전에 모든 카드를 여는 고전 카드 운세 게임입니다. |
 | 2026-07-16 | 루도 미니 | 주사위에서 6을 굴려 말을 출발시키고, 상대 말을 잡으며 한 바퀴를 정확히 돌아 모든 말을 먼저 도착시키는 고전 경주 게임입니다. |
 | 2026-07-15 | 불가리아 솔리테어 | 45장의 카드를 여러 더미로 나누고, 매 차례 각 더미에서 한 장씩 빼 새 더미를 만들며 1부터 9까지 계단 모양을 완성하는 고전 카드 퍼즐입니다. |
-| 2026-07-14 | 몬테카를로 솔리테어 | 5x5 카드판에서 같은 숫자의 이웃한 두 장을 치우고 남은 카드를 당겨 채우며 모든 카드를 없애는 고전 카드 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 알케르케
+
+![알케르케 게임 화면](daily/2026-07-29-alquerque/screenshot.png)
 
 ### 페그 솔리테어
 
@@ -57,15 +61,12 @@
 
 ![불가리아 솔리테어 게임 화면](daily/2026-07-15-bulgarian-solitaire/screenshot.png)
 
-### 몬테카를로 솔리테어
-
-![몬테카를로 솔리테어 게임 화면](daily/2026-07-14-monte-carlo-solitaire/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-07-29-alquerque/game-logic.test.js
 node daily/2026-07-28-peg-solitaire/game-logic.test.js
 node daily/2026-07-27-checkers/game-logic.test.js
 node daily/2026-07-21-latin-square/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-07-18-pig-dice/game-logic.test.js
 node daily/2026-07-17-clock-solitaire/game-logic.test.js
 node daily/2026-07-16-mini-ludo/game-logic.test.js
 node daily/2026-07-15-bulgarian-solitaire/game-logic.test.js
-node daily/2026-07-14-monte-carlo-solitaire/game-logic.test.js
 ```
