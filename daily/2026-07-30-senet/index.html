@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>세네트</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="eyebrow">오늘의 고전 게임 · 고대 이집트 경주</p>
+      <h1>세네트</h1>
+      <p>막대가 가리킨 칸만큼 말을 옮겨, 세 말을 모두 말판 밖으로 보내세요.</p>
+    </header>
+    <section class="summary" aria-label="게임 현황">
+      <span>내가 보낸 말 <strong data-player-home>0</strong>/3</span>
+      <span>상대가 보낸 말 <strong data-computer-home>0</strong>/3</span>
+      <strong class="turn" data-turn>나 차례</strong>
+    </section>
+    <section class="throw-area" aria-label="막대 던지기">
+      <p>이번 막대: <strong data-roll>1</strong>칸</p>
+      <button type="button" data-throw>막대 던지기</button>
+    </section>
+    <div class="track" data-track aria-label="세네트 말판"></div>
+    <p class="message" data-message aria-live="polite"></p>
+    <p class="hint">상대 말은 인접한 두 말이 되면 보호됩니다. 4 또는 5가 나오면 한 번 더 움직입니다.</p>
+    <button type="button" class="reset" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
