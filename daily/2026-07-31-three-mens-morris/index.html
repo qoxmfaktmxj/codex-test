@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>세 남자 모리스</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="eyebrow">오늘의 고전 게임 · 세 칸 한 줄</p>
+      <h1>세 남자 모리스</h1>
+      <p>말 세 개를 놓고 움직여 가로·세로·대각선 한 줄을 먼저 완성하세요.</p>
+    </header>
+    <section class="summary" aria-label="게임 현황">
+      <span>내 말 <strong data-player-count>0</strong>/3</span>
+      <strong data-turn>나 차례</strong>
+      <span>상대 말 <strong data-computer-count>0</strong>/3</span>
+    </section>
+    <div class="board" data-board aria-label="세 남자 모리스 말판"></div>
+    <p class="message" data-message aria-live="polite"></p>
+    <p class="hint">내 말을 선택한 뒤, 빛나는 빈 교차점을 누르면 움직일 수 있습니다.</p>
+    <button type="button" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
