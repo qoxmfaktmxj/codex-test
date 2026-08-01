@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>무 토레레</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header><p class="eyebrow">오늘의 고전 게임 · 마오리 전략 놀이</p><h1>무 토레레</h1><p>아홉 교차점에서 말을 한 칸씩 움직여 상대를 먼저 막으세요.</p></header>
+    <section class="summary" aria-label="게임 현황"><span>내 말 <strong data-player-count>4</strong></span><strong data-turn>나 차례</strong><span>상대 말 <strong data-computer-count>4</strong></span></section>
+    <div class="board" data-board aria-label="무 토레레 말판"></div>
+    <p class="message" data-message aria-live="polite"></p><p class="hint">내 말을 누른 뒤, 빛나는 빈 교차점으로 옮기세요.</p>
+    <button type="button" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script><script src="app.js"></script>
+</body>
+</html>
