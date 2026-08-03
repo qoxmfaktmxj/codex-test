@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>헥스</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header><p class="eyebrow">오늘의 고전 게임 · 연결 전략</p><h1>헥스</h1><p>파란 돌로 위와 아래를 잇기 전에, 상대의 빨간 길을 막으세요.</p></header>
+    <section class="summary" aria-label="게임 현황"><span class="blue">나: 위 ↕ 아래</span><strong data-turn>나 차례</strong><span class="red">상대: 왼쪽 ↔ 오른쪽</span></section>
+    <div class="board" data-board aria-label="헥스 말판"></div>
+    <p class="message" data-message aria-live="polite"></p>
+    <p class="hint">빈 육각형을 누르면 파란 돌을 놓습니다.</p>
+    <button type="button" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
