@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>코나네</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header><p class="eyebrow">오늘의 고전 게임 · 하와이 섬의 도약</p><h1>코나네</h1><p>상대 말을 가로 또는 세로로 뛰어넘어, 더 이상 움직일 수 없게 만드세요.</p></header>
+    <section class="summary" aria-label="게임 현황"><span class="mine">나: 검은 돌</span><strong data-turn>나 차례</strong><span class="theirs">상대: 흰 돌</span></section>
+    <div class="board" data-board aria-label="코나네 말판"></div>
+    <p class="message" data-message aria-live="polite"></p>
+    <p class="hint" data-hint>가운데의 검은 돌 하나를 눌러 시작하세요.</p>
+    <button type="button" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
