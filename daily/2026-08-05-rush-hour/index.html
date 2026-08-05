@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>러시 아워 | 데일리 클래식 게임</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="masthead">
+      <p class="eyebrow">고속도로 퍼즐 · 06</p>
+      <h1>러시 아워</h1>
+      <p class="subtitle">막힌 도로를 정리해 빨간 자동차를 탈출시키세요.</p>
+    </header>
+
+    <section class="road-wrap" aria-label="러시 아워 말판">
+      <div class="exit-sign" aria-hidden="true"><span>탈출구</span><i></i></div>
+      <div class="board" data-board></div>
+    </section>
+
+    <section class="dashboard" aria-live="polite">
+      <div class="meter"><span>이동 횟수</span><strong data-turns>0</strong></div>
+      <div class="instruction"><strong data-message></strong><span data-hint></span></div>
+      <button class="reset" type="button" data-reset>새 퍼즐</button>
+    </section>
+
+    <section class="controls" aria-label="자동차 조작">
+      <p data-selection aria-live="polite">자동차를 선택하세요.</p>
+      <div>
+        <button type="button" data-move="-1">뒤로</button>
+        <button type="button" data-move="1">앞으로</button>
+      </div>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
