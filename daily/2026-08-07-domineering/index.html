@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>도미네어링</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="eyebrow">오늘의 고전 게임 · 영역 전략</p>
+      <h1>도미네어링</h1>
+      <p>가로와 세로 도미노가 빈칸을 차지하는 두 사람 전략 게임입니다.</p>
+    </header>
+    <section class="rule" aria-label="게임 규칙">
+      <strong>당신은 가로</strong><span>컴퓨터는 세로</span><span>더 이상 놓지 못하면 패배</span>
+    </section>
+    <section class="score" aria-label="게임 상태">
+      <span><i class="horizontal"></i> 당신의 가로 도미노</span><span><i class="vertical"></i> 컴퓨터의 세로 도미노</span>
+    </section>
+    <section class="board" data-board aria-label="도미네어링 말판"></section>
+    <p class="message" data-message aria-live="polite"></p>
+    <button type="button" class="new-game" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script><script src="app.js"></script>
+</body>
+</html>
