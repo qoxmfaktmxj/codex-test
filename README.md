@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-08-08 | 심 | 여섯 점 사이의 선을 번갈아 자기 색으로 칠하고, 같은 색 삼각형을 먼저 만들지 않도록 피하는 고전 전략 게임입니다. |
 | 2026-08-07 | 도미네어링 | 가로 도미노와 세로 도미노를 번갈아 빈칸에 놓고, 상대가 더 이상 놓을 자리가 없게 만드는 고전 전략 게임입니다. |
 | 2026-08-06 | 마스터마인드 | 서로 다른 네 가지 색의 숨은 순서를 여덟 번 안에 맞히고, 자리와 색 힌트로 암호를 푸는 고전 추리 게임입니다. |
 | 2026-08-05 | 러시 아워 | 자동차를 앞뒤로 움직여 길을 열고, 빨간 자동차를 오른쪽 탈출구로 보내는 고전 교통 퍼즐입니다. |
@@ -17,9 +18,12 @@
 | 2026-08-01 | 무 토레레 | 아홉 교차점에서 말을 인접한 빈자리로 움직여 상대가 더 이상 움직이지 못하게 만드는 마오리 고전 전략 게임입니다. |
 | 2026-07-31 | 세 남자 모리스 | 말 세 개를 놓고 인접한 교차점으로 움직이며 가로·세로·대각선 한 줄을 먼저 완성하는 고전 삼목 게임입니다. |
 | 2026-07-30 | 세네트 | 막대를 던져 말을 움직이고, 상대 말의 보호를 피해 세 말을 모두 말판 밖으로 먼저 보내는 고대 이집트 경주 게임입니다. |
-| 2026-07-29 | 알케르케 | 5x5 연결선 위에서 말을 한 칸 옮기거나 상대 말을 뛰어넘어 잡으며, 상대 말을 모두 없애는 고전 말잡기 게임입니다. |
 
 ## 최근 게임 화면
+
+### 심
+
+![심 게임 화면](daily/2026-08-08-sim/screenshot.png)
 
 ### 도미네어링
 
@@ -57,19 +61,12 @@
 
 ![세네트 게임 화면](daily/2026-07-30-senet/screenshot.png)
 
-### 알케르케
-
-![알케르케 게임 화면](daily/2026-07-29-alquerque/screenshot.png)
-
-### 페그 솔리테어
-
-![페그 솔리테어 게임 화면](daily/2026-07-28-peg-solitaire/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-08-08-sim/game-logic.test.js
 node daily/2026-08-07-domineering/game-logic.test.js
 node daily/2026-08-06-mastermind/game-logic.test.js
 node daily/2026-08-05-rush-hour/game-logic.test.js
@@ -79,6 +76,4 @@ node daily/2026-08-02-nim/game-logic.test.js
 node daily/2026-08-01-mu-torere/game-logic.test.js
 node daily/2026-07-31-three-mens-morris/game-logic.test.js
 node daily/2026-07-30-senet/game-logic.test.js
-node daily/2026-07-29-alquerque/game-logic.test.js
-node daily/2026-07-28-peg-solitaire/game-logic.test.js
 ```
