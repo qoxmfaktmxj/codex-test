@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>아홉 남자 모리스</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="eyebrow">오늘의 고전 게임 · 세 줄 완성</p>
+      <h1>아홉 남자 모리스</h1>
+      <p>세 말을 한 줄로 만들고 상대 말을 잡아, 세 개 미만으로 줄이세요.</p>
+    </header>
+    <section class="rule" aria-label="게임 규칙"><strong>당신은 주황색</strong><span>컴퓨터는 남색</span><span>한 줄 완성 뒤 상대 말 하나 잡기</span></section>
+    <section class="status" aria-label="게임 현황"><span data-player-count></span><span data-computer-count></span></section>
+    <section class="board" data-board aria-label="아홉 남자 모리스 말판">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M4 4H96V96H4ZM17 17H83V83H17ZM31 31H69V69H31ZM50 4V31M96 50H69M50 96V69M4 50H31"/></svg>
+    </section>
+    <p class="message" data-message aria-live="polite"></p>
+    <button type="button" class="new-game" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script><script src="app.js"></script>
+</body>
+</html>
