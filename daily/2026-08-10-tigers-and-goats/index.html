@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>호랑이와 염소</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="eyebrow">오늘의 고전 게임 · 네팔의 포위 전략</p>
+      <h1>호랑이와 염소</h1>
+      <p>염소를 놓아 호랑이를 가두거나, 호랑이로 염소 다섯 마리를 잡으세요.</p>
+    </header>
+    <section class="rule" aria-label="게임 규칙">
+      <strong>당신은 염소</strong><span>컴퓨터는 호랑이</span><span>호랑이는 염소를 뛰어넘어 잡을 수 있어요</span>
+    </section>
+    <section class="score" aria-label="게임 현황">
+      <span>남은 염소 <b data-goats-left>20</b>마리</span><span>잡힌 염소 <b data-captured>0</b>마리</span>
+    </section>
+    <section class="board" data-board aria-label="호랑이와 염소 말판">
+      <svg class="board-lines" viewBox="0 0 100 100" aria-hidden="true">
+        <g class="grid-lines"><path d="M10 10H90M10 30H90M10 50H90M10 70H90M10 90H90M10 10V90M30 10V90M50 10V90M70 10V90M90 10V90"/></g>
+        <g class="diagonal-lines"><path d="M10 10L30 30M30 10L10 30M30 10L50 30M50 10L30 30M50 10L70 30M70 10L50 30M70 10L90 30M90 10L70 30M10 30L30 50M30 30L10 50M30 30L50 50M50 30L30 50M50 30L70 50M70 30L50 50M70 30L90 50M90 30L70 50M10 50L30 70M30 50L10 70M30 50L50 70M50 50L30 70M50 50L70 70M70 50L50 70M70 50L90 70M90 50L70 70M10 70L30 90M30 70L10 90M30 70L50 90M50 70L30 90M50 70L70 90M70 70L50 90M70 70L90 90M90 70L70 90"/></g>
+      </svg>
+    </section>
+    <p class="message" data-message aria-live="polite"></p>
+    <button type="button" class="new-game" data-reset>새 게임</button>
+  </main>
+  <script src="game-logic.js"></script><script src="app.js"></script>
+</body>
+</html>
