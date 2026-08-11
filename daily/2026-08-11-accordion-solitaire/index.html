@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>아코디언 솔리테어</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">DAILY CLASSIC GAME</p>
+      <h1>아코디언 솔리테어</h1>
+      <p class="intro">같은 무늬 또는 숫자 카드 위로, 한 칸이나 세 칸 왼쪽에 카드를 포개세요.</p>
+    </header>
+    <section class="control-panel" aria-label="게임 정보">
+      <p id="message" aria-live="polite"></p>
+      <p class="move-count">이동 <strong id="moves">0</strong>회</p>
+      <button id="new-game" type="button">새 게임</button>
+    </section>
+    <section id="board" class="board" aria-label="카드 더미"></section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>테두리가 빛나는 카드를 고릅니다.</li>
+        <li>파란 표시가 있는 더미를 눌러 카드를 옮깁니다.</li>
+        <li>모든 카드를 한 더미로 모으면 성공입니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
