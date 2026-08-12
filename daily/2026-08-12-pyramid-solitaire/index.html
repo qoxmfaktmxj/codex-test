@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>피라미드 솔리테어</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 카드 퍼즐</p>
+      <h1>피라미드 솔리테어</h1>
+      <p class="intro">열린 카드 두 장의 합을 13으로 만들어 피라미드를 비우세요.</p>
+    </header>
+    <section class="control-panel" aria-label="게임 정보">
+      <p id="message" aria-live="polite"></p>
+      <p class="move-count">제거 <strong id="moves">0</strong>회</p>
+      <button id="new-game" type="button">새 게임</button>
+    </section>
+    <section id="pyramid" class="pyramid" aria-label="피라미드 카드"></section>
+    <section class="draw-area" aria-label="뽑기 카드">
+      <div class="draw-stack">
+        <h2>뽑기 더미 <small id="stock-count"></small></h2>
+        <button id="draw-card" type="button" class="card stock-card" aria-label="카드 뽑기"><span>♣</span></button>
+      </div>
+      <div class="draw-stack">
+        <h2>버린 카드</h2>
+        <div id="waste-card" class="waste-slot"></div>
+      </div>
+    </section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>가려지지 않은 카드만 고를 수 있습니다.</li>
+        <li>두 카드의 합이 13이면 두 장이 사라집니다.</li>
+        <li>K 카드는 혼자 눌러 제거합니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

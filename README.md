@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-08-12 | 피라미드 솔리테어 | 열린 카드 두 장의 합을 13으로 맞춰 제거하고, K 카드는 혼자 없애 피라미드를 비우는 고전 카드 퍼즐입니다. |
 | 2026-08-11 | 아코디언 솔리테어 | 같은 무늬 또는 숫자의 카드 위로 한 칸이나 세 칸 왼쪽 카드를 포개어, 모든 카드를 한 더미로 모으는 고전 카드 퍼즐입니다. |
 | 2026-08-10 | 호랑이와 염소 | 염소 스무 마리로 호랑이 네 마리를 가두거나, 호랑이로 염소 다섯 마리를 뛰어넘어 잡는 네팔의 고전 포위 전략 게임입니다. |
 | 2026-08-09 | 아홉 남자 모리스 | 말을 번갈아 놓고 움직여 가로 또는 세로 한 줄을 만든 뒤 상대 말을 잡아, 세 개 미만으로 줄이는 고전 보드 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-08-05 | 러시 아워 | 자동차를 앞뒤로 움직여 길을 열고, 빨간 자동차를 오른쪽 탈출구로 보내는 고전 교통 퍼즐입니다. |
 | 2026-08-04 | 코나네 | 검은 돌과 흰 돌을 번갈아 치운 뒤, 상대 말을 가로 또는 세로로 뛰어넘어 더 이상 움직이지 못하게 만드는 하와이 고전 전략 게임입니다. |
 | 2026-08-03 | 헥스 | 파란 돌로 위와 아래를 연결하고, 상대가 빨간 돌로 왼쪽과 오른쪽을 잇기 전에 길을 완성하는 고전 연결 전략 게임입니다. |
-| 2026-08-02 | 님 | 세 더미 중 하나에서 원하는 만큼 돌을 가져가 마지막 돌을 먼저 차지하는 고전 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 피라미드 솔리테어
+
+![피라미드 솔리테어 게임 화면](daily/2026-08-12-pyramid-solitaire/screenshot.png)
 
 ### 아코디언 솔리테어
 
@@ -57,15 +61,12 @@
 
 ![헥스 게임 화면](daily/2026-08-03-hex/screenshot.png)
 
-### 님
-
-![님 게임 화면](daily/2026-08-02-nim/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-08-12-pyramid-solitaire/game-logic.test.js
 node daily/2026-08-11-accordion-solitaire/game-logic.test.js
 node daily/2026-08-10-tigers-and-goats/game-logic.test.js
 node daily/2026-08-09-nine-mens-morris/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-08-06-mastermind/game-logic.test.js
 node daily/2026-08-05-rush-hour/game-logic.test.js
 node daily/2026-08-04-konane/game-logic.test.js
 node daily/2026-08-03-hex/game-logic.test.js
-node daily/2026-08-02-nim/game-logic.test.js
 ```

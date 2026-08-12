@@ -1,0 +1,21 @@
+:root { color-scheme: dark; font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; background: #071b1c; color: #f9f2df; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: radial-gradient(circle at 50% -10%, #24564d 0, #092425 42%, #061617 100%); }
+.game-shell { width: min(980px, calc(100% - 28px)); margin: 0 auto; padding: 42px 0 54px; }
+header { text-align: center; }
+.eyebrow { margin: 0; color: #f2bd63; font-size: .78rem; font-weight: 800; letter-spacing: .14em; }
+h1 { margin: 8px 0; font-family: Georgia, "Batang", serif; font-size: clamp(2.1rem, 6vw, 3.8rem); letter-spacing: -.05em; }
+.intro { margin: 0; color: #b8d5cb; }
+.control-panel { display: flex; align-items: center; gap: 18px; margin: 26px auto 22px; padding: 13px 17px; max-width: 700px; background: #113434; border: 1px solid #396b60; border-radius: 13px; box-shadow: 0 12px 30px #0004; }
+.control-panel p { margin: 0; }
+#message { flex: 1; line-height: 1.45; color: #d6eee0; }
+.move-count { white-space: nowrap; color: #f2bd63; }
+button { font: inherit; cursor: pointer; }
+#new-game { padding: 8px 13px; border: 0; border-radius: 8px; background: #e4a849; color: #17211d; font-weight: 800; }
+.pyramid { display: grid; grid-template-columns: repeat(13, 27px); grid-template-rows: repeat(7, 72px); justify-content: center; padding: 16px 0 22px; }
+.pyramid-slot { display: grid; place-items: center; min-width: 0; }
+.card { position: relative; display: grid; place-items: center; width: 54px; height: 72px; padding: 0; border: 2px solid #e8e1cf; border-radius: 7px; background: linear-gradient(135deg, #fffdf5, #dfd9c9); box-shadow: 0 4px 8px #0005; font-family: Georgia, serif; font-weight: 800; transition: transform .15s, box-shadow .15s; }
+.card:hover:not(:disabled), .card.selected { transform: translateY(-5px); box-shadow: 0 8px 16px #0008; }.card.selected { outline: 3px solid #f2bd63; }
+.card:disabled { cursor: not-allowed; filter: brightness(.55); }.card.red { color: #b73537; }.card.black { color: #132427; }.corner { position: absolute; top: 5px; left: 6px; font-size: .83rem; }.suit { font-size: 1.9rem; }
+.draw-area { display: flex; justify-content: center; gap: 36px; padding: 15px; border-top: 1px solid #376259; }.draw-stack { text-align: center; }.draw-stack h2 { margin: 0 0 9px; font-size: .9rem; color: #b8d5cb; }.draw-stack small { display: block; font-weight: 400; }.stock-card { background: repeating-linear-gradient(45deg, #1f5e58 0 5px, #e1ba66 5px 8px); color: #f8e8bd; }.waste-slot { display: grid; place-items: center; width: 54px; height: 72px; border: 2px dashed #49776b; border-radius: 7px; color: #89aa9e; font-size: .75rem; }.guide { max-width: 700px; margin: 24px auto 0; padding: 16px 21px; border-left: 3px solid #e4a849; background: #0b2a2b; }.guide h2 { margin: 0 0 9px; font-size: 1rem; }.guide ol { margin: 0; padding-left: 20px; color: #c7ded4; line-height: 1.7; }
+@media (max-width: 560px) { .game-shell { width: min(100% - 16px, 980px); padding-top: 25px; }.control-panel { flex-wrap: wrap; gap: 10px; }.control-panel #message { flex-basis: 100%; }.pyramid { grid-template-columns: repeat(13, minmax(0, 1fr)); grid-template-rows: repeat(7, 61px); width: 100%; }.card, .waste-slot { width: 43px; height: 61px; }.suit { font-size: 1.45rem; }.corner { font-size: .7rem; }.draw-area { gap: 20px; } }
