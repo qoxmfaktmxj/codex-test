@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>올드 메이드</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 카드 게임</p>
+      <h1>올드 메이드</h1>
+      <p class="intro">같은 숫자 두 장을 모아 버리고, 마지막 조커를 피하세요.</p>
+    </header>
+    <section class="control-panel" aria-label="게임 정보">
+      <p id="message" aria-live="polite"></p>
+      <p class="move-count">뽑기 <strong id="moves">0</strong>번</p>
+      <button id="new-game" type="button">새 게임</button>
+    </section>
+    <section class="computer-area" aria-label="컴퓨터 카드">
+      <h2>컴퓨터 카드 <small id="computer-count"></small></h2>
+      <div id="computer-hand" class="hand computer-hand"></div>
+    </section>
+    <section class="player-area" aria-label="내 카드">
+      <h2>내 카드 <small id="player-count"></small></h2>
+      <div id="player-hand" class="hand player-hand"></div>
+    </section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>컴퓨터의 뒷면 카드 한 장을 고릅니다.</li>
+        <li>같은 숫자 두 장이 생기면 자동으로 버려집니다.</li>
+        <li>카드를 모두 버리면 승리, 조커를 끝까지 가지면 패배입니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
