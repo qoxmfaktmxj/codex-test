@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-08-14 | 골프 솔리테어 | 버린 카드와 숫자가 하나 차이 나는 각 줄의 맨 위 카드만 이어 놓아, 일곱 줄을 모두 비우는 고전 카드 퍼즐입니다. |
 | 2026-08-13 | 올드 메이드 | 컴퓨터의 뒷면 카드에서 한 장씩 뽑아 같은 숫자 짝을 버리고, 마지막 조커를 피하는 고전 카드 게임입니다. |
 | 2026-08-12 | 피라미드 솔리테어 | 열린 카드 두 장의 합을 13으로 맞춰 제거하고, K 카드는 혼자 없애 피라미드를 비우는 고전 카드 퍼즐입니다. |
 | 2026-08-11 | 아코디언 솔리테어 | 같은 무늬 또는 숫자의 카드 위로 한 칸이나 세 칸 왼쪽 카드를 포개어, 모든 카드를 한 더미로 모으는 고전 카드 퍼즐입니다. |
@@ -17,9 +18,12 @@
 | 2026-08-07 | 도미네어링 | 가로 도미노와 세로 도미노를 번갈아 빈칸에 놓고, 상대가 더 이상 놓을 자리가 없게 만드는 고전 전략 게임입니다. |
 | 2026-08-06 | 마스터마인드 | 서로 다른 네 가지 색의 숨은 순서를 여덟 번 안에 맞히고, 자리와 색 힌트로 암호를 푸는 고전 추리 게임입니다. |
 | 2026-08-05 | 러시 아워 | 자동차를 앞뒤로 움직여 길을 열고, 빨간 자동차를 오른쪽 탈출구로 보내는 고전 교통 퍼즐입니다. |
-| 2026-08-04 | 코나네 | 검은 돌과 흰 돌을 번갈아 치운 뒤, 상대 말을 가로 또는 세로로 뛰어넘어 더 이상 움직이지 못하게 만드는 하와이 고전 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 골프 솔리테어
+
+![골프 솔리테어 게임 화면](daily/2026-08-14-golf-solitaire/screenshot.png)
 
 ### 올드 메이드
 
@@ -57,15 +61,12 @@
 
 ![러시 아워 게임 화면](daily/2026-08-05-rush-hour/screenshot.png)
 
-### 코나네
-
-![코나네 게임 화면](daily/2026-08-04-konane/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-08-14-golf-solitaire/game-logic.test.js
 node daily/2026-08-13-old-maid/game-logic.test.js
 node daily/2026-08-12-pyramid-solitaire/game-logic.test.js
 node daily/2026-08-11-accordion-solitaire/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-08-08-sim/game-logic.test.js
 node daily/2026-08-07-domineering/game-logic.test.js
 node daily/2026-08-06-mastermind/game-logic.test.js
 node daily/2026-08-05-rush-hour/game-logic.test.js
-node daily/2026-08-04-konane/game-logic.test.js
 ```

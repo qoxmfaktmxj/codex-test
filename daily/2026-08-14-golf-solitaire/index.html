@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>골프 솔리테어</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 카드 퍼즐</p>
+      <h1>골프 솔리테어</h1>
+      <p class="intro">숫자가 하나 차이 나는 카드만 이어 놓아, 일곱 줄의 카드를 모두 치우세요.</p>
+    </header>
+    <section class="control-panel" aria-label="게임 정보">
+      <p id="message" aria-live="polite"></p>
+      <p class="move-count">이동 <strong id="moves">0</strong>회</p>
+      <button id="new-game" type="button">새 게임</button>
+    </section>
+    <section id="tableau" class="tableau" aria-label="골프장 카드"></section>
+    <section class="draw-area" aria-label="카드 더미">
+      <div class="draw-stack">
+        <h2>남은 카드 <small id="stock-count"></small></h2>
+        <button id="draw-card" type="button" class="card stock-card" aria-label="새 카드 꺼내기"><span>♣</span></button>
+      </div>
+      <div class="draw-stack">
+        <h2>버린 카드</h2>
+        <div id="waste-card" class="waste-slot"></div>
+      </div>
+    </section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>각 줄에서 맨 위에 보이는 카드만 고를 수 있습니다.</li>
+        <li>버린 카드보다 숫자가 하나 높거나 낮으면 이어 놓을 수 있습니다.</li>
+        <li>더 놓을 카드가 없으면 남은 카드 더미에서 한 장을 꺼내세요.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
