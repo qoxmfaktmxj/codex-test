@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>생명 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 셀룰러 퍼즐</p>
+      <h1>생명 게임</h1>
+      <p class="intro">칸을 눌러 생명을 심고, 다음 세대에 어떤 무늬가 살아남는지 지켜보세요.</p>
+    </header>
+    <section class="control-panel" aria-label="게임 조작">
+      <p id="message" aria-live="polite">칸을 눌러 시작 무늬를 만들어 보세요.</p>
+      <p class="generation">세대 <strong id="generation">0</strong></p>
+      <div class="buttons">
+        <button id="next" type="button">다음 세대</button>
+        <button id="play" type="button">자동 진행</button>
+        <button id="sample" type="button">예시 무늬</button>
+        <button id="clear" type="button" class="quiet">비우기</button>
+      </div>
+    </section>
+    <section id="board" class="board" aria-label="생명 게임 보드"></section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>빈 칸을 누르면 생명이 태어나고, 다시 누르면 사라집니다.</li>
+        <li>생명은 이웃이 두세 개면 살아남고, 정확히 세 개면 새로 태어납니다.</li>
+        <li>자동 진행으로 세대가 바뀌는 모습을 관찰해 보세요.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
