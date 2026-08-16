@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-08-16 | 브리지트 | 빨간 돌을 위아래로, 컴퓨터의 파란 돌을 왼쪽과 오른쪽으로 먼저 이어 승부하는 고전 연결 전략 게임입니다. |
 | 2026-08-15 | 생명 게임 | 칸에 생명을 심고 이웃 수에 따라 다음 세대를 넘기며, 살아남고 태어나는 무늬를 관찰하는 고전 셀룰러 퍼즐입니다. |
 | 2026-08-14 | 골프 솔리테어 | 버린 카드와 숫자가 하나 차이 나는 각 줄의 맨 위 카드만 이어 놓아, 일곱 줄을 모두 비우는 고전 카드 퍼즐입니다. |
 | 2026-08-13 | 올드 메이드 | 컴퓨터의 뒷면 카드에서 한 장씩 뽑아 같은 숫자 짝을 버리고, 마지막 조커를 피하는 고전 카드 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-08-09 | 아홉 남자 모리스 | 말을 번갈아 놓고 움직여 가로 또는 세로 한 줄을 만든 뒤 상대 말을 잡아, 세 개 미만으로 줄이는 고전 보드 게임입니다. |
 | 2026-08-08 | 심 | 여섯 점 사이의 선을 번갈아 자기 색으로 칠하고, 같은 색 삼각형을 먼저 만들지 않도록 피하는 고전 전략 게임입니다. |
 | 2026-08-07 | 도미네어링 | 가로 도미노와 세로 도미노를 번갈아 빈칸에 놓고, 상대가 더 이상 놓을 자리가 없게 만드는 고전 전략 게임입니다. |
-| 2026-08-06 | 마스터마인드 | 서로 다른 네 가지 색의 숨은 순서를 여덟 번 안에 맞히고, 자리와 색 힌트로 암호를 푸는 고전 추리 게임입니다. |
 
 ## 최근 게임 화면
+
+### 브리지트
+
+![브리지트 게임 화면](daily/2026-08-16-bridgit/screenshot.png)
 
 ### 생명 게임
 
@@ -57,15 +61,12 @@
 
 ![도미네어링 게임 화면](daily/2026-08-07-domineering/screenshot.png)
 
-### 마스터마인드
-
-![마스터마인드 게임 화면](daily/2026-08-06-mastermind/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-08-16-bridgit/game-logic.test.js
 node daily/2026-08-15-game-of-life/game-logic.test.js
 node daily/2026-08-14-golf-solitaire/game-logic.test.js
 node daily/2026-08-13-old-maid/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-08-10-tigers-and-goats/game-logic.test.js
 node daily/2026-08-09-nine-mens-morris/game-logic.test.js
 node daily/2026-08-08-sim/game-logic.test.js
 node daily/2026-08-07-domineering/game-logic.test.js
-node daily/2026-08-06-mastermind/game-logic.test.js
 ```
