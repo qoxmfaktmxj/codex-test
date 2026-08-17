@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>티코</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 추상 전략 게임</p>
+      <h1>티코</h1>
+      <p class="intro">5×5 말판에서 네 개의 말을 한 줄 또는 작은 네모로 먼저 이어 보세요.</p>
+    </header>
+    <section class="control-panel" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite">빨간 말 네 개를 놓을 차례입니다.</p>
+      <p class="legend"><span class="red-dot" aria-hidden="true"></span> 빨간 말 · <span class="blue-dot" aria-hidden="true"></span> 파란 말</p>
+      <button id="reset" type="button">새 게임</button>
+    </section>
+    <section id="board" class="board" aria-label="티코 말판"></section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>두 사람이 빨간 말과 파란 말을 번갈아 네 개씩 놓습니다.</li>
+        <li>말을 모두 놓은 뒤에는 자기 말을 빈 인접 칸으로 한 칸씩 옮깁니다.</li>
+        <li>가로·세로·대각선 네 칸 또는 2×2 네모를 먼저 만들면 이깁니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
