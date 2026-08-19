@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>에이스 업 솔리테어</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 카드 놀이</p>
+      <h1>에이스 업 솔리테어</h1>
+      <p class="intro">같은 무늬의 더 낮은 카드를 버리고, 네 장의 에이스만 남겨 보세요.</p>
+    </header>
+    <section class="control-panel" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite">버릴 수 있는 카드를 눌러 보세요.</p>
+      <p id="count" class="count">남은 카드 52장</p>
+      <button id="deal" type="button">카드 나누기</button>
+      <button id="reset" type="button" class="secondary">새 게임</button>
+    </section>
+    <section id="piles" class="piles" aria-label="카드 더미"></section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>네 더미 맨 위에 같은 무늬가 둘 이상이면, 더 낮은 카드를 눌러 버립니다.</li>
+        <li>빈 더미를 누른 뒤 다른 더미의 맨 위 카드를 눌러 옮길 수 있습니다.</li>
+        <li>막히면 카드 나누기를 눌러 각 더미에 한 장씩 더 놓습니다.</li>
+        <li>모든 카드가 사라지고 네 장의 에이스만 남으면 성공입니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

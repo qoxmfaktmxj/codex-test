@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-08-19 | 에이스 업 솔리테어 | 같은 무늬의 더 낮은 카드를 버리고 네 장의 에이스만 남기는 고전 카드 퍼즐입니다. |
 | 2026-08-18 | 페그 솔리테어 | 십자형 말판에서 말을 하나 뛰어넘어 없애며, 마지막 말 하나만 남기는 고전 혼자 퍼즐입니다. |
 | 2026-08-17 | 티코 | 5×5 말판에 빨간 말과 파란 말을 네 개씩 놓은 뒤 인접 칸으로 움직여, 가로·세로·대각선 네 칸 또는 2×2 네모를 먼저 만드는 고전 추상 전략 게임입니다. |
 | 2026-08-16 | 브리지트 | 빨간 돌을 위아래로, 컴퓨터의 파란 돌을 왼쪽과 오른쪽으로 먼저 이어 승부하는 고전 연결 전략 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-08-12 | 피라미드 솔리테어 | 열린 카드 두 장의 합을 13으로 맞춰 제거하고, K 카드는 혼자 없애 피라미드를 비우는 고전 카드 퍼즐입니다. |
 | 2026-08-11 | 아코디언 솔리테어 | 같은 무늬 또는 숫자의 카드 위로 한 칸이나 세 칸 왼쪽 카드를 포개어, 모든 카드를 한 더미로 모으는 고전 카드 퍼즐입니다. |
 | 2026-08-10 | 호랑이와 염소 | 염소 스무 마리로 호랑이 네 마리를 가두거나, 호랑이로 염소 다섯 마리를 뛰어넘어 잡는 네팔의 고전 포위 전략 게임입니다. |
-| 2026-08-09 | 아홉 남자 모리스 | 말을 번갈아 놓고 움직여 가로 또는 세로 한 줄을 만든 뒤 상대 말을 잡아, 세 개 미만으로 줄이는 고전 보드 게임입니다. |
 
 ## 최근 게임 화면
+
+### 에이스 업 솔리테어
+
+![에이스 업 솔리테어 게임 화면](daily/2026-08-19-aces-up-solitaire/screenshot.png)
 
 ### 페그 솔리테어
 
@@ -57,15 +61,12 @@
 
 ![호랑이와 염소 게임 화면](daily/2026-08-10-tigers-and-goats/screenshot.png)
 
-### 아홉 남자 모리스
-
-![아홉 남자 모리스 게임 화면](daily/2026-08-09-nine-mens-morris/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-08-19-aces-up-solitaire/game-logic.test.js
 node daily/2026-08-18-peg-solitaire/game-logic.test.js
 node daily/2026-08-17-teeko/game-logic.test.js
 node daily/2026-08-16-bridgit/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-08-13-old-maid/game-logic.test.js
 node daily/2026-08-12-pyramid-solitaire/game-logic.test.js
 node daily/2026-08-11-accordion-solitaire/game-logic.test.js
 node daily/2026-08-10-tigers-and-goats/game-logic.test.js
-node daily/2026-08-09-nine-mens-morris/game-logic.test.js
 ```
