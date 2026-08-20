@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>노노그램</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 그림 논리 퍼즐</p>
+      <h1>노노그램</h1>
+      <p class="intro">가로와 세로 숫자 힌트를 보고 칸을 채워, 숨은 여우 그림을 완성하세요.</p>
+    </header>
+
+    <section class="control-panel" aria-label="게임 안내와 조작">
+      <p id="message" aria-live="polite">숫자 묶음은 이어서 칠할 칸의 길이입니다. 빈 칸을 눌러 시작하세요.</p>
+      <button id="reset" type="button">처음부터</button>
+    </section>
+
+    <section class="puzzle-card" aria-label="노노그램 말판">
+      <div class="puzzle-layout">
+        <div class="corner" aria-hidden="true">힌트</div>
+        <div id="column-hints" class="column-hints" aria-label="세로 힌트"></div>
+        <div id="row-hints" class="row-hints" aria-label="가로 힌트"></div>
+        <div id="board" class="board" aria-label="그림 말판"></div>
+      </div>
+    </section>
+
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>왼쪽과 위쪽 숫자를 보고 각 줄에서 이어서 칠할 칸의 길이를 찾습니다.</li>
+        <li>칸을 누르면 채워지고, 다시 누르면 비워집니다.</li>
+        <li>모든 칸을 정확하게 채우면 그림이 완성됩니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
