@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-08-21 | 미니 클론다이크 | 검은색과 빨간색 카드를 내림차순으로 쌓고, 같은 무늬의 카드를 A부터 기초 더미에 모으는 고전 카드 퍼즐입니다. |
 | 2026-08-20 | 노노그램 | 가로와 세로 숫자 힌트를 보고 칸을 채워 숨은 여우 그림을 완성하는 고전 그림 논리 퍼즐입니다. |
 | 2026-08-19 | 에이스 업 솔리테어 | 같은 무늬의 더 낮은 카드를 버리고 네 장의 에이스만 남기는 고전 카드 퍼즐입니다. |
 | 2026-08-18 | 페그 솔리테어 | 십자형 말판에서 말을 하나 뛰어넘어 없애며, 마지막 말 하나만 남기는 고전 혼자 퍼즐입니다. |
@@ -17,9 +18,12 @@
 | 2026-08-14 | 골프 솔리테어 | 버린 카드와 숫자가 하나 차이 나는 각 줄의 맨 위 카드만 이어 놓아, 일곱 줄을 모두 비우는 고전 카드 퍼즐입니다. |
 | 2026-08-13 | 올드 메이드 | 컴퓨터의 뒷면 카드에서 한 장씩 뽑아 같은 숫자 짝을 버리고, 마지막 조커를 피하는 고전 카드 게임입니다. |
 | 2026-08-12 | 피라미드 솔리테어 | 열린 카드 두 장의 합을 13으로 맞춰 제거하고, K 카드는 혼자 없애 피라미드를 비우는 고전 카드 퍼즐입니다. |
-| 2026-08-11 | 아코디언 솔리테어 | 같은 무늬 또는 숫자의 카드 위로 한 칸이나 세 칸 왼쪽 카드를 포개어, 모든 카드를 한 더미로 모으는 고전 카드 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 미니 클론다이크
+
+![미니 클론다이크 게임 화면](daily/2026-08-21-klondike-solitaire/screenshot.png)
 
 ### 노노그램
 
@@ -57,15 +61,12 @@
 
 ![피라미드 솔리테어 게임 화면](daily/2026-08-12-pyramid-solitaire/screenshot.png)
 
-### 아코디언 솔리테어
-
-![아코디언 솔리테어 게임 화면](daily/2026-08-11-accordion-solitaire/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-08-21-klondike-solitaire/game-logic.test.js
 node daily/2026-08-20-nonogram/game-logic.test.js
 node daily/2026-08-19-aces-up-solitaire/game-logic.test.js
 node daily/2026-08-18-peg-solitaire/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-08-15-game-of-life/game-logic.test.js
 node daily/2026-08-14-golf-solitaire/game-logic.test.js
 node daily/2026-08-13-old-maid/game-logic.test.js
 node daily/2026-08-12-pyramid-solitaire/game-logic.test.js
-node daily/2026-08-11-accordion-solitaire/game-logic.test.js
 ```
