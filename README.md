@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-08-22 | 미니 팔자 카드 | 같은 숫자나 무늬의 카드를 내고, 언제든 낼 수 있는 팔자 카드로 다음 무늬를 바꿔 내 카드를 먼저 없애는 고전 카드 게임입니다. |
 | 2026-08-21 | 미니 클론다이크 | 검은색과 빨간색 카드를 내림차순으로 쌓고, 같은 무늬의 카드를 A부터 기초 더미에 모으는 고전 카드 퍼즐입니다. |
 | 2026-08-20 | 노노그램 | 가로와 세로 숫자 힌트를 보고 칸을 채워 숨은 여우 그림을 완성하는 고전 그림 논리 퍼즐입니다. |
 | 2026-08-19 | 에이스 업 솔리테어 | 같은 무늬의 더 낮은 카드를 버리고 네 장의 에이스만 남기는 고전 카드 퍼즐입니다. |
@@ -17,9 +18,12 @@
 | 2026-08-15 | 생명 게임 | 칸에 생명을 심고 이웃 수에 따라 다음 세대를 넘기며, 살아남고 태어나는 무늬를 관찰하는 고전 셀룰러 퍼즐입니다. |
 | 2026-08-14 | 골프 솔리테어 | 버린 카드와 숫자가 하나 차이 나는 각 줄의 맨 위 카드만 이어 놓아, 일곱 줄을 모두 비우는 고전 카드 퍼즐입니다. |
 | 2026-08-13 | 올드 메이드 | 컴퓨터의 뒷면 카드에서 한 장씩 뽑아 같은 숫자 짝을 버리고, 마지막 조커를 피하는 고전 카드 게임입니다. |
-| 2026-08-12 | 피라미드 솔리테어 | 열린 카드 두 장의 합을 13으로 맞춰 제거하고, K 카드는 혼자 없애 피라미드를 비우는 고전 카드 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 미니 팔자 카드
+
+![미니 팔자 카드 게임 화면](daily/2026-08-22-crazy-eights/screenshot.png)
 
 ### 미니 클론다이크
 
@@ -57,15 +61,12 @@
 
 ![올드 메이드 게임 화면](daily/2026-08-13-old-maid/screenshot.png)
 
-### 피라미드 솔리테어
-
-![피라미드 솔리테어 게임 화면](daily/2026-08-12-pyramid-solitaire/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-08-22-crazy-eights/game-logic.test.js
 node daily/2026-08-21-klondike-solitaire/game-logic.test.js
 node daily/2026-08-20-nonogram/game-logic.test.js
 node daily/2026-08-19-aces-up-solitaire/game-logic.test.js
@@ -75,5 +76,4 @@ node daily/2026-08-16-bridgit/game-logic.test.js
 node daily/2026-08-15-game-of-life/game-logic.test.js
 node daily/2026-08-14-golf-solitaire/game-logic.test.js
 node daily/2026-08-13-old-maid/game-logic.test.js
-node daily/2026-08-12-pyramid-solitaire/game-logic.test.js
 ```

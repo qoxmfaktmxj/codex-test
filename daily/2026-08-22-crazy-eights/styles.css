@@ -1,0 +1,43 @@
+:root { color-scheme: dark; font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; background: #11142c; color: #f9f5e8; }
+* { box-sizing: border-box; }
+body { min-width: 320px; margin: 0; background: radial-gradient(circle at 82% 12%, #c44367 0, transparent 24rem), radial-gradient(circle at 5% 90%, #285fa3 0, transparent 30rem), #11142c; }
+button { font: inherit; cursor: pointer; }
+.game-shell { width: min(940px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+header { max-width: 700px; }
+.eyebrow { margin: 0 0 8px; color: #f5bc7a; font-weight: 800; letter-spacing: .06em; }
+h1 { margin: 0; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(3rem, 9vw, 5.6rem); letter-spacing: -.08em; }
+.intro { color: #d7dcf7; font-size: 1.08rem; line-height: 1.75; }
+.status-card, .table, .guide, .suit-picker { border: 1px solid #7180c4; background: #1c2145e8; box-shadow: 0 20px 48px #080a1d99; }
+.status-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 28px; padding: 16px 18px; border-radius: 16px; }
+#message { margin: 0; color: #f4f4ff; line-height: 1.55; }
+#reset { flex: none; border: 1px solid #ffe2a8; border-radius: 9px; padding: 9px 13px; background: #eea85c; color: #24170e; font-weight: 800; }
+#reset:hover, #reset:focus-visible { background: #ffe7bd; outline: 3px solid #9eb9ff; outline-offset: 3px; }
+.table { display: grid; gap: 26px; margin: 32px 0 18px; padding: 28px; border-radius: 24px; }
+.opponent-area, .player-area { text-align: center; }
+.opponent-area p, .player-area p { margin: 0 0 12px; color: #dce2ff; }
+.opponent-hand, .player-hand { display: flex; min-height: 96px; justify-content: center; gap: 9px; flex-wrap: wrap; }
+.card, .back-card { display: grid; width: 74px; min-height: 94px; place-items: center; border-radius: 10px; font-family: Georgia, "Noto Serif KR", serif; font-size: 1.6rem; font-weight: 800; }
+.back-card { border: 2px solid #f3c270; background: repeating-linear-gradient(45deg, #bf3f66 0 7px, #342b69 7px 14px); color: #ffebc5; }
+.card { border: 2px solid #e6e1d4; background: #fffdf4; color: #19223a; box-shadow: 0 5px 12px #07091a77; }
+.card.red, .suit-picker button:nth-child(-n+2) { color: #c7374e; }
+.card.playable { border-color: #ffd677; transform: translateY(-6px); }
+.card:hover:not(:disabled), .card:focus-visible { outline: 3px solid #8cb6ff; outline-offset: 3px; transform: translateY(-8px); }
+.card:disabled { cursor: default; opacity: .7; }
+.center-area { display: flex; justify-content: center; gap: 28px; }
+.pile { display: grid; width: 136px; min-height: 154px; place-items: center; align-content: center; gap: 8px; border: 2px solid #8d9de1; border-radius: 14px; text-align: center; }
+.pile span { color: #d7defc; font-size: .82rem; font-weight: 800; }
+.draw-pile { background: repeating-linear-gradient(45deg, #c64066 0 8px, #403576 8px 16px); color: #fff7df; }
+.draw-pile:hover:not(:disabled), .draw-pile:focus-visible { outline: 3px solid #9eb9ff; outline-offset: 3px; }
+.draw-pile:disabled { cursor: default; filter: grayscale(.6); }
+.discard-pile { background: #f8f3e6; color: #1d2540; }
+.discard-pile span { color: #555f80; }
+#discard-card { font-family: Georgia, "Noto Serif KR", serif; font-size: 2.2rem; }
+#active-suit { font-style: normal; color: #4a5687; font-size: .8rem; }
+.suit-picker { margin: 0 auto 24px; padding: 16px; border-radius: 16px; text-align: center; }
+.suit-picker p { margin: 0 0 10px; color: #edf0ff; }
+.suit-picker button { width: 52px; height: 48px; margin: 0 3px; border: 1px solid #dce3ff; border-radius: 9px; background: #f9f6eb; color: #19223a; font-family: Georgia, serif; font-size: 1.4rem; font-weight: 800; }
+.suit-picker button:hover, .suit-picker button:focus-visible { outline: 3px solid #8cb6ff; outline-offset: 2px; transform: translateY(-2px); }
+.guide { max-width: 700px; margin: 0 auto; border-radius: 16px; padding: 20px; }
+.guide h2 { margin: 0 0 10px; font-size: 1.1rem; }
+.guide ol { margin: 0; padding-left: 1.45em; color: #dce2f7; line-height: 1.85; }
+@media (max-width: 560px) { .game-shell { padding-top: 30px; } .status-card { align-items: flex-start; flex-direction: column; } .table { padding: 18px 12px; } .card, .back-card { width: 58px; min-height: 78px; font-size: 1.35rem; } .center-area { gap: 14px; } .pile { width: 124px; } }

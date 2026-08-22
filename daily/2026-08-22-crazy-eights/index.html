@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미니 팔자 카드</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 카드 게임</p>
+      <h1>미니 팔자 카드</h1>
+      <p class="intro">같은 숫자나 같은 무늬를 내세요. 숫자 8은 원하는 무늬로 바꿀 수 있는 특별한 카드입니다.</p>
+    </header>
+
+    <section class="status-card" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite">카드를 한 장 내거나, 낼 카드가 없으면 더미에서 한 장 뽑으세요.</p>
+      <button id="reset" type="button">새로 시작</button>
+    </section>
+
+    <section class="table" aria-label="팔자 카드 말판">
+      <div class="opponent-area">
+        <p>상대 카드 <strong id="opponent-count">0장</strong></p>
+        <div id="opponent-hand" class="opponent-hand" aria-label="상대 카드"></div>
+      </div>
+      <div class="center-area">
+        <button id="draw-pile" class="pile draw-pile" type="button" aria-label="카드 더미에서 한 장 뽑기"><span id="draw-label">카드 더미</span><strong id="draw-count">0장</strong></button>
+        <div class="pile discard-pile" aria-label="버린 카드"><span>버린 카드</span><strong id="discard-card"></strong><em id="active-suit"></em></div>
+      </div>
+      <div class="player-area">
+        <p>내 카드 <strong id="player-count">0장</strong></p>
+        <div id="player-hand" class="player-hand" aria-label="내 카드"></div>
+      </div>
+    </section>
+
+    <section id="suit-picker" class="suit-picker" hidden aria-label="바꿀 무늬 선택">
+      <p>팔자로 바꿀 무늬를 고르세요.</p>
+      <div>
+        <button type="button" data-suit="♥">♥</button>
+        <button type="button" data-suit="♦">♦</button>
+        <button type="button" data-suit="♣">♣</button>
+        <button type="button" data-suit="♠">♠</button>
+      </div>
+    </section>
+
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>버린 카드와 같은 숫자 또는 현재 무늬의 카드를 냅니다.</li>
+        <li>숫자 8은 언제든 낼 수 있고, 다음에 이어갈 무늬를 고릅니다.</li>
+        <li>내 카드를 먼저 모두 없애면 승리합니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
