@@ -1,0 +1,41 @@
+:root { color-scheme: dark; font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; background: #122028; color: #f3efe1; }
+* { box-sizing: border-box; }
+body { min-width: 320px; margin: 0; background: radial-gradient(circle at 88% 6%, #c9853f 0, transparent 26rem), radial-gradient(circle at 4% 80%, #247978 0, transparent 28rem), #122028; }
+button { font: inherit; cursor: pointer; }
+.game-shell { width: min(980px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+header { max-width: 760px; }
+.eyebrow { margin: 0 0 8px; color: #f1c985; font-weight: 800; letter-spacing: .06em; }
+h1 { margin: 0; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(3rem, 9vw, 5.6rem); letter-spacing: -.08em; }
+.intro { color: #d6e6e0; font-size: 1.08rem; line-height: 1.75; }
+.status-card, .table, .guide, .end-picker { border: 1px solid #5c9391; background: #17313be8; box-shadow: 0 20px 48px #06121699; }
+.status-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 28px; padding: 16px 18px; border-radius: 16px; }
+#message { margin: 0; line-height: 1.55; }
+#reset { flex: none; border: 1px solid #ffe4ad; border-radius: 9px; padding: 9px 13px; background: #e9aa56; color: #27190d; font-weight: 800; }
+#reset:hover, #reset:focus-visible, .end-picker button:hover, .end-picker button:focus-visible { outline: 3px solid #95e5dc; outline-offset: 3px; filter: brightness(1.15); }
+.table { display: grid; gap: 22px; margin: 32px 0 18px; padding: 28px; border-radius: 24px; }
+.opponent-area, .player-area { text-align: center; }
+.opponent-area p, .player-area p { margin: 0 0 12px; color: #d4eee8; }
+.opponent-hand, .player-hand { display: flex; min-height: 64px; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.tile, .back-tile { display: grid; width: 74px; height: 44px; place-items: center; border-radius: 7px; font-family: Georgia, serif; font-size: 1.1rem; font-weight: 800; letter-spacing: .12em; }
+.tile { border: 2px solid #f4e5c6; background: #fffaf0; color: #202929; box-shadow: 0 4px 9px #07141788; }
+.tile.playable { border-color: #f3bd62; transform: translateY(-5px); }
+.tile:hover:not(:disabled), .tile:focus-visible { outline: 3px solid #93e3dd; outline-offset: 3px; transform: translateY(-7px); }
+.tile:disabled { cursor: default; opacity: .62; }
+.back-tile { border: 2px solid #f4c878; background: repeating-linear-gradient(45deg, #b65048 0 7px, #2c6766 7px 14px); color: #fff5d9; }
+.board-area { display: grid; align-items: center; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; padding: 18px; border: 1px dashed #78aaa6; border-radius: 14px; background: #0e272c; }
+.end-label { margin: 0; color: #c6e8e1; text-align: center; font-size: .85rem; }
+.end-label strong { display: block; color: #f5c16c; font-size: 1.5rem; }
+.board { display: flex; min-height: 58px; align-items: center; justify-content: center; gap: 3px; overflow-x: auto; padding: 6px; }
+.board .tile { flex: 0 0 auto; width: 62px; height: 38px; font-size: .95rem; }
+.draw-area { display: flex; justify-content: center; }
+.draw-pile { display: grid; min-width: 184px; gap: 4px; border: 2px solid #eac271; border-radius: 11px; padding: 13px 18px; background: repeating-linear-gradient(45deg, #b65048 0 8px, #2c6766 8px 16px); color: #fff8e6; font-weight: 800; }
+.draw-pile span { font-size: .9rem; }
+.draw-pile:disabled { cursor: default; filter: grayscale(.65); }
+.draw-pile:hover:not(:disabled), .draw-pile:focus-visible { outline: 3px solid #93e3dd; outline-offset: 3px; }
+.end-picker { margin: 0 auto 24px; padding: 16px; border-radius: 16px; text-align: center; }
+.end-picker p { margin: 0 0 10px; }
+.end-picker button { margin: 0 3px; border: 1px solid #f6d898; border-radius: 8px; padding: 9px 13px; background: #e9aa56; color: #24170e; font-weight: 800; }
+.guide { max-width: 700px; margin: 0 auto; border-radius: 16px; padding: 20px; }
+.guide h2 { margin: 0 0 10px; font-size: 1.1rem; }
+.guide ol { margin: 0; padding-left: 1.45em; color: #d8ece8; line-height: 1.85; }
+@media (max-width: 560px) { .game-shell { padding-top: 30px; } .status-card { align-items: flex-start; flex-direction: column; } .table { padding: 18px 12px; } .tile, .back-tile { width: 59px; height: 39px; font-size: .95rem; } .board-area { grid-template-columns: 1fr; } .end-label { display: flex; justify-content: center; gap: 8px; } .end-label strong { display: inline; font-size: 1.1rem; } }

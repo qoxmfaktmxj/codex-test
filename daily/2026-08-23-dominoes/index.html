@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미니 도미노</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 보드 게임</p>
+      <h1>미니 도미노</h1>
+      <p class="intro">양 끝 숫자 중 하나가 맞는 도미노를 이어 놓으세요. 내 도미노를 먼저 모두 놓으면 이깁니다.</p>
+    </header>
+
+    <section class="status-card" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite">내 도미노를 골라 양 끝에 이어 놓으세요.</p>
+      <button id="reset" type="button">새로 시작</button>
+    </section>
+
+    <section class="table" aria-label="도미노 말판">
+      <div class="opponent-area">
+        <p>상대 도미노 <strong id="opponent-count">0개</strong></p>
+        <div id="opponent-hand" class="opponent-hand" aria-label="상대 도미노"></div>
+      </div>
+      <div class="board-area">
+        <p class="end-label">왼쪽 끝 <strong id="left-end">0</strong></p>
+        <div id="board" class="board" aria-label="놓인 도미노"></div>
+        <p class="end-label">오른쪽 끝 <strong id="right-end">0</strong></p>
+      </div>
+      <div class="draw-area">
+        <button id="draw" class="draw-pile" type="button" aria-label="도미노 더미에서 한 개 뽑기"><span id="draw-label">더미에서 뽑기</span><strong id="draw-count">0개</strong></button>
+      </div>
+      <div class="player-area">
+        <p>내 도미노 <strong id="player-count">0개</strong></p>
+        <div id="player-hand" class="player-hand" aria-label="내 도미노"></div>
+      </div>
+    </section>
+
+    <section id="end-picker" class="end-picker" hidden aria-label="놓을 쪽 선택">
+      <p>어느 쪽 끝에 놓을까요?</p>
+      <button type="button" data-side="left">왼쪽 끝</button>
+      <button type="button" data-side="right">오른쪽 끝</button>
+    </section>
+
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>양 끝 숫자와 같은 숫자가 있는 도미노를 놓습니다.</li>
+        <li>놓을 도미노가 없으면 더미에서 한 개를 뽑습니다.</li>
+        <li>더미도 비고 둘 다 놓지 못하면, 남은 점수가 더 낮은 쪽이 이깁니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
