@@ -1,0 +1,38 @@
+:root { color-scheme: dark; font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; background: #11172a; color: #f4f1e8; }
+* { box-sizing: border-box; }
+body { min-width: 320px; margin: 0; background: radial-gradient(circle at 8% 0%, #6242a1 0, transparent 29rem), radial-gradient(circle at 94% 86%, #167c7d 0, transparent 31rem), #11172a; }
+button { font: inherit; cursor: pointer; }
+.game-shell { width: min(1000px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+header { max-width: 760px; }
+.eyebrow { margin: 0 0 8px; color: #d8bdff; font-weight: 800; letter-spacing: .06em; }
+h1 { margin: 0; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(3rem, 9vw, 5.7rem); letter-spacing: -.08em; }
+.intro { color: #dbe3ff; font-size: 1.08rem; line-height: 1.75; }
+.status-card, .board, .guide { border: 1px solid #8585c8; background: #1d2441e8; box-shadow: 0 20px 48px #05071199; }
+.status-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 28px; padding: 16px 18px; border-radius: 16px; }
+#message { margin: 0; line-height: 1.55; }
+#reset { flex: none; border: 1px solid #fbdea0; border-radius: 9px; padding: 9px 13px; background: #f0b85a; color: #241807; font-weight: 800; }
+#reset:hover, #reset:focus-visible { outline: 3px solid #9ce9df; outline-offset: 3px; filter: brightness(1.12); }
+.board { margin: 32px 0 18px; padding: 24px; border-radius: 24px; }
+.top-row { display: flex; justify-content: space-between; gap: 28px; }
+.area h2, .tableau-area h2, .guide h2 { margin: 0 0 11px; font-size: 1rem; color: #dfe4ff; }
+.cells, .foundations { display: flex; gap: 10px; }
+.cell-slot { display: grid; width: 104px; min-height: 112px; align-content: center; justify-items: center; gap: 8px; border: 1px dashed #777fbd; border-radius: 11px; color: #aeb8dc; font-size: .78rem; }
+.foundation { display: grid; width: 76px; height: 76px; place-items: center; border: 2px solid #d4b36b; border-radius: 12px; background: #151b32; font-size: 1.75rem; font-weight: 900; }
+.tableau-area { margin-top: 30px; }
+.tableau { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
+.column { display: grid; align-content: start; justify-items: center; min-height: 306px; gap: 10px; border: 1px solid #6971ae; border-radius: 12px; padding: 11px 7px; background: #151b32b8; }
+.card-stack { display: grid; width: 100%; min-height: 245px; align-content: start; justify-items: center; color: #aeb8dc; font-size: .82rem; }
+.card { display: grid; width: 76px; height: 102px; place-items: center; margin-bottom: -72px; border: 2px solid #f6f1dd; border-radius: 9px; background: #fffdf5; box-shadow: 0 5px 10px #07091499; font-family: Georgia, serif; font-size: 1.7rem; font-weight: 900; }
+.card.fixed { z-index: 1; pointer-events: none; }
+.card-stack .card:last-child { z-index: 2; margin-bottom: 0; }
+.card:hover, .card:focus-visible { z-index: 5; outline: 3px solid #8de5dc; outline-offset: 3px; transform: translateY(-4px); }
+.card.selected { border-color: #f3ba54; outline: 3px solid #f3ba54; outline-offset: 3px; transform: translateY(-4px); }
+.hearts, .diamonds { color: #bd2541; }
+.clubs, .spades { color: #1d2c42; }
+.foundation.hearts, .foundation.diamonds { color: #f07389; }
+.foundation.clubs, .foundation.spades { color: #ccd7f7; }
+.place-button { border: 1px solid #7f8dcf; border-radius: 7px; padding: 6px 8px; background: #303d70; color: #f5f4ff; font-size: .76rem; font-weight: 700; }
+.place-button:hover, .place-button:focus-visible, .foundation:hover, .foundation:focus-visible { outline: 3px solid #8de5dc; outline-offset: 3px; filter: brightness(1.15); }
+.guide { max-width: 720px; margin: 0 auto; border-radius: 16px; padding: 20px; }
+.guide ol { margin: 0; padding-left: 1.45em; color: #dbe3ff; line-height: 1.85; }
+@media (max-width: 640px) { .game-shell { padding-top: 30px; } .status-card { align-items: flex-start; flex-direction: column; } .board { padding: 15px 10px; overflow-x: auto; } .top-row { min-width: 496px; } .tableau { min-width: 496px; } .column { min-height: 290px; } .card-stack { min-height: 230px; } .card { width: 67px; height: 91px; margin-bottom: -64px; } }

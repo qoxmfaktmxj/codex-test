@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미니 프리셀</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 카드 퍼즐</p>
+      <h1>미니 프리셀</h1>
+      <p class="intro">두 개의 빈 칸을 영리하게 써서 네 무늬의 카드를 기초 더미에 차례대로 모으세요.</p>
+    </header>
+
+    <section class="status-card" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite">맨 위 카드를 골라 움직일 곳을 선택하세요.</p>
+      <button id="reset" type="button">새로 시작</button>
+    </section>
+
+    <section class="board" aria-label="프리셀 카드 말판">
+      <div class="top-row">
+        <section class="area">
+          <h2>빈 칸</h2>
+          <div id="cells" class="cells"></div>
+        </section>
+        <section class="area foundations-area">
+          <h2>기초 더미</h2>
+          <div id="foundations" class="foundations"></div>
+        </section>
+      </div>
+      <section class="tableau-area">
+        <h2>카드 줄</h2>
+        <div id="tableau" class="tableau"></div>
+      </section>
+    </section>
+
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>각 줄의 맨 위 카드만 움직일 수 있습니다.</li>
+        <li>카드는 색을 번갈아 가며 한 단계 낮은 숫자 위에 놓습니다.</li>
+        <li>빈 칸에는 카드 한 장을 잠시 보관할 수 있고, 기초 더미에는 같은 무늬를 A부터 4까지 올립니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
