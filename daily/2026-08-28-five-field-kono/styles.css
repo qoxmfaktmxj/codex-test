@@ -1,0 +1,30 @@
+:root { color: #f8f1e4; background: #172b3a; font-family: "Noto Sans KR", system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: radial-gradient(circle at 15% 0%, #31566b, #172b3a 56%); }
+.game-shell { width: min(940px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 64px; }
+header { max-width: 650px; }
+.eyebrow { margin: 0; color: #f0bb58; font-size: .88rem; font-weight: 700; letter-spacing: .08em; }
+h1 { margin: 8px 0; font: 800 clamp(2.4rem, 8vw, 4.6rem)/1 Georgia, serif; letter-spacing: -.06em; }
+.intro { margin: 0; color: #d4e0dd; font-size: 1.08rem; }
+.status-card { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 32px 0 22px; padding: 15px 18px; background: #f8f1e4; color: #172b3a; border-radius: 12px; box-shadow: 0 12px 30px #0b182150; }
+.status-card p { margin: 0; font-weight: 700; }
+button { font: inherit; cursor: pointer; }
+#reset { flex: none; padding: 9px 13px; border: 0; border-radius: 8px; color: #fff9ec; background: #bf5a35; font-weight: 800; }
+.game-area { display: grid; place-items: center; padding: 28px; background: #e0b56d; border-radius: 18px; box-shadow: inset 0 0 0 6px #8f5d35, 0 18px 40px #09151d75; }
+.legend { display: flex; gap: 22px; align-items: center; justify-content: center; margin-bottom: 18px; color: #38281d; font-weight: 800; }
+.legend span { display: inline-flex; gap: 7px; align-items: center; }
+.stone, .piece { display: inline-block; border-radius: 50%; }
+.stone { width: 15px; height: 15px; }
+.blue { background: #28689a; box-shadow: inset 3px 3px 4px #72afc9, inset -3px -3px 4px #0e355f; }
+.orange { background: #d65e32; box-shadow: inset 3px 3px 4px #ffb068, inset -3px -3px 4px #8c2d23; }
+.board { display: grid; grid-template-columns: repeat(5, 1fr); width: min(520px, 100%); aspect-ratio: 1; padding: 4px; background: #55371f; }
+.cell { position: relative; min-width: 0; border: 1px solid #8f5d35; background: #f3d28b; }
+.cell::before, .cell::after { content: ""; position: absolute; inset: 50% auto auto 50%; width: 142%; height: 1px; background: #8f5d3555; transform: translate(-50%, -50%) rotate(45deg); pointer-events: none; }
+.cell::after { transform: translate(-50%, -50%) rotate(-45deg); }
+.piece { position: relative; z-index: 1; width: 70%; aspect-ratio: 1; border: 2px solid #fff8e6aa; }
+.cell.selected { outline: 5px solid #ffe595; outline-offset: -5px; }
+.cell:focus-visible { z-index: 2; outline: 4px solid #172b3a; outline-offset: -4px; }
+.guide { margin-top: 30px; padding: 24px 28px; border-left: 4px solid #f0bb58; background: #203b4b; }
+.guide h2 { margin: 0 0 10px; font-size: 1.1rem; }
+.guide ol { margin: 0; padding-left: 22px; color: #d4e0dd; line-height: 1.75; }
+@media (max-width: 520px) { .game-shell { width: min(100% - 24px, 940px); padding-top: 28px; } .status-card { align-items: flex-start; flex-direction: column; } .game-area { padding: 16px; } }
