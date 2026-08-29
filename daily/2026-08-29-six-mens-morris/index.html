@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>여섯 남자 모리스</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 전략 게임</p>
+      <h1>여섯 남자 모리스</h1>
+      <p class="intro">두 겹의 사각 말판에서 줄을 만들고 상대 말을 없애세요.</p>
+    </header>
+    <section class="status-card" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite"></p>
+      <button id="reset" type="button">새로 시작</button>
+    </section>
+    <section class="game-area" aria-label="여섯 남자 모리스 말판">
+      <div class="legend"><span><i class="stone black"></i>검은 말</span><span><i class="stone white"></i>흰 말</span></div>
+      <div id="board" class="board" aria-label="여섯 남자 모리스 말판"></div>
+    </section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>검은 말부터 번갈아 여섯 개의 말을 빈 점에 놓습니다.</li>
+        <li>가로 또는 세로로 같은 색 말 세 개를 이으면 상대 말 하나를 없앱니다.</li>
+        <li>모든 말을 놓은 뒤에는 연결된 다음 점으로만 움직입니다. 상대 말을 두 개 이하로 만들거나 움직이지 못하게 하면 이깁니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
