@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>젓가락 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 손놀이</p>
+      <h1>젓가락 게임</h1>
+      <p class="intro">손가락 수를 더해 상대의 두 손을 모두 0으로 만드세요.</p>
+    </header>
+    <section class="status-card" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite"></p>
+      <button id="reset" type="button">새로 시작</button>
+    </section>
+    <section class="table" aria-label="젓가락 게임 말판">
+      <div class="player orange"><h2>주황 플레이어</h2><div id="orange-hands" class="hands"></div></div>
+      <div class="divider">상대의 손을 눌러 칩니다</div>
+      <div class="player blue"><h2>파랑 플레이어</h2><div id="blue-hands" class="hands"></div></div>
+    </section>
+    <section class="split-card" aria-label="손가락 나누기">
+      <h2>손가락 나누기</h2>
+      <p>내 차례에는 손가락 수를 보존해 두 손에 다시 나눌 수 있습니다.</p>
+      <div class="split-controls"><label>왼손 <select id="first-split" aria-label="왼손 손가락 수"><option>1</option><option>2</option><option>3</option><option>4</option></select></label><label>오른손 <select id="second-split" aria-label="오른손 손가락 수"><option>1</option><option>2</option><option>3</option><option>4</option></select></label><button id="split" type="button">나누기</button></div>
+    </section>
+    <section class="guide"><h2>놀이 방법</h2><ol><li>파랑부터 내 손 하나와 상대 손 하나를 골라 칩니다.</li><li>상대 손가락 수에 내 손가락 수를 더합니다. 5가 되면 그 손은 0이 됩니다.</li><li>두 손의 합은 그대로 두고 새로 나눌 수도 있습니다. 상대의 두 손을 모두 0으로 만들면 이깁니다.</li></ol></section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
