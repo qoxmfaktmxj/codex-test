@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-08-31 | 피카리아 | 세 말을 놓고 선으로 이어진 이웃 점으로 옮겨 가로·세로·대각선 한 줄을 먼저 만드는 북미 원주민의 고전 전략 게임입니다. |
 | 2026-08-30 | 젓가락 게임 | 내 손가락 수를 상대 손에 더해 5가 되면 0으로 만들고, 손가락을 다시 나누며 상대의 두 손을 먼저 모두 0으로 만드는 고전 손놀이입니다. |
 | 2026-08-29 | 여섯 남자 모리스 | 두 겹의 사각 말판에 여섯 개의 말을 놓고 가로·세로 한 줄을 만들어 상대 말을 없애거나 움직이지 못하게 하는 고전 전략 게임입니다. |
 | 2026-08-28 | 다섯밭 코노 | 대각선으로 말 일곱 개를 한 칸씩 옮겨 상대편의 처음 자리 일곱 칸을 먼저 모두 채우는 한국의 고전 전략 게임입니다. |
@@ -17,9 +18,12 @@
 | 2026-08-24 | 미니 프리셀 | 두 개의 빈 칸을 활용해 색을 번갈아 한 단계 낮게 카드를 쌓고, 네 무늬를 A부터 4까지 기초 더미에 모으는 고전 카드 퍼즐입니다. |
 | 2026-08-23 | 미니 도미노 | 양 끝 숫자와 맞는 도미노를 이어 놓고, 내 도미노를 먼저 모두 없애는 고전 보드 게임입니다. |
 | 2026-08-22 | 미니 팔자 카드 | 같은 숫자나 무늬의 카드를 내고, 언제든 낼 수 있는 팔자 카드로 다음 무늬를 바꿔 내 카드를 먼저 없애는 고전 카드 게임입니다. |
-| 2026-08-21 | 미니 클론다이크 | 검은색과 빨간색 카드를 내림차순으로 쌓고, 같은 무늬의 카드를 A부터 기초 더미에 모으는 고전 카드 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 피카리아
+
+![피카리아 게임 화면](daily/2026-08-31-picaria/screenshot.png)
 
 ### 젓가락 게임
 
@@ -57,15 +61,12 @@
 
 ![미니 팔자 카드 게임 화면](daily/2026-08-22-crazy-eights/screenshot.png)
 
-### 미니 클론다이크
-
-![미니 클론다이크 게임 화면](daily/2026-08-21-klondike-solitaire/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-08-31-picaria/game-logic.test.js
 node daily/2026-08-30-chopsticks/game-logic.test.js
 node daily/2026-08-29-six-mens-morris/game-logic.test.js
 node daily/2026-08-28-five-field-kono/game-logic.test.js
@@ -80,5 +81,4 @@ node daily/2026-08-20-nonogram/game-logic.test.js
 node daily/2026-08-19-aces-up-solitaire/game-logic.test.js
 node daily/2026-08-18-peg-solitaire/game-logic.test.js
 node daily/2026-08-17-teeko/game-logic.test.js
-node daily/2026-08-16-bridgit/game-logic.test.js
 ```
