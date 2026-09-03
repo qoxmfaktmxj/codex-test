@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개구리 점프</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 퍼즐</p>
+      <h1>개구리 점프</h1>
+      <p class="intro">양쪽 연잎의 개구리를 뛰어넘어 자리를 완전히 바꿔 보세요.</p>
+    </header>
+    <section class="status-card" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite"></p>
+      <button id="reset" type="button">처음부터</button>
+    </section>
+    <section class="pond-card" aria-label="개구리 점프 연잎 줄">
+      <div id="pond" class="pond"></div>
+      <p class="counter">움직인 횟수 <strong id="moves">0</strong></p>
+    </section>
+    <section class="guide">
+      <h2>놀이 방법</h2>
+      <ol>
+        <li>초록 개구리는 오른쪽으로, 보라 개구리는 왼쪽으로만 갑니다.</li>
+        <li>앞의 빈 연잎으로 한 칸 움직이거나, 개구리 한 마리를 뛰어넘을 수 있습니다.</li>
+        <li>양쪽 개구리의 자리를 모두 바꾸면 성공입니다.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

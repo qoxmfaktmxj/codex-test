@@ -1,0 +1,30 @@
+:root { color-scheme: light; font-family: "Noto Sans KR", system-ui, sans-serif; background: #e8f4f0; color: #183a3a; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 28px 16px; background: radial-gradient(circle at 16% 12%, #fffddc 0 8%, transparent 28%), linear-gradient(145deg, #dff6ed, #cce5ed); }
+.game-shell { width: min(100%, 720px); }
+header { padding: 7px 8px 22px; }
+.eyebrow { margin: 0 0 7px; color: #257160; font-size: .78rem; font-weight: 850; letter-spacing: .13em; }
+h1 { margin: 0; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(2.75rem, 9vw, 5rem); letter-spacing: -.07em; }
+.intro { margin: 12px 0 0; color: #4b6966; font-size: 1.05rem; }
+.status-card, .pond-card, .guide { background: #fffef8; border: 1px solid #b8d5ca; border-radius: 21px; box-shadow: 0 14px 34px #27554b1c; }
+.status-card { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 17px 20px; margin-bottom: 16px; }
+#message { margin: 0; line-height: 1.45; font-weight: 800; }
+#reset { border: 0; border-radius: 999px; background: #1b665c; color: #fff; padding: 10px 16px; font: inherit; font-weight: 800; cursor: pointer; white-space: nowrap; }
+#reset:hover { background: #104d46; }
+.pond-card { padding: clamp(20px, 5vw, 45px) clamp(14px, 4vw, 34px) 19px; overflow: hidden; }
+.pond { position: relative; display: grid; grid-template-columns: repeat(7, 1fr); gap: clamp(4px, 1.3vw, 11px); padding: 26px 7px; }
+.pond::before { content: ""; position: absolute; inset: 43% -8% auto; height: 22%; border-radius: 999px; background: linear-gradient(90deg, #56b6c7, #7ac9d0 45%, #4aabc2); box-shadow: inset 0 8px 12px #26779528; }
+.leaf { position: relative; z-index: 1; aspect-ratio: 1; min-width: 0; border: 0; border-radius: 54% 46% 53% 47%; background: radial-gradient(circle at 34% 28%, #bdf282 0 10%, #61b94d 11% 68%, #27753c 70%); box-shadow: inset -7px -7px #155c3845, 0 5px 8px #14515e38; cursor: pointer; display: grid; place-items: center; transition: transform .16s ease, filter .16s ease; }
+.leaf::after { content: ""; position: absolute; width: 33%; height: 7%; right: 1%; top: 47%; background: #e8f4f0; transform: rotate(-20deg); border-radius: 0 100% 100% 0; opacity: .55; }
+.leaf.empty { background: radial-gradient(circle at 35% 30%, #d8f8a3, #8dce6b 65%, #438d4d); }
+.leaf:hover:not(:disabled), .leaf.selected { transform: translateY(-8px) rotate(-3deg); filter: saturate(1.2); }
+.leaf.selected { outline: 4px solid #f3ad37; outline-offset: 3px; }
+.leaf.destination { outline: 4px solid #fff4a8; outline-offset: 3px; animation: pulse 1s infinite alternate; }
+.frog { position: relative; z-index: 2; width: 58%; aspect-ratio: 1.15; border-radius: 52% 48% 45% 45%; display: grid; place-items: center; color: transparent; box-shadow: inset 0 -8px #0002, 0 4px 5px #173b3d66; }
+.frog::before, .frog::after { content: ""; position: absolute; top: 13%; width: 29%; aspect-ratio: 1; border-radius: 50%; background: #fff; box-shadow: inset 0 -2px #0002; }
+.frog::before { left: 12%; }.frog::after { right: 12%; }
+.frog.left { background: #258b50; }.frog.right { background: #7455aa; }
+.counter { margin: 14px 0 0; text-align: center; color: #4f706a; font-size: .95rem; }.counter strong { color: #1b665c; font-size: 1.15rem; }
+.guide { margin-top: 16px; padding: 18px 25px; }.guide h2 { margin: 0 0 8px; font-size: 1.1rem; }.guide ol { margin: 0; padding-left: 1.3rem; color: #49645f; line-height: 1.65; }
+@keyframes pulse { from { box-shadow: 0 0 0 #fff1a5; } to { box-shadow: 0 0 18px #ffe067; } }
+@media (max-width: 480px) { .status-card { align-items: flex-start; flex-direction: column; } #reset { width: 100%; } .pond { gap: 3px; padding-inline: 0; } }
