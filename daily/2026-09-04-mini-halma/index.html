@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미니 할마</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <p class="eyebrow">오늘의 고전 전략 게임</p>
+      <h1>미니 할마</h1>
+      <p class="intro">말을 건너편 모서리 캠프로 모두 옮기세요.</p>
+    </header>
+    <section class="status-card" aria-label="게임 상태와 조작">
+      <p id="message" aria-live="polite"></p>
+      <button id="reset" type="button">새로 시작</button>
+    </section>
+    <section class="board-card" aria-label="미니 할마 말판">
+      <div id="board" class="board"></div>
+      <div class="legend"><span><i class="piece blue"></i>파랑</span><span><i class="piece coral"></i>산호</span><b>이동 <em id="moves">0</em>회</b></div>
+    </section>
+    <section class="guide"><h2>놀이 방법</h2><ol><li>파랑부터 번갈아 말 하나를 움직입니다.</li><li>빈 이웃 칸으로 한 번 움직이거나, 인접한 말을 뛰어넘을 수 있습니다.</li><li>한 번의 차례에 여러 번 연속으로 뛰어넘어도 됩니다.</li><li>내 말 여섯 개를 모두 건너편 모서리 캠프에 넣으면 이깁니다.</li></ol></section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
