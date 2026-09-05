@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>시가 · 데일리 클래식 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">고대 이집트의 포위 전략</p>
+      <h1>시가</h1>
+      <p class="guide">말 두 개씩 열두 개를 놓은 뒤, 첫 수는 가운데로 움직이세요. 인접 칸으로 움직여 상대 말을 양쪽에서 끼워 잡고, 가운데 안전 칸을 활용하세요.</p>
+    </header>
+    <section class="game" aria-label="시가 게임">
+      <div class="status"><span id="turn-dot" aria-hidden="true"></span><strong id="message"></strong></div>
+      <div id="board" class="board" role="grid" aria-label="시가 말판"></div>
+      <div class="legend"><span><i class="piece sand"></i> 모래</span><span><i class="piece ink"></i> 먹빛</span><span class="safe">◎ 가운데는 안전</span></div>
+      <button id="reset" type="button">새 게임</button>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

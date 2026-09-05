@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@500;700&display=swap');
+
+:root { color: #2d2119; background: #e9dfc8; font-family: 'Noto Sans KR', sans-serif; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; background: radial-gradient(circle at 50% 8%, #fbf5e8 0 9%, transparent 35%), repeating-linear-gradient(90deg, #e9dfc8 0 3px, #e4d7bd 3px 6px); }
+main { width: min(92vw, 680px); margin: 0 auto; padding: 52px 0 44px; text-align: center; }
+.eyebrow { margin: 0; color: #927142; font-size: .76rem; font-weight: 700; letter-spacing: .18em; }
+h1 { margin: 9px 0 5px; font: 700 clamp(3rem, 10vw, 4.6rem)/1 'Gowun Batang', serif; letter-spacing: -.12em; }
+.guide { max-width: 500px; margin: 0 auto 27px; color: #6d5a49; font-size: .95rem; line-height: 1.7; }
+.game { padding: 20px 20px 24px; background: #fbf7ee; border: 1px solid #bca985; border-radius: 5px; box-shadow: 0 16px 35px #49381b26; }
+.status { min-height: 32px; display: flex; align-items: center; justify-content: center; gap: 9px; font-size: .95rem; }
+.dot { width: 12px; height: 12px; display: inline-block; border-radius: 50%; border: 1px solid #46382e; }
+.dot.sand, .piece.sand { background: #d69d51; }
+.dot.ink, .piece.ink { background: #344558; }
+.board { width: min(76vw, 440px); aspect-ratio: 1; margin: 14px auto 16px; display: grid; grid-template-columns: repeat(5, 1fr); padding: 12px; background: #af8752; border: 8px solid #5a432e; box-shadow: inset 0 0 0 2px #e0c58e; }
+.cell { position: relative; border: 1px solid #7b5a3a; background: #c9a16c; cursor: pointer; }
+.cell:hover:not(:disabled), .cell.selected { background: #e3c58b; }
+.cell.target::after { content: ''; position: absolute; inset: 31%; border-radius: 50%; background: #f8e8bc; box-shadow: 0 0 0 2px #80613d; }
+.cell.center { background: #d8b77f; }
+.piece { position: relative; z-index: 1; width: 70%; height: 70%; display: block; margin: auto; border: 2px solid #3c2c21; border-radius: 50%; box-shadow: inset 8px 8px 12px #ffffff42, 3px 4px 0 #37251444; }
+.center-mark { color: #80613d; font-size: 1.4rem; font-style: normal; }
+.legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px 18px; color: #6d5a49; font-size: .78rem; }
+.legend .piece { display: inline-block; width: 13px; height: 13px; vertical-align: -2px; margin-right: 4px; }.safe { color: #927142; }
+button { font: inherit; } #reset { margin-top: 22px; padding: 10px 24px; color: #fffaf0; background: #5b4430; border: 0; border-radius: 3px; cursor: pointer; font-weight: 700; } #reset:hover { background: #785938; }
+@media (max-width: 420px) { main { padding-top: 32px; }.game { padding: 15px 10px 20px; }.board { border-width: 6px; padding: 8px; } }
