@@ -1,0 +1,16 @@
+:root { color: #27223a; background: #e7e3f2; font-family: system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; background: linear-gradient(135deg, #e7e3f2, #f5f1e8 55%, #d7e5df); }
+main { width: min(92vw, 650px); margin: 0 auto; padding: 52px 0 44px; text-align: center; }
+.eyebrow { margin: 0; color: #6b6189; font-size: .78rem; font-weight: 750; letter-spacing: .13em; }
+h1 { margin: 9px 0 7px; font-size: clamp(2.2rem, 8vw, 3.75rem); letter-spacing: -.09em; }
+.guide { max-width: 500px; margin: 0 auto 27px; color: #5d5871; font-size: .94rem; line-height: 1.72; }
+.game { padding: 20px 20px 24px; background: #fbfafcdd; border: 1px solid #c8c1da; border-radius: 16px; box-shadow: 0 18px 38px #332c5724; }
+.status { min-height: 32px; display: flex; align-items: center; justify-content: center; gap: 9px; font-size: .96rem; }
+.dot { width: 12px; height: 12px; display: inline-block; border: 1px solid #362e48; border-radius: 50%; }.dot.white, .piece.white { background: #f7f3de; }.dot.black, .piece.black { background: #493f65; }
+.board { width: min(78vw, 430px); aspect-ratio: 1; margin: 15px auto 17px; display: grid; grid-template-columns: repeat(5, 1fr); padding: 9px; background: #65597e; border: 8px solid #352e49; border-radius: 8px; box-shadow: inset 0 0 0 2px #a99fbd, 0 6px 0 #282239; }
+.cell { position: relative; border: 1px solid #a79bbb; background: #e6dfc5; cursor: pointer; }.cell:nth-child(odd) { background: #d9cfad; }.cell:hover:not(:disabled), .cell.selected { background: #f4cf87; }.cell.target::after { content: ''; position: absolute; inset: 34%; border-radius: 50%; background: #5f9b82; box-shadow: 0 0 0 2px #eaf5eb; }
+.piece { position: relative; z-index: 1; width: 72%; height: 72%; display: block; margin: auto; border: 2px solid #3c354d; border-radius: 50%; box-shadow: inset 8px 8px 10px #ffffff80, 3px 4px 0 #39314938; }.piece.black { border-color: #28223c; }
+.legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 18px; color: #5d5871; font-size: .79rem; }.legend .piece { display: inline-block; width: 13px; height: 13px; vertical-align: -2px; margin-right: 4px; }
+button { font: inherit; } #reset { margin-top: 23px; padding: 10px 24px; color: #fff; background: #51456f; border: 0; border-radius: 8px; cursor: pointer; font-weight: 750; } #reset:hover { background: #6a5b8d; }
+@media (max-width: 420px) { main { padding-top: 33px; }.game { padding: 15px 10px 20px; }.board { border-width: 6px; padding: 6px; } }
