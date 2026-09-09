@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>우물고누 · 데일리 클래식 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">우리네 마당에서 이어진 작은 수싸움</p>
+      <h1>우물고누</h1>
+      <p class="guide">내 말을 가로·세로·대각선으로 이웃한 빈칸에 한 칸 옮기세요. 상대 말이 더 이상 움직이지 못하면 이깁니다.</p>
+    </header>
+    <section class="game" aria-label="우물고누 게임">
+      <div class="status"><span id="turn-dot" aria-hidden="true"></span><strong id="message"></strong></div>
+      <div id="board" class="board" role="group" aria-label="우물고누 말판"></div>
+      <div class="legend"><span><i class="piece white"></i> 흰 돌</span><span><i class="piece black"></i> 검은 돌</span><span>빈칸으로 한 칸씩</span></div>
+      <button id="reset" type="button">새 게임</button>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
