@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미니 파노로나 · 데일리 클래식 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">마다가스카르의 포위와 추격</p>
+      <h1>미니 파노로나</h1>
+      <p class="guide">선으로 이어진 빈 점에 말을 한 칸 옮기세요. 상대에게 다가가거나 등을 돌려 연달아 있는 말을 잡을 수 있으며, 잡을 수 있으면 반드시 잡아야 합니다.</p>
+    </header>
+    <section class="game" aria-label="미니 파노로나 게임">
+      <div class="status"><span id="turn-dot" aria-hidden="true"></span><strong id="message"></strong></div>
+      <div id="board" class="board" role="group" aria-label="미니 파노로나 말판"></div>
+      <div id="capture-choice" class="capture-choice" aria-live="polite"></div>
+      <div class="legend"><span><i class="piece white"></i> 흰 말</span><span><i class="piece black"></i> 검은 말</span><span>잡을 수 있으면 잡기</span></div>
+      <button id="reset" type="button">새 게임</button>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
