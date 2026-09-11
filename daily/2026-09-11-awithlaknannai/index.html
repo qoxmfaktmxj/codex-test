@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>아위슬라크난나이 · 데일리 클래식 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">주니족의 세 줄 전략</p>
+      <h1>아위슬라크난나이</h1>
+      <p class="guide">해와 달의 말을 여섯 개씩 놓으세요. 가로 또는 세로로 세 말을 이으면 상대 말 하나를 잡습니다. 말을 세 개 미만으로 줄이면 승리합니다.</p>
+    </header>
+    <section class="game" aria-label="아위슬라크난나이 게임">
+      <div class="status"><span id="turn-dot" aria-hidden="true"></span><strong id="message"></strong></div>
+      <div id="board" class="board" role="group" aria-label="아위슬라크난나이 말판"></div>
+      <div class="score"><span>해 남은 말 <b id="sun-count"></b></span><span>달 남은 말 <b id="moon-count"></b></span></div>
+      <button id="reset" type="button">새 게임</button>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
