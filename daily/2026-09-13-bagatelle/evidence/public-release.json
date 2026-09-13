@@ -1,0 +1,25 @@
+{
+  "gameCommit": "7fa5337795768dbc3435b0094e57fe448f2ad2c7",
+  "url": "https://raw.githack.com/qoxmfaktmxj/codex-test/7fa5337795768dbc3435b0094e57fe448f2ad2c7/daily/2026-09-13-bagatelle/index.html",
+  "initialNotice": "External Content Notice: Open the page clicked and actual game loaded",
+  "title": "바가텔 — 나무판 위의 작은 유원지",
+  "resourceStatus": 200,
+  "resourceSHA256": {
+    "app.js": "5877c6960901c49ead725746e82d6ecb701adffbe847bfcc42e138ee95a213e8",
+    "game-logic.js": "aa638849a9a98e4cd710ade5a8f30a6d3c73ca5f7fb79974fc3811eed720ffa5",
+    "styles.css": "2be7e85cd29e757e931a925ffac916ea37c962d1b7eaa9e91f16506149da6559"
+  },
+  "remoteBytesMatchLocal": true,
+  "liveShot": {
+    "power": 60,
+    "score": 50,
+    "remaining": 4
+  },
+  "resetRemaining": 5,
+  "uncaughtPageErrors": 0,
+  "gitRemoteVerified": true,
+  "remainingBagatelleFolders": [
+    "2026-09-13-bagatelle"
+  ],
+  "runbookSHA256": "0730c340d18e476e24c1a47ca1a60840870598fa45d1451c371d3e56b995ec41"
+}

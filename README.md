@@ -24,7 +24,9 @@
 
 ![빈티지 목재 바가텔 오락기](daily/2026-09-13-bagatelle/screenshot.png)
 
-[게임 열기](https://raw.githack.com/qoxmfaktmxj/codex-test/main/daily/2026-09-13-bagatelle/index.html) · [모바일 화면](daily/2026-09-13-bagatelle/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-13-bagatelle/DESIGN.md)
+[게임 열기](https://raw.githack.com/qoxmfaktmxj/codex-test/7fa5337795768dbc3435b0094e57fe448f2ad2c7/daily/2026-09-13-bagatelle/index.html) · [모바일 화면](daily/2026-09-13-bagatelle/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-13-bagatelle/DESIGN.md)
+
+첫 접속 시 외부 뷰어 안내의 **Open the page**를 누르면 게임이 열립니다.
 
 ### 밍망
 

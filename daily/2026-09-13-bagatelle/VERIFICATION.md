@@ -35,4 +35,4 @@ workspace의 `scripts/codex-test-daily-game-runbook.md`도 같은 정책으로 �
 
 ## 배포 경로
 
-GitHub Pages는 검증 시 404로 미구성이므로 사용하지 않는다. README는 Raw.githack의 공개 정적 실행 링크를 제공한다. 출시 후 커밋 고정 URL에서 실제 리소스 로딩과 발사를 추가 검증한다. Git 원격은 push 뒤 fetch하여 HEAD와 origin/main 일치를 확인한다.
+GitHub Pages는 검증 시 404로 미구성이므로 사용하지 않는다. README는 Raw.githack의 공개 정적 실행 링크를 제공한다. 게임 구현 커밋 `7fa5337795768dbc3435b0094e57fe448f2ad2c7`의 [고정 플레이 URL](https://raw.githack.com/qoxmfaktmxj/codex-test/7fa5337795768dbc3435b0094e57fe448f2ad2c7/daily/2026-09-13-bagatelle/index.html)에서 실제 리소스 로딩과 발사/득점/리셋을 검증했다. 첫 접속 외부 뷰어 안내의 Open the page 클릭 후 정상 진입했다. JS/CSS 모두 HTTP 200 및 로컬 SHA256 일치, 한 공 50점/남은 공 4개, 리셋 후 5개, 페이지 예외 0개. Git 원격은 push 뒤 fetch하여 HEAD와 origin/main 일치 및 바가텔 폴더 한 개만 존재함을 확인했다. `evidence/public-release.json` 참고.
