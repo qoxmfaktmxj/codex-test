@@ -1,0 +1,10 @@
+375/768/1024/1440 no horizontal overflow; actual screenshots saved
+Desktop keyboard slider/launch, rolling lock, ball movement, reset during motion PASS
+Mobile touch shot 1: power 38, score 010
+Mobile touch shot 2: power 49, score 030
+Mobile touch shot 3: power 59, score 050
+Mobile touch shot 4: power 69, score 070
+Mobile touch shot 5: power 80, score 080
+Mobile five shots, sum, finish lock, restart PASS
+Reduced-motion hides trails; game and reset still work PASS
+Browser uncaught errors: 0

@@ -1,0 +1,16 @@
+{
+  "id": "b2f73dce-1cd8-4ed9-ae50-a47bea039ac6",
+  "name": "codex-test 데일리 클래식 게임 생성 (매일 12:15 KST)",
+  "schedule": {
+    "kind": "cron",
+    "expr": "15 12 * * *",
+    "tz": "Asia/Seoul"
+  },
+  "enabled": true,
+  "payload": {
+    "message": "매일 오후 12:15 (Asia/Seoul)에 codex-test 데일리 클래식 게임을 1개 추가하는 작업입니다. 이 작업은 isolated 세션에서 수행됩니다.\n\n먼저 `/root/.openclaw/workspace/scripts/codex-test-daily-game-runbook.md`를 읽고, 그 절차를 그대로 실행하세요.\n\n핵심 요약:\n- 대상 레포: `/root/.openclaw/workspace/codex-test`, branch `main`\n- KST 오늘 날짜로 `daily/YYYY-MM-DD-<slug>` 폴더 1개 추가\n- 작은 클래식 게임, 한글 UI, 정적 HTML/CSS/JS, 새 의존성 금지\n- Superpowers 방식 사용: TDD(테스트 먼저 실패 확인 후 구현) + 전체 테스트 + 별도 리뷰어 코드리뷰 후 Critical/Important 수정\n- README에 웹 스크린샷과 간단 설명 추가\n- README 게임이 10개 초과 시 오래된 설명/스크린샷은 `archive/README-games.md`에 보관하고 루트 README는 최신 10개 유지\n- 커밋 후 `git push origin main`\n\n최종 응답은 runbook의 최종 출력 형식 한 줄만 반환하세요.\n\n필수 디자인 절차(제작/부분 복구 모두 적용): anthropic-frontend-design SKILL.md를 읽고, 기존 코드/테스트만 재사용하며 기존 UI 복제는 금지합니다. 최근 7개 게임을 실제 브라우저로 실행·스크린샷 비교한 뒤 제작 전 DESIGN.md에 콘셉트를 정하세요. 구도·타이포·재질·움직임 중 최소 3개를 실질적으로 차별화하고 어두운 배경+금색 강조+일반 패널의 반복을 피하세요. 게임판이 주인공이어야 합니다. desktop/mobile 실제 플레이와 스크린샷 시각 리뷰에서 최근 UI와 유사하면 수정 후 다시 검증하세요. 목업은 실제 캡처를 대체하지 않습니다. 기존 TDD/전체 테스트/별도 리뷰와 중요 수정/중복 방지/README 최신10개+archive/commit·push 규칙은 유지하며 push 후 fetch로 원격 반영을 확인하세요.",
+    "model": "openai/gpt-6-astra",
+    "thinking": "low",
+    "timeoutSeconds": 3000
+  }
+}

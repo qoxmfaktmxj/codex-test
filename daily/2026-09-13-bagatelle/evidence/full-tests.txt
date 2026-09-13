@@ -1,0 +1,628 @@
+daily/2026-04-24-tic-tac-toe/game-logic.test.js
+ok - starts with an empty X turn game
+ok - places a mark and switches turns
+ok - rejects moves on occupied cells
+ok - rejects moves outside whole-number board indexes
+ok - detects a winning row
+ok - marks the game won after a winning move
+ok - marks the game drawn when the board fills without a winner
+
+daily/2026-04-27-memory-match/game-logic.test.js
+ok - starts with all cards face down
+ok - flips one card without counting a move
+ok - matches a pair and counts one move
+ok - keeps an unmatched pair visible until hidden
+ok - rejects invalid flips and a third flip before hiding unmatched cards
+ok - marks the game won after all pairs are matched
+
+daily/2026-04-27-number-baseball/game-logic.test.js
+ok - starts with the provided answer and no attempts
+ok - creates a three digit answer without duplicate digits
+ok - creates an answer that does not start with zero
+ok - rejects guesses that start with zero
+ok - counts strikes and balls for a valid guess
+ok - rejects guesses that are not three unique digits
+ok - records valid attempts and keeps playing until solved
+ok - marks the game as won when all three digits are strikes
+
+daily/2026-04-27-rock-paper-scissors/game-logic.test.js
+ok - starts with zero scores and no round result
+ok - keeps score unchanged when both choices match
+ok - adds one player point when player choice beats computer choice
+ok - adds one computer point when computer choice beats player choice
+ok - keeps score across rounds
+ok - rejects moves outside the choice set
+
+daily/2026-04-29-hangman/game-logic.test.js
+ok - starts with hidden Korean word and no misses
+ok - reveals every matching Korean letter
+ok - counts a wrong unused letter as one miss
+ok - ignores duplicate guesses without changing misses
+ok - wins when every Korean letter is revealed
+ok - loses after maximum misses
+ok - rejects guesses that are not one Korean syllable
+ok - picks a word by clamping random value into the word list
+ok - falls back to the default word when word list is empty
+
+daily/2026-05-11-lights-out/game-logic.test.js
+ok - starts with a 3x3 Korean lights-out puzzle
+ok - starts as solved when every light is already off
+ok - toggles selected center cell and its four neighbors
+ok - toggles only valid edge neighbors at a corner
+ok - ignores invalid moves without changing the game
+ok - marks the game solved when every light is off
+ok - does not accept moves after the puzzle is solved
+ok - counts lights that are still on
+
+daily/2026-05-15-number-puzzle/game-logic.test.js
+ok - starts with a 3x3 Korean number puzzle
+ok - moves a tile into the empty space when it is adjacent
+ok - ignores a tile that is not next to the empty space
+ok - lists only tiles next to the empty space as movable
+ok - does not accept moves after the puzzle is solved
+ok - recognizes the solved tile order
+ok - enables only movable tiles while playing
+ok - disables every tile after the puzzle is solved
+
+daily/2026-05-15-simon-memory/game-logic.test.js
+ok - starts a Korean Simon memory game by showing one random tile to memorize
+ok - starts input only after the player chooses to begin
+ok - hides the answer sequence during player input
+ok - accepts a correct tile and adds a random next round after the sequence is completed
+ok - tracks progress inside a longer hidden sequence
+ok - marks the game lost when the tile does not match the hidden sequence
+ok - wins after completing the target round
+ok - ignores invalid tiles, memorize phase input, and finished games
+ok - formats sequence and remaining count for the Korean UI
+
+daily/2026-05-15-snake/game-logic.test.js
+ok - starts with a snake in the center and Korean playing status
+ok - moves one cell in the current direction without eating food
+ok - grows and scores when eating food
+ok - ends the game when the snake hits a wall
+ok - rejects an immediate reverse direction
+ok - allows any starting direction while the snake has one cell
+ok - prevents a second key press from reversing before the next movement
+ok - marks the game won when no empty food cell remains
+ok - does not move after the game is no longer playing
+ok - preserves a null food cell for completed games
+
+daily/2026-05-16-snake/game-logic.test.js
+ok - starts a Korean snake game in the center of the board
+ok - rejects an immediate reverse turn but accepts a perpendicular turn
+ok - moves one step without eating and keeps the same length
+ok - grows when eating food and places the next food on an empty cell
+ok - skips occupied random food cells until an empty cell is found
+ok - wins when the snake reaches the target length
+ok - loses when hitting a wall or its own body
+ok - formats helpers for the Korean UI
+
+daily/2026-05-17-breakout/game-logic.test.js
+ok - 새 게임은 벽돌, 패들, 공, 한글 상태를 준비한다
+ok - 패들은 게임판 밖으로 나가지 않는다
+ok - 공은 벽에 닿으면 가로 방향을 튕긴다
+ok - 공은 천장에 닿으면 아래로 튕긴다
+ok - 패들 위에 닿은 공은 위로 튕긴다
+ok - 벽돌에 닿으면 벽돌이 사라지고 점수가 오른다
+ok - 마지막 벽돌을 깨면 승리한다
+ok - 공이 바닥 아래로 지나가면 게임이 끝난다
+ok - 종료된 게임은 더 움직이지 않는다
+
+daily/2026-05-18-whack-a-mole/game-logic.test.js
+ok - 새 게임은 3x3 판과 한글 상태를 준비한다
+ok - 두더지가 있는 구멍을 누르면 점수가 오르고 다음 두더지가 나온다
+ok - 빈 구멍을 누르면 실수가 늘고 다음 두더지가 나온다
+ok - 실수가 최대치에 닿으면 게임이 종료된다
+ok - 유효하지 않은 구멍 번호는 무시한다
+ok - 종료된 게임은 더 이상 변하지 않는다
+ok - 다음 두더지는 현재 위치와 다른 구멍을 고른다
+
+daily/2026-05-19-space-invaders/game-logic.test.js
+✓ 새 게임은 플레이어와 침략자를 정해진 위치에 배치한다
+✓ 플레이어는 보드 밖으로 이동하지 않는다
+✓ 레이저는 한 번만 발사되며 위로 이동한다
+✓ 레이저가 침략자를 맞히면 점수가 오르고 침략자가 제거된다
+✓ 침략자가 벽에 닿으면 방향을 바꾸고 한 칸 내려온다
+✓ 모든 침략자를 제거하면 승리한다
+✓ 침략자가 방어선에 닿으면 게임이 끝난다
+
+daily/2026-05-20-frogger/game-logic.test.js
+✓ 새 게임은 개구리와 자동차를 정해진 위치에 배치한다
+✓ 개구리는 판 밖으로 이동하지 않는다
+✓ 비정상 개구리 옵션은 시작 위치로 보정한다
+✓ 개구리가 도착 줄에 닿으면 승리한다
+✓ 자동차는 방향대로 움직이고 가장자리를 넘어가면 반대편에서 나타난다
+✓ 자동차가 있는 칸으로 이동하면 게임이 끝난다
+✓ 자동차가 움직여 개구리와 만나도 게임이 끝난다
+✓ 끝난 게임은 더 움직이지 않는다
+
+daily/2026-05-21-minesweeper/game-logic.test.js
+✓ 새 게임은 8x8 판에 지뢰 10개를 숨긴다
+✓ 좌표는 한 줄 인덱스로 바뀌고 이웃 칸은 모서리를 넘지 않는다
+✓ 주변 지뢰 수를 정확히 계산한다
+✓ 빈 칸을 열면 연결된 안전 칸이 함께 열린다
+✓ 숫자 칸을 열면 해당 칸만 열린다
+✓ 지뢰를 열면 모든 지뢰가 보이고 게임이 끝난다
+✓ 깃발은 닫힌 칸에서만 켜고 끌 수 있다
+✓ 깃발 칸과 끝난 게임은 열리지 않는다
+
+daily/2026-05-22-pong/game-logic.test.js
+✓ 새 게임은 중앙 공과 왼쪽 플레이어, 오른쪽 상대를 배치한다
+✓ 받침대는 경기장 밖으로 나가지 않는다
+✓ 공은 위아래 벽에 닿으면 세로 방향을 바꾼다
+✓ 왼쪽 받침대에 맞은 공은 오른쪽으로 튕긴다
+✓ 오른쪽 받침대에 맞은 공은 왼쪽으로 튕긴다
+✓ 공을 놓치면 상대 점수가 오르고 라운드가 다시 시작된다
+✓ 세 점을 먼저 얻으면 게임이 끝난다
+✓ 끝난 게임은 움직이지 않고 리셋하면 새 라운드가 된다
+
+daily/2026-05-23-blackjack/game-logic.test.js
+✓ 새 덱은 서로 다른 카드 52장으로 만든다
+✓ 패 값은 에이스를 11 또는 1로 조정한다
+✓ 새 게임은 플레이어와 딜러에게 두 장씩 나누고 플레이 상태를 만든다
+✓ 플레이어가 카드를 받아 21을 넘으면 패배한다
+✓ 플레이어가 멈추면 딜러는 17 이상까지 받고 점수를 비교한다
+✓ 처음 두 장으로 21을 만들면 즉시 승리한다
+
+daily/2026-05-24-connect-four/game-logic.test.js
+✓ 새 게임은 6행 7열 빈 판과 노란 말 차례로 시작한다
+✓ 말은 선택한 열의 가장 아래 빈칸에 놓이고 차례가 바뀐다
+✓ 가로 네 줄을 만들면 승리한다
+✓ 세로 네 줄을 만들면 승리한다
+✓ 대각선 네 줄을 만들면 승리한다
+✓ 가득 찬 열이나 끝난 게임에는 말을 놓을 수 없다
+✓ 판이 모두 차면 무승부가 된다
+
+daily/2026-05-25-2048-puzzle/game-logic.test.js
+✓ 빈 판은 4x4 크기로 만들어진다
+✓ 새 게임은 지정한 난수 위치에 숫자 두 개를 놓고 시작한다
+✓ 한 줄을 왼쪽으로 밀 때 같은 숫자는 한 번만 합쳐진다
+✓ 왼쪽 이동은 모든 행을 압축하고 점수를 더한다
+✓ 상하좌우 이동을 모두 지원한다
+✓ 빈칸이나 합칠 수 있는 이웃이 있으면 계속 진행할 수 있다
+
+daily/2026-05-26-othello/game-logic.test.js
+✓ 새 오셀로 게임은 8x8 기본 배치와 흑돌 차례로 시작한다
+✓ 초기 흑돌의 합법 수 네 곳과 뒤집힐 돌을 계산한다
+✓ 돌을 놓으면 상대 돌을 뒤집고 차례가 바뀐다
+✓ 합법 수가 아닌 칸에는 돌을 놓을 수 없다
+✓ 상대가 둘 곳이 없으면 차례를 건너뛴다
+✓ 양쪽 모두 둘 곳이 없으면 더 많은 돌을 가진 쪽이 승리한다
+
+daily/2026-05-28-falling-blocks/game-logic.test.js
+낙하 블록 로직 테스트 통과
+
+daily/2026-05-31-maze-escape/game-logic.test.js
+✓ 새 게임은 시작 위치와 열쇠 없는 진행 상태로 시작한다
+✓ 벽이나 지도 밖으로는 이동할 수 없다
+✓ 빈 길로 움직이면 위치와 이동 횟수가 바뀐다
+✓ 열쇠 칸에 도착하면 열쇠를 얻는다
+✓ 열쇠가 없으면 출구로 나갈 수 없고 열쇠가 있으면 승리한다
+
+daily/2026-06-01-sokoban/game-logic.test.js
+✓ 새 게임은 플레이어와 상자를 올바른 위치에 둔다
+✓ 벽이나 지도 밖으로는 이동할 수 없다
+✓ 빈 칸으로 이동하면 위치와 이동 횟수가 바뀐다
+✓ 상자 뒤가 비어 있으면 상자를 한 칸 민다
+✓ 상자 뒤가 막히면 상자를 밀 수 없다
+✓ 모든 목표 위에 상자를 올리면 승리한다
+
+daily/2026-06-05-nim/game-logic.test.js
+✓ 새 게임은 스물한 개의 돌과 플레이어 차례로 시작한다
+✓ 남은 돌보다 많이 가져갈 수 없다
+✓ 돌을 가져가면 남은 돌과 기록이 갱신된다
+✓ 컴퓨터는 네의 배수를 남기는 수를 고른다
+✓ 플레이어 한 수 뒤 컴퓨터가 자동으로 응수한다
+✓ 마지막 돌을 가져가면 승패가 결정된다
+
+daily/2026-06-06-tower-of-hanoi/game-logic.test.js
+✓ 새 게임은 모든 원반이 첫 번째 기둥에 큰 원반부터 놓인다
+✓ 빈 기둥에서 원반을 옮길 수 없다
+✓ 작은 원반 위에 큰 원반을 올릴 수 없다
+✓ 합법 이동은 원반 위치와 이동 수를 갱신한다
+✓ 가능한 이동 목록은 현재 상태의 합법 이동만 담는다
+✓ 마지막 기둥에 모든 원반을 옮기면 승리한다
+
+daily/2026-06-07-lunar-lander/game-logic.test.js
+✓ 새 게임은 착륙선의 높이, 속도, 연료를 초기화한다
+✓ 추력을 쓰지 않으면 중력 때문에 하강 속도가 커진다
+✓ 추력을 쓰면 연료가 줄고 하강 속도가 완화된다
+✓ 연료가 없으면 추력 입력은 무시된다
+✓ 안전 속도 이하로 표면에 닿으면 착륙 성공이다
+✓ 너무 빠르게 표면에 닿으면 착륙 실패다
+✓ 상태와 추력 문구는 한국어로 현재 상황을 설명한다
+
+daily/2026-06-08-peg-solitaire/game-logic.test.js
+✓ 새 게임은 중앙 구멍만 비운 십자형 판을 만든다
+✓ 처음에는 중앙으로 뛰어드는 네 가지 이동만 가능하다
+✓ 유효한 이동은 출발 말과 건넌 말을 비우고 도착 칸에 말을 둔다
+✓ 규칙에 맞지 않는 이동은 판을 바꾸지 않고 안내 문구를 보여준다
+✓ 첫 선택 뒤 같은 말을 다시 누르면 선택이 취소된다
+✓ 이동할 수 없는 판은 남은 말 수에 따라 성공과 실패를 판정한다
+✓ 요약 문구는 한국어로 남은 말과 이동 횟수를 설명한다
+
+daily/2026-06-09-mastermind/game-logic.test.js
+✓ 새 게임은 네 자리 비밀 코드와 빈 추측줄을 만든다
+✓ 정답 판정은 정확한 위치와 색만 맞은 개수를 따로 센다
+✓ 슬롯에 색을 넣으면 현재 추측이 바뀌고 이전 게임은 보존된다
+✓ 네 칸을 모두 채우지 않으면 제출하지 않는다
+✓ 틀린 제출은 기록을 추가하고 다음 줄로 넘어간다
+✓ 정답을 맞히면 승리 상태가 되고 남은 차례를 보여준다
+✓ 마지막 차례까지 실패하면 패배 상태가 된다
+✓ 무작위 코드는 지정 길이와 색 목록을 따른다
+
+daily/2026-06-10-nim/game-logic.test.js
+✓ 새 게임은 세 더미와 첫 번째 차례를 준비한다
+✓ 한 차례에는 한 더미에서 가능한 개수만 가져갈 수 있다
+✓ 돌을 가져가면 더미가 줄고 차례가 바뀐다
+✓ 마지막 돌을 가져간 사람이 승리한다
+✓ 끝난 게임이나 잘못된 수는 상태를 바꾸지 않는다
+✓ 가능한 수 목록은 남은 돌 기준으로 만든다
+
+daily/2026-06-11-pig-dice/game-logic.test.js
+✓ 새 게임은 목표 점수와 내 차례를 준비한다
+✓ 2부터 6까지는 이번 차례 점수에 더한다
+✓ 1이 나오면 이번 차례 점수를 잃고 차례가 넘어간다
+✓ 점수를 저장하면 누적 점수가 오르고 차례가 바뀐다
+✓ 목표 점수에 도달하면 승자를 확정한다
+✓ 컴퓨터는 위험 점수나 승리 가능 점수에서 저장을 고른다
+✓ 새로 시작하면 점수와 상태가 초기화된다
+
+daily/2026-06-12-high-low-card/game-logic.test.js
+✓ 새 게임은 첫 카드를 열고 남은 카드와 기회를 준비한다
+✓ 카드 비교는 높음, 낮음, 같음을 판정한다
+✓ 정답을 맞히면 연속 정답과 최고 기록이 오른다
+✓ 오답이면 기회가 줄고 연속 정답은 초기화된다
+✓ 목표 연속 정답에 도달하면 승리한다
+✓ 기회를 모두 잃으면 게임이 끝난다
+✓ 카드가 떨어지면 현재 기록으로 종료한다
+✓ 새로 시작하면 상태가 초기화된다
+
+daily/2026-06-13-dice-poker/game-logic.test.js
+✓ 새 게임은 다섯 주사위와 세 번의 굴리기 기회를 준비한다
+✓ 주사위를 굴리면 고정하지 않은 칸만 바뀌고 기회가 줄어든다
+✓ 굴리기 전에는 주사위를 고정할 수 없다
+✓ 굴린 뒤에는 원하는 주사위 고정을 바꿀 수 있다
+✓ 점수 계산은 고전 주사위 포커 조합을 판정한다
+✓ 가장 높은 조합을 추천한다
+✓ 조합을 선택하면 점수를 기록하고 게임을 끝낸다
+✓ 새로 시작하면 상태가 초기화된다
+
+daily/2026-06-14-mini-sudoku/game-logic.test.js
+✓ 새 게임은 4x4 퍼즐과 고정 칸을 준비한다
+✓ 행, 열, 2x2 구역에 같은 숫자가 있으면 입력할 수 없다
+✓ 고정 칸은 선택할 수 있지만 값을 바꿀 수 없다
+✓ 빈 칸에 올바른 숫자를 넣으면 보드가 갱신된다
+✓ 잘못된 숫자를 넣으면 오류가 늘고 칸은 비어 있다
+✓ 입력한 칸만 지울 수 있다
+✓ 모든 칸이 해답과 일치하면 게임이 완료된다
+✓ 겹침 없는 다른 완성판도 완료로 인정한다
+✓ 칸 상태는 고정, 선택, 오류 여부를 알려준다
+✓ 새로 시작하면 처음 퍼즐로 돌아간다
+
+daily/2026-06-15-dots-and-boxes/game-logic.test.js
+✓ 새 게임은 4x4 점과 3x3 칸을 비운 상태로 시작한다
+✓ 빈 선을 그으면 차례가 넘어가고 선 상태가 표시된다
+✓ 이미 그은 선이나 범위 밖 선은 점수와 차례를 바꾸지 않는다
+✓ 칸의 네 변을 완성하면 점수를 얻고 한 번 더 둔다
+✓ 가운데 선은 두 칸을 동시에 완성할 수 있다
+✓ 모든 칸을 채우면 승자를 알려 주고 게임을 끝낸다
+✓ 새로 시작하면 처음 상태로 돌아간다
+
+daily/2026-06-16-mancala/game-logic.test.js
+✓ 새 게임은 양쪽 여섯 칸에 네 개씩 돌을 놓고 시작한다
+✓ 자기 칸을 고르면 돌을 반시계 방향으로 한 개씩 뿌린다
+✓ 마지막 돌이 자기 저장소에 들어가면 한 번 더 둔다
+✓ 빈 자기 칸에 마지막 돌이 멈추면 맞은편 돌을 잡는다
+✓ 상대 저장소는 건너뛰고 돌을 계속 뿌린다
+✓ 빈 칸이나 상대 칸은 선택할 수 없다
+✓ 한쪽 칸이 모두 비면 남은 돌을 저장소로 모으고 승자를 정한다
+✓ 칸 상태 조회와 새로 시작이 동작한다
+
+daily/2026-06-17-card-war/game-logic.test.js
+✓ 새 카드 묶음은 네 문양의 열세 등급으로 만든다
+✓ 새 게임은 점수 없이 지정 라운드와 섞인 카드로 시작한다
+✓ 내 카드가 높으면 내 점수가 오르고 카드 두 장을 소비한다
+✓ 컴퓨터 카드가 높으면 컴퓨터 점수가 오른다
+✓ 같은 등급이면 점수 없이 라운드만 진행한다
+✓ 마지막 라운드가 끝나면 승자를 안내한다
+✓ 카드가 부족하면 즉시 완료하고 현재 점수로 승자를 정한다
+✓ 카드 표시와 다시 시작이 동작한다
+
+daily/2026-06-18-color-flood/game-logic.test.js
+✓ 정해진 난수로 지정 크기의 색깔 판을 만든다
+✓ 새 게임은 판, 이동 제한, 시작 메시지를 준비한다
+✓ 왼쪽 위와 이어진 같은 색 영역을 찾는다
+✓ 색을 고르면 이어진 영역이 바뀌고 같은 색 이웃까지 흡수한다
+✓ 이미 같은 색을 고르면 이동 수를 쓰지 않는다
+✓ 모든 칸이 같은 색이 되면 승리로 끝난다
+✓ 이동 제한을 모두 쓰면 실패로 끝난다
+✓ 순수 함수로 판을 직접 채울 수 있다
+
+daily/2026-06-19-snakes-and-ladders/game-logic.test.js
+✓ 정해진 난수로 1부터 6까지 주사위를 만든다
+✓ 새 게임은 두 말을 시작 칸에 놓고 내 차례로 시작한다
+✓ 사다리에 도착하면 위 칸으로 올라간다
+✓ 뱀에 도착하면 아래 칸으로 내려간다
+✓ 도착 칸을 넘는 주사위는 이동하지 않는다
+✓ 차례를 진행하면 말 위치와 다음 차례가 바뀐다
+✓ 정확히 마지막 칸에 도착하면 승리한다
+✓ 보드 칸은 화면 표시용 이동 정보와 함께 36칸을 만든다
+
+daily/2026-06-20-gomoku/game-logic.test.js
+✓ 새 오목판은 9x9 빈 칸과 흑 차례로 시작한다
+✓ 빈 칸에 돌을 놓으면 원본을 바꾸지 않고 차례를 넘긴다
+✓ 이미 놓인 칸에는 다시 둘 수 없다
+✓ 가로 다섯 돌을 만들면 승리한다
+✓ 대각선 다섯 돌도 승리로 판정한다
+✓ 가득 찬 판에 승자가 없으면 무승부가 된다
+✓ 초기화하면 새 게임으로 돌아간다
+
+daily/2026-06-21-shell-game/game-logic.test.js
+컵 속 공 찾기 로직 테스트 통과
+
+daily/2026-06-22-samegame/game-logic.test.js
+같은 블록 지우기 로직 테스트 통과
+
+daily/2026-06-23-knights-tour/game-logic.test.js
+기사 순회 로직 테스트 통과
+
+daily/2026-06-24-eight-queens/game-logic.test.js
+여덟 퀸 로직 테스트 통과
+
+daily/2026-06-25-river-crossing/game-logic.test.js
+강 건너기 로직 테스트 통과
+
+daily/2026-06-26-make-24/game-logic.test.js
+24 만들기 로직 테스트 통과
+
+daily/2026-06-27-craps-dice/game-logic.test.js
+크랩스 주사위 로직 테스트 통과
+
+daily/2026-06-28-match-three/game-logic.test.js
+보석 맞추기 로직 테스트 통과
+
+daily/2026-06-29-count-to-31/game-logic.test.js
+서른하나 세기 로직 테스트 통과
+
+daily/2026-06-30-lights-out/game-logic.test.js
+불 끄기 로직 테스트 통과
+
+daily/2026-07-01-battleship/game-logic.test.js
+전함 찾기 로직 테스트 통과
+
+daily/2026-07-02-chomp/game-logic.test.js
+독 초콜릿 피하기 로직 테스트 통과
+
+daily/2026-07-03-shut-the-box/game-logic.test.js
+상자 닫기 로직 테스트 통과
+
+daily/2026-07-04-darts-301/game-logic.test.js
+301 다트 로직 테스트 통과
+
+daily/2026-07-05-acey-deucey/game-logic.test.js
+에이스 듀스 로직 테스트 통과
+
+daily/2026-07-06-mastermind/game-logic.test.js
+마스터마인드 로직 테스트 통과
+
+daily/2026-07-07-tower-of-hanoi/game-logic.test.js
+하노이의 탑 로직 테스트 통과
+
+daily/2026-07-08-fifteen-puzzle/game-logic.test.js
+십오 퍼즐 로직 테스트 통과
+
+daily/2026-07-08-gomoku/game-logic.test.js
+✓ 새 게임은 빈 9칸 보드와 흑돌 차례를 준비한다
+✓ 진행 중인 빈 칸에만 돌을 놓을 수 있다
+✓ 돌을 놓으면 보드가 바뀌고 차례가 넘어간다
+✓ 가로로 다섯 돌을 이으면 승리한다
+✓ 대각선으로 다섯 돌을 이으면 승리한다
+✓ 반대 대각선으로 다섯 돌을 이으면 승리한다
+✓ 마지막 칸을 채워도 다섯 줄이 없으면 무승부가 된다
+✓ 잘못된 수는 기존 상태를 바꾸지 않는다
+
+daily/2026-07-09-game-of-goose/game-logic.test.js
+거위 게임 로직 테스트 통과
+
+daily/2026-07-10-hexapawn/game-logic.test.js
+헥사폰 로직 테스트 통과
+
+daily/2026-07-11-tapatan/game-logic.test.js
+타파탄 로직 테스트 통과
+
+daily/2026-07-12-royal-ur/game-logic.test.js
+왕실 우르 게임 로직 테스트 통과
+
+daily/2026-07-13-fox-and-hounds/game-logic.test.js
+여우와 사냥개 로직 테스트 통과
+
+daily/2026-07-14-monte-carlo-solitaire/game-logic.test.js
+몬테카를로 솔리테어 로직 테스트 통과
+
+daily/2026-07-15-bulgarian-solitaire/game-logic.test.js
+불가리아 솔리테어 로직 테스트 통과
+
+daily/2026-07-16-mini-ludo/game-logic.test.js
+루도 미니 로직 테스트 통과
+
+daily/2026-07-17-clock-solitaire/game-logic.test.js
+시계 솔리테어 로직 테스트 통과
+
+daily/2026-07-18-pig-dice/game-logic.test.js
+돼지 주사위 로직 테스트 통과
+
+daily/2026-07-19-poker-squares/game-logic.test.js
+카드 열 맞추기 로직 테스트 통과
+
+daily/2026-07-20-magic-square/game-logic.test.js
+마방진 15 로직 테스트 통과
+
+daily/2026-07-21-latin-square/game-logic.test.js
+라틴 사각형 로직 테스트 통과
+
+daily/2026-07-27-checkers/game-logic.test.js
+체커 로직 테스트 통과
+
+daily/2026-07-28-peg-solitaire/game-logic.test.js
+페그 솔리테어 로직 테스트 통과
+
+daily/2026-07-29-alquerque/game-logic.test.js
+알케르케 로직 테스트 통과
+
+daily/2026-07-30-senet/game-logic.test.js
+세네트 로직 테스트 통과
+
+daily/2026-07-31-three-mens-morris/game-logic.test.js
+세 남자 모리스 로직 테스트 통과
+
+daily/2026-08-01-mu-torere/game-logic.test.js
+무 토레레 로직 테스트 통과
+
+daily/2026-08-02-nim/game-logic.test.js
+님 로직 테스트 통과
+
+daily/2026-08-03-hex/game-logic.test.js
+헥스 로직 테스트 통과
+
+daily/2026-08-04-konane/game-logic.test.js
+코나네 로직 테스트 통과
+
+daily/2026-08-05-rush-hour/game-logic.test.js
+러시 아워 로직 테스트 통과
+
+daily/2026-08-06-mastermind/game-logic.test.js
+마스터마인드 로직 테스트 통과
+
+daily/2026-08-07-domineering/game-logic.test.js
+도미네어링 로직 테스트 통과
+
+daily/2026-08-08-sim/game-logic.test.js
+심 로직 테스트 통과
+
+daily/2026-08-09-nine-mens-morris/game-logic.test.js
+아홉 남자 모리스 로직 테스트 통과
+
+daily/2026-08-10-tigers-and-goats/game-logic.test.js
+호랑이와 염소 로직 테스트 통과
+
+daily/2026-08-11-accordion-solitaire/game-logic.test.js
+아코디언 솔리테어 로직 테스트 통과
+
+daily/2026-08-12-pyramid-solitaire/game-logic.test.js
+피라미드 솔리테어 로직 테스트 통과
+
+daily/2026-08-13-old-maid/game-logic.test.js
+올드 메이드 로직 테스트 통과
+
+daily/2026-08-14-golf-solitaire/game-logic.test.js
+골프 솔리테어 로직 테스트 통과
+
+daily/2026-08-15-game-of-life/game-logic.test.js
+생명 게임 로직 테스트 통과
+
+daily/2026-08-16-bridgit/game-logic.test.js
+브리지트 로직 테스트 통과
+
+daily/2026-08-17-teeko/game-logic.test.js
+티코 로직 테스트 통과
+
+daily/2026-08-18-peg-solitaire/game-logic.test.js
+페그 솔리테어 로직 테스트 통과
+
+daily/2026-08-19-aces-up-solitaire/game-logic.test.js
+에이스 업 솔리테어 로직 테스트 통과
+
+daily/2026-08-20-nonogram/game-logic.test.js
+노노그램 로직 테스트 통과
+
+daily/2026-08-21-klondike-solitaire/game-logic.test.js
+클론다이크 솔리테어 로직 테스트 통과
+
+daily/2026-08-22-crazy-eights/game-logic.test.js
+팔자 카드 로직 테스트 통과
+
+daily/2026-08-23-dominoes/game-logic.test.js
+도미노 로직 테스트 통과
+
+daily/2026-08-24-mini-freecell/game-logic.test.js
+미니 프리셀 로직 테스트 통과
+
+daily/2026-08-25-quarto/game-logic.test.js
+미니 콰르토 로직 테스트 통과
+
+daily/2026-08-26-gaps-solitaire/game-logic.test.js
+갭 솔리테어 로직 테스트 통과
+
+daily/2026-08-27-tafl/game-logic.test.js
+타플 로직 테스트 통과
+
+daily/2026-08-28-five-field-kono/game-logic.test.js
+다섯밭 코노 로직 테스트 통과
+
+daily/2026-08-29-six-mens-morris/game-logic.test.js
+여섯 남자 모리스 로직 테스트 통과
+
+daily/2026-08-30-chopsticks/game-logic.test.js
+젓가락 게임 로직 테스트 통과
+
+daily/2026-08-31-picaria/game-logic.test.js
+피카리아 로직 테스트 통과
+
+daily/2026-09-01-dara/game-logic.test.js
+다라 로직 테스트 통과
+
+daily/2026-09-02-yote/game-logic.test.js
+요테 로직 테스트 통과
+
+daily/2026-09-03-frog-leap/game-logic.test.js
+개구리 점프 로직 테스트 통과
+
+daily/2026-09-04-mini-halma/game-logic.test.js
+미니 할마 로직 테스트 통과
+
+daily/2026-09-05-seega/game-logic.test.js
+시가 로직 테스트 통과
+
+daily/2026-09-06-mini-hasami-shogi/game-logic.test.js
+미니 하사미 장기 로직 테스트 통과
+
+daily/2026-09-07-shisima/game-logic.test.js
+시시마 로직 테스트 통과
+
+daily/2026-09-08-latrunculi/game-logic.test.js
+라트룬쿨리 로직 테스트 통과
+
+daily/2026-09-09-umul-gonu/game-logic.test.js
+우물고누 로직 테스트 통과
+
+daily/2026-09-10-mini-fanorona/game-logic.test.js
+미니 파노로나 로직 테스트 통과
+
+daily/2026-09-11-awithlaknannai/game-logic.test.js
+아위슬라크난나이 로직 테스트 통과
+
+daily/2026-09-12-ming-mang/game-logic.test.js
+밍망 로직 테스트 통과
+
+daily/2026-09-13-bagatelle/game-logic.test.js
+✔ 다섯 공과 빈 점수표로 시작한다 (1.58567ms)
+✔ 발사는 공 하나만 소비하고 실제 위쪽 속도를 부여한다 (0.384452ms)
+✔ 잘못된 발사 세기와 시간 간격을 거부한다 (0.41028ms)
+✔ 중력은 속도를 바꾸며 스텝은 원본을 변형하지 않는다 (0.321969ms)
+✔ 못 충돌은 공을 바깥으로 밀고 입사 속도를 반사한다 (0.286045ms)
+✔ 못 정중앙의 충돌도 유한한 상태로 복구한다 (0.159528ms)
+✔ 경사진 가이드가 위로 쏜 공을 왼쪽으로 반사한다 (0.1605ms)
+✔ 우측 발사대로 돌아온 공은 영점으로 종료한다 (0.314027ms)
+✔ 실제 도착 홈의 점수만 한 번 더한다 (0.287999ms)
+✔ 공 다섯 개 뒤 종료하며 새 판은 독립적이다 (0.406896ms)
+✔ 모든 정수 세기가 경계 내에서 유한 시간 종료한다 (123.932382ms)
+✔ 같은 세기는 같은 물리 결과이며 전 과정 순간이동이 없다 (5.369835ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 152.87961

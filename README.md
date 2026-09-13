@@ -8,8 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
-| 2026-09-13 | [바가텔 아스트라 비교판](daily/2026-09-13-bagatelle-astra/index.html) | 위치와 세기를 조절해 못에 튕기는 공 다섯 개로 점수를 겨루는 물리 기반 비교판입니다. |
-| 2026-09-13 | 바가텔 | 공 다섯 개를 굴려 못 사이의 점수 칸을 노리고, 좁은 가운데 100점 칸까지 합산해 점수를 겨루는 19세기 고전 탁상 공놀이입니다. |
+| 2026-09-13 | [바가텔 · 작은 유원지](daily/2026-09-13-bagatelle/index.html) | 목재 오락기의 용수철로 쇠구슬 다섯 개를 쏘아 올리고, 못과 벽에 튕겨 도착한 홈의 점수를 모으는 물리 공놀이입니다. |
 | 2026-09-12 | 밍망 | 말을 가로·세로로 한 칸 움직여 내 말 사이에 낀 상대 말을 내 색으로 바꾸고, 상대 말을 모두 바꾸거나 움직이지 못하게 만드는 중국의 고전 포위 전략 게임입니다. |
 | 2026-09-11 | 아위슬라크난나이 | 해와 달의 말을 여섯 개씩 놓고 가로 또는 세로로 세 말을 이어 상대 말을 잡아, 상대 말을 세 개 미만으로 줄이는 주니족의 고전 전략 게임입니다. |
 | 2026-09-10 | 미니 파노로나 | 선으로 이어진 빈 점에 말을 한 칸 옮겨 상대에게 다가가거나 등을 돌려 연달아 있는 말을 잡고, 상대 말을 모두 없애는 마다가스카르의 고전 전략 게임입니다. |
@@ -21,13 +20,11 @@
 
 ## 최근 게임 화면
 
-### 바가텔 아스트라 비교판
+### 바가텔 · 작은 유원지
 
-![바가텔 아스트라 비교판](daily/2026-09-13-bagatelle-astra/screenshot.png)
+![빈티지 목재 바가텔 오락기](daily/2026-09-13-bagatelle/screenshot.png)
 
-### 바가텔
-
-![바가텔 게임 화면](daily/2026-09-13-bagatelle/screenshot.png)
+[게임 열기](https://raw.githack.com/qoxmfaktmxj/codex-test/main/daily/2026-09-13-bagatelle/index.html) · [모바일 화면](daily/2026-09-13-bagatelle/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-13-bagatelle/DESIGN.md)
 
 ### 밍망
 
@@ -66,7 +63,6 @@
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
-node daily/2026-09-13-bagatelle-astra/game-logic.test.js
 node daily/2026-09-13-bagatelle/game-logic.test.js
 node daily/2026-09-12-ming-mang/game-logic.test.js
 node daily/2026-09-11-awithlaknannai/game-logic.test.js

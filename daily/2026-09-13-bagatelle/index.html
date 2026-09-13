@@ -3,28 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>바가텔 · 데일리 클래식 게임</title>
+  <meta name="theme-color" content="#eee9dd">
+  <meta name="description" content="나무판 위의 작은 유원지. 스프링으로 쇠구슬 다섯 개를 쏘아 올리는 물리 바가텔.">
+  <title>바가텔 — 나무판 위의 작은 유원지</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <header>
-      <p class="eyebrow">고전 탁상 공놀이</p>
-      <h1>바가텔</h1>
-      <p class="guide">공 다섯 개를 굴려 못 사이의 점수 칸을 노리세요. 가운데 100점 칸은 좁지만 가장 높은 점수를 줍니다.</p>
+  <main class="workshop">
+    <header class="poster">
+      <p class="edition"><span>작은 유원지</span><span>제 01 호</span></p>
+      <p class="category">나무판 위의 고전 공놀이</p>
+      <h1>바가텔<span class="title-dot">.</span></h1>
+      <p class="motto">톡, 하고 쏘아 올린<br>작은 우연 다섯 번.</p>
+      <div class="poster-mark" aria-hidden="true"><svg viewBox="0 0 150 75"><path d="M8 56Q38 0 71 38T140 23" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 5"/><circle cx="140" cy="23" r="8" fill="currentColor"/><path d="M7 69h138" stroke="currentColor"/></svg><span>중력과 손끝 사이</span></div>
     </header>
-    <section class="game" aria-label="바가텔 게임">
-      <div class="scorebar"><span>남은 공 <b id="remaining"></b></span><span>현재 점수 <b id="score"></b></span></div>
-      <div class="board" aria-label="바가텔 점수판">
-        <div id="ball" class="ball" aria-hidden="true"></div>
-        <i class="peg p1"></i><i class="peg p2"></i><i class="peg p3"></i><i class="peg p4"></i><i class="peg p5"></i><i class="peg p6"></i><i class="peg p7"></i><i class="peg p8"></i><i class="peg p9"></i>
-        <button class="slot s10" data-points="10" type="button">10</button><button class="slot s20a" data-points="20" type="button">20</button><button class="slot s50a" data-points="50" type="button">50</button><button class="slot s100" data-points="100" type="button">100</button><button class="slot s50b" data-points="50" type="button">50</button><button class="slot s20b" data-points="20" type="button">20</button><button class="slot s10b" data-points="10" type="button">10</button>
+    <section class="cabinet" aria-label="바가텔 오락기">
+      <div class="machine-head">
+        <div class="meter"><span class="meter-label">총 점수</span><output id="score" aria-label="총 점수">000</output></div>
+        <div class="stock"><span class="meter-label">남은 공 <b id="remaining">5</b>개</span><div id="stock-balls" aria-hidden="true"></div></div>
       </div>
-      <p id="message" class="message">점수 칸을 눌러 공을 굴리세요.</p>
-      <button id="reset" type="button">새 게임</button>
+      <div class="playfield">
+        <svg id="board" viewBox="0 0 480 710" role="img" aria-labelledby="board-title board-desc">
+          <title id="board-title">쇠구슬 바가텔 게임판</title>
+          <desc id="board-desc">오른쪽 발사대로 쏘아 올린 공이 못과 벽에 튕긴 뒤 아래쪽 일곱 점수 홈에 들어갑니다. 왼쪽부터 10, 20, 50, 100, 50, 20, 10점. 발사대로 돌아오면 0점입니다.</desc>
+          <defs>
+            <pattern id="grain" width="87" height="190" patternUnits="userSpaceOnUse"><path d="M4-10Q25 55 6 120T12 205M16-10Q38 65 21 130T29 205M49-10Q35 90 57 130T62 205M75-10Q64 80 78 180" fill="none" stroke="#8c6941" stroke-opacity=".10" stroke-width=".7"/></pattern>
+            <radialGradient id="steel" cx="30%" cy="22%"><stop stop-color="#fff"/><stop offset=".25" stop-color="#e7e7dd"/><stop offset=".65" stop-color="#a0a69c"/><stop offset="1" stop-color="#343d39"/></radialGradient>
+            <radialGradient id="pin" cx="30%" cy="25%"><stop stop-color="#f6f2e6"/><stop offset=".48" stop-color="#a9aaa0"/><stop offset="1" stop-color="#424c47"/></radialGradient>
+            <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feDropShadow dx="2" dy="3" stdDeviation="1.5" flood-color="#33271c" flood-opacity=".45"/></filter>
+          </defs>
+          <rect width="480" height="710" fill="#dec59c"/>
+          <rect width="480" height="710" fill="url(#grain)"/>
+          <path d="M32 607V105L72 32H412L452 105V695" class="engraving"/>
+          <path d="M38 600V108L76 40H408L446 108V604" class="engraving fine"/>
+          <g class="board-print" aria-hidden="true">
+            <text x="238" y="82" class="board-name">작은 유원지</text>
+            <path d="M133 96h210M164 101h145" class="engraving"/>
+            <circle cx="170" cy="251" r="52" class="target-ring"/><circle cx="170" cy="251" r="44" class="target-ring fine"/>
+            <text x="170" y="254" class="target-word">행운</text>
+            <circle cx="289" cy="312" r="45" class="target-ring green"/><text x="289" y="318" class="target-word green">묘수</text>
+            <path d="M143 439l96-62 95 62-95 64Z" class="target-ring"/><text x="239" y="446" class="target-word">한 번 더</text>
+            <text x="238" y="555" class="small-print">못 사이로, 뜻밖의 한 수</text>
+            <text x="445" y="320" class="lane-print" transform="rotate(-90 445 320)">쇠구슬이 올라가는 길</text>
+            <path d="M442 170v-42m-6 9 6-9 6 9" class="engraving"/>
+          </g>
+          <g id="slots"></g><g id="rails"></g><g id="pegs"></g>
+          <g id="trail" aria-hidden="true"></g>
+          <g id="spring" aria-hidden="true"><path d="M442 681v-5l-8-3 16-5-16-5 16-5-16-5 16-5-8-3v-4" fill="none" stroke="#626d64" stroke-width="2"/><rect x="431" y="635" width="22" height="5" rx="2" fill="url(#pin)"/></g>
+          <circle id="ball-shadow" cx="445" cy="634" r="8" fill="#32291c" opacity=".18"/>
+          <circle id="ball" cx="442" cy="630" r="8" fill="url(#steel)" stroke="#58605a" stroke-width=".6"/>
+        </svg>
+      </div>
+      <form id="controls" class="control-deck">
+        <div class="power-control"><label for="power">용수철 세기 <output id="power-value" for="power">60</output></label><input id="power" name="power" type="range" min="20" max="100" value="60" step="1"><div class="scale" aria-hidden="true"><span>살짝</span><span>힘껏</span></div></div>
+        <button id="launch" type="submit"><span class="knob" aria-hidden="true"></span><span id="launch-label">공 쏘기</span></button>
+      </form>
     </section>
+    <aside class="paper" aria-label="게임 사용표와 기록">
+      <div class="ticket-head"><span>이용 안내</span><span>한 판 · 다섯 공</span></div>
+      <ol><li>용수철의 세기를 정하세요.</li><li><strong>공 쏘기</strong>를 눌러 손을 떼세요.</li><li>공이 멈춘 홈의 점수를 모으세요.</li></ol>
+      <p class="hint">세기가 달라지면 길도 달라집니다.<br>발사대로 되돌아온 공은 0점이에요.</p>
+      <div class="record-heading">이번 판 기록</div>
+      <ol id="history" class="history" aria-label="공별 획득 점수"><li>—</li><li>—</li><li>—</li><li>—</li><li>—</li></ol>
+      <p id="message" role="status" aria-live="polite">첫 번째 공이 기다리고 있어요.</p>
+      <button id="reset" type="button">새 판 시작 <span aria-hidden="true">↗</span></button>
+      <p class="keyboard-note">키보드: 탭으로 이동 · 방향키로 세기 조절<br>공 쏘기에서 엔터 또는 스페이스</p>
+    </aside>
+    <footer><span>매일 하나씩, 오래된 놀이를 새롭게.</span><span>2026 · 09 · 13</span></footer>
   </main>
-  <script src="game-logic.js"></script>
-  <script src="app.js"></script>
+  <script src="game-logic.js"></script><script src="app.js"></script>
 </body>
 </html>

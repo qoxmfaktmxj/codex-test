@@ -1,0 +1,20 @@
+{
+  "runId": "f3a5c4b8-08a0-4751-8945-0d20913118a2",
+  "status": "ok",
+  "provider": "openai",
+  "model": "gpt-6-astra",
+  "harness": "codex",
+  "thinkingLevel": "low",
+  "requested": {
+    "provider": "openai",
+    "model": "gpt-6-astra"
+  },
+  "effective": {
+    "provider": "openai",
+    "model": "gpt-6-astra",
+    "responseModel": "gpt-6-astra"
+  },
+  "rerouted": false,
+  "fallbackUsed": false,
+  "initialAttempt": "agent exec: legacy workspace setup error before model invocation; model=null. Recovered through existing Gateway session; no doctor/global config changes."
+}

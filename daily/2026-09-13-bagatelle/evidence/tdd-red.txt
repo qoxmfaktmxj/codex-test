@@ -1,0 +1,153 @@
+✖ 다섯 공과 빈 점수표로 시작한다 (2.407332ms)
+✖ 발사는 공 하나만 소비하고 실제 위쪽 속도를 부여한다 (0.225355ms)
+✔ 잘못된 발사 세기와 시간 간격을 거부한다 (0.665901ms)
+✖ 중력은 속도를 바꾸며 스텝은 원본을 변형하지 않는다 (0.17509ms)
+✖ 못 충돌은 공을 바깥으로 밀고 입사 속도를 반사한다 (0.161902ms)
+✖ 못 정중앙의 충돌도 유한한 상태로 복구한다 (0.221779ms)
+✖ 경사진 가이드가 위로 쏜 공을 왼쪽으로 반사한다 (0.283262ms)
+✖ 우측 발사대로 돌아온 공은 영점으로 종료한다 (0.163172ms)
+✖ 실제 도착 홈의 점수만 한 번 더한다 (0.664248ms)
+✖ 공 다섯 개 뒤 종료하며 새 판은 독립적이다 (0.242019ms)
+✖ 모든 정수 세기가 경계 내에서 유한 시간 종료한다 (0.200629ms)
+✖ 같은 세기는 같은 물리 결과이며 전 과정 순간이동이 없다 (0.132298ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 1
+ℹ fail 11
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.040961
+
+✖ failing tests:
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:5:1
+✖ 다섯 공과 빈 점수표로 시작한다 (2.407332ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  
+  undefined !== []
+  
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:5:80)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:6:1
+✖ 발사는 공 하나만 소비하고 실제 위쪽 속도를 부여한다 (0.225355ms)
+  TypeError: G.launch is not a function
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:6:76)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:8:1
+✖ 중력은 속도를 바꾸며 스텝은 원본을 변형하지 않는다 (0.17509ms)
+  TypeError: G.launch is not a function
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:8:52)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:9:1
+✖ 못 충돌은 공을 바깥으로 밀고 입사 속도를 반사한다 (0.161902ms)
+  TypeError: G.collidePeg is not a function
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:9:52)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:10:1
+✖ 못 정중앙의 충돌도 유한한 상태로 복구한다 (0.221779ms)
+  TypeError: G.collidePeg is not a function
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:10:47)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:11:1
+✖ 경사진 가이드가 위로 쏜 공을 왼쪽으로 반사한다 (0.283262ms)
+  TypeError: G.collideWall is not a function
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:11:50)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:12:1
+✖ 우측 발사대로 돌아온 공은 영점으로 종료한다 (0.163172ms)
+  TypeError: G.launch is not a function
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:12:46)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:13:1
+✖ 실제 도착 홈의 점수만 한 번 더한다 (0.664248ms)
+  TypeError: G.launch is not a function
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:13:42)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:14:1
+✖ 공 다섯 개 뒤 종료하며 새 판은 독립적이다 (0.242019ms)
+  TypeError: G.launch is not a function
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:14:85)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:15:1
+✖ 모든 정수 세기가 경계 내에서 유한 시간 종료한다 (0.200629ms)
+  TypeError: G.launch is not a function
+      at finish (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:4:32)
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:15:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
+
+test at daily/2026-09-13-bagatelle/game-logic.test.js:16:1
+✖ 같은 세기는 같은 물리 결과이며 전 과정 순간이동이 없다 (0.132298ms)
+  TypeError: G.launch is not a function
+      at finish (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:4:32)
+      at TestContext.<anonymous> (/root/.openclaw/workspace/codex-test/daily/2026-09-13-bagatelle/game-logic.test.js:16:62)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)
