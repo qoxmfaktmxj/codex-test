@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>바가텔 · 데일리 클래식 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">고전 탁상 공놀이</p>
+      <h1>바가텔</h1>
+      <p class="guide">공 다섯 개를 굴려 못 사이의 점수 칸을 노리세요. 가운데 100점 칸은 좁지만 가장 높은 점수를 줍니다.</p>
+    </header>
+    <section class="game" aria-label="바가텔 게임">
+      <div class="scorebar"><span>남은 공 <b id="remaining"></b></span><span>현재 점수 <b id="score"></b></span></div>
+      <div class="board" aria-label="바가텔 점수판">
+        <div id="ball" class="ball" aria-hidden="true"></div>
+        <i class="peg p1"></i><i class="peg p2"></i><i class="peg p3"></i><i class="peg p4"></i><i class="peg p5"></i><i class="peg p6"></i><i class="peg p7"></i><i class="peg p8"></i><i class="peg p9"></i>
+        <button class="slot s10" data-points="10" type="button">10</button><button class="slot s20a" data-points="20" type="button">20</button><button class="slot s50a" data-points="50" type="button">50</button><button class="slot s100" data-points="100" type="button">100</button><button class="slot s50b" data-points="50" type="button">50</button><button class="slot s20b" data-points="20" type="button">20</button><button class="slot s10b" data-points="10" type="button">10</button>
+      </div>
+      <p id="message" class="message">점수 칸을 눌러 공을 굴리세요.</p>
+      <button id="reset" type="button">새 게임</button>
+    </section>
+  </main>
+  <script src="game-logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
