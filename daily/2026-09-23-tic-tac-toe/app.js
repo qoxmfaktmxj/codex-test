@@ -1,0 +1,4 @@
+(()=>{'use strict';const board=document.querySelector('#board'),status=document.querySelector('#status'),reset=document.querySelector('#reset');let state;
+function message(){if(state.phase==='finished')return state.winner==='draw'?'바다가 고요합니다 · 무승부':'신호 완성 · '+state.winner+'의 승리';return state.turn+'의 차례 · 빈 칸을 누르세요.';}
+function render(){board.innerHTML='';state.board.forEach((mark,i)=>{const b=document.createElement('button');b.type='button';b.className='cell '+(mark?'marked '+mark.toLowerCase():'');b.setAttribute('aria-label',(i+1)+'번 칸'+(mark?' '+mark:' 놓기'));b.textContent=mark||'';b.disabled=!!mark||state.phase==='finished';b.addEventListener('click',()=>{state=TicTacToe.play(state,i);render();});board.append(b);});status.textContent=message();}
+reset.addEventListener('click',()=>{state=TicTacToe.createState();render();});state=TicTacToe.createState();render();})();
