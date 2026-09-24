@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-09-24 | [열다섯 · 활자 정렬실](daily/2026-09-24-fifteen-puzzle/index.html) | 빈칸 옆의 번호 활자를 눌러 1부터 15까지 차례대로 정렬하는 한 사람용 고전 슬라이딩 퍼즐입니다. |
 | 2026-09-23 | [삼목 · 바다 신호기](daily/2026-09-23-tic-tac-toe/index.html) | 청록 파도 위의 비스듬한 3×3 표지판에서 X와 O를 번갈아 놓아 세 칸을 먼저 잇는 두 사람용 고전 게임입니다. |
 | 2026-09-22 | [님 · 성냥 공방](daily/2026-09-22-nim-sticks/index.html) | 세 더미에서 한 더미를 골라 성냥을 원하는 만큼 가져가며 컴퓨터보다 먼저 마지막 성냥을 차지하는 고전 전략 게임입니다. |
 | 2026-09-21 | [오델로 · 인쇄소의 여덟 칸](daily/2026-09-21-othello-print-studio/index.html) | 흑과 백의 잉크를 번갈아 찍어 상대 돌을 사이에 끼우고 뒤집으며, 더 많은 돌을 남기는 두 사람용 고전 전략 게임입니다. |
@@ -19,6 +20,12 @@
 | 2026-09-10 | 미니 파노로나 | 선으로 이어진 빈 점에 말을 한 칸 옮겨 상대에게 다가가거나 등을 돌려 연달아 있는 말을 잡고, 상대 말을 모두 없애는 마다가스카르의 고전 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 열다섯 · 활자 정렬실
+
+![코발트 잉크와 주홍 교정선으로 구성한 열다섯 활자 퍼즐](daily/2026-09-24-fifteen-puzzle/screenshot.png)
+
+[게임 파일](daily/2026-09-24-fifteen-puzzle/index.html) · [모바일 화면](daily/2026-09-24-fifteen-puzzle/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-24-fifteen-puzzle/DESIGN.md)
 
 ### 삼목 · 바다 신호기
 
@@ -78,6 +85,7 @@
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-09-24-fifteen-puzzle/game-logic.test.js
 node daily/2026-09-23-tic-tac-toe/game-logic.test.js
 node daily/2026-09-22-nim-sticks/game-logic.test.js
 node daily/2026-09-21-othello-print-studio/game-logic.test.js
