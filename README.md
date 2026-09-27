@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-09-27 | [미니 다마 · 보랏빛 극장 좌석표](daily/2026-09-27-mini-draughts/index.html) | 붉은 표식과 푸른 표식을 대각선 좌석으로 옮기고 상대를 뛰어넘어 모두 잡는 두 사람용 미니 다마입니다. |
 | 2026-09-26 | [알케르케 · 푸른 타일 정원](daily/2026-09-26-alquerque/index.html) | 산호와 상아 말을 교차점으로 움직여 상대 말을 뛰어넘어 잡고, 상대 말을 모두 없애는 두 사람용 고전 전략 게임입니다. |
 | 2026-09-25 | [사목 · 감귤 온실](daily/2026-09-25-connect-four/index.html) | 귤빛과 자주빛 유리 구슬을 온실 격자에 떨어뜨려 가로·세로·대각선 네 알을 먼저 잇는 두 사람용 고전 사목 게임입니다. |
 | 2026-09-24 | [열다섯 · 활자 정렬실](daily/2026-09-24-fifteen-puzzle/index.html) | 빈칸 옆의 번호 활자를 눌러 1부터 15까지 차례대로 정렬하는 한 사람용 고전 슬라이딩 퍼즐입니다. |
@@ -17,9 +18,14 @@
 | 2026-09-20 | [여우와 거위 · 바람길](daily/2026-09-20-fox-and-geese/index.html) | 거위는 길을 막고 여우는 거위를 넘어 잡으며, 여우가 네 마리를 먼저 잡으면 이기는 두 사람용 고전 포위 전략 게임입니다. |
 | 2026-09-14 | [셔플보드 · 미끄러짐의 기술](daily/2026-09-14-shuffleboard/index.html) | 힘을 조절해 퍽을 오른쪽 득점 구역으로 밀고, 끝을 넘지 않도록 다섯 번의 거리 감각을 겨루는 1인 연습 게임입니다. |
 | 2026-09-13 | [바가텔 · 작은 유원지](daily/2026-09-13-bagatelle/index.html) | 목재 오락기의 용수철로 쇠구슬 다섯 개를 쏘아 올리고, 못과 벽에 튕겨 도착한 홈의 점수를 모으는 물리 공놀이입니다. |
-| 2026-09-12 | 밍망 | 말을 가로·세로로 한 칸 움직여 내 말 사이에 낀 상대 말을 내 색으로 바꾸고, 상대 말을 모두 바꾸거나 움직이지 못하게 만드는 중국의 고전 포위 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 미니 다마 · 보랏빛 극장 좌석표
+
+![밝은 종이 좌석표 위의 보랏빛 미니 다마 게임판](daily/2026-09-27-mini-draughts/screenshot.png)
+
+[게임 파일](daily/2026-09-27-mini-draughts/index.html) · [모바일 화면](daily/2026-09-27-mini-draughts/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-27-mini-draughts/DESIGN.md)
 
 ### 알케르케 · 푸른 타일 정원
 
@@ -79,15 +85,12 @@
 
 첫 접속 시 외부 뷰어 안내의 **Open the page**를 누르면 게임이 열립니다.
 
-### 밍망
-
-![밍망 게임 화면](daily/2026-09-12-ming-mang/screenshot.png)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-09-27-mini-draughts/game-logic.test.js
 node daily/2026-09-26-alquerque/game-logic.test.js
 node daily/2026-09-25-connect-four/game-logic.test.js
 node daily/2026-09-24-fifteen-puzzle/game-logic.test.js
