@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-09-28 | [칼라하 · 조수 웅덩이](daily/2026-09-28-kalaha-tide-pools/index.html) | 내 쪽 조약돌을 시계 방향으로 나누어 저장소에 모으고, 마지막 돌의 위치를 계산해 추가 턴과 포획을 노리는 고전 전략 게임입니다. |
 | 2026-09-27 | [미니 다마 · 보랏빛 극장 좌석표](daily/2026-09-27-mini-draughts/index.html) | 붉은 표식과 푸른 표식을 대각선 좌석으로 옮기고 상대를 뛰어넘어 모두 잡는 두 사람용 미니 다마입니다. |
 | 2026-09-26 | [알케르케 · 푸른 타일 정원](daily/2026-09-26-alquerque/index.html) | 산호와 상아 말을 교차점으로 움직여 상대 말을 뛰어넘어 잡고, 상대 말을 모두 없애는 두 사람용 고전 전략 게임입니다. |
 | 2026-09-25 | [사목 · 감귤 온실](daily/2026-09-25-connect-four/index.html) | 귤빛과 자주빛 유리 구슬을 온실 격자에 떨어뜨려 가로·세로·대각선 네 알을 먼저 잇는 두 사람용 고전 사목 게임입니다. |
@@ -16,10 +17,14 @@
 | 2026-09-22 | [님 · 성냥 공방](daily/2026-09-22-nim-sticks/index.html) | 세 더미에서 한 더미를 골라 성냥을 원하는 만큼 가져가며 컴퓨터보다 먼저 마지막 성냥을 차지하는 고전 전략 게임입니다. |
 | 2026-09-21 | [오델로 · 인쇄소의 여덟 칸](daily/2026-09-21-othello-print-studio/index.html) | 흑과 백의 잉크를 번갈아 찍어 상대 돌을 사이에 끼우고 뒤집으며, 더 많은 돌을 남기는 두 사람용 고전 전략 게임입니다. |
 | 2026-09-20 | [여우와 거위 · 바람길](daily/2026-09-20-fox-and-geese/index.html) | 거위는 길을 막고 여우는 거위를 넘어 잡으며, 여우가 네 마리를 먼저 잡으면 이기는 두 사람용 고전 포위 전략 게임입니다. |
-| 2026-09-14 | [셔플보드 · 미끄러짐의 기술](daily/2026-09-14-shuffleboard/index.html) | 힘을 조절해 퍽을 오른쪽 득점 구역으로 밀고, 끝을 넘지 않도록 다섯 번의 거리 감각을 겨루는 1인 연습 게임입니다. |
-| 2026-09-13 | [바가텔 · 작은 유원지](daily/2026-09-13-bagatelle/index.html) | 목재 오락기의 용수철로 쇠구슬 다섯 개를 쏘아 올리고, 못과 벽에 튕겨 도착한 홈의 점수를 모으는 물리 공놀이입니다. |
 
 ## 최근 게임 화면
+
+### 칼라하 · 조수 웅덩이
+
+![푸른 조수 웅덩이 안에 조약돌을 나누는 칼라하 게임판](daily/2026-09-28-kalaha-tide-pools/screenshot.png)
+
+[게임 파일](daily/2026-09-28-kalaha-tide-pools/index.html) · [모바일 화면](daily/2026-09-28-kalaha-tide-pools/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-28-kalaha-tide-pools/DESIGN.md)
 
 ### 미니 다마 · 보랏빛 극장 좌석표
 
@@ -69,27 +74,12 @@
 
 [게임 파일](daily/2026-09-20-fox-and-geese/index.html) · [모바일 화면](daily/2026-09-20-fox-and-geese/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-20-fox-and-geese/DESIGN.md)
 
-### 셔플보드 · 미끄러짐의 기술
-
-![밝은 청록색 코트의 셔플보드 실제 게임 화면](daily/2026-09-14-shuffleboard/screenshot.png)
-
-[게임 파일](daily/2026-09-14-shuffleboard/index.html) · [모바일 화면](daily/2026-09-14-shuffleboard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-14-shuffleboard/DESIGN.md)
-
-퍽 전체가 1·2·3점 선을 넘어 멈추면 득점합니다. 끝을 넘으면 0점, 매번 퍽을 치우며 다섯 번의 점수를 합산합니다.
-
-### 바가텔 · 작은 유원지
-
-![빈티지 목재 바가텔 오락기](daily/2026-09-13-bagatelle/screenshot.png)
-
-[게임 열기](https://raw.githack.com/qoxmfaktmxj/codex-test/7fa5337795768dbc3435b0094e57fe448f2ad2c7/daily/2026-09-13-bagatelle/index.html) · [모바일 화면](daily/2026-09-13-bagatelle/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-13-bagatelle/DESIGN.md)
-
-첫 접속 시 외부 뷰어 안내의 **Open the page**를 누르면 게임이 열립니다.
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-09-28-kalaha-tide-pools/game-logic.test.js
 node daily/2026-09-27-mini-draughts/game-logic.test.js
 node daily/2026-09-26-alquerque/game-logic.test.js
 node daily/2026-09-25-connect-four/game-logic.test.js
