@@ -1,0 +1,22 @@
+const assert=require('assert');
+const Boggle=require('./game-logic.js');
+
+let state=Boggle.createState(['바','다','나','무','구','름','별','꽃','달','빛','하','늘','소','리','길','이'],['바다','나무','구름','별빛']);
+assert.deepStrictEqual(Boggle.neighbors(0),[1,4,5]);
+state=Boggle.select(state,0);
+state=Boggle.select(state,1);
+assert.strictEqual(state.current,'바다');
+state=Boggle.submit(state);
+assert.deepStrictEqual(state.found,['바다']);
+assert.strictEqual(state.message,'낱말을 조판했습니다.');
+state=Boggle.select(state,2);
+assert.throws(()=>Boggle.select(state,15),/이어지는 활자/);
+state=Boggle.select(state,6);
+state=Boggle.submit(state);
+assert.strictEqual(state.message,'목록에 없는 낱말입니다.');
+state=Boggle.createState(['바','다','나','무','구','름','별','꽃','달','빛','하','늘','소','리','길','이'],['바다']);
+state=Boggle.select(state,0);
+state=Boggle.select(state,1);
+state=Boggle.submit(state);
+assert.strictEqual(state.phase,'finished');
+console.log('보글 로직 테스트 통과');

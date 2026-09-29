@@ -1,0 +1,8 @@
+(function(root){'use strict';
+function neighbors(index){const row=Math.floor(index/4),col=index%4,result=[];for(let y=Math.max(0,row-1);y<=Math.min(3,row+1);y++)for(let x=Math.max(0,col-1);x<=Math.min(3,col+1);x++)if(y!==row||x!==col)result.push(y*4+x);return result;}
+function createState(letters,words){return {letters:(letters||[]).slice(),words:(words||[]).slice(),selected:[],current:'',found:[],message:'활자를 이어 낱말을 만드세요.',phase:'playing'};}
+function select(state,index){if(state.phase!=='playing')throw Error('새 조판을 시작하세요.');if(index<0||index>=state.letters.length||state.selected.includes(index)||(state.selected.length&&!neighbors(state.selected.at(-1)).includes(index)))throw Error('이어지는 활자만 고를 수 있습니다.');const selected=state.selected.concat(index);return {...state,selected,current:selected.map(i=>state.letters[i]).join(''),message:'활자를 고르는 중입니다.'};}
+function submit(state){const word=state.current;if(word.length<2)return {...state,message:'두 글자 이상 이어 보세요.',selected:[],current:''};if(!state.words.includes(word))return {...state,message:'목록에 없는 낱말입니다.',selected:[],current:''};if(state.found.includes(word))return {...state,message:'이미 조판한 낱말입니다.',selected:[],current:''};const found=state.found.concat(word),phase=found.length===state.words.length?'finished':'playing';return {...state,found,phase,selected:[],current:'',message:phase==='finished'?'모든 낱말을 조판했습니다!':'낱말을 조판했습니다.'};}
+function clear(state){return state.phase==='finished'?state:{...state,selected:[],current:'',message:'활자를 이어 낱말을 만드세요.'};}
+const api={createState,neighbors,select,submit,clear};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.Boggle=api;
+})(globalThis);

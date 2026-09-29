@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-09-29 | [보글 · 활자 상자](daily/2026-09-29-boggle-typecase/index.html) | 서로 닿은 한글 활자를 이어 목록의 낱말을 조판하듯 찾아내는 고전 낱말 퍼즐입니다. |
 | 2026-09-28 | [칼라하 · 조수 웅덩이](daily/2026-09-28-kalaha-tide-pools/index.html) | 내 쪽 조약돌을 시계 방향으로 나누어 저장소에 모으고, 마지막 돌의 위치를 계산해 추가 턴과 포획을 노리는 고전 전략 게임입니다. |
 | 2026-09-27 | [미니 다마 · 보랏빛 극장 좌석표](daily/2026-09-27-mini-draughts/index.html) | 붉은 표식과 푸른 표식을 대각선 좌석으로 옮기고 상대를 뛰어넘어 모두 잡는 두 사람용 미니 다마입니다. |
 | 2026-09-26 | [알케르케 · 푸른 타일 정원](daily/2026-09-26-alquerque/index.html) | 산호와 상아 말을 교차점으로 움직여 상대 말을 뛰어넘어 잡고, 상대 말을 모두 없애는 두 사람용 고전 전략 게임입니다. |
@@ -19,6 +20,12 @@
 | 2026-09-20 | [여우와 거위 · 바람길](daily/2026-09-20-fox-and-geese/index.html) | 거위는 길을 막고 여우는 거위를 넘어 잡으며, 여우가 네 마리를 먼저 잡으면 이기는 두 사람용 고전 포위 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 보글 · 활자 상자
+
+![크림 종이 위 납 활자 서랍에서 한글 낱말을 찾는 보글 게임판](daily/2026-09-29-boggle-typecase/screenshot.png)
+
+[게임 파일](daily/2026-09-29-boggle-typecase/index.html) · [모바일 화면](daily/2026-09-29-boggle-typecase/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-29-boggle-typecase/DESIGN.md)
 
 ### 칼라하 · 조수 웅덩이
 
@@ -79,6 +86,7 @@
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-09-29-boggle-typecase/game-logic.test.js
 node daily/2026-09-28-kalaha-tide-pools/game-logic.test.js
 node daily/2026-09-27-mini-draughts/game-logic.test.js
 node daily/2026-09-26-alquerque/game-logic.test.js
