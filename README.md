@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-09-30 | [펜테 · 네온 코트](daily/2026-09-30-pente-neon-court/index.html) | 형광 코트 위에서 돌 다섯 개를 잇거나 상대 돌을 포획하는 두 사람용 고전 펜테입니다. |
 | 2026-09-29 | [보글 · 활자 상자](daily/2026-09-29-boggle-typecase/index.html) | 서로 닿은 한글 활자를 이어 목록의 낱말을 조판하듯 찾아내는 고전 낱말 퍼즐입니다. |
 | 2026-09-28 | [칼라하 · 조수 웅덩이](daily/2026-09-28-kalaha-tide-pools/index.html) | 내 쪽 조약돌을 시계 방향으로 나누어 저장소에 모으고, 마지막 돌의 위치를 계산해 추가 턴과 포획을 노리는 고전 전략 게임입니다. |
 | 2026-09-27 | [미니 다마 · 보랏빛 극장 좌석표](daily/2026-09-27-mini-draughts/index.html) | 붉은 표식과 푸른 표식을 대각선 좌석으로 옮기고 상대를 뛰어넘어 모두 잡는 두 사람용 미니 다마입니다. |
@@ -17,9 +18,14 @@
 | 2026-09-23 | [삼목 · 바다 신호기](daily/2026-09-23-tic-tac-toe/index.html) | 청록 파도 위의 비스듬한 3×3 표지판에서 X와 O를 번갈아 놓아 세 칸을 먼저 잇는 두 사람용 고전 게임입니다. |
 | 2026-09-22 | [님 · 성냥 공방](daily/2026-09-22-nim-sticks/index.html) | 세 더미에서 한 더미를 골라 성냥을 원하는 만큼 가져가며 컴퓨터보다 먼저 마지막 성냥을 차지하는 고전 전략 게임입니다. |
 | 2026-09-21 | [오델로 · 인쇄소의 여덟 칸](daily/2026-09-21-othello-print-studio/index.html) | 흑과 백의 잉크를 번갈아 찍어 상대 돌을 사이에 끼우고 뒤집으며, 더 많은 돌을 남기는 두 사람용 고전 전략 게임입니다. |
-| 2026-09-20 | [여우와 거위 · 바람길](daily/2026-09-20-fox-and-geese/index.html) | 거위는 길을 막고 여우는 거위를 넘어 잡으며, 여우가 네 마리를 먼저 잡으면 이기는 두 사람용 고전 포위 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 펜테 · 네온 코트
+
+![푸른 실내 코트와 형광 핑크·라임 돌로 구성한 펜테 게임판](daily/2026-09-30-pente-neon-court/screenshot.png)
+
+[게임 파일](daily/2026-09-30-pente-neon-court/index.html) · [모바일 화면](daily/2026-09-30-pente-neon-court/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-30-pente-neon-court/DESIGN.md)
 
 ### 보글 · 활자 상자
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-09-21-othello-print-studio/index.html) · [모바일 화면](daily/2026-09-21-othello-print-studio/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-21-othello-print-studio/DESIGN.md)
 
-### 여우와 거위 · 바람길
-
-![산호색과 바다유리색 인쇄 포스터 게임판](daily/2026-09-20-fox-and-geese/screenshot.png)
-
-[게임 파일](daily/2026-09-20-fox-and-geese/index.html) · [모바일 화면](daily/2026-09-20-fox-and-geese/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-20-fox-and-geese/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-09-30-pente-neon-court/game-logic.test.js
 node daily/2026-09-29-boggle-typecase/game-logic.test.js
 node daily/2026-09-28-kalaha-tide-pools/game-logic.test.js
 node daily/2026-09-27-mini-draughts/game-logic.test.js

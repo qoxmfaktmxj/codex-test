@@ -1,0 +1,13 @@
+const assert=require('assert');
+const Pente=require('./game-logic.js');
+let state=Pente.createState(9);
+assert.strictEqual(state.board.length,81);
+state=Pente.play(state,40); assert.strictEqual(state.board[40],'핑크');
+assert.throws(()=>Pente.play(state,40),/놓을 수 없습니다/);
+state=Pente.createState(9);
+[0,9,1,10,2,11,3,12,4].forEach(i=>state=Pente.play(state,i));
+assert.strictEqual(state.phase,'finished'); assert.strictEqual(state.winner,'핑크');
+state=Pente.createState(9);
+[0,1,8,2,3].forEach(i=>state=Pente.play(state,i));
+assert.strictEqual(state.captures.핑크,2);
+console.log('펜테 로직 테스트 통과');
