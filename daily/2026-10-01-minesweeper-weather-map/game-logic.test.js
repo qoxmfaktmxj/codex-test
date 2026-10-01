@@ -1,0 +1,14 @@
+const assert=require('assert');
+const Mine=require('./game-logic.js');
+let state=Mine.createState(3,[0,8]);
+assert.strictEqual(state.cells.length,9);
+state=Mine.reveal(state,4); assert.strictEqual(state.cells[4].near,2); assert.strictEqual(state.cells[4].open,true);
+state=Mine.createState(3,[0]); state=Mine.reveal(state,0);
+assert.strictEqual(state.phase,'lost'); assert.strictEqual(state.cells[0].open,true);
+state=Mine.createState(2,[0]); [1,2,3].forEach(i=>state=Mine.reveal(state,i));
+assert.strictEqual(state.phase,'won'); assert.strictEqual(state.message,'관측 성공!');
+state=Mine.createState(3,[0]); state=Mine.toggleFlag(state,1);
+assert.strictEqual(state.cells[1].flagged,true); assert.throws(()=>Mine.reveal(state,1),/깃발/);
+state=Mine.createState(2,[0]); state=Mine.reveal(state,0); const ended=Mine.reveal(state,1);
+assert.strictEqual(ended.message,'폭풍 경보!'); assert.strictEqual(ended.phase,'lost');
+console.log('지뢰찾기 로직 테스트 통과');

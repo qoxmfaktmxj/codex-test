@@ -682,3 +682,11 @@ node daily/2026-07-12-royal-ur/game-logic.test.js
 ### 미니 할마
 
 ![미니 할마 게임 화면](../daily/2026-09-04-mini-halma/screenshot.png)
+
+### 오델로 · 인쇄소의 여덟 칸
+
+흑과 백의 잉크를 번갈아 찍어 상대 돌을 사이에 끼우고 뒤집으며, 더 많은 돌을 남기는 두 사람용 고전 전략 게임입니다.
+
+![크림 종이와 청색 제도선의 오델로 인쇄 공방 게임판](../daily/2026-09-21-othello-print-studio/screenshot.png)
+
+[게임 파일](../daily/2026-09-21-othello-print-studio/index.html) · [모바일 화면](../daily/2026-09-21-othello-print-studio/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-09-21-othello-print-studio/DESIGN.md)

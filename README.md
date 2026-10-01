@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-01 | [지뢰찾기 · 기상 지도실](daily/2026-10-01-minesweeper-weather-map/index.html) | 종이 일기도 위의 관측 지점을 열어 폭풍을 피해 모든 안전 지점을 찾는 고전 지뢰찾기입니다. |
 | 2026-09-30 | [펜테 · 네온 코트](daily/2026-09-30-pente-neon-court/index.html) | 형광 코트 위에서 돌 다섯 개를 잇거나 상대 돌을 포획하는 두 사람용 고전 펜테입니다. |
 | 2026-09-29 | [보글 · 활자 상자](daily/2026-09-29-boggle-typecase/index.html) | 서로 닿은 한글 활자를 이어 목록의 낱말을 조판하듯 찾아내는 고전 낱말 퍼즐입니다. |
 | 2026-09-28 | [칼라하 · 조수 웅덩이](daily/2026-09-28-kalaha-tide-pools/index.html) | 내 쪽 조약돌을 시계 방향으로 나누어 저장소에 모으고, 마지막 돌의 위치를 계산해 추가 턴과 포획을 노리는 고전 전략 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-09-24 | [열다섯 · 활자 정렬실](daily/2026-09-24-fifteen-puzzle/index.html) | 빈칸 옆의 번호 활자를 눌러 1부터 15까지 차례대로 정렬하는 한 사람용 고전 슬라이딩 퍼즐입니다. |
 | 2026-09-23 | [삼목 · 바다 신호기](daily/2026-09-23-tic-tac-toe/index.html) | 청록 파도 위의 비스듬한 3×3 표지판에서 X와 O를 번갈아 놓아 세 칸을 먼저 잇는 두 사람용 고전 게임입니다. |
 | 2026-09-22 | [님 · 성냥 공방](daily/2026-09-22-nim-sticks/index.html) | 세 더미에서 한 더미를 골라 성냥을 원하는 만큼 가져가며 컴퓨터보다 먼저 마지막 성냥을 차지하는 고전 전략 게임입니다. |
-| 2026-09-21 | [오델로 · 인쇄소의 여덟 칸](daily/2026-09-21-othello-print-studio/index.html) | 흑과 백의 잉크를 번갈아 찍어 상대 돌을 사이에 끼우고 뒤집으며, 더 많은 돌을 남기는 두 사람용 고전 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 지뢰찾기 · 기상 지도실
+
+![밝은 기상 지도 위에서 관측 지점을 여는 지뢰찾기 게임판](daily/2026-10-01-minesweeper-weather-map/screenshot.png)
+
+[게임 파일](daily/2026-10-01-minesweeper-weather-map/index.html) · [모바일 화면](daily/2026-10-01-minesweeper-weather-map/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-01-minesweeper-weather-map/DESIGN.md)
 
 ### 펜테 · 네온 코트
 
@@ -75,17 +81,13 @@
 
 [게임 파일](daily/2026-09-22-nim-sticks/index.html) · [모바일 화면](daily/2026-09-22-nim-sticks/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-22-nim-sticks/DESIGN.md)
 
-### 오델로 · 인쇄소의 여덟 칸
-
-![크림 종이와 청색 제도선의 오델로 인쇄 공방 게임판](daily/2026-09-21-othello-print-studio/screenshot.png)
-
-[게임 파일](daily/2026-09-21-othello-print-studio/index.html) · [모바일 화면](daily/2026-09-21-othello-print-studio/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-21-othello-print-studio/DESIGN.md)
 
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-01-minesweeper-weather-map/game-logic.test.js
 node daily/2026-09-30-pente-neon-court/game-logic.test.js
 node daily/2026-09-29-boggle-typecase/game-logic.test.js
 node daily/2026-09-28-kalaha-tide-pools/game-logic.test.js
@@ -95,7 +97,6 @@ node daily/2026-09-25-connect-four/game-logic.test.js
 node daily/2026-09-24-fifteen-puzzle/game-logic.test.js
 node daily/2026-09-23-tic-tac-toe/game-logic.test.js
 node daily/2026-09-22-nim-sticks/game-logic.test.js
-node daily/2026-09-21-othello-print-studio/game-logic.test.js
 node daily/2026-09-20-fox-and-geese/game-logic.test.js
 node daily/2026-09-14-shuffleboard/game-logic.test.js
 node daily/2026-09-13-bagatelle/game-logic.test.js

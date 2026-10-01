@@ -1,0 +1,7 @@
+(function(root){'use strict';
+function createState(size,mines){const total=size*size,mineSet=new Set(mines||[]);const cells=Array.from({length:total},(_,i)=>({mine:mineSet.has(i),open:false,flagged:false,near:0}));cells.forEach((cell,i)=>cell.near=neighbors(size,i).filter(n=>cells[n].mine).length);return {size,cells,phase:'playing',message:'관측 지점을 고르세요.'};}
+function neighbors(size,index){const r=Math.floor(index/size),c=index%size,out=[];for(let y=r-1;y<=r+1;y++)for(let x=c-1;x<=c+1;x++)if((y!==r||x!==c)&&y>=0&&x>=0&&y<size&&x<size)out.push(y*size+x);return out;}
+function reveal(state,index){if(state.phase!=='playing')return state;if(state.cells[index].flagged)throw Error('깃발을 먼저 해제하세요.');if(state.cells[index].open)return state;const cells=state.cells.map(c=>({...c}));const open=i=>{if(cells[i].open||cells[i].flagged)return;cells[i].open=true;if(!cells[i].mine&&!cells[i].near)neighbors(state.size,i).forEach(open);};open(index);const lost=cells[index].mine,won=!lost&&cells.every(c=>c.mine||c.open);return {...state,cells,phase:lost?'lost':won?'won':'playing',message:lost?'폭풍 경보!':won?'관측 성공!':'안전한 지점을 계속 찾으세요.'};}
+function toggleFlag(state,index){if(state.phase!=='playing'||state.cells[index].open)return state;const cells=state.cells.map(c=>({...c}));cells[index].flagged=!cells[index].flagged;return {...state,cells,message:cells[index].flagged?'폭풍 깃발을 꽂았습니다.':'깃발을 내렸습니다.'};}
+const api={createState,reveal,toggleFlag,neighbors};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.Mine=api;
+})(globalThis);
