@@ -1,0 +1,17 @@
+const assert=require('assert');
+const Mastermind=require('./game-logic.js');
+let state=Mastermind.createState([0,1,2,3]);
+assert.strictEqual(state.phase,'playing');
+assert.strictEqual(state.guesses.length,0);
+assert.throws(()=>Mastermind.submit(state,[0,1]),/네 개/);
+state=Mastermind.submit(state,[0,1,2,3]);
+assert.strictEqual(state.phase,'won');
+assert.deepStrictEqual(state.guesses[0].score,{exact:4,misplaced:0});
+state=Mastermind.createState([0,1,2,3]); state=Mastermind.submit(state,[3,2,1,0]);
+assert.deepStrictEqual(state.guesses[0].score,{exact:0,misplaced:4});
+state=Mastermind.createState([0,0,1,1]); state=Mastermind.submit(state,[0,0,0,0]);
+assert.deepStrictEqual(state.guesses[0].score,{exact:2,misplaced:0});
+state=Mastermind.createState([0,1,2,3],1); state=Mastermind.submit(state,[3,3,3,3]);
+assert.strictEqual(state.phase,'lost');
+assert.deepStrictEqual(state.answer,[0,1,2,3]);
+console.log('마스터마인드 로직 테스트 통과');
