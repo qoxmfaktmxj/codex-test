@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-03 | [아타리고 · 점토 격자](daily/2026-10-03-atari-go-clay-grid/index.html) | 한 번의 포획으로 끝나는 7×7 아타리고에서 점토 격자의 교차점에 흑백 돌을 두는 두 사람용 고전 전략 게임입니다. |
 | 2026-10-02 | [마스터마인드 · 천공 카드실](daily/2026-10-02-mastermind-punchcard/index.html) | 여섯 잉크색으로 된 네 칸의 비밀 암호를 천공 카드에 기록하고, 정확한 자리와 색 힌트로 해독하는 고전 추리 게임입니다. |
 | 2026-10-01 | [지뢰찾기 · 기상 지도실](daily/2026-10-01-minesweeper-weather-map/index.html) | 종이 일기도 위의 관측 지점을 열어 폭풍을 피해 모든 안전 지점을 찾는 고전 지뢰찾기입니다. |
 | 2026-09-30 | [펜테 · 네온 코트](daily/2026-09-30-pente-neon-court/index.html) | 형광 코트 위에서 돌 다섯 개를 잇거나 상대 돌을 포획하는 두 사람용 고전 펜테입니다. |
@@ -17,9 +18,14 @@
 | 2026-09-26 | [알케르케 · 푸른 타일 정원](daily/2026-09-26-alquerque/index.html) | 산호와 상아 말을 교차점으로 움직여 상대 말을 뛰어넘어 잡고, 상대 말을 모두 없애는 두 사람용 고전 전략 게임입니다. |
 | 2026-09-25 | [사목 · 감귤 온실](daily/2026-09-25-connect-four/index.html) | 귤빛과 자주빛 유리 구슬을 온실 격자에 떨어뜨려 가로·세로·대각선 네 알을 먼저 잇는 두 사람용 고전 사목 게임입니다. |
 | 2026-09-24 | [열다섯 · 활자 정렬실](daily/2026-09-24-fifteen-puzzle/index.html) | 빈칸 옆의 번호 활자를 눌러 1부터 15까지 차례대로 정렬하는 한 사람용 고전 슬라이딩 퍼즐입니다. |
-| 2026-09-23 | [삼목 · 바다 신호기](daily/2026-09-23-tic-tac-toe/index.html) | 청록 파도 위의 비스듬한 3×3 표지판에서 X와 O를 번갈아 놓아 세 칸을 먼저 잇는 두 사람용 고전 게임입니다. |
 
 ## 최근 게임 화면
+
+### 아타리고 · 점토 격자
+
+![밝은 점토 격자 위에서 흑백 돌을 포획하는 아타리고 게임판](daily/2026-10-03-atari-go-clay-grid/screenshot.png)
+
+[게임 파일](daily/2026-10-03-atari-go-clay-grid/index.html) · [모바일 화면](daily/2026-10-03-atari-go-clay-grid/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-03-atari-go-clay-grid/DESIGN.md)
 
 ### 마스터마인드 · 천공 카드실
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-09-24-fifteen-puzzle/index.html) · [모바일 화면](daily/2026-09-24-fifteen-puzzle/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-24-fifteen-puzzle/DESIGN.md)
 
-### 삼목 · 바다 신호기
-
-![청록색 파도 위의 비스듬한 삼목 신호판](daily/2026-09-23-tic-tac-toe/screenshot.png)
-
-[게임 파일](daily/2026-09-23-tic-tac-toe/index.html) · [모바일 화면](daily/2026-09-23-tic-tac-toe/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-23-tic-tac-toe/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-03-atari-go-clay-grid/game-logic.test.js
 node daily/2026-10-02-mastermind-punchcard/game-logic.test.js
 node daily/2026-10-01-minesweeper-weather-map/game-logic.test.js
 node daily/2026-09-30-pente-neon-court/game-logic.test.js
