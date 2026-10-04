@@ -1,0 +1,8 @@
+(function(root){'use strict';
+function createState(size){size=size||16;const row=Math.floor((size-1)/2),head=row*size+Math.floor((size-1)/2);return {size, snake:[head,head-1,head-2],direction:'right',food:0,score:0,phase:'playing'};}
+function turn(state,direction){const opposite={up:'down',down:'up',left:'right',right:'left'};if(!opposite[direction])throw Error('방향이 올바르지 않습니다.');if(opposite[state.direction]===direction)throw Error('반대 방향으로는 전환할 수 없습니다.');return {...state,direction};}
+function nextIndex(size,index,direction){const row=Math.floor(index/size),col=index%size;if(direction==='up')return row===0?-1:index-size;if(direction==='down')return row===size-1?-1:index+size;if(direction==='left')return col===0?-1:index-1;return col===size-1?-1:index+1;}
+function chooseFood(state,random){const empty=[];for(let i=0;i<state.size*state.size;i++)if(!state.snake.includes(i))empty.push(i);return empty.length?empty[Math.min(empty.length-1,Math.floor((random||Math.random)()*empty.length))]:-1;}
+function step(state,random){if(state.phase!=='playing')return state;const head=nextIndex(state.size,state.snake[0],state.direction);if(head<0||state.snake.includes(head))return {...state,phase:'lost'};const ate=head===state.food;const snake=[head,...state.snake];if(!ate)snake.pop();const next={...state,snake,score:state.score+(ate?1:0)};if(!ate)return next;const food=chooseFood(next,random);return food<0?{...next,food,phase:'won'}:{...next,food};}
+const api={createState,turn,nextIndex,chooseFood,step};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.SnakeSignal=api;
+})(globalThis);

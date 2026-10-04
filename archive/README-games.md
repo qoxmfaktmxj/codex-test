@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 열다섯 · 활자 정렬실
+
+![코발트 잉크와 주홍 교정선으로 구성한 열다섯 활자 퍼즐](../daily/2026-09-24-fifteen-puzzle/screenshot.png)
+
+[게임 파일](../daily/2026-09-24-fifteen-puzzle/index.html) · [모바일 화면](../daily/2026-09-24-fifteen-puzzle/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-09-24-fifteen-puzzle/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-09-24 | 열다섯 · 활자 정렬실 | 빈칸 옆의 번호 활자를 눌러 1부터 15까지 차례대로 정렬하는 한 사람용 고전 슬라이딩 퍼즐입니다. |
+
 ### 삼목 · 바다 신호기
 
 ![청록색 파도 위의 비스듬한 삼목 신호판](../daily/2026-09-23-tic-tac-toe/screenshot.png)
