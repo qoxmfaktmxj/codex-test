@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-05 | [2048 · 활자 인쇄소](daily/2026-10-05-2048-printshop/index.html) | 같은 숫자 활자를 밀어 한 장의 큰 숫자로 조판하며 2048호를 찍는 고전 숫자 퍼즐입니다. |
 | 2026-10-04 | [스네이크 · 신호국](daily/2026-10-04-snake-signal/index.html) | CRT 신호 모니터에서 방향키로 선로를 연장하며 사과 신호를 모으고, 벽과 자신의 꼬리를 피하는 고전 스네이크입니다. |
 | 2026-10-03 | [아타리고 · 점토 격자](daily/2026-10-03-atari-go-clay-grid/index.html) | 한 번의 포획으로 끝나는 7×7 아타리고에서 점토 격자의 교차점에 흑백 돌을 두는 두 사람용 고전 전략 게임입니다. |
 | 2026-10-02 | [마스터마인드 · 천공 카드실](daily/2026-10-02-mastermind-punchcard/index.html) | 여섯 잉크색으로 된 네 칸의 비밀 암호를 천공 카드에 기록하고, 정확한 자리와 색 힌트로 해독하는 고전 추리 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-09-28 | [칼라하 · 조수 웅덩이](daily/2026-09-28-kalaha-tide-pools/index.html) | 내 쪽 조약돌을 시계 방향으로 나누어 저장소에 모으고, 마지막 돌의 위치를 계산해 추가 턴과 포획을 노리는 고전 전략 게임입니다. |
 | 2026-09-27 | [미니 다마 · 보랏빛 극장 좌석표](daily/2026-09-27-mini-draughts/index.html) | 붉은 표식과 푸른 표식을 대각선 좌석으로 옮기고 상대를 뛰어넘어 모두 잡는 두 사람용 미니 다마입니다. |
 | 2026-09-26 | [알케르케 · 푸른 타일 정원](daily/2026-09-26-alquerque/index.html) | 산호와 상아 말을 교차점으로 움직여 상대 말을 뛰어넘어 잡고, 상대 말을 모두 없애는 두 사람용 고전 전략 게임입니다. |
-| 2026-09-25 | [사목 · 감귤 온실](daily/2026-09-25-connect-four/index.html) | 귤빛과 자주빛 유리 구슬을 온실 격자에 떨어뜨려 가로·세로·대각선 네 알을 먼저 잇는 두 사람용 고전 사목 게임입니다. |
 
 ## 최근 게임 화면
+
+### 2048 · 활자 인쇄소
+
+![미색 인쇄지 위 먹색 활자와 코발트 교정선으로 구성한 2048 게임판](daily/2026-10-05-2048-printshop/screenshot.png)
+
+[게임 파일](daily/2026-10-05-2048-printshop/index.html) · [모바일 화면](daily/2026-10-05-2048-printshop/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-05-2048-printshop/DESIGN.md)
 
 ### 스네이크 · 신호국
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-09-26-alquerque/index.html) · [모바일 화면](daily/2026-09-26-alquerque/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-26-alquerque/DESIGN.md)
 
-### 사목 · 감귤 온실
-
-![밝은 온실 벽과 녹색 격자에 떨어지는 귤빛과 자주빛 유리 구슬](daily/2026-09-25-connect-four/screenshot.png)
-
-[게임 파일](daily/2026-09-25-connect-four/index.html) · [모바일 화면](daily/2026-09-25-connect-four/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-25-connect-four/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-05-2048-printshop/game-logic.test.js
 node daily/2026-10-04-snake-signal/game-logic.test.js
 node daily/2026-10-03-atari-go-clay-grid/game-logic.test.js
 node daily/2026-10-02-mastermind-punchcard/game-logic.test.js

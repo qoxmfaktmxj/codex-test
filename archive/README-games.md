@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 사목 · 감귤 온실
+
+![밝은 온실 벽과 녹색 격자에 떨어지는 귤빛과 자주빛 유리 구슬](../daily/2026-09-25-connect-four/screenshot.png)
+
+[게임 파일](../daily/2026-09-25-connect-four/index.html) · [모바일 화면](../daily/2026-09-25-connect-four/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-09-25-connect-four/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-09-25 | 사목 · 감귤 온실 | 귤빛과 자주빛 유리 구슬을 온실 격자에 떨어뜨려 가로·세로·대각선 네 알을 먼저 잇는 두 사람용 고전 사목 게임입니다. |
+
 ### 열다섯 · 활자 정렬실
 
 ![코발트 잉크와 주홍 교정선으로 구성한 열다섯 활자 퍼즐](../daily/2026-09-24-fifteen-puzzle/screenshot.png)
