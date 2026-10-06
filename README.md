@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-06 | [윷놀이 · 기와마당](daily/2026-10-06-yutnori-roofyard/index.html) | 기와가 깔린 둥근 마당에서 윷을 던져 말을 한 바퀴 돌아오게 하는 한국의 고전 놀이입니다. |
 | 2026-10-05 | [2048 · 활자 인쇄소](daily/2026-10-05-2048-printshop/index.html) | 같은 숫자 활자를 밀어 한 장의 큰 숫자로 조판하며 2048호를 찍는 고전 숫자 퍼즐입니다. |
 | 2026-10-04 | [스네이크 · 신호국](daily/2026-10-04-snake-signal/index.html) | CRT 신호 모니터에서 방향키로 선로를 연장하며 사과 신호를 모으고, 벽과 자신의 꼬리를 피하는 고전 스네이크입니다. |
 | 2026-10-03 | [아타리고 · 점토 격자](daily/2026-10-03-atari-go-clay-grid/index.html) | 한 번의 포획으로 끝나는 7×7 아타리고에서 점토 격자의 교차점에 흑백 돌을 두는 두 사람용 고전 전략 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-09-29 | [보글 · 활자 상자](daily/2026-09-29-boggle-typecase/index.html) | 서로 닿은 한글 활자를 이어 목록의 낱말을 조판하듯 찾아내는 고전 낱말 퍼즐입니다. |
 | 2026-09-28 | [칼라하 · 조수 웅덩이](daily/2026-09-28-kalaha-tide-pools/index.html) | 내 쪽 조약돌을 시계 방향으로 나누어 저장소에 모으고, 마지막 돌의 위치를 계산해 추가 턴과 포획을 노리는 고전 전략 게임입니다. |
 | 2026-09-27 | [미니 다마 · 보랏빛 극장 좌석표](daily/2026-09-27-mini-draughts/index.html) | 붉은 표식과 푸른 표식을 대각선 좌석으로 옮기고 상대를 뛰어넘어 모두 잡는 두 사람용 미니 다마입니다. |
-| 2026-09-26 | [알케르케 · 푸른 타일 정원](daily/2026-09-26-alquerque/index.html) | 산호와 상아 말을 교차점으로 움직여 상대 말을 뛰어넘어 잡고, 상대 말을 모두 없애는 두 사람용 고전 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 윷놀이 · 기와마당
+
+![청록·주홍 기와가 둘러싼 밝은 원형 마당에서 윷말을 움직이는 게임판](daily/2026-10-06-yutnori-roofyard/screenshot.png)
+
+[게임 파일](daily/2026-10-06-yutnori-roofyard/index.html) · [모바일 화면](daily/2026-10-06-yutnori-roofyard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-06-yutnori-roofyard/DESIGN.md)
 
 ### 2048 · 활자 인쇄소
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-09-27-mini-draughts/index.html) · [모바일 화면](daily/2026-09-27-mini-draughts/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-27-mini-draughts/DESIGN.md)
 
-### 알케르케 · 푸른 타일 정원
-
-![푸른 타일 원형 프레임 안의 알케르케 게임판](daily/2026-09-26-alquerque/screenshot.png)
-
-[게임 파일](daily/2026-09-26-alquerque/index.html) · [모바일 화면](daily/2026-09-26-alquerque/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-26-alquerque/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-06-yutnori-roofyard/game-logic.test.js
 node daily/2026-10-05-2048-printshop/game-logic.test.js
 node daily/2026-10-04-snake-signal/game-logic.test.js
 node daily/2026-10-03-atari-go-clay-grid/game-logic.test.js
