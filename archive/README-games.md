@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 미니 다마 · 보랏빛 극장 좌석표
+
+![밝은 종이 좌석표 위의 보랏빛 미니 다마 게임판](../daily/2026-09-27-mini-draughts/screenshot.png)
+
+[게임 파일](../daily/2026-09-27-mini-draughts/index.html) · [모바일 화면](../daily/2026-09-27-mini-draughts/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-09-27-mini-draughts/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-09-27 | 미니 다마 · 보랏빛 극장 좌석표 | 붉은 표식과 푸른 표식을 대각선 좌석으로 옮기고 상대를 뛰어넘어 모두 잡는 두 사람용 미니 다마입니다. |
+
 ### 알케르케 · 푸른 타일 정원
 
 ![푸른 타일 원형 프레임 안의 알케르케 게임판](../daily/2026-09-26-alquerque/screenshot.png)
