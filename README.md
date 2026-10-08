@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-08 | [하노이 탑 · 도서관 사다리](daily/2026-10-08-hanoi-library-ladder/index.html) | 밝은 도서관의 세 서가에서 작은 책을 큰 책 위에만 놓아 오른쪽 서가로 모두 옮기는 고전 하노이 탑 퍼즐입니다. |
 | 2026-10-07 | [달 착륙선 · 연 축제](daily/2026-10-07-lunar-lander-kite-festival/index.html) | 연등이 뜬 청록 하늘에서 추력과 수평 속도를 조절해 달빛 활주로에 내려앉는 고전 달 착륙 게임입니다. |
 | 2026-10-06 | [윷놀이 · 기와마당](daily/2026-10-06-yutnori-roofyard/index.html) | 기와가 깔린 둥근 마당에서 윷을 던져 말을 한 바퀴 돌아오게 하는 한국의 고전 놀이입니다. |
 | 2026-10-05 | [2048 · 활자 인쇄소](daily/2026-10-05-2048-printshop/index.html) | 같은 숫자 활자를 밀어 한 장의 큰 숫자로 조판하며 2048호를 찍는 고전 숫자 퍼즐입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-01 | [지뢰찾기 · 기상 지도실](daily/2026-10-01-minesweeper-weather-map/index.html) | 종이 일기도 위의 관측 지점을 열어 폭풍을 피해 모든 안전 지점을 찾는 고전 지뢰찾기입니다. |
 | 2026-09-30 | [펜테 · 네온 코트](daily/2026-09-30-pente-neon-court/index.html) | 형광 코트 위에서 돌 다섯 개를 잇거나 상대 돌을 포획하는 두 사람용 고전 펜테입니다. |
 | 2026-09-29 | [보글 · 활자 상자](daily/2026-09-29-boggle-typecase/index.html) | 서로 닿은 한글 활자를 이어 목록의 낱말을 조판하듯 찾아내는 고전 낱말 퍼즐입니다. |
-| 2026-09-28 | [칼라하 · 조수 웅덩이](daily/2026-09-28-kalaha-tide-pools/index.html) | 내 쪽 조약돌을 시계 방향으로 나누어 저장소에 모으고, 마지막 돌의 위치를 계산해 추가 턴과 포획을 노리는 고전 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 하노이 탑 · 도서관 사다리
+
+![밝은 도서관의 세 서가 사이에서 책을 옮기는 하노이 탑 게임판](daily/2026-10-08-hanoi-library-ladder/screenshot.png)
+
+[게임 파일](daily/2026-10-08-hanoi-library-ladder/index.html) · [모바일 화면](daily/2026-10-08-hanoi-library-ladder/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-08-hanoi-library-ladder/DESIGN.md)
 
 ### 달 착륙선 · 연 축제
 
@@ -75,18 +81,12 @@
 
 [게임 파일](daily/2026-09-29-boggle-typecase/index.html) · [모바일 화면](daily/2026-09-29-boggle-typecase/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-29-boggle-typecase/DESIGN.md)
 
-### 칼라하 · 조수 웅덩이
-
-![푸른 조수 웅덩이 안에 조약돌을 나누는 칼라하 게임판](daily/2026-09-28-kalaha-tide-pools/screenshot.png)
-
-[게임 파일](daily/2026-09-28-kalaha-tide-pools/index.html) · [모바일 화면](daily/2026-09-28-kalaha-tide-pools/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-09-28-kalaha-tide-pools/DESIGN.md)
-
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-08-hanoi-library-ladder/game-logic.test.js
 node daily/2026-10-07-lunar-lander-kite-festival/game-logic.test.js
 node daily/2026-10-06-yutnori-roofyard/game-logic.test.js
 node daily/2026-10-05-2048-printshop/game-logic.test.js

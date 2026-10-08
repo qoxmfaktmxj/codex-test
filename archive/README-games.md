@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 칼라하 · 조수 웅덩이
+
+![푸른 조수 웅덩이 안에 조약돌을 나누는 칼라하 게임판](../daily/2026-09-28-kalaha-tide-pools/screenshot.png)
+
+[게임 파일](../daily/2026-09-28-kalaha-tide-pools/index.html) · [모바일 화면](../daily/2026-09-28-kalaha-tide-pools/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-09-28-kalaha-tide-pools/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-09-28 | 칼라하 · 조수 웅덩이 | 내 쪽 조약돌을 시계 방향으로 나누어 저장소에 모으고, 마지막 돌의 위치를 계산해 추가 턴과 포획을 노리는 고전 전략 게임입니다. |
+
 ### 미니 다마 · 보랏빛 극장 좌석표
 
 ![밝은 종이 좌석표 위의 보랏빛 미니 다마 게임판](../daily/2026-09-27-mini-draughts/screenshot.png)
