@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 보글 · 활자 상자
+
+![크림 종이 위 납 활자 서랍에서 한글 낱말을 찾는 보글 게임판](../daily/2026-09-29-boggle-typecase/screenshot.png)
+
+[게임 파일](../daily/2026-09-29-boggle-typecase/index.html) · [모바일 화면](../daily/2026-09-29-boggle-typecase/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-09-29-boggle-typecase/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-09-29 | 보글 · 활자 상자 | 서로 닿은 한글 활자를 이어 목록의 낱말을 조판하듯 찾아내는 고전 낱말 퍼즐입니다. |
+
 ### 칼라하 · 조수 웅덩이
 
 ![푸른 조수 웅덩이 안에 조약돌을 나누는 칼라하 게임판](../daily/2026-09-28-kalaha-tide-pools/screenshot.png)
