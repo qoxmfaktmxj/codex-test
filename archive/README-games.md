@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 펜테 · 네온 코트
+
+![푸른 실내 코트와 형광 핑크·라임 돌로 구성한 펜테 게임판](../daily/2026-09-30-pente-neon-court/screenshot.png)
+
+[게임 파일](../daily/2026-09-30-pente-neon-court/index.html) · [모바일 화면](../daily/2026-09-30-pente-neon-court/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-09-30-pente-neon-court/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-09-30 | 펜테 · 네온 코트 | 형광 코트 위에서 돌 다섯 개를 잇거나 상대 돌을 포획하는 두 사람용 고전 펜테입니다. |
+
 ### 보글 · 활자 상자
 
 ![크림 종이 위 납 활자 서랍에서 한글 낱말을 찾는 보글 게임판](../daily/2026-09-29-boggle-typecase/screenshot.png)
