@@ -1,0 +1,23 @@
+const assert = require('node:assert/strict');
+const { createGame, enterDigit, clearCell, groupState, isComplete } = require('./game-logic.js');
+
+let game = createGame();
+assert.equal(game.cells.a1, null);
+game = enterDigit(game, 'a1', 4);
+assert.equal(game.cells.a1, 4);
+assert.equal(enterDigit(game, 'a1', 0), game);
+game = enterDigit(game, 'a2', 5);
+assert.deepEqual(groupState(game, 'row-a'), { sum: 9, target: 9, duplicate: false, complete: true });
+game = enterDigit(game, 'b1', 4);
+game = enterDigit(game, 'c1', 4);
+assert.equal(groupState(game, 'col-1').duplicate, true);
+game = clearCell(game, 'c1');
+assert.equal(game.cells.c1, null);
+assert.equal(isComplete(game), false);
+game = createGame();
+for (const [cell, digit] of Object.entries({ a1: 4, a2: 5, b1: 3, b2: 7, b3: 5, c1: 5, c2: 6 })) game = enterDigit(game, cell, digit);
+assert.equal(groupState(game, 'col-2').target, 18);
+assert.equal(groupState(game, 'col-2').sum, 18);
+assert.equal(groupState(game, 'col-3').sum, 5);
+assert.equal(isComplete(game), true);
+console.log('카쿠로 로직 테스트 통과');

@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 지뢰찾기 · 기상 지도실
+
+![밝은 기상 지도 위에서 관측 지점을 여는 지뢰찾기 게임판](../daily/2026-10-01-minesweeper-weather-map/screenshot.png)
+
+[게임 파일](../daily/2026-10-01-minesweeper-weather-map/index.html) · [모바일 화면](../daily/2026-10-01-minesweeper-weather-map/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-01-minesweeper-weather-map/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-01 | 지뢰찾기 · 기상 지도실 | 종이 일기도 위의 관측 지점을 열어 폭풍을 피해 모든 안전 지점을 찾는 고전 지뢰찾기입니다. |
+
 ### 펜테 · 네온 코트
 
 ![푸른 실내 코트와 형광 핑크·라임 돌로 구성한 펜테 게임판](../daily/2026-09-30-pente-neon-court/screenshot.png)

@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-11 | [카쿠로 · 찻집 장부](daily/2026-10-11-kakuro-tea-ledger/index.html) | 크림 장부의 가로·세로 주문 합계에 맞춰 숫자를 채우는 고전 카쿠로 퍼즐입니다. |
 | 2026-10-10 | [리버시 · 소풍 보자기](daily/2026-10-10-reversi-picnic-cloth/index.html) | 빨강·파랑 체크 보자기 위에 나무 단추를 놓아 상대 단추를 뒤집는 고전 리버시 게임입니다. |
 | 2026-10-09 | [라이트 아웃 · 빗방울 실험실](daily/2026-10-09-lights-out-rain-lab/index.html) | 비 내린 유리창의 빛나는 물방울을 눌러 십자 모양 이웃과 함께 모두 끄는 고전 라이트 아웃 퍼즐입니다. |
 | 2026-10-08 | [하노이 탑 · 도서관 사다리](daily/2026-10-08-hanoi-library-ladder/index.html) | 밝은 도서관의 세 서가에서 작은 책을 큰 책 위에만 놓아 오른쪽 서가로 모두 옮기는 고전 하노이 탑 퍼즐입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-04 | [스네이크 · 신호국](daily/2026-10-04-snake-signal/index.html) | CRT 신호 모니터에서 방향키로 선로를 연장하며 사과 신호를 모으고, 벽과 자신의 꼬리를 피하는 고전 스네이크입니다. |
 | 2026-10-03 | [아타리고 · 점토 격자](daily/2026-10-03-atari-go-clay-grid/index.html) | 한 번의 포획으로 끝나는 7×7 아타리고에서 점토 격자의 교차점에 흑백 돌을 두는 두 사람용 고전 전략 게임입니다. |
 | 2026-10-02 | [마스터마인드 · 천공 카드실](daily/2026-10-02-mastermind-punchcard/index.html) | 여섯 잉크색으로 된 네 칸의 비밀 암호를 천공 카드에 기록하고, 정확한 자리와 색 힌트로 해독하는 고전 추리 게임입니다. |
-| 2026-10-01 | [지뢰찾기 · 기상 지도실](daily/2026-10-01-minesweeper-weather-map/index.html) | 종이 일기도 위의 관측 지점을 열어 폭풍을 피해 모든 안전 지점을 찾는 고전 지뢰찾기입니다. |
 
 ## 최근 게임 화면
+
+### 카쿠로 · 찻집 장부
+
+![크림 장부의 붉은 합계 칸과 청록 잉크 숫자로 구성한 카쿠로 게임판](daily/2026-10-11-kakuro-tea-ledger/screenshot.png)
+
+[게임 파일](daily/2026-10-11-kakuro-tea-ledger/index.html) · [모바일 화면](daily/2026-10-11-kakuro-tea-ledger/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-11-kakuro-tea-ledger/DESIGN.md)
 
 ### 리버시 · 소풍 보자기
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-02-mastermind-punchcard/index.html) · [모바일 화면](daily/2026-10-02-mastermind-punchcard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-02-mastermind-punchcard/DESIGN.md)
 
-### 지뢰찾기 · 기상 지도실
-
-![밝은 기상 지도 위에서 관측 지점을 여는 지뢰찾기 게임판](daily/2026-10-01-minesweeper-weather-map/screenshot.png)
-
-[게임 파일](daily/2026-10-01-minesweeper-weather-map/index.html) · [모바일 화면](daily/2026-10-01-minesweeper-weather-map/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-01-minesweeper-weather-map/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-11-kakuro-tea-ledger/game-logic.test.js
 node daily/2026-10-10-reversi-picnic-cloth/game-logic.test.js
 node daily/2026-10-09-lights-out-rain-lab/game-logic.test.js
 node daily/2026-10-08-hanoi-library-ladder/game-logic.test.js
