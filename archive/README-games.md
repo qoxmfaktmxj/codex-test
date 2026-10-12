@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 마스터마인드 · 천공 카드실
+
+![재생지 천공 카드에 색 암호를 기록하는 마스터마인드 게임판](../daily/2026-10-02-mastermind-punchcard/screenshot.png)
+
+[게임 파일](../daily/2026-10-02-mastermind-punchcard/index.html) · [모바일 화면](../daily/2026-10-02-mastermind-punchcard/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-02-mastermind-punchcard/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-02 | 마스터마인드 · 천공 카드실 | 여섯 잉크색으로 된 네 칸의 비밀 암호를 천공 카드에 기록하고, 정확한 자리와 색 힌트로 해독하는 고전 추리 게임입니다. |
+
 ### 지뢰찾기 · 기상 지도실
 
 ![밝은 기상 지도 위에서 관측 지점을 여는 지뢰찾기 게임판](../daily/2026-10-01-minesweeper-weather-map/screenshot.png)

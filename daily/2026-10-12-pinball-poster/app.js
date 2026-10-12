@@ -1,0 +1,9 @@
+(function() {
+  const api = window.nightMarketPinball, ball = document.querySelector('#ball'), table = document.querySelector('#table'); let game = api.createGame(), last = performance.now();
+  const score = document.querySelector('#score'), balls = document.querySelector('#balls'), message = document.querySelector('#message'), launch = document.querySelector('#launch');
+  function draw() { ball.style.transform = `translate(${game.ball.x - 8}px,${game.ball.y - 8}px)`; score.textContent = String(game.score).padStart(6, '0'); balls.textContent = `공 ${game.balls}개`; document.querySelectorAll('.bumper').forEach((el, i) => el.classList.toggle('hit', game.bumpers[i])); if (game.status === 'ready') { launch.textContent = game.balls === 3 ? '공 발사' : '다음 공 발사'; message.textContent = '발사 버튼 또는 스페이스바를 누르세요.'; } else if (game.status === 'over') { launch.textContent = '새 포스터 붙이기'; message.textContent = `공을 모두 썼어요. 최종 점수 ${game.score}점!`; } else { launch.textContent = '진행 중'; message.textContent = '플리퍼로 공을 골목 위쪽 범퍼에 튕기세요.'; } }
+  function act(kind) { if (kind === 'launch') game = game.status === 'over' ? api.reset(game) : api.launch(game); else game = api.flip(game, kind); draw(); }
+  launch.addEventListener('click', () => act('launch')); document.querySelector('#left').addEventListener('click', () => act('left')); document.querySelector('#right').addEventListener('click', () => act('right'));
+  window.addEventListener('keydown', e => { if ([' ', 'ArrowLeft', 'ArrowRight', 'a', 'A', 'l', 'L'].includes(e.key)) e.preventDefault(); if (e.key === ' ') act('launch'); if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'a') act('left'); if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'l') act('right'); });
+  function frame(now) { game = api.step(game, now - last); last = now; draw(); requestAnimationFrame(frame); } draw(); requestAnimationFrame(frame);
+})();
