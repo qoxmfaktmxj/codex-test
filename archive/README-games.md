@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 아타리고 · 점토 격자
+
+![밝은 점토 격자 위에서 흑백 돌을 포획하는 아타리고 게임판](../daily/2026-10-03-atari-go-clay-grid/screenshot.png)
+
+[게임 파일](../daily/2026-10-03-atari-go-clay-grid/index.html) · [모바일 화면](../daily/2026-10-03-atari-go-clay-grid/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-03-atari-go-clay-grid/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-03 | 아타리고 · 점토 격자 | 한 번의 포획으로 끝나는 7×7 아타리고에서 점토 격자의 교차점에 흑백 돌을 두는 두 사람용 고전 전략 게임입니다. |
+
 ### 마스터마인드 · 천공 카드실
 
 ![재생지 천공 카드에 색 암호를 기록하는 마스터마인드 게임판](../daily/2026-10-02-mastermind-punchcard/screenshot.png)

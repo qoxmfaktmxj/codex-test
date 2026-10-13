@@ -1,0 +1,21 @@
+const assert = require('node:assert/strict');
+const { createGame, drawNumber, markCell, reset, isBingo } = require('./game-logic.js');
+
+let game = createGame(() => 0.999);
+assert.equal(game.status, 'playing');
+assert.equal(game.current, null);
+assert.equal(game.board.length, 25);
+game = drawNumber(game);
+assert.equal(game.current, 1);
+assert.equal(game.drawn.includes(1), true);
+game = markCell(game, 0);
+assert.equal(game.board[0].marked, true);
+assert.equal(markCell(game, 1), game);
+game = { ...game, current: 5, board: game.board.map((cell, index) => ({ ...cell, marked: index < 4 })) };
+assert.equal(isBingo(game.board), false);
+game = markCell(game, 4);
+assert.equal(isBingo(game.board), true);
+assert.equal(game.status, 'won');
+assert.equal(markCell(game, 5).status, 'won');
+assert.equal(reset(game, () => 0.999).current, null);
+console.log('빙고 로직 테스트 통과');

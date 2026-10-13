@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-13 | [빙고 · 해변 구조대 전광판](daily/2026-10-13-bingo-lifeguard-board/index.html) | 해변 구조대의 기계식 호출판에서 뽑힌 번호를 찾아 깃발을 올리고 한 줄을 완성하는 고전 빙고 게임입니다. |
 | 2026-10-12 | [핀볼 · 밤시장 포스터](daily/2026-10-12-pinball-poster/index.html) | 형광 실크스크린 골목 포스터에서 플리퍼로 공을 튕겨 범퍼를 맞히는 고전 핀볼 게임입니다. |
 | 2026-10-11 | [카쿠로 · 찻집 장부](daily/2026-10-11-kakuro-tea-ledger/index.html) | 크림 장부의 가로·세로 주문 합계에 맞춰 숫자를 채우는 고전 카쿠로 퍼즐입니다. |
 | 2026-10-10 | [리버시 · 소풍 보자기](daily/2026-10-10-reversi-picnic-cloth/index.html) | 빨강·파랑 체크 보자기 위에 나무 단추를 놓아 상대 단추를 뒤집는 고전 리버시 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-06 | [윷놀이 · 기와마당](daily/2026-10-06-yutnori-roofyard/index.html) | 기와가 깔린 둥근 마당에서 윷을 던져 말을 한 바퀴 돌아오게 하는 한국의 고전 놀이입니다. |
 | 2026-10-05 | [2048 · 활자 인쇄소](daily/2026-10-05-2048-printshop/index.html) | 같은 숫자 활자를 밀어 한 장의 큰 숫자로 조판하며 2048호를 찍는 고전 숫자 퍼즐입니다. |
 | 2026-10-04 | [스네이크 · 신호국](daily/2026-10-04-snake-signal/index.html) | CRT 신호 모니터에서 방향키로 선로를 연장하며 사과 신호를 모으고, 벽과 자신의 꼬리를 피하는 고전 스네이크입니다. |
-| 2026-10-03 | [아타리고 · 점토 격자](daily/2026-10-03-atari-go-clay-grid/index.html) | 한 번의 포획으로 끝나는 7×7 아타리고에서 점토 격자의 교차점에 흑백 돌을 두는 두 사람용 고전 전략 게임입니다. |
 
 ## 최근 게임 화면
+
+### 빙고 · 해변 구조대 전광판
+
+![밝은 아이보리 선체 위 거대한 5×5 구조대 빙고 전광판](daily/2026-10-13-bingo-lifeguard-board/screenshot.png)
+
+[게임 파일](daily/2026-10-13-bingo-lifeguard-board/index.html) · [모바일 화면](daily/2026-10-13-bingo-lifeguard-board/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-13-bingo-lifeguard-board/DESIGN.md)
 
 ### 핀볼 · 밤시장 포스터
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-04-snake-signal/index.html) · [모바일 화면](daily/2026-10-04-snake-signal/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-04-snake-signal/DESIGN.md)
 
-### 아타리고 · 점토 격자
-
-![밝은 점토 격자 위에서 흑백 돌을 포획하는 아타리고 게임판](daily/2026-10-03-atari-go-clay-grid/screenshot.png)
-
-[게임 파일](daily/2026-10-03-atari-go-clay-grid/index.html) · [모바일 화면](daily/2026-10-03-atari-go-clay-grid/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-03-atari-go-clay-grid/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-13-bingo-lifeguard-board/game-logic.test.js
 node daily/2026-10-12-pinball-poster/game-logic.test.js
 node daily/2026-10-11-kakuro-tea-ledger/game-logic.test.js
 node daily/2026-10-10-reversi-picnic-cloth/game-logic.test.js
