@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 스네이크 · 신호국
+
+![코발트 CRT 신호 모니터에서 라임 선로를 잇는 스네이크 게임판](../daily/2026-10-04-snake-signal/screenshot.png)
+
+[게임 파일](../daily/2026-10-04-snake-signal/index.html) · [모바일 화면](../daily/2026-10-04-snake-signal/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-04-snake-signal/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-04 | 스네이크 · 신호국 | CRT 신호 모니터에서 방향키로 선로를 연장하며 사과 신호를 모으고, 벽과 자신의 꼬리를 피하는 고전 스네이크입니다. |
+
 ### 아타리고 · 점토 격자
 
 ![밝은 점토 격자 위에서 흑백 돌을 포획하는 아타리고 게임판](../daily/2026-10-03-atari-go-clay-grid/screenshot.png)
