@@ -1,0 +1,14 @@
+(function(root) {
+  'use strict';
+  const other = color => color === 'navy' ? 'coral' : 'navy';
+  const inside = (row, col) => row >= 0 && row < 6 && col >= 0 && col < 6;
+  const indexOf = (row, col) => row * 6 + col;
+  function createGame() { const board = Array(36).fill(null); [0,1,2,3,4,5,6,7,8,9,10,11].forEach(index => board[index] = 'coral'); [24,25,26,27,28,29,30,31,32,33,34,35].forEach(index => board[index] = 'navy'); return { board, turn: 'navy', captured: { navy: 0, coral: 0 }, status: 'playing', winner: null }; }
+  function loopStep(row, col, dr, dc) { const nr = row + dr, nc = col + dc; if (inside(nr, nc)) return { row: nr, col: nc, dr, dc, looped: false }; const key = `${row},${col},${dr},${dc}`; const turns = { '0,0,-1,0':[0,1,0,1], '0,0,0,-1':[1,0,1,0], '0,5,-1,0':[0,4,0,-1], '0,5,0,1':[1,5,1,0], '5,0,1,0':[5,1,0,1], '5,0,0,-1':[4,0,-1,0], '5,5,1,0':[5,4,0,-1], '5,5,0,1':[4,5,-1,0] }; const turn = turns[key]; return turn ? { row: turn[0], col: turn[1], dr: turn[2], dc: turn[3], looped: true } : null; }
+  function loopCapture(board, from, to) { const startRow = Math.floor(from / 6), startCol = from % 6; for (const [dr, dc] of [[1,0],[-1,0],[0,1],[0,-1]]) { let row = startRow, col = startCol, dirRow = dr, dirCol = dc, looped = false; for (let step = 0; step < 36; step += 1) { const next = loopStep(row, col, dirRow, dirCol); if (!next) break; row = next.row; col = next.col; dirRow = next.dr; dirCol = next.dc; looped ||= next.looped; const index = indexOf(row, col); if (index === to) return looped; if (board[index]) break; } } return false; }
+  function legalMoves(game) { if (game.status !== 'playing') return []; const moves = []; game.board.forEach((piece, from) => { if (piece !== game.turn) return; const row = Math.floor(from / 6), col = from % 6; [[1,0],[-1,0],[0,1],[0,-1]].forEach(([dr, dc]) => { const to = indexOf(row + dr, col + dc); if (inside(row + dr, col + dc) && !game.board[to]) moves.push({ from, to, capture: false }); }); game.board.forEach((target, to) => { if (target === other(game.turn) && loopCapture(game.board, from, to)) moves.push({ from, to, capture: true }); }); }); return moves; }
+  function movePiece(game, from, to) { const move = legalMoves(game).find(candidate => candidate.from === from && candidate.to === to); if (!move) return game; const board = game.board.map((piece, index) => index === from ? null : index === to ? game.turn : piece); const captured = { ...game.captured, [game.turn]: game.captured[game.turn] + (move.capture ? 1 : 0) }; const winner = move.capture && captured[game.turn] === 12 ? game.turn : null; return { ...game, board, captured, turn: winner ? game.turn : other(game.turn), status: winner ? 'won' : 'playing', winner }; }
+  const api = { createGame, legalMoves, movePiece, reset: createGame };
+  if (typeof module !== 'undefined') module.exports = api;
+  if (typeof window !== 'undefined') window.harborSurakarta = api;
+})(globalThis);

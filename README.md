@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-15 | [수라카르타 · 항구 해도](daily/2026-10-15-surakarta-harbor-chart/index.html) | 항구 해도의 순환 고리를 지나 상대 말을 잡는 인도네시아 고전 수라카르타입니다. |
 | 2026-10-14 | [필로스 · 수련 온실](daily/2026-10-14-pylos-lily-greenhouse/index.html) | 유리 수련 받침 위에 청록과 산호 구슬을 차례로 올려 꼭대기를 먼저 완성하는 고전 필로스 게임입니다. |
 | 2026-10-13 | [빙고 · 해변 구조대 전광판](daily/2026-10-13-bingo-lifeguard-board/index.html) | 해변 구조대의 기계식 호출판에서 뽑힌 번호를 찾아 깃발을 올리고 한 줄을 완성하는 고전 빙고 게임입니다. |
 | 2026-10-12 | [핀볼 · 밤시장 포스터](daily/2026-10-12-pinball-poster/index.html) | 형광 실크스크린 골목 포스터에서 플리퍼로 공을 튕겨 범퍼를 맞히는 고전 핀볼 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-08 | [하노이 탑 · 도서관 사다리](daily/2026-10-08-hanoi-library-ladder/index.html) | 밝은 도서관의 세 서가에서 작은 책을 큰 책 위에만 놓아 오른쪽 서가로 모두 옮기는 고전 하노이 탑 퍼즐입니다. |
 | 2026-10-07 | [달 착륙선 · 연 축제](daily/2026-10-07-lunar-lander-kite-festival/index.html) | 연등이 뜬 청록 하늘에서 추력과 수평 속도를 조절해 달빛 활주로에 내려앉는 고전 달 착륙 게임입니다. |
 | 2026-10-06 | [윷놀이 · 기와마당](daily/2026-10-06-yutnori-roofyard/index.html) | 기와가 깔린 둥근 마당에서 윷을 던져 말을 한 바퀴 돌아오게 하는 한국의 고전 놀이입니다. |
-| 2026-10-05 | [2048 · 활자 인쇄소](daily/2026-10-05-2048-printshop/index.html) | 같은 숫자 활자를 밀어 한 장의 큰 숫자로 조판하며 2048호를 찍는 고전 숫자 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 수라카르타 · 항구 해도
+
+![아이보리 항구 해도 위 청색과 산호 말, 바깥 순환 항로로 구성한 수라카르타 게임판](daily/2026-10-15-surakarta-harbor-chart/screenshot.png)
+
+[게임 파일](daily/2026-10-15-surakarta-harbor-chart/index.html) · [모바일 화면](daily/2026-10-15-surakarta-harbor-chart/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-15-surakarta-harbor-chart/DESIGN.md)
 
 ### 필로스 · 수련 온실
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-06-yutnori-roofyard/index.html) · [모바일 화면](daily/2026-10-06-yutnori-roofyard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-06-yutnori-roofyard/DESIGN.md)
 
-### 2048 · 활자 인쇄소
-
-![미색 인쇄지 위 먹색 활자와 코발트 교정선으로 구성한 2048 게임판](daily/2026-10-05-2048-printshop/screenshot.png)
-
-[게임 파일](daily/2026-10-05-2048-printshop/index.html) · [모바일 화면](daily/2026-10-05-2048-printshop/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-05-2048-printshop/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-15-surakarta-harbor-chart/game-logic.test.js
 node daily/2026-10-14-pylos-lily-greenhouse/game-logic.test.js
 node daily/2026-10-13-bingo-lifeguard-board/game-logic.test.js
 node daily/2026-10-12-pinball-poster/game-logic.test.js
