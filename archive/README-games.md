@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 윷놀이 · 기와마당
+
+![청록·주홍 기와가 둘러싼 밝은 원형 마당에서 윷말을 움직이는 게임판](../daily/2026-10-06-yutnori-roofyard/screenshot.png)
+
+[게임 파일](../daily/2026-10-06-yutnori-roofyard/index.html) · [모바일 화면](../daily/2026-10-06-yutnori-roofyard/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-06-yutnori-roofyard/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-06 | 윷놀이 · 기와마당 | 기와가 깔린 둥근 마당에서 윷을 던져 말을 한 바퀴 돌아오게 하는 한국의 고전 놀이입니다. |
+
 ### 2048 · 활자 인쇄소
 
 ![미색 인쇄지 위 먹색 활자와 코발트 교정선으로 구성한 2048 게임판](../daily/2026-10-05-2048-printshop/screenshot.png)

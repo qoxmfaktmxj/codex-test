@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미니 스도쿠 · 종이접기 도감</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">접어서 맞추는 4 × 4</p><h1>미니 스도쿠<span>종이접기 도감</span></h1><p class="rule">가로·세로·작은 정사각형마다 1부터 4까지 한 번씩 넣으세요.</p></header>
+    <section class="game-stage" aria-label="미니 스도쿠 게임">
+      <div class="corner-note note-a">네 칸의<br>약속</div><div class="corner-note note-b">접힌 선을<br>따라</div>
+      <div id="board" class="board" aria-label="스도쿠 판"></div>
+      <div class="number-strip" aria-label="숫자 선택"><button data-number="1">1</button><button data-number="2">2</button><button data-number="3">3</button><button data-number="4">4</button></div>
+    </section>
+    <footer><p id="message" aria-live="polite">빈 칸을 누른 뒤 숫자를 고르세요.</p><button id="reset" class="reset">처음부터 접기</button></footer>
+  </main>
+  <script src="game-logic.js"></script><script src="app.js"></script>
+</body>
+</html>

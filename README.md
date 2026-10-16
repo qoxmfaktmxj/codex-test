@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-16 | [미니 스도쿠 · 종이접기 도감](daily/2026-10-16-mini-sudoku-origami/index.html) | 접힌 종이 도감의 4×4 칸에 1부터 4까지를 맞물리게 넣는 작은 고전 스도쿠 퍼즐입니다. |
 | 2026-10-15 | [수라카르타 · 항구 해도](daily/2026-10-15-surakarta-harbor-chart/index.html) | 항구 해도의 순환 고리를 지나 상대 말을 잡는 인도네시아 고전 수라카르타입니다. |
 | 2026-10-14 | [필로스 · 수련 온실](daily/2026-10-14-pylos-lily-greenhouse/index.html) | 유리 수련 받침 위에 청록과 산호 구슬을 차례로 올려 꼭대기를 먼저 완성하는 고전 필로스 게임입니다. |
 | 2026-10-13 | [빙고 · 해변 구조대 전광판](daily/2026-10-13-bingo-lifeguard-board/index.html) | 해변 구조대의 기계식 호출판에서 뽑힌 번호를 찾아 깃발을 올리고 한 줄을 완성하는 고전 빙고 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-09 | [라이트 아웃 · 빗방울 실험실](daily/2026-10-09-lights-out-rain-lab/index.html) | 비 내린 유리창의 빛나는 물방울을 눌러 십자 모양 이웃과 함께 모두 끄는 고전 라이트 아웃 퍼즐입니다. |
 | 2026-10-08 | [하노이 탑 · 도서관 사다리](daily/2026-10-08-hanoi-library-ladder/index.html) | 밝은 도서관의 세 서가에서 작은 책을 큰 책 위에만 놓아 오른쪽 서가로 모두 옮기는 고전 하노이 탑 퍼즐입니다. |
 | 2026-10-07 | [달 착륙선 · 연 축제](daily/2026-10-07-lunar-lander-kite-festival/index.html) | 연등이 뜬 청록 하늘에서 추력과 수평 속도를 조절해 달빛 활주로에 내려앉는 고전 달 착륙 게임입니다. |
-| 2026-10-06 | [윷놀이 · 기와마당](daily/2026-10-06-yutnori-roofyard/index.html) | 기와가 깔린 둥근 마당에서 윷을 던져 말을 한 바퀴 돌아오게 하는 한국의 고전 놀이입니다. |
 
 ## 최근 게임 화면
+
+### 미니 스도쿠 · 종이접기 도감
+
+![크림 종이와 코발트·주홍 접힘으로 구성한 4×4 미니 스도쿠 게임판](daily/2026-10-16-mini-sudoku-origami/screenshot.png)
+
+[게임 파일](daily/2026-10-16-mini-sudoku-origami/index.html) · [모바일 화면](daily/2026-10-16-mini-sudoku-origami/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-16-mini-sudoku-origami/DESIGN.md)
 
 ### 수라카르타 · 항구 해도
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-07-lunar-lander-kite-festival/index.html) · [모바일 화면](daily/2026-10-07-lunar-lander-kite-festival/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-07-lunar-lander-kite-festival/DESIGN.md)
 
-### 윷놀이 · 기와마당
-
-![청록·주홍 기와가 둘러싼 밝은 원형 마당에서 윷말을 움직이는 게임판](daily/2026-10-06-yutnori-roofyard/screenshot.png)
-
-[게임 파일](daily/2026-10-06-yutnori-roofyard/index.html) · [모바일 화면](daily/2026-10-06-yutnori-roofyard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-06-yutnori-roofyard/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-16-mini-sudoku-origami/game-logic.test.js
 node daily/2026-10-15-surakarta-harbor-chart/game-logic.test.js
 node daily/2026-10-14-pylos-lily-greenhouse/game-logic.test.js
 node daily/2026-10-13-bingo-lifeguard-board/game-logic.test.js
