@@ -840,3 +840,8 @@ node daily/2026-07-12-royal-ur/game-logic.test.js
 ![크림 종이와 청색 제도선의 오델로 인쇄 공방 게임판](../daily/2026-09-21-othello-print-studio/screenshot.png)
 
 [게임 파일](../daily/2026-09-21-othello-print-studio/index.html) · [모바일 화면](../daily/2026-09-21-othello-print-studio/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-09-21-othello-print-studio/DESIGN.md)
+# 2026-10-07 · 달 착륙선 · 연 축제
+
+![청록 하늘과 연등 사이로 달빛 활주로에 내려오는 달 착륙선 게임판](../daily/2026-10-07-lunar-lander-kite-festival/screenshot.png)
+
+[게임 파일](../daily/2026-10-07-lunar-lander-kite-festival/index.html) · [모바일 화면](../daily/2026-10-07-lunar-lander-kite-festival/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-07-lunar-lander-kite-festival/DESIGN.md)

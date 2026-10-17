@@ -1,0 +1,12 @@
+const assert = require('node:assert/strict');
+const { createGame, move, reset } = require('./game-logic.js');
+let game = createGame();
+assert.equal(game.player, 13);
+assert.equal(move(game, 'up'), game);
+game = move(game, 'right');
+assert.equal(game.player, 14);
+game = move(game, 'right');
+assert.equal(game.crates.includes(16), true);
+assert.equal(game.status, 'won');
+assert.equal(reset().status, 'playing');
+console.log('성냥갑 창고 소코반 로직 테스트 통과');
