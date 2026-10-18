@@ -1,0 +1,1 @@
+const a=require('node:assert/strict'),{createGame,choose,isOpen}=require('./game-logic');let g=createGame(['달','별','파','해','산','달']);a.equal(isOpen(g.tiles,0),true);a.equal(isOpen(g.tiles,1),false);g=choose(g,0);g=choose(g,5);a.equal(g.moves,1);a.equal(g.tiles[0].removed,true);console.log('마작 패 맞추기 로직 테스트 통과');

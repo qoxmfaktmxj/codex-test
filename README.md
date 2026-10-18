@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-18 | [마작 패 맞추기 · 청사진 조선소](daily/2026-10-18-battleship-blueprint/index.html) | 밝은 조선소 청사진의 패 작업대에서 좌우가 열린 같은 패을 짝지어 치우는 고전 마작 맞추기입니다. |
 | 2026-10-17 | [소코반 · 성냥갑 창고](daily/2026-10-17-sokoban-matchbox/index.html) | 청회색 벽돌 창고에서 상자 하나를 붉은 목표 칸까지 미는 고전 소코반입니다. |
 | 2026-10-16 | [미니 스도쿠 · 종이접기 도감](daily/2026-10-16-mini-sudoku-origami/index.html) | 접힌 종이 도감의 4×4 칸에 1부터 4까지를 맞물리게 넣는 작은 고전 스도쿠 퍼즐입니다. |
 | 2026-10-15 | [수라카르타 · 항구 해도](daily/2026-10-15-surakarta-harbor-chart/index.html) | 항구 해도의 순환 고리를 지나 상대 말을 잡는 인도네시아 고전 수라카르타입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-11 | [카쿠로 · 찻집 장부](daily/2026-10-11-kakuro-tea-ledger/index.html) | 크림 장부의 가로·세로 주문 합계에 맞춰 숫자를 채우는 고전 카쿠로 퍼즐입니다. |
 | 2026-10-10 | [리버시 · 소풍 보자기](daily/2026-10-10-reversi-picnic-cloth/index.html) | 빨강·파랑 체크 보자기 위에 나무 단추를 놓아 상대 단추를 뒤집는 고전 리버시 게임입니다. |
 | 2026-10-09 | [라이트 아웃 · 빗방울 실험실](daily/2026-10-09-lights-out-rain-lab/index.html) | 비 내린 유리창의 빛나는 물방울을 눌러 십자 모양 이웃과 함께 모두 끄는 고전 라이트 아웃 퍼즐입니다. |
-| 2026-10-08 | [하노이 탑 · 도서관 사다리](daily/2026-10-08-hanoi-library-ladder/index.html) | 밝은 도서관의 세 서가에서 작은 책을 큰 책 위에만 놓아 오른쪽 서가로 모두 옮기는 고전 하노이 탑 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 마작 패 맞추기 · 청사진 조선소
+
+![밝은 청색 조선소 도면 위 대형 마작 패 작업대](daily/2026-10-18-battleship-blueprint/screenshot.png)
+
+[게임 파일](daily/2026-10-18-battleship-blueprint/index.html) · [모바일 화면](daily/2026-10-18-battleship-blueprint/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-18-battleship-blueprint/DESIGN.md)
 
 ### 소코반 · 성냥갑 창고
 
@@ -75,17 +81,13 @@
 
 [게임 파일](daily/2026-10-09-lights-out-rain-lab/index.html) · [모바일 화면](daily/2026-10-09-lights-out-rain-lab/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-09-lights-out-rain-lab/DESIGN.md)
 
-### 하노이 탑 · 도서관 사다리
-
-![밝은 도서관의 세 서가 사이에서 책을 옮기는 하노이 탑 게임판](daily/2026-10-08-hanoi-library-ladder/screenshot.png)
-
-[게임 파일](daily/2026-10-08-hanoi-library-ladder/index.html) · [모바일 화면](daily/2026-10-08-hanoi-library-ladder/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-08-hanoi-library-ladder/DESIGN.md)
 
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-18-battleship-blueprint/game-logic.test.js
 node daily/2026-10-17-sokoban-matchbox/game-logic.test.js
 node daily/2026-10-16-mini-sudoku-origami/game-logic.test.js
 node daily/2026-10-15-surakarta-harbor-chart/game-logic.test.js

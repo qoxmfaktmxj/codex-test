@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 하노이 탑 · 도서관 사다리
+
+![밝은 도서관의 세 서가 사이에서 책을 옮기는 하노이 탑 게임판](../daily/2026-10-08-hanoi-library-ladder/screenshot.png)
+
+[게임 파일](../daily/2026-10-08-hanoi-library-ladder/index.html) · [모바일 화면](../daily/2026-10-08-hanoi-library-ladder/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-08-hanoi-library-ladder/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-08 | 하노이 탑 · 도서관 사다리 | 밝은 도서관의 세 서가에서 작은 책을 큰 책 위에만 놓아 오른쪽 서가로 모두 옮기는 고전 하노이 탑 퍼즐입니다. |
+
 ### 윷놀이 · 기와마당
 
 ![청록·주홍 기와가 둘러싼 밝은 원형 마당에서 윷말을 움직이는 게임판](../daily/2026-10-06-yutnori-roofyard/screenshot.png)
