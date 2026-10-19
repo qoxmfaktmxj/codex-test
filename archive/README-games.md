@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 라이트 아웃 · 빗방울 실험실
+
+![비 내린 유리창의 빛나는 물방울을 눌러 빛을 끄는 라이트 아웃 게임판](../daily/2026-10-09-lights-out-rain-lab/screenshot.png)
+
+[게임 파일](../daily/2026-10-09-lights-out-rain-lab/index.html) · [모바일 화면](../daily/2026-10-09-lights-out-rain-lab/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-09-lights-out-rain-lab/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-09 | 라이트 아웃 · 빗방울 실험실 | 비 내린 유리창의 빛나는 물방울을 눌러 십자 모양 이웃과 함께 모두 끄는 고전 라이트 아웃 퍼즐입니다. |
+
 ### 하노이 탑 · 도서관 사다리
 
 ![밝은 도서관의 세 서가 사이에서 책을 옮기는 하노이 탑 게임판](../daily/2026-10-08-hanoi-library-ladder/screenshot.png)
