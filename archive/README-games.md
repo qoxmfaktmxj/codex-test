@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 리버시 · 소풍 보자기
+
+![빨강과 파랑 체크 보자기 위에 나무 단추를 놓는 리버시 게임판](../daily/2026-10-10-reversi-picnic-cloth/screenshot.png)
+
+[게임 파일](../daily/2026-10-10-reversi-picnic-cloth/index.html) · [모바일 화면](../daily/2026-10-10-reversi-picnic-cloth/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-10-reversi-picnic-cloth/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-10 | 리버시 · 소풍 보자기 | 빨강·파랑 체크 보자기 위에 나무 단추를 놓아 상대 단추를 뒤집는 고전 리버시 게임입니다. |
+
 ### 라이트 아웃 · 빗방울 실험실
 
 ![비 내린 유리창의 빛나는 물방울을 눌러 빛을 끄는 라이트 아웃 게임판](../daily/2026-10-09-lights-out-rain-lab/screenshot.png)

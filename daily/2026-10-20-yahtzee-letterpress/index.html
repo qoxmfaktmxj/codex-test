@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>주사위 다섯 · 활자 공방</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <main class="press">
+    <header><p class="kicker">DAILY TYPE FOUNDRY · 2026.10.20</p><h1>주사위 <b>다섯</b></h1><p class="subtitle">활자 공방에서 주사위를 굴리고 행을 찍어내세요.</p></header>
+    <section class="tray" aria-label="주사위 게임판"><div class="register">ROLL / SET / PRINT</div><div id="dice" class="dice-row" aria-live="polite"></div><p id="status" class="status"></p><button id="roll" class="roll" type="button">주사위 굴리기 <span>3</span></button><p class="hint">주사위를 눌러 고정 · Space로 굴리기</p></section>
+    <section class="typecase" aria-label="점수 조판"><div class="score-head"><span>인쇄할 행</span><strong id="total">합계 0점</strong></div><div id="scores" class="score-list"></div></section>
+    <button id="restart" class="restart" type="button">새 조판 시작</button>
+  </main>
+  <script src="game-logic.js"></script><script src="app.js"></script>
+</body></html>
