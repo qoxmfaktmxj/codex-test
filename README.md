@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-21 | [쿼리도 · 지하철 노선도](daily/2026-10-21-quoridor-subway/index.html) | 크림 역전 인쇄물 위에서 빨간·파란 열차를 종점까지 먼저 보내고 차단선으로 길을 늦추는 고전 쿼리도입니다. |
 | 2026-10-20 | [주사위 다섯 · 활자 공방](daily/2026-10-20-yahtzee-letterpress/index.html) | 밝은 활자 공방의 주홍 주사위 트레이에서 다섯 주사위를 굴려 행마다 점수를 찍는 고전 야추입니다. |
 | 2026-10-19 | [차임 기억놀이 · 유리 온실](daily/2026-10-19-simon-glasshouse-chimes/index.html) | 낮빛 든 온실의 네 색 유리 차임이 울린 순서를 기억해 따라 누르는 고전 Simon 기억놀이입니다. |
 | 2026-10-18 | [마작 패 맞추기 · 청사진 조선소](daily/2026-10-18-battleship-blueprint/index.html) | 밝은 조선소 청사진의 패 작업대에서 좌우가 열린 같은 패을 짝지어 치우는 고전 마작 맞추기입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-14 | [필로스 · 수련 온실](daily/2026-10-14-pylos-lily-greenhouse/index.html) | 유리 수련 받침 위에 청록과 산호 구슬을 차례로 올려 꼭대기를 먼저 완성하는 고전 필로스 게임입니다. |
 | 2026-10-13 | [빙고 · 해변 구조대 전광판](daily/2026-10-13-bingo-lifeguard-board/index.html) | 해변 구조대의 기계식 호출판에서 뽑힌 번호를 찾아 깃발을 올리고 한 줄을 완성하는 고전 빙고 게임입니다. |
 | 2026-10-12 | [핀볼 · 밤시장 포스터](daily/2026-10-12-pinball-poster/index.html) | 형광 실크스크린 골목 포스터에서 플리퍼로 공을 튕겨 범퍼를 맞히는 고전 핀볼 게임입니다. |
-| 2026-10-11 | [카쿠로 · 찻집 장부](daily/2026-10-11-kakuro-tea-ledger/index.html) | 크림 장부의 가로·세로 주문 합계에 맞춰 숫자를 채우는 고전 카쿠로 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 쿼리도 · 지하철 노선도
+
+![크림 역전 인쇄물 위 빨강과 파랑 노선이 가로지르는 5×5 쿼리도 게임판](daily/2026-10-21-quoridor-subway/screenshot.png)
+
+[게임 파일](daily/2026-10-21-quoridor-subway/index.html) · [모바일 화면](daily/2026-10-21-quoridor-subway/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-21-quoridor-subway/DESIGN.md)
 
 ### 주사위 다섯 · 활자 공방
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-12-pinball-poster/index.html) · [모바일 화면](daily/2026-10-12-pinball-poster/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-12-pinball-poster/DESIGN.md)
 
-### 카쿠로 · 찻집 장부
-
-![크림 장부의 붉은 합계 칸과 청록 잉크 숫자로 구성한 카쿠로 게임판](daily/2026-10-11-kakuro-tea-ledger/screenshot.png)
-
-[게임 파일](daily/2026-10-11-kakuro-tea-ledger/index.html) · [모바일 화면](daily/2026-10-11-kakuro-tea-ledger/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-11-kakuro-tea-ledger/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-21-quoridor-subway/game-logic.test.js
 node daily/2026-10-20-yahtzee-letterpress/game-logic.test.js
 node daily/2026-10-19-simon-glasshouse-chimes/game-logic.test.js
 node daily/2026-10-18-battleship-blueprint/game-logic.test.js

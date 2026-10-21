@@ -875,3 +875,11 @@ node daily/2026-07-12-royal-ur/game-logic.test.js
 ![청록 하늘과 연등 사이로 달빛 활주로에 내려오는 달 착륙선 게임판](../daily/2026-10-07-lunar-lander-kite-festival/screenshot.png)
 
 [게임 파일](../daily/2026-10-07-lunar-lander-kite-festival/index.html) · [모바일 화면](../daily/2026-10-07-lunar-lander-kite-festival/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-07-lunar-lander-kite-festival/DESIGN.md)
+
+# 2026-10-11 · 카쿠로 · 찻집 장부
+
+크림 장부의 가로·세로 주문 합계에 맞춰 숫자를 채우는 고전 카쿠로 퍼즐입니다.
+
+![크림 장부의 붉은 합계 칸과 청록 잉크 숫자로 구성한 카쿠로 게임판](../daily/2026-10-11-kakuro-tea-ledger/screenshot.png)
+
+[게임 파일](../daily/2026-10-11-kakuro-tea-ledger/index.html) · [모바일 화면](../daily/2026-10-11-kakuro-tea-ledger/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-11-kakuro-tea-ledger/DESIGN.md)
