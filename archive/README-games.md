@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 핀볼 · 밤시장 포스터
+
+![형광 실크스크린 골목 포스터로 구성한 세로형 핀볼 게임판](../daily/2026-10-12-pinball-poster/screenshot.png)
+
+[게임 파일](../daily/2026-10-12-pinball-poster/index.html) · [모바일 화면](../daily/2026-10-12-pinball-poster/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-12-pinball-poster/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-12 | 핀볼 · 밤시장 포스터 | 형광 실크스크린 골목 포스터에서 플리퍼로 공을 튕겨 범퍼를 맞히는 고전 핀볼 게임입니다. |
+
 ### 리버시 · 소풍 보자기
 
 ![빨강과 파랑 체크 보자기 위에 나무 단추를 놓는 리버시 게임판](../daily/2026-10-10-reversi-picnic-cloth/screenshot.png)

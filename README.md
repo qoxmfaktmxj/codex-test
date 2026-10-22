@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-22 | [점과 상자 · 리소그래프 작업대](daily/2026-10-22-dots-and-boxes-risograph/index.html) | 크림 리소그래프 종이 위에 자홍·청록 잉크 선을 이어 상자를 더 많이 인쇄하는 고전 점과 상자 게임입니다. |
 | 2026-10-21 | [쿼리도 · 지하철 노선도](daily/2026-10-21-quoridor-subway/index.html) | 크림 역전 인쇄물 위에서 빨간·파란 열차를 종점까지 먼저 보내고 차단선으로 길을 늦추는 고전 쿼리도입니다. |
 | 2026-10-20 | [주사위 다섯 · 활자 공방](daily/2026-10-20-yahtzee-letterpress/index.html) | 밝은 활자 공방의 주홍 주사위 트레이에서 다섯 주사위를 굴려 행마다 점수를 찍는 고전 야추입니다. |
 | 2026-10-19 | [차임 기억놀이 · 유리 온실](daily/2026-10-19-simon-glasshouse-chimes/index.html) | 낮빛 든 온실의 네 색 유리 차임이 울린 순서를 기억해 따라 누르는 고전 Simon 기억놀이입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-15 | [수라카르타 · 항구 해도](daily/2026-10-15-surakarta-harbor-chart/index.html) | 항구 해도의 순환 고리를 지나 상대 말을 잡는 인도네시아 고전 수라카르타입니다. |
 | 2026-10-14 | [필로스 · 수련 온실](daily/2026-10-14-pylos-lily-greenhouse/index.html) | 유리 수련 받침 위에 청록과 산호 구슬을 차례로 올려 꼭대기를 먼저 완성하는 고전 필로스 게임입니다. |
 | 2026-10-13 | [빙고 · 해변 구조대 전광판](daily/2026-10-13-bingo-lifeguard-board/index.html) | 해변 구조대의 기계식 호출판에서 뽑힌 번호를 찾아 깃발을 올리고 한 줄을 완성하는 고전 빙고 게임입니다. |
-| 2026-10-12 | [핀볼 · 밤시장 포스터](daily/2026-10-12-pinball-poster/index.html) | 형광 실크스크린 골목 포스터에서 플리퍼로 공을 튕겨 범퍼를 맞히는 고전 핀볼 게임입니다. |
 
 ## 최근 게임 화면
+
+### 점과 상자 · 리소그래프 작업대
+
+![크림 리소그래프 종이 위에 자홍과 청록 잉크 선을 잇는 대형 점과 상자 게임판](daily/2026-10-22-dots-and-boxes-risograph/screenshot.png)
+
+[게임 파일](daily/2026-10-22-dots-and-boxes-risograph/index.html) · [모바일 화면](daily/2026-10-22-dots-and-boxes-risograph/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-22-dots-and-boxes-risograph/DESIGN.md)
 
 ### 쿼리도 · 지하철 노선도
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-13-bingo-lifeguard-board/index.html) · [모바일 화면](daily/2026-10-13-bingo-lifeguard-board/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-13-bingo-lifeguard-board/DESIGN.md)
 
-### 핀볼 · 밤시장 포스터
-
-![형광 실크스크린 골목 포스터로 구성한 세로형 핀볼 게임판](daily/2026-10-12-pinball-poster/screenshot.png)
-
-[게임 파일](daily/2026-10-12-pinball-poster/index.html) · [모바일 화면](daily/2026-10-12-pinball-poster/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-12-pinball-poster/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-22-dots-and-boxes-risograph/game-logic.test.js
 node daily/2026-10-21-quoridor-subway/game-logic.test.js
 node daily/2026-10-20-yahtzee-letterpress/game-logic.test.js
 node daily/2026-10-19-simon-glasshouse-chimes/game-logic.test.js
@@ -95,7 +96,6 @@ node daily/2026-10-16-mini-sudoku-origami/game-logic.test.js
 node daily/2026-10-15-surakarta-harbor-chart/game-logic.test.js
 node daily/2026-10-14-pylos-lily-greenhouse/game-logic.test.js
 node daily/2026-10-13-bingo-lifeguard-board/game-logic.test.js
-node daily/2026-10-12-pinball-poster/game-logic.test.js
 node daily/2026-10-11-kakuro-tea-ledger/game-logic.test.js
 node daily/2026-10-10-reversi-picnic-cloth/game-logic.test.js
 node daily/2026-10-09-lights-out-rain-lab/game-logic.test.js
