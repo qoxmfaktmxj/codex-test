@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-23 | [블록 탈출 · 형광 인쇄소](daily/2026-10-23-klotski-studio/index.html) | 형광 안전표지 인쇄소의 세로 활판 틀에서 큰 빨간 블록을 출구까지 빼내는 고전 화룽도 퍼즐입니다. |
 | 2026-10-22 | [점과 상자 · 리소그래프 작업대](daily/2026-10-22-dots-and-boxes-risograph/index.html) | 크림 리소그래프 종이 위에 자홍·청록 잉크 선을 이어 상자를 더 많이 인쇄하는 고전 점과 상자 게임입니다. |
 | 2026-10-21 | [쿼리도 · 지하철 노선도](daily/2026-10-21-quoridor-subway/index.html) | 크림 역전 인쇄물 위에서 빨간·파란 열차를 종점까지 먼저 보내고 차단선으로 길을 늦추는 고전 쿼리도입니다. |
 | 2026-10-20 | [주사위 다섯 · 활자 공방](daily/2026-10-20-yahtzee-letterpress/index.html) | 밝은 활자 공방의 주홍 주사위 트레이에서 다섯 주사위를 굴려 행마다 점수를 찍는 고전 야추입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-16 | [미니 스도쿠 · 종이접기 도감](daily/2026-10-16-mini-sudoku-origami/index.html) | 접힌 종이 도감의 4×4 칸에 1부터 4까지를 맞물리게 넣는 작은 고전 스도쿠 퍼즐입니다. |
 | 2026-10-15 | [수라카르타 · 항구 해도](daily/2026-10-15-surakarta-harbor-chart/index.html) | 항구 해도의 순환 고리를 지나 상대 말을 잡는 인도네시아 고전 수라카르타입니다. |
 | 2026-10-14 | [필로스 · 수련 온실](daily/2026-10-14-pylos-lily-greenhouse/index.html) | 유리 수련 받침 위에 청록과 산호 구슬을 차례로 올려 꼭대기를 먼저 완성하는 고전 필로스 게임입니다. |
-| 2026-10-13 | [빙고 · 해변 구조대 전광판](daily/2026-10-13-bingo-lifeguard-board/index.html) | 해변 구조대의 기계식 호출판에서 뽑힌 번호를 찾아 깃발을 올리고 한 줄을 완성하는 고전 빙고 게임입니다. |
 
 ## 최근 게임 화면
+
+### 블록 탈출 · 형광 인쇄소
+
+![형광 라임 안전표지 위 검은 인쇄 틀과 큰 빨간 블록으로 구성한 세로형 화룽도 게임판](daily/2026-10-23-klotski-studio/screenshot.png)
+
+[게임 파일](daily/2026-10-23-klotski-studio/index.html) · [모바일 화면](daily/2026-10-23-klotski-studio/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-23-klotski-studio/DESIGN.md)
 
 ### 점과 상자 · 리소그래프 작업대
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-14-pylos-lily-greenhouse/index.html) · [모바일 화면](daily/2026-10-14-pylos-lily-greenhouse/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-14-pylos-lily-greenhouse/DESIGN.md)
 
-### 빙고 · 해변 구조대 전광판
-
-![밝은 아이보리 선체 위 거대한 5×5 구조대 빙고 전광판](daily/2026-10-13-bingo-lifeguard-board/screenshot.png)
-
-[게임 파일](daily/2026-10-13-bingo-lifeguard-board/index.html) · [모바일 화면](daily/2026-10-13-bingo-lifeguard-board/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-13-bingo-lifeguard-board/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-23-klotski-studio/game-logic.test.js
 node daily/2026-10-22-dots-and-boxes-risograph/game-logic.test.js
 node daily/2026-10-21-quoridor-subway/game-logic.test.js
 node daily/2026-10-20-yahtzee-letterpress/game-logic.test.js

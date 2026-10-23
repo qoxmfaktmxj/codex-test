@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 빙고 · 해변 구조대 전광판
+
+![밝은 아이보리 선체 위 거대한 5×5 구조대 빙고 전광판](../daily/2026-10-13-bingo-lifeguard-board/screenshot.png)
+
+[게임 파일](../daily/2026-10-13-bingo-lifeguard-board/index.html) · [모바일 화면](../daily/2026-10-13-bingo-lifeguard-board/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-13-bingo-lifeguard-board/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-13 | 빙고 · 해변 구조대 전광판 | 해변 구조대의 기계식 호출판에서 뽑힌 번호를 찾아 깃발을 올리고 한 줄을 완성하는 고전 빙고 게임입니다. |
+
 ### 핀볼 · 밤시장 포스터
 
 ![형광 실크스크린 골목 포스터로 구성한 세로형 핀볼 게임판](../daily/2026-10-12-pinball-poster/screenshot.png)
