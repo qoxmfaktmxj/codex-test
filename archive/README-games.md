@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 필로스 · 수련 온실
+
+![유리 수련 받침 위에 청록과 산호 구슬을 쌓는 공중 피라미드 게임판](../daily/2026-10-14-pylos-lily-greenhouse/screenshot.png)
+
+[게임 파일](../daily/2026-10-14-pylos-lily-greenhouse/index.html) · [모바일 화면](../daily/2026-10-14-pylos-lily-greenhouse/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-14-pylos-lily-greenhouse/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-14 | 필로스 · 수련 온실 | 유리 수련 받침 위에 청록과 산호 구슬을 차례로 올려 꼭대기를 먼저 완성하는 고전 필로스 게임입니다. |
+
 ### 빙고 · 해변 구조대 전광판
 
 ![밝은 아이보리 선체 위 거대한 5×5 구조대 빙고 전광판](../daily/2026-10-13-bingo-lifeguard-board/screenshot.png)

@@ -1,0 +1,6 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>개구리 길건너기 · 횡단보도 관제함</title><link rel="stylesheet" href="styles.css"></head><body>
+<main><header><p class="eyebrow">횡단보도 관제함 · 07:30</p><h1>개구리 길건너기</h1><p class="lead">차선을 건너 안전지대에 도착하세요.</p></header>
+<section class="console" aria-label="게임 상태"><span>도착 <b id="score">0</b>회</span><span id="message" aria-live="polite">신호를 살피고 출발</span><button id="reset" type="button">처음부터</button></section>
+<section id="board" class="board" aria-label="개구리 길건너기 게임판" tabindex="0"></section>
+<nav class="controls" aria-label="이동 조작"><button data-move="up" aria-label="위로">▲</button><div><button data-move="left" aria-label="왼쪽">◀</button><button data-move="down" aria-label="아래로">▼</button><button data-move="right" aria-label="오른쪽">▶</button></div></nav>
+<p class="hint">키보드 방향키 또는 버튼으로 이동</p></main><script src="game-logic.js"></script><script src="app.js"></script></body></html>
