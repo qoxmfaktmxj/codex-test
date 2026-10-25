@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-25 | [나인핀 · 바닷가 산책로](daily/2026-10-25-ninepins-seaside/index.html) | 푸른 타일 레인에서 두 번의 공으로 아홉 핀을 최대한 쓰러뜨리는 고전 나인핀 게임입니다. |
 | 2026-10-24 | [개구리 길건너기 · 횡단보도 관제함](daily/2026-10-24-frogger-crosswalk/index.html) | 아침 교차로의 흐르는 차량 사이를 가로질러 안전지대에 닿는 고전 개구리 길건너기입니다. |
 | 2026-10-23 | [블록 탈출 · 형광 인쇄소](daily/2026-10-23-klotski-studio/index.html) | 형광 안전표지 인쇄소의 세로 활판 틀에서 큰 빨간 블록을 출구까지 빼내는 고전 화룽도 퍼즐입니다. |
 | 2026-10-22 | [점과 상자 · 리소그래프 작업대](daily/2026-10-22-dots-and-boxes-risograph/index.html) | 크림 리소그래프 종이 위에 자홍·청록 잉크 선을 이어 상자를 더 많이 인쇄하는 고전 점과 상자 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-18 | [마작 패 맞추기 · 청사진 조선소](daily/2026-10-18-battleship-blueprint/index.html) | 밝은 조선소 청사진의 패 작업대에서 좌우가 열린 같은 패을 짝지어 치우는 고전 마작 맞추기입니다. |
 | 2026-10-17 | [소코반 · 성냥갑 창고](daily/2026-10-17-sokoban-matchbox/index.html) | 청회색 벽돌 창고에서 상자 하나를 붉은 목표 칸까지 미는 고전 소코반입니다. |
 | 2026-10-16 | [미니 스도쿠 · 종이접기 도감](daily/2026-10-16-mini-sudoku-origami/index.html) | 접힌 종이 도감의 4×4 칸에 1부터 4까지를 맞물리게 넣는 작은 고전 스도쿠 퍼즐입니다. |
-| 2026-10-15 | [수라카르타 · 항구 해도](daily/2026-10-15-surakarta-harbor-chart/index.html) | 항구 해도의 순환 고리를 지나 상대 말을 잡는 인도네시아 고전 수라카르타입니다. |
 
 ## 최근 게임 화면
+
+### 나인핀 · 바닷가 산책로
+
+![맑은 파란 타일 레인 끝의 아홉 흰 핀을 토마토색 공으로 맞히는 가로형 나인핀 게임판](daily/2026-10-25-ninepins-seaside/screenshot.png)
+
+[게임 파일](daily/2026-10-25-ninepins-seaside/index.html) · [모바일 화면](daily/2026-10-25-ninepins-seaside/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-25-ninepins-seaside/DESIGN.md)
 
 ### 개구리 길건너기 · 횡단보도 관제함
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-16-mini-sudoku-origami/index.html) · [모바일 화면](daily/2026-10-16-mini-sudoku-origami/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-16-mini-sudoku-origami/DESIGN.md)
 
-### 수라카르타 · 항구 해도
-
-![아이보리 항구 해도 위 청색과 산호 말, 바깥 순환 항로로 구성한 수라카르타 게임판](daily/2026-10-15-surakarta-harbor-chart/screenshot.png)
-
-[게임 파일](daily/2026-10-15-surakarta-harbor-chart/index.html) · [모바일 화면](daily/2026-10-15-surakarta-harbor-chart/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-15-surakarta-harbor-chart/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-25-ninepins-seaside/game-logic.test.js
 node daily/2026-10-24-frogger-crosswalk/game-logic.test.js
 node daily/2026-10-23-klotski-studio/game-logic.test.js
 node daily/2026-10-22-dots-and-boxes-risograph/game-logic.test.js
@@ -95,7 +96,6 @@ node daily/2026-10-19-simon-glasshouse-chimes/game-logic.test.js
 node daily/2026-10-18-battleship-blueprint/game-logic.test.js
 node daily/2026-10-17-sokoban-matchbox/game-logic.test.js
 node daily/2026-10-16-mini-sudoku-origami/game-logic.test.js
-node daily/2026-10-15-surakarta-harbor-chart/game-logic.test.js
 node daily/2026-10-14-pylos-lily-greenhouse/game-logic.test.js
 node daily/2026-10-13-bingo-lifeguard-board/game-logic.test.js
 node daily/2026-10-11-kakuro-tea-ledger/game-logic.test.js

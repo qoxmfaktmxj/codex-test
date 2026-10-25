@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>나인핀 · 바닷가 산책로</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<main>
+  <header><p>해안 볼링장 · 09</p><h1>나인핀 <span>바닷가 산책로</span></h1><button id="reset" type="button">새 게임</button></header>
+  <section class="scoreline" aria-live="polite"><b>넘어진 핀 <strong id="score">0</strong></b><b>남은 기회 <strong id="throws">2</strong></b><p id="message">공의 방향을 골라 굴리세요.</p></section>
+  <section class="lane-wrap" aria-label="나인핀 게임판">
+    <div class="sun"></div><div id="lane" class="lane" tabindex="0">
+      <div class="tile-grid"></div><div id="ball" class="ball" aria-hidden="true"></div><div id="pins" class="pins"></div>
+      <div class="aimline"></div>
+    </div>
+    <div class="controls" aria-label="공 방향"><button data-aim="-1" type="button">왼쪽</button><button data-aim="0" type="button" class="roll">굴리기</button><button data-aim="1" type="button">오른쪽</button></div>
+  </section>
+  <p class="note">버튼을 누르거나 ← → 키로 방향을 정한 뒤 Enter로 굴리세요. 두 번 안에 핀을 최대한 쓰러뜨리세요.</p>
+</main>
+<script src="game-logic.js"></script><script src="app.js"></script>
+</body></html>

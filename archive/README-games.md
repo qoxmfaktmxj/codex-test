@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 수라카르타 · 항구 해도
+
+![아이보리 항구 해도 위 청색과 산호 말, 바깥 순환 항로로 구성한 수라카르타 게임판](../daily/2026-10-15-surakarta-harbor-chart/screenshot.png)
+
+[게임 파일](../daily/2026-10-15-surakarta-harbor-chart/index.html) · [모바일 화면](../daily/2026-10-15-surakarta-harbor-chart/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-15-surakarta-harbor-chart/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-15 | 수라카르타 · 항구 해도 | 항구 해도의 순환 고리를 지나 상대 말을 잡는 인도네시아 고전 수라카르타입니다. |
+
 ### 필로스 · 수련 온실
 
 ![유리 수련 받침 위에 청록과 산호 구슬을 쌓는 공중 피라미드 게임판](../daily/2026-10-14-pylos-lily-greenhouse/screenshot.png)
