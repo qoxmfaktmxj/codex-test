@@ -2,6 +2,12 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 미니 스도쿠 · 종이접기 도감
+
+![크림 종이와 코발트·주홍 접힘으로 구성한 4×4 미니 스도쿠 게임판](../daily/2026-10-16-mini-sudoku-origami/screenshot.png)
+
+[게임 파일](../daily/2026-10-16-mini-sudoku-origami/index.html) · [모바일 화면](../daily/2026-10-16-mini-sudoku-origami/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-16-mini-sudoku-origami/DESIGN.md)
+
 ### 수라카르타 · 항구 해도
 
 ![아이보리 항구 해도 위 청색과 산호 말, 바깥 순환 항로로 구성한 수라카르타 게임판](../daily/2026-10-15-surakarta-harbor-chart/screenshot.png)

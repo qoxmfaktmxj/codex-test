@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-26 | [중국 장기 · 종이등 마당](daily/2026-10-26-chinese-checkers-festival/index.html) | 종이등 빛의 별 모양 마당에서 말을 뛰어넘어 건너편 뜰을 먼저 채우는 중국 장기입니다. |
 | 2026-10-25 | [나인핀 · 바닷가 산책로](daily/2026-10-25-ninepins-seaside/index.html) | 푸른 타일 레인에서 두 번의 공으로 아홉 핀을 최대한 쓰러뜨리는 고전 나인핀 게임입니다. |
 | 2026-10-24 | [개구리 길건너기 · 횡단보도 관제함](daily/2026-10-24-frogger-crosswalk/index.html) | 아침 교차로의 흐르는 차량 사이를 가로질러 안전지대에 닿는 고전 개구리 길건너기입니다. |
 | 2026-10-23 | [블록 탈출 · 형광 인쇄소](daily/2026-10-23-klotski-studio/index.html) | 형광 안전표지 인쇄소의 세로 활판 틀에서 큰 빨간 블록을 출구까지 빼내는 고전 화룽도 퍼즐입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-19 | [차임 기억놀이 · 유리 온실](daily/2026-10-19-simon-glasshouse-chimes/index.html) | 낮빛 든 온실의 네 색 유리 차임이 울린 순서를 기억해 따라 누르는 고전 Simon 기억놀이입니다. |
 | 2026-10-18 | [마작 패 맞추기 · 청사진 조선소](daily/2026-10-18-battleship-blueprint/index.html) | 밝은 조선소 청사진의 패 작업대에서 좌우가 열린 같은 패을 짝지어 치우는 고전 마작 맞추기입니다. |
 | 2026-10-17 | [소코반 · 성냥갑 창고](daily/2026-10-17-sokoban-matchbox/index.html) | 청회색 벽돌 창고에서 상자 하나를 붉은 목표 칸까지 미는 고전 소코반입니다. |
-| 2026-10-16 | [미니 스도쿠 · 종이접기 도감](daily/2026-10-16-mini-sudoku-origami/index.html) | 접힌 종이 도감의 4×4 칸에 1부터 4까지를 맞물리게 넣는 작은 고전 스도쿠 퍼즐입니다. |
 
 ## 최근 게임 화면
+
+### 중국 장기 · 종이등 마당
+
+![종이등 색의 여섯 꼭짓점 마당 위에서 빨강과 파랑 말을 움직이는 중국 장기 게임판](daily/2026-10-26-chinese-checkers-festival/screenshot.png)
+
+[게임 파일](daily/2026-10-26-chinese-checkers-festival/index.html) · [모바일 화면](daily/2026-10-26-chinese-checkers-festival/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-26-chinese-checkers-festival/DESIGN.md)
 
 ### 나인핀 · 바닷가 산책로
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-17-sokoban-matchbox/index.html) · [모바일 화면](daily/2026-10-17-sokoban-matchbox/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-17-sokoban-matchbox/DESIGN.md)
 
-### 미니 스도쿠 · 종이접기 도감
-
-![크림 종이와 코발트·주홍 접힘으로 구성한 4×4 미니 스도쿠 게임판](daily/2026-10-16-mini-sudoku-origami/screenshot.png)
-
-[게임 파일](daily/2026-10-16-mini-sudoku-origami/index.html) · [모바일 화면](daily/2026-10-16-mini-sudoku-origami/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-16-mini-sudoku-origami/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-26-chinese-checkers-festival/game-logic.test.js
 node daily/2026-10-25-ninepins-seaside/game-logic.test.js
 node daily/2026-10-24-frogger-crosswalk/game-logic.test.js
 node daily/2026-10-23-klotski-studio/game-logic.test.js
