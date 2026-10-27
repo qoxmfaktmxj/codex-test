@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>미니 백개먼 · 여행 포스터</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <main class="poster">
+    <header><p class="eyebrow">해안 순환선 · 두 사람 레이스</p><h1>미니 백개먼</h1><p class="subtitle">주사위를 골라 세 개의 말을 먼저 항구 밖으로 보내세요.</p></header>
+    <section class="board-wrap" aria-label="백개먼 게임판">
+      <div class="sun" aria-hidden="true"></div><div id="board" class="board"></div>
+      <div class="sea-line" aria-hidden="true"></div>
+    </section>
+    <section class="controls" aria-label="게임 조작">
+      <p id="status" aria-live="polite"></p><div id="dice" class="dice"></div>
+      <button id="reset" type="button">새 여행 시작</button>
+      <p class="guide">밝은 말은 왼쪽에서 오른쪽, 짙은 말은 반대 방향으로 달립니다. 주사위를 골라 항구까지 가장 먼저 달려가세요.</p>
+    </section>
+  </main><script src="game-logic.js"></script><script src="app.js"></script>
+</body></html>

@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 소코반 · 성냥갑 창고
+
+![청회색 벽돌 창고의 큰 6×6 소코반 게임판](../daily/2026-10-17-sokoban-matchbox/screenshot.png)
+
+[게임 파일](../daily/2026-10-17-sokoban-matchbox/index.html) · [모바일 화면](../daily/2026-10-17-sokoban-matchbox/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-17-sokoban-matchbox/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-17 | 소코반 · 성냥갑 창고 | 청회색 벽돌 창고에서 상자 하나를 붉은 목표 칸까지 미는 고전 소코반 퍼즐입니다. |
+
 ### 미니 스도쿠 · 종이접기 도감
 
 ![크림 종이와 코발트·주홍 접힘으로 구성한 4×4 미니 스도쿠 게임판](../daily/2026-10-16-mini-sudoku-origami/screenshot.png)
