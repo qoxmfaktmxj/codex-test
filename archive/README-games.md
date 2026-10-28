@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 마작 패 맞추기 · 청사진 조선소
+
+![밝은 청색 조선소 도면 위 대형 마작 패 작업대](../daily/2026-10-18-battleship-blueprint/screenshot.png)
+
+[게임 파일](../daily/2026-10-18-battleship-blueprint/index.html) · [모바일 화면](../daily/2026-10-18-battleship-blueprint/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-18-battleship-blueprint/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-18 | 마작 패 맞추기 · 청사진 조선소 | 밝은 조선소 청사진의 패 작업대에서 좌우가 열린 같은 패을 짝지어 치우는 고전 마작 맞추기입니다. |
+
 ### 소코반 · 성냥갑 창고
 
 ![청회색 벽돌 창고의 큰 6×6 소코반 게임판](../daily/2026-10-17-sokoban-matchbox/screenshot.png)

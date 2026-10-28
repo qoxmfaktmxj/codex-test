@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-28 | [미니 탁구 · 오전 체육관](daily/2026-10-28-pong-gymnasium/index.html) | 밝은 학교 체육관 코트에서 패들을 움직여 공을 받아내는 두 사람 고전 탁구입니다. |
 | 2026-10-27 | [미니 백개먼 · 여행 포스터](daily/2026-10-27-backgammon-travel-poster/index.html) | 해안 순환선 포스터의 대각 항로에서 세 말을 먼저 항구 밖으로 보내는 미니 백개먼 레이스입니다. |
 | 2026-10-26 | [중국 장기 · 종이등 마당](daily/2026-10-26-chinese-checkers-festival/index.html) | 종이등 빛의 별 모양 마당에서 말을 뛰어넘어 건너편 뜰을 먼저 채우는 중국 장기입니다. |
 | 2026-10-25 | [나인핀 · 바닷가 산책로](daily/2026-10-25-ninepins-seaside/index.html) | 푸른 타일 레인에서 두 번의 공으로 아홉 핀을 최대한 쓰러뜨리는 고전 나인핀 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-21 | [쿼리도 · 지하철 노선도](daily/2026-10-21-quoridor-subway/index.html) | 크림 역전 인쇄물 위에서 빨간·파란 열차를 종점까지 먼저 보내고 차단선으로 길을 늦추는 고전 쿼리도입니다. |
 | 2026-10-20 | [주사위 다섯 · 활자 공방](daily/2026-10-20-yahtzee-letterpress/index.html) | 밝은 활자 공방의 주홍 주사위 트레이에서 다섯 주사위를 굴려 행마다 점수를 찍는 고전 야추입니다. |
 | 2026-10-19 | [차임 기억놀이 · 유리 온실](daily/2026-10-19-simon-glasshouse-chimes/index.html) | 낮빛 든 온실의 네 색 유리 차임이 울린 순서를 기억해 따라 누르는 고전 Simon 기억놀이입니다. |
-| 2026-10-18 | [마작 패 맞추기 · 청사진 조선소](daily/2026-10-18-battleship-blueprint/index.html) | 밝은 조선소 청사진의 패 작업대에서 좌우가 열린 같은 패을 짝지어 치우는 고전 마작 맞추기입니다. |
 
 ## 최근 게임 화면
+
+### 미니 탁구 · 오전 체육관
+
+![민트 체육관 코트 위 빨간 패들과 흰 공으로 구성한 가로형 미니 탁구 게임판](daily/2026-10-28-pong-gymnasium/screenshot.png)
+
+[게임 파일](daily/2026-10-28-pong-gymnasium/index.html) · [모바일 화면](daily/2026-10-28-pong-gymnasium/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-28-pong-gymnasium/DESIGN.md)
 
 ### 미니 백개먼 · 여행 포스터
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-19-simon-glasshouse-chimes/index.html) · [모바일 화면](daily/2026-10-19-simon-glasshouse-chimes/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-19-simon-glasshouse-chimes/DESIGN.md)
 
-### 마작 패 맞추기 · 청사진 조선소
-
-![밝은 청색 조선소 도면 위 대형 마작 패 작업대](daily/2026-10-18-battleship-blueprint/screenshot.png)
-
-[게임 파일](daily/2026-10-18-battleship-blueprint/index.html) · [모바일 화면](daily/2026-10-18-battleship-blueprint/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-18-battleship-blueprint/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-28-pong-gymnasium/game-logic.test.js
 node daily/2026-10-27-backgammon-travel-poster/game-logic.test.js
 node daily/2026-10-26-chinese-checkers-festival/game-logic.test.js
 node daily/2026-10-25-ninepins-seaside/game-logic.test.js
