@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 차임 기억놀이 · 유리 온실
+
+![민트 온실빛 속 대형 네 색 유리 차임 원형 게임판](../daily/2026-10-19-simon-glasshouse-chimes/screenshot.png)
+
+[게임 파일](../daily/2026-10-19-simon-glasshouse-chimes/index.html) · [모바일 화면](../daily/2026-10-19-simon-glasshouse-chimes/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-19-simon-glasshouse-chimes/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-19 | 차임 기억놀이 · 유리 온실 | 낮빛 든 온실의 네 색 유리 차임이 울린 순서를 기억해 따라 누르는 고전 Simon 기억놀이입니다. |
+
 ### 마작 패 맞추기 · 청사진 조선소
 
 ![밝은 청색 조선소 도면 위 대형 마작 패 작업대](../daily/2026-10-18-battleship-blueprint/screenshot.png)

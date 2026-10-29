@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>페그 솔리테어 · 궤도 관측소</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <main>
+    <header><p class="kicker">ORBITAL FIELD NOTE · 29 OCT 2026</p><h1>페그 솔리테어<br><em>궤도 관측소</em></h1><p class="intro">구슬 하나를 넘어뜨리고 빈 궤도에 착지하세요. 마지막 한 개만 남기면 관측 성공입니다.</p></header>
+    <section class="observatory" aria-label="페그 솔리테어 게임">
+      <div class="readout"><span>남은 구슬 <b id="pegs">32</b></span><span>점프 <b id="moves">0</b></span><button id="reset" type="button">새 관측</button></div>
+      <div class="orbit-wrap"><div id="board" class="board" role="grid" aria-label="페그 솔리테어 보드"></div><div class="axis axis-a"></div><div class="axis axis-b"></div></div>
+      <p id="status" class="status" aria-live="polite">구슬을 선택한 뒤 빛나는 빈 칸을 누르세요.</p>
+    </section>
+    <footer><span>조작: 누르기 / 클릭</span><span>키보드: 탭 · 엔터</span></footer>
+  </main>
+  <script src="game-logic.js"></script><script src="app.js"></script>
+</body></html>

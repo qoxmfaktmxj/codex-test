@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-29 | [페그 솔리테어 · 궤도 관측소](daily/2026-10-29-peg-solitaire-orbit/index.html) | 살구빛 원형 관측판에서 구슬을 뛰어넘어 마지막 한 개만 남기는 고전 페그 솔리테어입니다. |
 | 2026-10-28 | [미니 탁구 · 오전 체육관](daily/2026-10-28-pong-gymnasium/index.html) | 밝은 학교 체육관 코트에서 패들을 움직여 공을 받아내는 두 사람 고전 탁구입니다. |
 | 2026-10-27 | [미니 백개먼 · 여행 포스터](daily/2026-10-27-backgammon-travel-poster/index.html) | 해안 순환선 포스터의 대각 항로에서 세 말을 먼저 항구 밖으로 보내는 미니 백개먼 레이스입니다. |
 | 2026-10-26 | [중국 장기 · 종이등 마당](daily/2026-10-26-chinese-checkers-festival/index.html) | 종이등 빛의 별 모양 마당에서 말을 뛰어넘어 건너편 뜰을 먼저 채우는 중국 장기입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-22 | [점과 상자 · 리소그래프 작업대](daily/2026-10-22-dots-and-boxes-risograph/index.html) | 크림 리소그래프 종이 위에 자홍·청록 잉크 선을 이어 상자를 더 많이 인쇄하는 고전 점과 상자 게임입니다. |
 | 2026-10-21 | [쿼리도 · 지하철 노선도](daily/2026-10-21-quoridor-subway/index.html) | 크림 역전 인쇄물 위에서 빨간·파란 열차를 종점까지 먼저 보내고 차단선으로 길을 늦추는 고전 쿼리도입니다. |
 | 2026-10-20 | [주사위 다섯 · 활자 공방](daily/2026-10-20-yahtzee-letterpress/index.html) | 밝은 활자 공방의 주홍 주사위 트레이에서 다섯 주사위를 굴려 행마다 점수를 찍는 고전 야추입니다. |
-| 2026-10-19 | [차임 기억놀이 · 유리 온실](daily/2026-10-19-simon-glasshouse-chimes/index.html) | 낮빛 든 온실의 네 색 유리 차임이 울린 순서를 기억해 따라 누르는 고전 Simon 기억놀이입니다. |
 
 ## 최근 게임 화면
+
+### 페그 솔리테어 · 궤도 관측소
+
+![살구빛 원형 궤도 관측판 위에서 청록 세라믹 구슬을 뛰어넘는 페그 솔리테어 게임판](daily/2026-10-29-peg-solitaire-orbit/screenshot.png)
+
+[게임 파일](daily/2026-10-29-peg-solitaire-orbit/index.html) · [모바일 화면](daily/2026-10-29-peg-solitaire-orbit/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-29-peg-solitaire-orbit/DESIGN.md)
 
 ### 미니 탁구 · 오전 체육관
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-20-yahtzee-letterpress/index.html) · [모바일 화면](daily/2026-10-20-yahtzee-letterpress/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-20-yahtzee-letterpress/DESIGN.md)
 
-### 차임 기억놀이 · 유리 온실
-
-![민트 온실빛 속 대형 네 색 유리 차임 원형 게임판](daily/2026-10-19-simon-glasshouse-chimes/screenshot.png)
-
-[게임 파일](daily/2026-10-19-simon-glasshouse-chimes/index.html) · [모바일 화면](daily/2026-10-19-simon-glasshouse-chimes/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-19-simon-glasshouse-chimes/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-29-peg-solitaire-orbit/game-logic.test.js
 node daily/2026-10-28-pong-gymnasium/game-logic.test.js
 node daily/2026-10-27-backgammon-travel-poster/game-logic.test.js
 node daily/2026-10-26-chinese-checkers-festival/game-logic.test.js
