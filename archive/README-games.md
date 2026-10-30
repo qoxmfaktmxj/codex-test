@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 주사위 다섯 · 활자 공방
+
+![밝은 살구 종이와 주홍 잉크 트레이 속 다섯 주사위로 구성한 야추 게임판](../daily/2026-10-20-yahtzee-letterpress/screenshot.png)
+
+[게임 파일](../daily/2026-10-20-yahtzee-letterpress/index.html) · [모바일 화면](../daily/2026-10-20-yahtzee-letterpress/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-20-yahtzee-letterpress/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-20 | 주사위 다섯 · 활자 공방 | 밝은 활자 공방의 주홍 주사위 트레이에서 다섯 주사위를 굴려 행마다 점수를 찍는 고전 야추입니다. |
+
 ### 차임 기억놀이 · 유리 온실
 
 ![민트 온실빛 속 대형 네 색 유리 차임 원형 게임판](../daily/2026-10-19-simon-glasshouse-chimes/screenshot.png)
