@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-10-31 | [크리비지 · 붉은 천 테이블](daily/2026-10-31-cribbage-cloth-table/index.html) | 붉은 펠트 테이블에서 합계 15가 되는 손패 두 장을 골라 핀을 옮기는 고전 크리비지입니다. |
 | 2026-10-30 | [종이 축구 · 점수판](daily/2026-10-30-paper-football-scoreboard/index.html) | 공책 격자 경기장에서 지나간 선을 피하며 위·아래 골대까지 공을 잇는 고전 종이 축구입니다. |
 | 2026-10-29 | [페그 솔리테어 · 궤도 관측소](daily/2026-10-29-peg-solitaire-orbit/index.html) | 살구빛 원형 관측판에서 구슬을 뛰어넘어 마지막 한 개만 남기는 고전 페그 솔리테어입니다. |
 | 2026-10-28 | [미니 탁구 · 오전 체육관](daily/2026-10-28-pong-gymnasium/index.html) | 밝은 학교 체육관 코트에서 패들을 움직여 공을 받아내는 두 사람 고전 탁구입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-24 | [개구리 길건너기 · 횡단보도 관제함](daily/2026-10-24-frogger-crosswalk/index.html) | 아침 교차로의 흐르는 차량 사이를 가로질러 안전지대에 닿는 고전 개구리 길건너기입니다. |
 | 2026-10-23 | [블록 탈출 · 형광 인쇄소](daily/2026-10-23-klotski-studio/index.html) | 형광 안전표지 인쇄소의 세로 활판 틀에서 큰 빨간 블록을 출구까지 빼내는 고전 화룽도 퍼즐입니다. |
 | 2026-10-22 | [점과 상자 · 리소그래프 작업대](daily/2026-10-22-dots-and-boxes-risograph/index.html) | 크림 리소그래프 종이 위에 자홍·청록 잉크 선을 이어 상자를 더 많이 인쇄하는 고전 점과 상자 게임입니다. |
-| 2026-10-21 | [쿼리도 · 지하철 노선도](daily/2026-10-21-quoridor-subway/index.html) | 크림 역전 인쇄물 위에서 빨간·파란 열차를 종점까지 먼저 보내고 차단선으로 길을 늦추는 고전 쿼리도입니다. |
 
 ## 최근 게임 화면
+
+### 크리비지 · 붉은 천 테이블
+
+![붉은 펠트 테이블 위 상아색 손패와 주황 점수 핀으로 구성한 크리비지 게임판](daily/2026-10-31-cribbage-cloth-table/screenshot.png)
+
+[게임 파일](daily/2026-10-31-cribbage-cloth-table/index.html) · [모바일 화면](daily/2026-10-31-cribbage-cloth-table/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-31-cribbage-cloth-table/DESIGN.md)
 
 ### 종이 축구 · 점수판
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-22-dots-and-boxes-risograph/index.html) · [모바일 화면](daily/2026-10-22-dots-and-boxes-risograph/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-22-dots-and-boxes-risograph/DESIGN.md)
 
-### 쿼리도 · 지하철 노선도
-
-![크림 역전 인쇄물 위 빨강과 파랑 노선이 가로지르는 5×5 쿼리도 게임판](daily/2026-10-21-quoridor-subway/screenshot.png)
-
-[게임 파일](daily/2026-10-21-quoridor-subway/index.html) · [모바일 화면](daily/2026-10-21-quoridor-subway/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-21-quoridor-subway/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-10-31-cribbage-cloth-table/game-logic.test.js
 node daily/2026-10-30-paper-football-scoreboard/game-logic.test.js
 node daily/2026-10-29-peg-solitaire-orbit/game-logic.test.js
 node daily/2026-10-28-pong-gymnasium/game-logic.test.js

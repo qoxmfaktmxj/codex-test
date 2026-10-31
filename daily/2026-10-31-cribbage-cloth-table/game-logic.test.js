@@ -1,0 +1,10 @@
+const assert = require('node:assert/strict');
+const { createGame, chooseCard, isComplete } = require('./game-logic');
+let game = createGame([5, 10, 7, 8, 5, 10]);
+game = chooseCard(game, 1); assert.deepEqual(game.selectedIds, [1]);
+game = chooseCard(game, 2); assert.equal(game.score, 2); assert.deepEqual(game.scoredIds, [1, 2]);
+game = chooseCard(game, 3); game = chooseCard(game, 4); assert.equal(game.score, 4);
+game = chooseCard(game, 5); game = chooseCard(game, 6); assert.equal(game.score, 6);
+assert.equal(isComplete(game), true);
+assert.throws(() => chooseCard(game, 1), /이미 점수에 반영한 카드/);
+console.log('붉은 천 크리비지 로직 테스트 통과');

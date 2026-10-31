@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 쿼리도 · 지하철 노선도
+
+![크림 역전 인쇄물 위 빨강과 파랑 노선이 가로지르는 5×5 쿼리도 게임판](../daily/2026-10-21-quoridor-subway/screenshot.png)
+
+[게임 파일](../daily/2026-10-21-quoridor-subway/index.html) · [모바일 화면](../daily/2026-10-21-quoridor-subway/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-21-quoridor-subway/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-21 | 쿼리도 · 지하철 노선도 | 크림 역전 인쇄물 위에서 빨간·파란 열차를 종점까지 먼저 보내고 차단선으로 길을 늦추는 고전 쿼리도입니다. |
+
 ### 주사위 다섯 · 활자 공방
 
 ![밝은 살구 종이와 주홍 잉크 트레이 속 다섯 주사위로 구성한 야추 게임판](../daily/2026-10-20-yahtzee-letterpress/screenshot.png)
