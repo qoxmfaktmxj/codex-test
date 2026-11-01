@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>피그 다이스 · 홍차 깡통</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="tin">
+  <header><p class="eyebrow">오후의 두 사람 놀이 · 목표 30점</p><h1>피그<br><em>다이스</em></h1><p class="intro">숫자를 쌓고, 멈출 때 은행에 넣으세요.<br>1이 나오면 차례 점수는 사라집니다.</p></header>
+  <section class="game" aria-label="피그 다이스 게임판">
+    <div class="score-rim"><div><span>첫째 찻잔</span><b id="score0">0</b></div><strong id="turn" aria-live="polite">첫째 찻잔 차례</strong><div><span>둘째 찻잔</span><b id="score1">0</b></div></div>
+    <div id="dice" class="dice" aria-label="주사위"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="pot">이번 잔 <b id="turn-score">0</b>점</p>
+    <div class="actions"><button id="roll" type="button">주사위 굴리기</button><button id="hold" type="button">점수 넣기</button></div>
+    <p id="status" class="status" aria-live="polite">주사위를 굴려 첫 잔을 따르세요.</p>
+  </section>
+  <footer><button id="reset" type="button">새 깡통 열기</button><span>마우스·터치 · R: 굴리기 · H: 넣기</span></footer>
+</main><script src="game-logic.js"></script><script src="app.js"></script></body></html>

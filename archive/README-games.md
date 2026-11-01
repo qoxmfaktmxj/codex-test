@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 점과 상자 · 리소그래프 작업대
+
+![크림 리소그래프 종이 위에 자홍과 청록 잉크 선을 잇는 대형 점과 상자 게임판](../daily/2026-10-22-dots-and-boxes-risograph/screenshot.png)
+
+[게임 파일](../daily/2026-10-22-dots-and-boxes-risograph/index.html) · [모바일 화면](../daily/2026-10-22-dots-and-boxes-risograph/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-22-dots-and-boxes-risograph/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-22 | 점과 상자 · 리소그래프 작업대 | 크림 리소그래프 종이 위에 자홍·청록 잉크 선을 이어 상자를 더 많이 인쇄하는 고전 점과 상자 게임입니다. |
+
 ### 쿼리도 · 지하철 노선도
 
 ![크림 역전 인쇄물 위 빨강과 파랑 노선이 가로지르는 5×5 쿼리도 게임판](../daily/2026-10-21-quoridor-subway/screenshot.png)
