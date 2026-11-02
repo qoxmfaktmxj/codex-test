@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 블록 탈출 · 형광 인쇄소
+
+![형광 라임 안전표지 위 검은 인쇄 틀과 큰 빨간 블록으로 구성한 세로형 화룽도 게임판](../daily/2026-10-23-klotski-studio/screenshot.png)
+
+[게임 파일](../daily/2026-10-23-klotski-studio/index.html) · [모바일 화면](../daily/2026-10-23-klotski-studio/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-23-klotski-studio/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-23 | 블록 탈출 · 형광 인쇄소 | 형광 안전표지 인쇄소의 세로 활판 틀에서 큰 빨간 블록을 출구까지 빼내는 고전 화룽도 퍼즐입니다. |
+
 ### 점과 상자 · 리소그래프 작업대
 
 ![크림 리소그래프 종이 위에 자홍과 청록 잉크 선을 잇는 대형 점과 상자 게임판](../daily/2026-10-22-dots-and-boxes-risograph/screenshot.png)
