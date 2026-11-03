@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-03 | [페어 기억 놀이 · 다락방 퀼트](daily/2026-11-03-memory-quilt/index.html) | 밝은 다락방 퀼트 조각을 두 장씩 뒤집어 같은 무늬를 찾아 이불을 완성하는 고전 페어 기억 놀이입니다. |
 | 2026-11-02 | [시장 풍탄 · 항구 전표](daily/2026-11-02-fan-tan-market/index.html) | 청회색 항구 전표의 숫자 선반에서 2번부터 이웃 패를 잇는 고전 풍탄 카드 게임입니다. |
 | 2026-11-01 | [피그 다이스 · 홍차 깡통](daily/2026-11-01-pig-dice-tea-tin/index.html) | 청록 차통 라벨 위에서 주사위를 굴려 30점을 먼저 은행에 넣는 두 사람 고전 피그 다이스입니다. |
 | 2026-10-31 | [크리비지 · 붉은 천 테이블](daily/2026-10-31-cribbage-cloth-table/index.html) | 붉은 펠트 테이블에서 합계 15가 되는 손패 두 장을 골라 핀을 옮기는 고전 크리비지입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-27 | [미니 백개먼 · 여행 포스터](daily/2026-10-27-backgammon-travel-poster/index.html) | 해안 순환선 포스터의 대각 항로에서 세 말을 먼저 항구 밖으로 보내는 미니 백개먼 레이스입니다. |
 | 2026-10-26 | [중국 장기 · 종이등 마당](daily/2026-10-26-chinese-checkers-festival/index.html) | 종이등 빛의 별 모양 마당에서 말을 뛰어넘어 건너편 뜰을 먼저 채우는 중국 장기입니다. |
 | 2026-10-25 | [나인핀 · 바닷가 산책로](daily/2026-10-25-ninepins-seaside/index.html) | 푸른 타일 레인에서 두 번의 공으로 아홉 핀을 최대한 쓰러뜨리는 고전 나인핀 게임입니다. |
-| 2026-10-24 | [개구리 길건너기 · 횡단보도 관제함](daily/2026-10-24-frogger-crosswalk/index.html) | 아침 교차로의 흐르는 차량 사이를 가로질러 안전지대에 닿는 고전 개구리 길건너기입니다. |
 
 ## 최근 게임 화면
+
+### 페어 기억 놀이 · 다락방 퀼트
+
+![밝은 다락방의 산호·청록·노랑 천 조각으로 만든 정사각 퀼트 페어 기억 놀이 게임판](daily/2026-11-03-memory-quilt/screenshot.png)
+
+[게임 파일](daily/2026-11-03-memory-quilt/index.html) · [모바일 화면](daily/2026-11-03-memory-quilt/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-03-memory-quilt/DESIGN.md)
 
 ### 시장 풍탄 · 항구 전표
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-25-ninepins-seaside/index.html) · [모바일 화면](daily/2026-10-25-ninepins-seaside/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-25-ninepins-seaside/DESIGN.md)
 
-### 개구리 길건너기 · 횡단보도 관제함
-
-![연한 콘크리트 교차로 위 산호색 차량 사이로 청록 개구리가 건너는 대형 가로 도로 게임판](daily/2026-10-24-frogger-crosswalk/screenshot.png)
-
-[게임 파일](daily/2026-10-24-frogger-crosswalk/index.html) · [모바일 화면](daily/2026-10-24-frogger-crosswalk/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-24-frogger-crosswalk/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-03-memory-quilt/game-logic.test.js
 node daily/2026-11-02-fan-tan-market/game-logic.test.js
 node daily/2026-11-01-pig-dice-tea-tin/game-logic.test.js
 node daily/2026-10-31-cribbage-cloth-table/game-logic.test.js
@@ -95,7 +96,6 @@ node daily/2026-10-28-pong-gymnasium/game-logic.test.js
 node daily/2026-10-27-backgammon-travel-poster/game-logic.test.js
 node daily/2026-10-26-chinese-checkers-festival/game-logic.test.js
 node daily/2026-10-25-ninepins-seaside/game-logic.test.js
-node daily/2026-10-24-frogger-crosswalk/game-logic.test.js
 node daily/2026-10-23-klotski-studio/game-logic.test.js
 node daily/2026-10-21-quoridor-subway/game-logic.test.js
 node daily/2026-10-20-yahtzee-letterpress/game-logic.test.js
