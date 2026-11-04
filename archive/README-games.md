@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 나인핀 · 바닷가 산책로
+
+![맑은 파란 타일 레인 끝의 아홉 흰 핀을 토마토색 공으로 맞히는 가로형 나인핀 게임판](../daily/2026-10-25-ninepins-seaside/screenshot.png)
+
+[게임 파일](../daily/2026-10-25-ninepins-seaside/index.html) · [모바일 화면](../daily/2026-10-25-ninepins-seaside/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-25-ninepins-seaside/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-25 | 나인핀 · 바닷가 산책로 | 푸른 타일 레인에서 두 번의 공으로 아홉 핀을 최대한 쓰러뜨리는 고전 나인핀 게임입니다. |
+
 ### 개구리 길건너기 · 횡단보도 관제함
 
 ![연한 콘크리트 교차로 위 산호색 차량 사이로 청록 개구리가 건너는 대형 가로 도로 게임판](../daily/2026-10-24-frogger-crosswalk/screenshot.png)

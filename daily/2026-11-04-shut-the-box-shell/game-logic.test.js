@@ -1,0 +1,23 @@
+const assert = require('node:assert/strict');
+const { createGame, rollDice, toggleTile, closeSelection, isComplete, hasMatch } = require('./game-logic');
+
+let game = createGame();
+assert.deepEqual(game.tiles, [1,2,3,4,5,6,7,8,9]);
+assert.equal(game.roll, null);
+game = rollDice(game, 7);
+assert.equal(game.roll, 7);
+game = toggleTile(game, 3);
+game = toggleTile(game, 4);
+assert.deepEqual(game.selected, [3,4]);
+game = closeSelection(game);
+assert.deepEqual(game.tiles, [1,2,5,6,7,8,9]);
+assert.equal(game.roll, null);
+assert.throws(() => closeSelection(createGame()), /주사위를 먼저/);
+assert.throws(() => toggleTile(rollDice(createGame(), 4), 8), /목표를 넘을 수/);
+assert.equal(hasMatch([1,3,6], 4), true);
+assert.equal(hasMatch([2,6,9], 5), false);
+game = { tiles:[1], selected:[], roll:null, turns:4 };
+game = rollDice(game, 1);
+game = toggleTile(game, 1);
+assert.equal(isComplete(closeSelection(game)), true);
+console.log('자개 부채판 숫자 닫기 로직 테스트 통과');
