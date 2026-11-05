@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-05 | [코나네 · 흙빛 작업대](daily/2026-11-05-puluc-clay-studio/index.html) | 석고 작업대의 청록·백토 돌을 뛰어넘어 길을 끊는 하와이 전통 코나네 게임입니다. |
 | 2026-11-04 | [숫자 닫기 · 자개 부채판](daily/2026-11-04-shut-the-box-shell/index.html) | 바다빛 자개 부채판에서 주사위 합과 같은 숫자 조각을 접어 모두 닫는 고전 숫자 닫기입니다. |
 | 2026-11-03 | [페어 기억 놀이 · 다락방 퀼트](daily/2026-11-03-memory-quilt/index.html) | 밝은 다락방 퀼트 조각을 두 장씩 뒤집어 같은 무늬를 찾아 이불을 완성하는 고전 페어 기억 놀이입니다. |
 | 2026-11-02 | [시장 풍탄 · 항구 전표](daily/2026-11-02-fan-tan-market/index.html) | 청회색 항구 전표의 숫자 선반에서 2번부터 이웃 패를 잇는 고전 풍탄 카드 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-10-29 | [페그 솔리테어 · 궤도 관측소](daily/2026-10-29-peg-solitaire-orbit/index.html) | 살구빛 원형 관측판에서 구슬을 뛰어넘어 마지막 한 개만 남기는 고전 페그 솔리테어입니다. |
 | 2026-10-28 | [미니 탁구 · 오전 체육관](daily/2026-10-28-pong-gymnasium/index.html) | 밝은 학교 체육관 코트에서 패들을 움직여 공을 받아내는 두 사람 고전 탁구입니다. |
 | 2026-10-27 | [미니 백개먼 · 여행 포스터](daily/2026-10-27-backgammon-travel-poster/index.html) | 해안 순환선 포스터의 대각 항로에서 세 말을 먼저 항구 밖으로 보내는 미니 백개먼 레이스입니다. |
-| 2026-10-26 | [중국 장기 · 종이등 마당](daily/2026-10-26-chinese-checkers-festival/index.html) | 종이등 빛의 별 모양 마당에서 말을 뛰어넘어 건너편 뜰을 먼저 채우는 중국 장기입니다. |
 
 ## 최근 게임 화면
+
+### 코나네 · 흙빛 작업대
+
+![아이보리 석고 바탕 위 테라코타 줄눈과 청록·백토 도자기 돌로 구성한 코나네 게임판](daily/2026-11-05-puluc-clay-studio/screenshot.png)
+
+[게임 파일](daily/2026-11-05-puluc-clay-studio/index.html) · [모바일 화면](daily/2026-11-05-puluc-clay-studio/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-05-puluc-clay-studio/DESIGN.md)
 
 ### 숫자 닫기 · 자개 부채판
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-27-backgammon-travel-poster/index.html) · [모바일 화면](daily/2026-10-27-backgammon-travel-poster/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-27-backgammon-travel-poster/DESIGN.md)
 
-### 중국 장기 · 종이등 마당
-
-![종이등 색의 여섯 꼭짓점 마당 위에서 빨강과 파랑 말을 움직이는 중국 장기 게임판](daily/2026-10-26-chinese-checkers-festival/screenshot.png)
-
-[게임 파일](daily/2026-10-26-chinese-checkers-festival/index.html) · [모바일 화면](daily/2026-10-26-chinese-checkers-festival/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-26-chinese-checkers-festival/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-05-puluc-clay-studio/game-logic.test.js
 node daily/2026-11-04-shut-the-box-shell/game-logic.test.js
 node daily/2026-11-03-memory-quilt/game-logic.test.js
 node daily/2026-11-02-fan-tan-market/game-logic.test.js

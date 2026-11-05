@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 중국 장기 · 종이등 마당
+
+![종이등 색의 여섯 꼭짓점 마당 위에서 빨강과 파랑 말을 움직이는 중국 장기 게임판](../daily/2026-10-26-chinese-checkers-festival/screenshot.png)
+
+[게임 파일](../daily/2026-10-26-chinese-checkers-festival/index.html) · [모바일 화면](../daily/2026-10-26-chinese-checkers-festival/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-26-chinese-checkers-festival/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-26 | 중국 장기 · 종이등 마당 | 종이등 빛의 별 모양 마당에서 말을 뛰어넘어 건너편 뜰을 먼저 채우는 중국 장기입니다. |
+
 ### 나인핀 · 바닷가 산책로
 
 ![맑은 파란 타일 레인 끝의 아홉 흰 핀을 토마토색 공으로 맞히는 가로형 나인핀 게임판](../daily/2026-10-25-ninepins-seaside/screenshot.png)
