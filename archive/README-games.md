@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 미니 백개먼 · 여행 포스터
+
+![청록 바다색 포스터 위 산호색과 크림색 삼각 항로로 구성한 대각 백개먼 게임판](../daily/2026-10-27-backgammon-travel-poster/screenshot.png)
+
+[게임 파일](../daily/2026-10-27-backgammon-travel-poster/index.html) · [모바일 화면](../daily/2026-10-27-backgammon-travel-poster/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-27-backgammon-travel-poster/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-27 | 미니 백개먼 · 여행 포스터 | 해안 순환선 포스터의 대각 항로에서 세 말을 먼저 항구 밖으로 보내는 미니 백개먼 레이스입니다. |
+
 ### 중국 장기 · 종이등 마당
 
 ![종이등 색의 여섯 꼭짓점 마당 위에서 빨강과 파랑 말을 움직이는 중국 장기 게임판](../daily/2026-10-26-chinese-checkers-festival/screenshot.png)

@@ -1,0 +1,25 @@
+const assert = require('node:assert/strict');
+const { createGame, roll, move, winner } = require('./game-logic');
+
+let game = createGame();
+assert.deepEqual(game.pieces, { reed: 0, ink: 0 });
+assert.equal(game.turn, 'reed');
+assert.throws(() => move(game), /먼저/);
+game = roll(game, 3);
+assert.equal(game.roll, 3);
+game = move(game);
+assert.equal(game.pieces.reed, 3);
+assert.equal(game.turn, 'ink');
+game = roll(game, 4);
+game = move(game);
+assert.equal(game.turn, 'ink');
+game = { pieces: { reed: 8, ink: 5 }, turn: 'reed', roll: null, turns: 7 };
+game = move(roll(game, 2));
+assert.equal(game.pieces.reed, 10);
+assert.equal(winner(game), 'reed');
+assert.throws(() => roll(createGame(), 5), /1부터 4/);
+game = move(roll({ pieces: { reed: 9, ink: 0 }, turn: 'reed', roll: null, turns: 0 }, 2));
+assert.equal(game.pieces.reed, 9);
+assert.equal(game.turn, 'ink');
+assert.equal(game.skipped, true);
+console.log('파치시 강변 두루마리 로직 테스트 통과');
