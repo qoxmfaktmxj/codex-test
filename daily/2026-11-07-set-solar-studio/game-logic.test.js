@@ -1,0 +1,17 @@
+const assert = require('node:assert/strict');
+const { isSet, createRound, choose, resolve } = require('./game-logic');
+const a = { count: 1, shape: 'oval', fill: 'solid', color: 'coral' };
+const b = { count: 2, shape: 'wave', fill: 'striped', color: 'teal' };
+const c = { count: 3, shape: 'diamond', fill: 'open', color: 'yellow' };
+assert.equal(isSet([a, b, c]), true);
+assert.equal(isSet([a, a, a]), true);
+assert.equal(isSet([a, { ...a, color: 'teal' }, { ...a, color: 'teal' }]), false);
+assert.throws(() => isSet([a, b]), /세 장/);
+let round = createRound([a, b, c, a]);
+round = choose(round, 0); round = choose(round, 1); round = choose(round, 2);
+assert.deepEqual(round.selected, [0, 1, 2]);
+round = resolve(round);
+assert.equal(round.score, 1); assert.equal(round.message, '세트를 찾았습니다');
+round = choose(round, 0); round = choose(round, 1); round = choose(round, 3); round = resolve(round);
+assert.equal(round.score, 1); assert.equal(round.message, '이 조합은 세트가 아닙니다');
+console.log('세트 태양 인쇄소 로직 테스트 통과');

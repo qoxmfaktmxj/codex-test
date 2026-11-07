@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 미니 탁구 · 오전 체육관
+
+![민트 체육관 코트 위 빨간 패들과 흰 공으로 구성한 가로형 미니 탁구 게임판](../daily/2026-10-28-pong-gymnasium/screenshot.png)
+
+[게임 파일](../daily/2026-10-28-pong-gymnasium/index.html) · [모바일 화면](../daily/2026-10-28-pong-gymnasium/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-28-pong-gymnasium/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-28 | 미니 탁구 · 오전 체육관 | 밝은 학교 체육관 코트에서 패들을 움직여 공을 받아내는 두 사람 고전 탁구입니다. |
+
 ### 미니 백개먼 · 여행 포스터
 
 ![청록 바다색 포스터 위 산호색과 크림색 삼각 항로로 구성한 대각 백개먼 게임판](../daily/2026-10-27-backgammon-travel-poster/screenshot.png)

@@ -1,0 +1,8 @@
+(()=>{const {createRound,choose,resolve,isSet}=SetLogic;const shapes=['oval','wave','diamond'],fills=['solid','striped','open'],colors=['coral','teal','yellow'];let round;
+const all=()=>{const a=[];[1,2,3].forEach(count=>shapes.forEach(shape=>fills.forEach(fill=>colors.forEach(color=>a.push({count,shape,fill,color})))));return a;};
+const deal=()=>{let deck=all().sort(()=>Math.random()-.5), cards=deck.slice(0,12);while(!cards.some((_,i)=>cards.some((_,j)=>cards.some((_,k)=>i<j&&j<k&&isSet([cards[i],cards[j],cards[k]])))))cards=all().sort(()=>Math.random()-.5).slice(0,12);round=createRound(cards);render();};
+const board=document.querySelector('#board'),msg=document.querySelector('#message'),score=document.querySelector('#score');
+const symbol=c=>Array.from({length:c.count},()=>`<i class="${c.shape} ${c.fill} ${c.color}"></i>`).join('');
+function render(){board.innerHTML=round.cards.map((c,i)=>`<button class="card ${round.selected.includes(i)?'picked':''} ${round.last||''}" data-i="${i}" aria-label="${i+1}번 카드">${symbol(c)}<small>${String(i+1).padStart(2,'0')}</small></button>`).join('');msg.textContent=round.message;score.textContent=`찾은 세트 ${round.score}`;board.querySelectorAll('button').forEach(b=>b.onclick=()=>{round=choose(round,+b.dataset.i);render();});}
+document.querySelector('#check').onclick=()=>{round=resolve(round);render();};document.querySelector('#new').onclick=deal;
+document.addEventListener('keydown',e=>{const keys=['1','2','3','4','5','6','7','8','9','0','-','='];const i=keys.indexOf(e.key);if(i>=0){round=choose(round,i);render();}if(e.key==='Enter'){round=resolve(round);render();}});deal();})();
