@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 페그 솔리테어 · 궤도 관측소
+
+![살구빛 원형 궤도 관측판 위에서 청록 세라믹 구슬을 뛰어넘는 페그 솔리테어 게임판](../daily/2026-10-29-peg-solitaire-orbit/screenshot.png)
+
+[게임 파일](../daily/2026-10-29-peg-solitaire-orbit/index.html) · [모바일 화면](../daily/2026-10-29-peg-solitaire-orbit/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-29-peg-solitaire-orbit/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-29 | 페그 솔리테어 · 궤도 관측소 | 살구빛 원형 관측판에서 구슬을 뛰어넘어 마지막 한 개만 남기는 고전 페그 솔리테어입니다. |
+
 ### 미니 탁구 · 오전 체육관
 
 ![민트 체육관 코트 위 빨간 패들과 흰 공으로 구성한 가로형 미니 탁구 게임판](../daily/2026-10-28-pong-gymnasium/screenshot.png)
