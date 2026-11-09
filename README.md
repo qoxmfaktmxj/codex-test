@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-09 | [구슬치기 · 분필 마당](daily/2026-11-09-marble-flick-yard/index.html) | 라일락 석회 마당의 원형 분필 고리로 유리 구슬을 튕겨 열두 칸을 먼저 채우는 고전 구슬치기입니다. |
 | 2026-11-08 | [키노 · 역광 벽보국](daily/2026-11-08-keno-poster/index.html) | 주황과 남색의 밤 벽보에서 다섯 번호를 찍고 추첨 번호와의 적중을 확인하는 고전 키노입니다. |
 | 2026-11-07 | [세트 · 태양 인쇄소](daily/2026-11-07-set-solar-studio/index.html) | 형광 잉크 시험지에서 수·모양·채움·색이 모두 같거나 모두 다른 세 장을 찾는 고전 세트입니다. |
 | 2026-11-06 | [파치시 · 강변 두루마리](daily/2026-11-06-pachisi-river-scroll/index.html) | 민트 수면의 기울어진 파피루스 수로에서 갈대 말과 먹물 말을 10칸 끝까지 먼저 흘려보내는 인도 고전 파치시 경주입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-02 | [시장 풍탄 · 항구 전표](daily/2026-11-02-fan-tan-market/index.html) | 청회색 항구 전표의 숫자 선반에서 2번부터 이웃 패를 잇는 고전 풍탄 카드 게임입니다. |
 | 2026-11-01 | [피그 다이스 · 홍차 깡통](daily/2026-11-01-pig-dice-tea-tin/index.html) | 청록 차통 라벨 위에서 주사위를 굴려 30점을 먼저 은행에 넣는 두 사람 고전 피그 다이스입니다. |
 | 2026-10-31 | [크리비지 · 붉은 천 테이블](daily/2026-10-31-cribbage-cloth-table/index.html) | 붉은 펠트 테이블에서 합계 15가 되는 손패 두 장을 골라 핀을 옮기는 고전 크리비지입니다. |
-| 2026-10-30 | [종이 축구 · 점수판](daily/2026-10-30-paper-football-scoreboard/index.html) | 공책 격자 경기장에서 지나간 선을 피하며 위·아래 골대까지 공을 잇는 고전 종이 축구입니다. |
 
 ## 최근 게임 화면
+
+### 구슬치기 · 분필 마당
+
+![라일락 석회 마당의 커다란 원형 분필 고리 안으로 청록·산호·보랏빛 유리 구슬을 튕기는 구슬치기 게임판](daily/2026-11-09-marble-flick-yard/screenshot.png)
+
+[게임 파일](daily/2026-11-09-marble-flick-yard/index.html) · [모바일 화면](daily/2026-11-09-marble-flick-yard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-09-marble-flick-yard/DESIGN.md)
 
 ### 키노 · 역광 벽보국
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-10-31-cribbage-cloth-table/index.html) · [모바일 화면](daily/2026-10-31-cribbage-cloth-table/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-31-cribbage-cloth-table/DESIGN.md)
 
-### 종이 축구 · 점수판
-
-![크림 공책 격자 경기장에서 파란 공과 주황 형광펜 선을 잇는 종이 축구 게임판](daily/2026-10-30-paper-football-scoreboard/screenshot.png)
-
-[게임 파일](daily/2026-10-30-paper-football-scoreboard/index.html) · [모바일 화면](daily/2026-10-30-paper-football-scoreboard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-30-paper-football-scoreboard/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-09-marble-flick-yard/game-logic.test.js
 node daily/2026-11-08-keno-poster/game-logic.test.js
 node daily/2026-11-07-set-solar-studio/game-logic.test.js
 node daily/2026-11-06-pachisi-river-scroll/game-logic.test.js

@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 종이 축구 · 점수판
+
+![크림 공책 격자 경기장에서 파란 공과 주황 형광펜 선을 잇는 종이 축구 게임판](../daily/2026-10-30-paper-football-scoreboard/screenshot.png)
+
+[게임 파일](../daily/2026-10-30-paper-football-scoreboard/index.html) · [모바일 화면](../daily/2026-10-30-paper-football-scoreboard/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-30-paper-football-scoreboard/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-30 | 종이 축구 · 점수판 | 공책 격자 경기장에서 지나간 선을 피하며 위·아래 골대까지 공을 잇는 고전 종이 축구입니다. |
+
 ### 페그 솔리테어 · 궤도 관측소
 
 ![살구빛 원형 궤도 관측판 위에서 청록 세라믹 구슬을 뛰어넘는 페그 솔리테어 게임판](../daily/2026-10-29-peg-solitaire-orbit/screenshot.png)
