@@ -1,0 +1,8 @@
+(()=>{const L=window.HockeyLogic;let game=L.createGame(7),raf,last=0,dragging=false;const rink=document.querySelector('#rink'),el={player:document.querySelector('#player'),cpu:document.querySelector('#cpu'),puck:document.querySelector('#puck'),trail:document.querySelector('#trail'),p:document.querySelector('#playerScore'),c:document.querySelector('#cpuScore'),flash:document.querySelector('#flash')};
+const place=(node,pos)=>{node.style.left=`${pos.x/4}%`;node.style.top=`${pos.y/5}%`;};
+function render(){place(el.player,game.paddle);place(el.cpu,game.cpu);place(el.puck,game.puck);el.trail.style.left=`${game.puck.x/4}%`;el.trail.style.top=`${game.puck.y/5}%`;el.p.textContent=game.player;el.c.textContent=game.computer;el.flash.textContent=game.message;}
+function aim(e){const r=rink.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*L.WIDTH,y=(e.clientY-r.top)/r.height*L.HEIGHT;game=L.movePaddle(game,x,y);render();}
+rink.addEventListener('pointerdown',e=>{dragging=true;rink.setPointerCapture(e.pointerId);aim(e)});rink.addEventListener('pointermove',e=>{if(dragging)aim(e)});rink.addEventListener('pointerup',()=>dragging=false);rink.addEventListener('pointercancel',()=>dragging=false);rink.addEventListener('lostpointercapture',()=>dragging=false);
+window.addEventListener('keydown',e=>{const d={ArrowLeft:[-22,0],ArrowRight:[22,0],ArrowUp:[0,-22],ArrowDown:[0,22]}[e.key];if(d){e.preventDefault();game=L.movePaddle(game,game.paddle.x+d[0],game.paddle.y+d[1]);render();}});
+document.querySelector('#reset').addEventListener('click',()=>{game=L.resetGame(Date.now()%999+1);render();rink.focus();});
+function loop(t){if(t-last>18){game=L.stepGame(game);render();last=t;}raf=requestAnimationFrame(loop)}render();raf=requestAnimationFrame(loop);})();

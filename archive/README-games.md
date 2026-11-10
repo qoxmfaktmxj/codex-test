@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 크리비지 · 붉은 천 테이블
+
+![붉은 펠트 테이블 위 상아색 손패와 주황 점수 핀으로 구성한 크리비지 게임판](../daily/2026-10-31-cribbage-cloth-table/screenshot.png)
+
+[게임 파일](../daily/2026-10-31-cribbage-cloth-table/index.html) · [모바일 화면](../daily/2026-10-31-cribbage-cloth-table/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-31-cribbage-cloth-table/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-10-31 | 크리비지 · 붉은 천 테이블 | 붉은 펠트 테이블에서 합계 15가 되는 손패 두 장을 골라 핀을 옮기는 고전 크리비지입니다. |
+
 ### 종이 축구 · 점수판
 
 ![크림 공책 격자 경기장에서 파란 공과 주황 형광펜 선을 잇는 종이 축구 게임판](../daily/2026-10-30-paper-football-scoreboard/screenshot.png)

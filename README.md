@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-10 | [에어 하키 · 빙판 라디오룸](daily/2026-11-10-air-hockey-ice-rink/index.html) | 서리 낀 청록 아이스 링크에서 패들을 움직여 퍽을 튕기고 5점을 먼저 내는 고전 에어 하키입니다. |
 | 2026-11-09 | [구슬치기 · 분필 마당](daily/2026-11-09-marble-flick-yard/index.html) | 라일락 석회 마당의 원형 분필 고리로 유리 구슬을 튕겨 열두 칸을 먼저 채우는 고전 구슬치기입니다. |
 | 2026-11-08 | [키노 · 역광 벽보국](daily/2026-11-08-keno-poster/index.html) | 주황과 남색의 밤 벽보에서 다섯 번호를 찍고 추첨 번호와의 적중을 확인하는 고전 키노입니다. |
 | 2026-11-07 | [세트 · 태양 인쇄소](daily/2026-11-07-set-solar-studio/index.html) | 형광 잉크 시험지에서 수·모양·채움·색이 모두 같거나 모두 다른 세 장을 찾는 고전 세트입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-03 | [페어 기억 놀이 · 다락방 퀼트](daily/2026-11-03-memory-quilt/index.html) | 밝은 다락방 퀼트 조각을 두 장씩 뒤집어 같은 무늬를 찾아 이불을 완성하는 고전 페어 기억 놀이입니다. |
 | 2026-11-02 | [시장 풍탄 · 항구 전표](daily/2026-11-02-fan-tan-market/index.html) | 청회색 항구 전표의 숫자 선반에서 2번부터 이웃 패를 잇는 고전 풍탄 카드 게임입니다. |
 | 2026-11-01 | [피그 다이스 · 홍차 깡통](daily/2026-11-01-pig-dice-tea-tin/index.html) | 청록 차통 라벨 위에서 주사위를 굴려 30점을 먼저 은행에 넣는 두 사람 고전 피그 다이스입니다. |
-| 2026-10-31 | [크리비지 · 붉은 천 테이블](daily/2026-10-31-cribbage-cloth-table/index.html) | 붉은 펠트 테이블에서 합계 15가 되는 손패 두 장을 골라 핀을 옮기는 고전 크리비지입니다. |
 
 ## 최근 게임 화면
+
+### 에어 하키 · 빙판 라디오룸
+
+![밝은 청록 아이스 링크에서 산호색 패들과 남색 패들로 검은 퍽을 튕기는 에어 하키 게임판](daily/2026-11-10-air-hockey-ice-rink/screenshot.png)
+
+[게임 파일](daily/2026-11-10-air-hockey-ice-rink/index.html) · [모바일 화면](daily/2026-11-10-air-hockey-ice-rink/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-10-air-hockey-ice-rink/DESIGN.md)
 
 ### 구슬치기 · 분필 마당
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-11-01-pig-dice-tea-tin/index.html) · [모바일 화면](daily/2026-11-01-pig-dice-tea-tin/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-01-pig-dice-tea-tin/DESIGN.md)
 
-### 크리비지 · 붉은 천 테이블
-
-![붉은 펠트 테이블 위 상아색 손패와 주황 점수 핀으로 구성한 크리비지 게임판](daily/2026-10-31-cribbage-cloth-table/screenshot.png)
-
-[게임 파일](daily/2026-10-31-cribbage-cloth-table/index.html) · [모바일 화면](daily/2026-10-31-cribbage-cloth-table/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-10-31-cribbage-cloth-table/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-10-air-hockey-ice-rink/game-logic.test.js
 node daily/2026-11-09-marble-flick-yard/game-logic.test.js
 node daily/2026-11-08-keno-poster/game-logic.test.js
 node daily/2026-11-07-set-solar-studio/game-logic.test.js
