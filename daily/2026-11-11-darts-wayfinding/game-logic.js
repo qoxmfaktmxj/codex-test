@@ -8,5 +8,13 @@
     const winner=after===0;
     return {...game,remaining:after,throws:game.throws+1,last:score,bust:false,winner,message:winner?'정확히 0점! 길찾기 챔피언입니다':'좋아요. 다음 다트를 던지세요'};
   };
-  return {createGame,scoreThrow,resetGame:createGame};
+  const scoreFromAim=(radius,base)=>{
+    if(!Number.isFinite(radius)||!Number.isInteger(base)||base<1||base>20)throw new Error('조준값이 올바르지 않습니다');
+    if(radius<.07)return 50;
+    if(radius<.1)return 25;
+    if(radius>=.22&&radius<=.34)return base*3;
+    if(radius>=.1&&radius<=.14)return base*2;
+    return radius<.88?base:0;
+  };
+  return {createGame,scoreThrow,scoreFromAim,resetGame:createGame};
 });

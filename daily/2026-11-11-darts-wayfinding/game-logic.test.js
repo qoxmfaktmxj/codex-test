@@ -1,5 +1,5 @@
 const assert = require('node:assert/strict');
-const { createGame, scoreThrow, resetGame } = require('./game-logic');
+const { createGame, scoreThrow, resetGame, scoreFromAim } = require('./game-logic');
 
 let game = createGame(11);
 assert.equal(game.remaining, 301);
@@ -14,4 +14,10 @@ assert.equal(scoreThrow(game, 20).remaining, 0);
 assert.deepEqual(resetGame(4), createGame(4));
 assert.throws(() => createGame(0), /씨앗/);
 assert.throws(() => scoreThrow(createGame(2), -1), /점수/);
+assert.equal(scoreFromAim(0.05, 20), 50);
+assert.equal(scoreFromAim(0.08, 20), 25);
+assert.equal(scoreFromAim(0.28, 20), 60);
+assert.equal(scoreFromAim(0.12, 20), 40);
+assert.equal(scoreFromAim(0.6, 20), 20);
+assert.equal(scoreFromAim(0.92, 20), 0);
 console.log('다트 길찾기 표지판 로직 테스트 통과');
