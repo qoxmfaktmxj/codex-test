@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-12 | [스키볼 · 티켓 부스](daily/2026-11-12-skee-ball-ticket-booth/index.html) | 민트 동전 오락실의 세로 레인에서 점수 포켓을 눌러 아홉 공의 티켓을 모으는 고전 스키볼입니다. |
 | 2026-11-11 | [다트 · 길찾기 표지판](daily/2026-11-11-darts-wayfinding/index.html) | 형광 길찾기 표지판 다트 원판을 눌러 301점을 정확히 비우는 고전 다트 게임입니다. |
 | 2026-11-10 | [에어 하키 · 빙판 라디오룸](daily/2026-11-10-air-hockey-ice-rink/index.html) | 서리 낀 청록 아이스 링크에서 패들을 움직여 퍽을 튕기고 5점을 먼저 내는 고전 에어 하키입니다. |
 | 2026-11-09 | [구슬치기 · 분필 마당](daily/2026-11-09-marble-flick-yard/index.html) | 라일락 석회 마당의 원형 분필 고리로 유리 구슬을 튕겨 열두 칸을 먼저 채우는 고전 구슬치기입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-05 | [코나네 · 흙빛 작업대](daily/2026-11-05-puluc-clay-studio/index.html) | 석고 작업대의 청록·백토 돌을 뛰어넘어 길을 끊는 하와이 전통 코나네 게임입니다. |
 | 2026-11-04 | [숫자 닫기 · 자개 부채판](daily/2026-11-04-shut-the-box-shell/index.html) | 바다빛 자개 부채판에서 주사위 합과 같은 숫자 조각을 접어 모두 닫는 고전 숫자 닫기입니다. |
 | 2026-11-03 | [페어 기억 놀이 · 다락방 퀼트](daily/2026-11-03-memory-quilt/index.html) | 밝은 다락방 퀼트 조각을 두 장씩 뒤집어 같은 무늬를 찾아 이불을 완성하는 고전 페어 기억 놀이입니다. |
-| 2026-11-02 | [시장 풍탄 · 항구 전표](daily/2026-11-02-fan-tan-market/index.html) | 청회색 항구 전표의 숫자 선반에서 2번부터 이웃 패를 잇는 고전 풍탄 카드 게임입니다. |
 
 ## 최근 게임 화면
+
+### 스키볼 · 티켓 부스
+
+![민트색 동전 오락실의 크림 목재 세로 레인과 빨강·남색 점수 포켓으로 구성한 스키볼 게임판](daily/2026-11-12-skee-ball-ticket-booth/screenshot.png)
+
+[게임 파일](daily/2026-11-12-skee-ball-ticket-booth/index.html) · [모바일 화면](daily/2026-11-12-skee-ball-ticket-booth/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-12-skee-ball-ticket-booth/DESIGN.md)
 
 ### 다트 · 길찾기 표지판
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-11-03-memory-quilt/index.html) · [모바일 화면](daily/2026-11-03-memory-quilt/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-03-memory-quilt/DESIGN.md)
 
-### 시장 풍탄 · 항구 전표
-
-![청회색 항구 전표의 주홍과 남색 숫자 선반으로 구성한 시장 풍탄 게임판](daily/2026-11-02-fan-tan-market/screenshot.png)
-
-[게임 파일](daily/2026-11-02-fan-tan-market/index.html) · [모바일 화면](daily/2026-11-02-fan-tan-market/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-02-fan-tan-market/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-12-skee-ball-ticket-booth/game-logic.test.js
 node daily/2026-11-11-darts-wayfinding/game-logic.test.js
 node daily/2026-11-10-air-hockey-ice-rink/game-logic.test.js
 node daily/2026-11-09-marble-flick-yard/game-logic.test.js

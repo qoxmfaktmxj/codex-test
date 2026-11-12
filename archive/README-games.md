@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 시장 풍탄 · 항구 전표
+
+![청회색 항구 전표의 주홍과 남색 숫자 선반으로 구성한 시장 풍탄 게임판](../daily/2026-11-02-fan-tan-market/screenshot.png)
+
+[게임 파일](../daily/2026-11-02-fan-tan-market/index.html) · [모바일 화면](../daily/2026-11-02-fan-tan-market/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-02-fan-tan-market/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-02 | 시장 풍탄 · 항구 전표 | 청회색 항구 전표의 숫자 선반에서 2번부터 이웃 패를 잇는 고전 풍탄 카드 게임입니다. |
+
 ### 피그 다이스 · 홍차 깡통
 
 ![청록 홍차 깡통 라벨 위의 큰 크림색 주사위와 주홍 테두리로 구성한 피그 다이스 게임판](../daily/2026-11-01-pig-dice-tea-tin/screenshot.png)
