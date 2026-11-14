@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 숫자 닫기 · 자개 부채판
+
+![바다빛 자개 부채살을 따라 숫자 조각을 골라 접는 방사형 숫자 닫기 게임판](../daily/2026-11-04-shut-the-box-shell/screenshot.png)
+
+[게임 파일](../daily/2026-11-04-shut-the-box-shell/index.html) · [모바일 화면](../daily/2026-11-04-shut-the-box-shell/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-04-shut-the-box-shell/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-04 | 숫자 닫기 · 자개 부채판 | 바다빛 자개 부채판에서 주사위 합과 같은 숫자 조각을 접어 모두 닫는 고전 숫자 닫기입니다. |
+
 ### 페어 기억 놀이 · 다락방 퀼트
 
 ![밝은 다락방의 산호·청록·노랑 천 조각으로 만든 정사각 퀼트 페어 기억 놀이 게임판](../daily/2026-11-03-memory-quilt/screenshot.png)

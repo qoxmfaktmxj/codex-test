@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-14 | [점 잇기 · 파도 우체국](daily/2026-11-14-dots-post-office/index.html) | 바랜 항공우편 종이 위에서 선을 이어 우표 칸을 더 많이 차지하는 고전 점 잇기입니다. |
 | 2026-11-13 | [공기놀이 · 겨울 마당](daily/2026-11-13-jacks-courtyard/index.html) | 하늘빛 고무 코트의 공기알을 하나씩 집어 다섯 단을 완성하는 고전 공기놀이입니다. |
 | 2026-11-12 | [스키볼 · 티켓 부스](daily/2026-11-12-skee-ball-ticket-booth/index.html) | 민트 동전 오락실의 세로 레인에서 점수 포켓을 눌러 아홉 공의 티켓을 모으는 고전 스키볼입니다. |
 | 2026-11-11 | [다트 · 길찾기 표지판](daily/2026-11-11-darts-wayfinding/index.html) | 형광 길찾기 표지판 다트 원판을 눌러 301점을 정확히 비우는 고전 다트 게임입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-07 | [세트 · 태양 인쇄소](daily/2026-11-07-set-solar-studio/index.html) | 형광 잉크 시험지에서 수·모양·채움·색이 모두 같거나 모두 다른 세 장을 찾는 고전 세트입니다. |
 | 2026-11-06 | [파치시 · 강변 두루마리](daily/2026-11-06-pachisi-river-scroll/index.html) | 민트 수면의 기울어진 파피루스 수로에서 갈대 말과 먹물 말을 10칸 끝까지 먼저 흘려보내는 인도 고전 파치시 경주입니다. |
 | 2026-11-05 | [코나네 · 흙빛 작업대](daily/2026-11-05-puluc-clay-studio/index.html) | 석고 작업대의 청록·백토 돌을 뛰어넘어 길을 끊는 하와이 전통 코나네 게임입니다. |
-| 2026-11-04 | [숫자 닫기 · 자개 부채판](daily/2026-11-04-shut-the-box-shell/index.html) | 바다빛 자개 부채판에서 주사위 합과 같은 숫자 조각을 접어 모두 닫는 고전 숫자 닫기입니다. |
 
 ## 최근 게임 화면
+
+### 점 잇기 · 파도 우체국
+
+![바랜 항공우편 종이 위 코발트 선과 산호 우표 칸을 이어 완성하는 점 잇기 게임판](daily/2026-11-14-dots-post-office/screenshot.png)
+
+[게임 파일](daily/2026-11-14-dots-post-office/index.html) · [모바일 화면](daily/2026-11-14-dots-post-office/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-14-dots-post-office/DESIGN.md)
 
 ### 공기놀이 · 겨울 마당
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-11-05-puluc-clay-studio/index.html) · [모바일 화면](daily/2026-11-05-puluc-clay-studio/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-05-puluc-clay-studio/DESIGN.md)
 
-### 숫자 닫기 · 자개 부채판
-
-![바다빛 자개 부채살을 따라 숫자 조각을 골라 접는 방사형 숫자 닫기 게임판](daily/2026-11-04-shut-the-box-shell/screenshot.png)
-
-[게임 파일](daily/2026-11-04-shut-the-box-shell/index.html) · [모바일 화면](daily/2026-11-04-shut-the-box-shell/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-04-shut-the-box-shell/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-14-dots-post-office/game-logic.test.js
 node daily/2026-11-13-jacks-courtyard/game-logic.test.js
 node daily/2026-11-12-skee-ball-ticket-booth/game-logic.test.js
 node daily/2026-11-11-darts-wayfinding/game-logic.test.js
