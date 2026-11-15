@@ -1,0 +1,9 @@
+(function(root,factory){const api=factory();if(typeof module!=='undefined')module.exports=api;root.HexCoralLogic=api;})(globalThis,function(){
+  const other=player=>player==='산호'?'해초':'산호';
+  const createGame=size=>{if(!Number.isInteger(size)||size<2)throw new Error('크기는 2 이상이어야 합니다');return {size,board:Array.from({length:size},()=>Array(size).fill(null)),turn:'산호',finished:false,winner:null,message:'산호가 먼저 위와 아래 해안을 잇습니다'};};
+  const legalMoves=game=>game.board.flatMap((row,r)=>row.map((cell,c)=>cell?null:[r,c]).filter(Boolean));
+  const neighbors=(size,row,col)=>[[row-1,col],[row-1,col+1],[row,col-1],[row,col+1],[row+1,col-1],[row+1,col]].filter(([r,c])=>r>=0&&c>=0&&r<size&&c<size);
+  const connected=(board,player)=>{const n=board.length, queue=[],seen=new Set();for(let i=0;i<n;i++){const r=player==='산호'?0:i,c=player==='산호'?i:0;if(board[r][c]===player){queue.push([r,c]);seen.add(r+'-'+c);}}while(queue.length){const [r,c]=queue.shift();if(player==='산호'&&r===n-1)return true;if(player==='해초'&&c===n-1)return true;for(const [nr,nc] of neighbors(n,r,c)){const key=nr+'-'+nc;if(board[nr][nc]===player&&!seen.has(key)){seen.add(key);queue.push([nr,nc]);}}}return false;};
+  const placeStone=(game,row,col)=>{if(game.finished)return game;if(!Number.isInteger(row)||!Number.isInteger(col)||row<0||col<0||row>=game.size||col>=game.size)throw new Error('게임판 범위를 벗어났습니다');if(game.board[row][col])throw new Error('이미 놓인 자리입니다');const board=game.board.map(line=>line.slice());const player=game.turn;board[row][col]=player;const won=connected(board,player);return {...game,board,turn:won?player:other(player),finished:won,winner:won?player:null,message:won?player+' 해안길 완성!':other(player)+' 차례입니다'};};
+  return {createGame,placeStone,legalMoves,resetGame:createGame};
+});

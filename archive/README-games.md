@@ -1119,3 +1119,12 @@ node daily/2026-07-12-royal-ur/game-logic.test.js
 ![크림 장부의 붉은 합계 칸과 청록 잉크 숫자로 구성한 카쿠로 게임판](../daily/2026-10-11-kakuro-tea-ledger/screenshot.png)
 
 [게임 파일](../daily/2026-10-11-kakuro-tea-ledger/index.html) · [모바일 화면](../daily/2026-10-11-kakuro-tea-ledger/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-10-11-kakuro-tea-ledger/DESIGN.md)
+### 코나네 · 흙빛 작업대
+
+![아이보리 석고 바탕 위 테라코타 줄눈과 청록·백토 도자기 돌로 구성한 코나네 게임판](../daily/2026-11-05-puluc-clay-studio/screenshot.png)
+
+[게임 파일](../daily/2026-11-05-puluc-clay-studio/index.html) · [모바일 화면](../daily/2026-11-05-puluc-clay-studio/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-05-puluc-clay-studio/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-05 | 코나네 · 흙빛 작업대 | 석고 작업대의 청록·백토 돌을 뛰어넘어 길을 끊는 하와이 전통 코나네 게임입니다. |

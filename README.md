@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-15 | [헥스 · 산호 산책로](daily/2026-11-15-hex-coral-walk/index.html) | 조개빛 수조의 육각 산책로에서 산호 해안을 위아래로 먼저 잇는 고전 헥스입니다. |
 | 2026-11-14 | [점 잇기 · 파도 우체국](daily/2026-11-14-dots-post-office/index.html) | 바랜 항공우편 종이 위에서 선을 이어 우표 칸을 더 많이 차지하는 고전 점 잇기입니다. |
 | 2026-11-13 | [공기놀이 · 겨울 마당](daily/2026-11-13-jacks-courtyard/index.html) | 하늘빛 고무 코트의 공기알을 하나씩 집어 다섯 단을 완성하는 고전 공기놀이입니다. |
 | 2026-11-12 | [스키볼 · 티켓 부스](daily/2026-11-12-skee-ball-ticket-booth/index.html) | 민트 동전 오락실의 세로 레인에서 점수 포켓을 눌러 아홉 공의 티켓을 모으는 고전 스키볼입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-08 | [키노 · 역광 벽보국](daily/2026-11-08-keno-poster/index.html) | 주황과 남색의 밤 벽보에서 다섯 번호를 찍고 추첨 번호와의 적중을 확인하는 고전 키노입니다. |
 | 2026-11-07 | [세트 · 태양 인쇄소](daily/2026-11-07-set-solar-studio/index.html) | 형광 잉크 시험지에서 수·모양·채움·색이 모두 같거나 모두 다른 세 장을 찾는 고전 세트입니다. |
 | 2026-11-06 | [파치시 · 강변 두루마리](daily/2026-11-06-pachisi-river-scroll/index.html) | 민트 수면의 기울어진 파피루스 수로에서 갈대 말과 먹물 말을 10칸 끝까지 먼저 흘려보내는 인도 고전 파치시 경주입니다. |
-| 2026-11-05 | [코나네 · 흙빛 작업대](daily/2026-11-05-puluc-clay-studio/index.html) | 석고 작업대의 청록·백토 돌을 뛰어넘어 길을 끊는 하와이 전통 코나네 게임입니다. |
 
 ## 최근 게임 화면
+
+### 헥스 · 산호 산책로
+
+![조개빛 수조에서 주황 산호와 청록 해초 타일로 해안을 연결하는 육각 헥스 게임판](daily/2026-11-15-hex-coral-walk/screenshot.png)
+
+[게임 파일](daily/2026-11-15-hex-coral-walk/index.html) · [모바일 화면](daily/2026-11-15-hex-coral-walk/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-15-hex-coral-walk/DESIGN.md)
 
 ### 점 잇기 · 파도 우체국
 
@@ -75,17 +81,12 @@
 
 [게임 파일](daily/2026-11-06-pachisi-river-scroll/index.html) · [모바일 화면](daily/2026-11-06-pachisi-river-scroll/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-06-pachisi-river-scroll/DESIGN.md)
 
-### 코나네 · 흙빛 작업대
-
-![아이보리 석고 바탕 위 테라코타 줄눈과 청록·백토 도자기 돌로 구성한 코나네 게임판](daily/2026-11-05-puluc-clay-studio/screenshot.png)
-
-[게임 파일](daily/2026-11-05-puluc-clay-studio/index.html) · [모바일 화면](daily/2026-11-05-puluc-clay-studio/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-05-puluc-clay-studio/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-15-hex-coral-walk/game-logic.test.js
 node daily/2026-11-14-dots-post-office/game-logic.test.js
 node daily/2026-11-13-jacks-courtyard/game-logic.test.js
 node daily/2026-11-12-skee-ball-ticket-booth/game-logic.test.js
