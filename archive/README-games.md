@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 파치시 · 강변 두루마리
+
+![민트 물결과 모래빛 종이 위 기울어진 열 칸 수로를 따라 갈대 말과 먹물 말을 움직이는 파치시 게임판](../daily/2026-11-06-pachisi-river-scroll/screenshot.png)
+
+[게임 파일](../daily/2026-11-06-pachisi-river-scroll/index.html) · [모바일 화면](../daily/2026-11-06-pachisi-river-scroll/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-06-pachisi-river-scroll/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-06 | 파치시 · 강변 두루마리 | 민트 수면의 기울어진 파피루스 수로에서 갈대 말과 먹물 말을 10칸 끝까지 먼저 흘려보내는 인도 고전 파치시 경주입니다. |
+
 ### 숫자 닫기 · 자개 부채판
 
 ![바다빛 자개 부채살을 따라 숫자 조각을 골라 접는 방사형 숫자 닫기 게임판](../daily/2026-11-04-shut-the-box-shell/screenshot.png)
