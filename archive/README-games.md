@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 세트 · 태양 인쇄소
+
+![크림색 인쇄 시험지 위 산호·청록·노랑 도형 세 장 조합을 찾는 세트 게임판](../daily/2026-11-07-set-solar-studio/screenshot.png)
+
+[게임 파일](../daily/2026-11-07-set-solar-studio/index.html) · [모바일 화면](../daily/2026-11-07-set-solar-studio/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-07-set-solar-studio/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-07 | 세트 · 태양 인쇄소 | 형광 잉크 시험지에서 수·모양·채움·색이 모두 같거나 모두 다른 세 장을 찾는 고전 세트입니다. |
+
 ### 파치시 · 강변 두루마리
 
 ![민트 물결과 모래빛 종이 위 기울어진 열 칸 수로를 따라 갈대 말과 먹물 말을 움직이는 파치시 게임판](../daily/2026-11-06-pachisi-river-scroll/screenshot.png)

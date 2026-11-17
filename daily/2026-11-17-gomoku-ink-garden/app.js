@@ -1,0 +1,10 @@
+(() => {
+  const { createGame, placeStone, resetGame } = window.InkGomokuLogic;
+  let game = createGame(9), cursor = [4,4];
+  const board = document.querySelector('#board'), turn = document.querySelector('#turn-label'), message = document.querySelector('#message');
+  const render = () => { board.innerHTML = ''; board.style.setProperty('--size', game.size); turn.textContent = game.finished ? (game.winner === '무승부' ? '무승부' : game.winner + ' 승리') : game.turn + ' 차례'; message.textContent = game.message.replace(/^.*? · /, '');
+    game.board.forEach((line,row) => line.forEach((stone,col) => { const cell = document.createElement('button'); cell.type='button'; cell.disabled = game.finished; cell.className='cell' + (stone ? ' occupied ' + (stone === '흑돌' ? 'black' : 'white') : '') + (game.lastMove?.[0] === row && game.lastMove?.[1] === col ? ' last' : '') + (game.winningCells.some(([r,c]) => r===row&&c===col) ? ' winning' : ''); cell.setAttribute('aria-label', `${row+1}행 ${col+1}열${stone ? ' '+stone : ' 빈 자리'}`); cell.tabIndex = cursor[0] === row && cursor[1] === col ? 0 : -1; if (stone) cell.innerHTML='<i aria-hidden="true"></i>'; cell.addEventListener('click', () => play(row,col)); board.append(cell); })); };
+  const play = (row,col) => { try { game = placeStone(game,row,col); cursor=[row,col]; render(); document.querySelectorAll('.cell')[row*game.size+col].focus(); } catch (_) { message.textContent='이미 놓인 자리입니다'; } };
+  board.addEventListener('keydown', event => { const keys={ArrowUp:[-1,0],ArrowDown:[1,0],ArrowLeft:[0,-1],ArrowRight:[0,1]}; if (keys[event.key]) { event.preventDefault(); cursor=[Math.max(0,Math.min(game.size-1,cursor[0]+keys[event.key][0])),Math.max(0,Math.min(game.size-1,cursor[1]+keys[event.key][1]))]; render(); document.querySelectorAll('.cell')[cursor[0]*game.size+cursor[1]].focus(); } if (event.key==='Enter'||event.key===' ') { event.preventDefault(); play(...cursor); } });
+  document.querySelector('#reset').addEventListener('click', () => { game=resetGame(9); cursor=[4,4]; render(); }); render();
+})();
