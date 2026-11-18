@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-18 | [천점 주사위 · 세탁표 교환소](daily/2026-11-18-farkle-laundry-token/index.html) | 회백색 세탁 전표 위에서 점수 눈을 골라 보관하며 1000점을 먼저 채우는 고전 천점 주사위입니다. |
 | 2026-11-17 | [오목 · 먹빛 정원](daily/2026-11-17-gomoku-ink-garden/index.html) | 종이 섬유가 비치는 한지 격자에서 흑돌과 백돌을 놓아 다섯 알을 먼저 잇는 고전 오목입니다. |
 | 2026-11-16 | [SOS · 폭풍 등대국](daily/2026-11-16-sos-storm-lanterns/index.html) | 하늘빛 기상 전보의 5×5 신호판에 S와 O를 놓아 SOS를 더 많이 보내는 고전 SOS입니다. |
 | 2026-11-15 | [헥스 · 산호 산책로](daily/2026-11-15-hex-coral-walk/index.html) | 조개빛 수조의 육각 산책로에서 산호 해안을 위아래로 먼저 잇는 고전 헥스입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-11 | [다트 · 길찾기 표지판](daily/2026-11-11-darts-wayfinding/index.html) | 형광 길찾기 표지판 다트 원판을 눌러 301점을 정확히 비우는 고전 다트 게임입니다. |
 | 2026-11-10 | [에어 하키 · 빙판 라디오룸](daily/2026-11-10-air-hockey-ice-rink/index.html) | 서리 낀 청록 아이스 링크에서 패들을 움직여 퍽을 튕기고 5점을 먼저 내는 고전 에어 하키입니다. |
 | 2026-11-09 | [구슬치기 · 분필 마당](daily/2026-11-09-marble-flick-yard/index.html) | 라일락 석회 마당의 원형 분필 고리로 유리 구슬을 튕겨 열두 칸을 먼저 채우는 고전 구슬치기입니다. |
-| 2026-11-08 | [키노 · 역광 벽보국](daily/2026-11-08-keno-poster/index.html) | 주황과 남색의 밤 벽보에서 다섯 번호를 찍고 추첨 번호와의 적중을 확인하는 고전 키노입니다. |
 
 ## 최근 게임 화면
+
+### 천점 주사위 · 세탁표 교환소
+
+![회백색 세탁 전표 위에서 파란 눈 주사위를 골라 주홍 교환권 점수를 보관하는 천점 주사위 게임판](daily/2026-11-18-farkle-laundry-token/screenshot.png)
+
+[게임 파일](daily/2026-11-18-farkle-laundry-token/index.html) · [모바일 화면](daily/2026-11-18-farkle-laundry-token/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-18-farkle-laundry-token/DESIGN.md)
 
 ### 오목 · 먹빛 정원
 
@@ -75,17 +81,13 @@
 
 [게임 파일](daily/2026-11-09-marble-flick-yard/index.html) · [모바일 화면](daily/2026-11-09-marble-flick-yard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-09-marble-flick-yard/DESIGN.md)
 
-### 키노 · 역광 벽보국
-
-![주황 실크스크린 벽보 위 남색 5×5 원형 번호판에서 번호를 찍고 추첨 결과를 확인하는 키노 게임판](daily/2026-11-08-keno-poster/screenshot.png)
-
-[게임 파일](daily/2026-11-08-keno-poster/index.html) · [모바일 화면](daily/2026-11-08-keno-poster/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-08-keno-poster/DESIGN.md)
 
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-18-farkle-laundry-token/game-logic.test.js
 node daily/2026-11-17-gomoku-ink-garden/game-logic.test.js
 node daily/2026-11-16-sos-storm-lanterns/game-logic.test.js
 node daily/2026-11-15-hex-coral-walk/game-logic.test.js
@@ -95,7 +97,6 @@ node daily/2026-11-12-skee-ball-ticket-booth/game-logic.test.js
 node daily/2026-11-11-darts-wayfinding/game-logic.test.js
 node daily/2026-11-10-air-hockey-ice-rink/game-logic.test.js
 node daily/2026-11-09-marble-flick-yard/game-logic.test.js
-node daily/2026-11-08-keno-poster/game-logic.test.js
 node daily/2026-11-07-set-solar-studio/game-logic.test.js
 node daily/2026-11-06-pachisi-river-scroll/game-logic.test.js
 node daily/2026-11-05-puluc-clay-studio/game-logic.test.js
