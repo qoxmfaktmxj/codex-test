@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-19 | [우르 왕실 경기 · 점토 경주](daily/2026-11-19-ur-clay-race/index.html) | 테라코타 점토 경주길에서 남빛과 토빛 말을 로제트 칸으로 이끌어 일곱 말을 먼저 도착시키는 고전 우르 왕실 경기입니다. |
 | 2026-11-18 | [천점 주사위 · 세탁표 교환소](daily/2026-11-18-farkle-laundry-token/index.html) | 회백색 세탁 전표 위에서 점수 눈을 골라 보관하며 1000점을 먼저 채우는 고전 천점 주사위입니다. |
 | 2026-11-17 | [오목 · 먹빛 정원](daily/2026-11-17-gomoku-ink-garden/index.html) | 종이 섬유가 비치는 한지 격자에서 흑돌과 백돌을 놓아 다섯 알을 먼저 잇는 고전 오목입니다. |
 | 2026-11-16 | [SOS · 폭풍 등대국](daily/2026-11-16-sos-storm-lanterns/index.html) | 하늘빛 기상 전보의 5×5 신호판에 S와 O를 놓아 SOS를 더 많이 보내는 고전 SOS입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-12 | [스키볼 · 티켓 부스](daily/2026-11-12-skee-ball-ticket-booth/index.html) | 민트 동전 오락실의 세로 레인에서 점수 포켓을 눌러 아홉 공의 티켓을 모으는 고전 스키볼입니다. |
 | 2026-11-11 | [다트 · 길찾기 표지판](daily/2026-11-11-darts-wayfinding/index.html) | 형광 길찾기 표지판 다트 원판을 눌러 301점을 정확히 비우는 고전 다트 게임입니다. |
 | 2026-11-10 | [에어 하키 · 빙판 라디오룸](daily/2026-11-10-air-hockey-ice-rink/index.html) | 서리 낀 청록 아이스 링크에서 패들을 움직여 퍽을 튕기고 5점을 먼저 내는 고전 에어 하키입니다. |
-| 2026-11-09 | [구슬치기 · 분필 마당](daily/2026-11-09-marble-flick-yard/index.html) | 라일락 석회 마당의 원형 분필 고리로 유리 구슬을 튕겨 열두 칸을 먼저 채우는 고전 구슬치기입니다. |
 
 ## 최근 게임 화면
+
+### 우르 왕실 경기 · 점토 경주
+
+![테라코타 점토판의 비대칭 S자 경주길에서 남빛과 토빛 말을 로제트 칸으로 옮기는 우르 왕실 경기 게임판](daily/2026-11-19-ur-clay-race/screenshot.png)
+
+[게임 파일](daily/2026-11-19-ur-clay-race/index.html) · [모바일 화면](daily/2026-11-19-ur-clay-race/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-19-ur-clay-race/DESIGN.md)
 
 ### 천점 주사위 · 세탁표 교환소
 
@@ -75,18 +81,13 @@
 
 [게임 파일](daily/2026-11-10-air-hockey-ice-rink/index.html) · [모바일 화면](daily/2026-11-10-air-hockey-ice-rink/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-10-air-hockey-ice-rink/DESIGN.md)
 
-### 구슬치기 · 분필 마당
-
-![라일락 석회 마당의 커다란 원형 분필 고리 안으로 청록·산호·보랏빛 유리 구슬을 튕기는 구슬치기 게임판](daily/2026-11-09-marble-flick-yard/screenshot.png)
-
-[게임 파일](daily/2026-11-09-marble-flick-yard/index.html) · [모바일 화면](daily/2026-11-09-marble-flick-yard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-09-marble-flick-yard/DESIGN.md)
-
 
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-19-ur-clay-race/game-logic.test.js
 node daily/2026-11-18-farkle-laundry-token/game-logic.test.js
 node daily/2026-11-17-gomoku-ink-garden/game-logic.test.js
 node daily/2026-11-16-sos-storm-lanterns/game-logic.test.js

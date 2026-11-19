@@ -1,0 +1,25 @@
+const assert = require('node:assert/strict');
+const { createGame, rollSticks, movePiece, resetGame } = require('./game-logic');
+
+let game = createGame();
+assert.equal(game.turn, '남빛');
+assert.deepEqual(game.dice, []);
+game = rollSticks(game, [1, 0, 1, 0]);
+assert.equal(game.steps, 2);
+assert.equal(game.phase, '이동');
+game = movePiece(game, 0);
+assert.equal(game.pieces.indigo[0], 1);
+assert.equal(game.turn, '토빛');
+game = rollSticks(game, [1, 1, 1, 1]);
+assert.equal(game.steps, 4);
+game = movePiece({ ...game, pieces: { ...game.pieces, terracotta: [8, -1, -1, -1, -1, -1, -1] } }, 0);
+assert.equal(game.turn, '토빛');
+assert.equal(game.message, '로제트 칸입니다 · 한 번 더 던지세요');
+const capture = movePiece({ ...createGame(), turn: '남빛', phase: '이동', steps: 1, pieces: { indigo: [7, -1, -1, -1, -1, -1, -1], terracotta: [8, -1, -1, -1, -1, -1, -1] } }, 0);
+assert.equal(capture.pieces.indigo[0], 8);
+assert.equal(capture.pieces.terracotta[0], -1);
+const exact = movePiece({ ...createGame(), phase: '이동', steps: 1, pieces: { indigo: [13, -1, -1, -1, -1, -1, -1], terracotta: [-1, -1, -1, -1, -1, -1, -1] } }, 0);
+assert.equal(exact.pieces.indigo[0], 14);
+assert.equal(exact.finished.indigo, 1);
+assert.deepEqual(resetGame(), createGame());
+console.log('우르 왕실 경기 점토 경주 로직 테스트 통과');
