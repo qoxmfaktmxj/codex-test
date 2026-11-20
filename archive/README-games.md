@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 에어 하키 · 빙판 라디오룸
+
+![밝은 청록 아이스 링크에서 산호색 패들과 남색 패들로 검은 퍽을 튕기는 에어 하키 게임판](../daily/2026-11-10-air-hockey-ice-rink/screenshot.png)
+
+[게임 파일](../daily/2026-11-10-air-hockey-ice-rink/index.html) · [모바일 화면](../daily/2026-11-10-air-hockey-ice-rink/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-10-air-hockey-ice-rink/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-10 | 에어 하키 · 빙판 라디오룸 | 서리 낀 청록 아이스 링크에서 패들을 움직여 퍽을 튕기고 5점을 먼저 내는 고전 에어 하키입니다. |
+
 ### 구슬치기 · 분필 마당
 
 ![라일락 석회 마당의 커다란 원형 분필 고리 안으로 청록·산호·보랏빛 유리 구슬을 튕기는 구슬치기 게임판](../daily/2026-11-09-marble-flick-yard/screenshot.png)

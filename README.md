@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-20 | [오와레 · 베틀 작업장](daily/2026-11-20-oware-weavers-loom/index.html) | 청남색 베틀 위 씨앗 상자에서 씨앗을 뿌리고 둘·셋 알이 된 상대 칸을 거두는 서아프리카 고전 오와레입니다. |
 | 2026-11-19 | [우르 왕실 경기 · 점토 경주](daily/2026-11-19-ur-clay-race/index.html) | 테라코타 점토 경주길에서 남빛과 토빛 말을 로제트 칸으로 이끌어 일곱 말을 먼저 도착시키는 고전 우르 왕실 경기입니다. |
 | 2026-11-18 | [천점 주사위 · 세탁표 교환소](daily/2026-11-18-farkle-laundry-token/index.html) | 회백색 세탁 전표 위에서 점수 눈을 골라 보관하며 1000점을 먼저 채우는 고전 천점 주사위입니다. |
 | 2026-11-17 | [오목 · 먹빛 정원](daily/2026-11-17-gomoku-ink-garden/index.html) | 종이 섬유가 비치는 한지 격자에서 흑돌과 백돌을 놓아 다섯 알을 먼저 잇는 고전 오목입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-13 | [공기놀이 · 겨울 마당](daily/2026-11-13-jacks-courtyard/index.html) | 하늘빛 고무 코트의 공기알을 하나씩 집어 다섯 단을 완성하는 고전 공기놀이입니다. |
 | 2026-11-12 | [스키볼 · 티켓 부스](daily/2026-11-12-skee-ball-ticket-booth/index.html) | 민트 동전 오락실의 세로 레인에서 점수 포켓을 눌러 아홉 공의 티켓을 모으는 고전 스키볼입니다. |
 | 2026-11-11 | [다트 · 길찾기 표지판](daily/2026-11-11-darts-wayfinding/index.html) | 형광 길찾기 표지판 다트 원판을 눌러 301점을 정확히 비우는 고전 다트 게임입니다. |
-| 2026-11-10 | [에어 하키 · 빙판 라디오룸](daily/2026-11-10-air-hockey-ice-rink/index.html) | 서리 낀 청록 아이스 링크에서 패들을 움직여 퍽을 튕기고 5점을 먼저 내는 고전 에어 하키입니다. |
 
 ## 최근 게임 화면
+
+### 오와레 · 베틀 작업장
+
+![청남색 직물 베틀의 2×6 타원 씨앗 상자에서 남색과 주홍 씨앗을 뿌리는 오와레 게임판](daily/2026-11-20-oware-weavers-loom/screenshot.png)
+
+[게임 파일](daily/2026-11-20-oware-weavers-loom/index.html) · [모바일 화면](daily/2026-11-20-oware-weavers-loom/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-20-oware-weavers-loom/DESIGN.md)
 
 ### 우르 왕실 경기 · 점토 경주
 
@@ -75,18 +81,13 @@
 
 [게임 파일](daily/2026-11-11-darts-wayfinding/index.html) · [모바일 화면](daily/2026-11-11-darts-wayfinding/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-11-darts-wayfinding/DESIGN.md)
 
-### 에어 하키 · 빙판 라디오룸
-
-![밝은 청록 아이스 링크에서 산호색 패들과 남색 패들로 검은 퍽을 튕기는 에어 하키 게임판](daily/2026-11-10-air-hockey-ice-rink/screenshot.png)
-
-[게임 파일](daily/2026-11-10-air-hockey-ice-rink/index.html) · [모바일 화면](daily/2026-11-10-air-hockey-ice-rink/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-10-air-hockey-ice-rink/DESIGN.md)
-
 
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-20-oware-weavers-loom/game-logic.test.js
 node daily/2026-11-19-ur-clay-race/game-logic.test.js
 node daily/2026-11-18-farkle-laundry-token/game-logic.test.js
 node daily/2026-11-17-gomoku-ink-garden/game-logic.test.js
@@ -96,7 +97,6 @@ node daily/2026-11-14-dots-post-office/game-logic.test.js
 node daily/2026-11-13-jacks-courtyard/game-logic.test.js
 node daily/2026-11-12-skee-ball-ticket-booth/game-logic.test.js
 node daily/2026-11-11-darts-wayfinding/game-logic.test.js
-node daily/2026-11-10-air-hockey-ice-rink/game-logic.test.js
 node daily/2026-11-09-marble-flick-yard/game-logic.test.js
 node daily/2026-11-07-set-solar-studio/game-logic.test.js
 node daily/2026-11-06-pachisi-river-scroll/game-logic.test.js
