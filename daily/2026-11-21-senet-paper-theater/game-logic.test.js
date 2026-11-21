@@ -1,0 +1,27 @@
+const assert=require('node:assert/strict');
+const {createGame,roll,move,resetGame}=require('./game-logic');
+
+let game=createGame();
+assert.equal(game.turn,'푸른 배우');
+assert.equal(game.pieces.length,10);
+assert.equal(game.message,'푸른 배우가 막대를 던지세요');
+assert.deepEqual(roll(game,4).roll,4);
+assert.equal(roll(game,4).message,'푸른 배우의 4칸 · 말을 고르세요');
+assert.equal(roll(game,4).turn,'푸른 배우');
+game=move(roll(game,4),0);
+assert.equal(game.pieces.find(p=>p.id===0).pos,4);
+assert.equal(game.turn,'붉은 배우');
+assert.equal(move(createGame(),0).message,'먼저 막대를 던지세요');
+const allyBlocked=move({...roll(createGame(),2),pieces:[{id:0,player:'푸른 배우',pos:0},{id:1,player:'푸른 배우',pos:2}]},0);
+assert.equal(allyBlocked.pieces.find(p=>p.id===0).pos,0);
+assert.equal(allyBlocked.message,'내 배우가 있는 칸입니다');
+const blocked=move({ ...roll(createGame(),3), pieces:[{id:0,player:'푸른 배우',pos:0},{id:1,player:'붉은 배우',pos:3}]},0);
+assert.equal(blocked.pieces.find(p=>p.id===0).pos,3);
+assert.equal(blocked.pieces.find(p=>p.id===1).pos,0);
+const safe=move({ ...roll(createGame(),2), pieces:[{id:0,player:'푸른 배우',pos:25},{id:1,player:'붉은 배우',pos:27}]},0);
+assert.equal(safe.pieces.find(p=>p.id===0).pos,25);
+const out=move({ ...roll(createGame(),1), pieces:[{id:0,player:'푸른 배우',pos:29},{id:1,player:'푸른 배우',pos:-1}]},0);
+assert.equal(out.pieces.find(p=>p.id===0).pos,30);
+assert.equal(out.finished['푸른 배우'],1);
+assert.deepEqual(resetGame(),createGame());
+console.log('세네트 종이 극장 로직 테스트 통과');

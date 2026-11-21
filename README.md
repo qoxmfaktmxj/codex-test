@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-21 | [세네트 · 종이 극장](daily/2026-11-21-senet-paper-theater/index.html) | 크림 인쇄지 극장의 긴 30칸 무대에서 푸른 배우와 붉은 배우를 교환하며 정확히 퇴장시키는 고전 세네트입니다. |
 | 2026-11-20 | [오와레 · 베틀 작업장](daily/2026-11-20-oware-weavers-loom/index.html) | 청남색 베틀 위 씨앗 상자에서 씨앗을 뿌리고 둘·셋 알이 된 상대 칸을 거두는 서아프리카 고전 오와레입니다. |
 | 2026-11-19 | [우르 왕실 경기 · 점토 경주](daily/2026-11-19-ur-clay-race/index.html) | 테라코타 점토 경주길에서 남빛과 토빛 말을 로제트 칸으로 이끌어 일곱 말을 먼저 도착시키는 고전 우르 왕실 경기입니다. |
 | 2026-11-18 | [천점 주사위 · 세탁표 교환소](daily/2026-11-18-farkle-laundry-token/index.html) | 회백색 세탁 전표 위에서 점수 눈을 골라 보관하며 1000점을 먼저 채우는 고전 천점 주사위입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-14 | [점 잇기 · 파도 우체국](daily/2026-11-14-dots-post-office/index.html) | 바랜 항공우편 종이 위에서 선을 이어 우표 칸을 더 많이 차지하는 고전 점 잇기입니다. |
 | 2026-11-13 | [공기놀이 · 겨울 마당](daily/2026-11-13-jacks-courtyard/index.html) | 하늘빛 고무 코트의 공기알을 하나씩 집어 다섯 단을 완성하는 고전 공기놀이입니다. |
 | 2026-11-12 | [스키볼 · 티켓 부스](daily/2026-11-12-skee-ball-ticket-booth/index.html) | 민트 동전 오락실의 세로 레인에서 점수 포켓을 눌러 아홉 공의 티켓을 모으는 고전 스키볼입니다. |
-| 2026-11-11 | [다트 · 길찾기 표지판](daily/2026-11-11-darts-wayfinding/index.html) | 형광 길찾기 표지판 다트 원판을 눌러 301점을 정확히 비우는 고전 다트 게임입니다. |
 
 ## 최근 게임 화면
+
+### 세네트 · 종이 극장
+
+![크림 인쇄지 무대와 주홍 커튼 사이의 3×10 세네트 보드에서 푸른 배우와 붉은 배우를 움직이는 게임판](daily/2026-11-21-senet-paper-theater/screenshot.png)
+
+[게임 파일](daily/2026-11-21-senet-paper-theater/index.html) · [모바일 화면](daily/2026-11-21-senet-paper-theater/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-21-senet-paper-theater/DESIGN.md)
 
 ### 오와레 · 베틀 작업장
 
@@ -77,16 +83,12 @@
 
 ### 다트 · 길찾기 표지판
 
-![형광 연두·코발트·주홍의 커다란 도로 표지 다트판에서 301점을 정확히 비우는 다트 게임판](daily/2026-11-11-darts-wayfinding/screenshot.png)
-
-[게임 파일](daily/2026-11-11-darts-wayfinding/index.html) · [모바일 화면](daily/2026-11-11-darts-wayfinding/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-11-darts-wayfinding/DESIGN.md)
-
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-21-senet-paper-theater/game-logic.test.js
 node daily/2026-11-20-oware-weavers-loom/game-logic.test.js
 node daily/2026-11-19-ur-clay-race/game-logic.test.js
 node daily/2026-11-18-farkle-laundry-token/game-logic.test.js

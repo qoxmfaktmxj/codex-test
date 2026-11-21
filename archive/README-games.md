@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 다트 · 길찾기 표지판
+
+![형광 연두·코발트·주홍의 커다란 도로 표지 다트판에서 301점을 정확히 비우는 다트 게임판](../daily/2026-11-11-darts-wayfinding/screenshot.png)
+
+[게임 파일](../daily/2026-11-11-darts-wayfinding/index.html) · [모바일 화면](../daily/2026-11-11-darts-wayfinding/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-11-darts-wayfinding/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-11 | 다트 · 길찾기 표지판 | 형광 길찾기 표지판 다트 원판을 눌러 301점을 정확히 비우는 고전 다트 게임입니다. |
+
 ### 에어 하키 · 빙판 라디오룸
 
 ![밝은 청록 아이스 링크에서 산호색 패들과 남색 패들로 검은 퍽을 튕기는 에어 하키 게임판](../daily/2026-11-10-air-hockey-ice-rink/screenshot.png)
