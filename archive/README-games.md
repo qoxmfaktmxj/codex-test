@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 스키볼 · 티켓 부스
+
+![민트색 동전 오락실의 크림 목재 세로 레인과 빨강·남색 점수 포켓으로 구성한 스키볼 게임판](../daily/2026-11-12-skee-ball-ticket-booth/screenshot.png)
+
+[게임 파일](../daily/2026-11-12-skee-ball-ticket-booth/index.html) · [모바일 화면](../daily/2026-11-12-skee-ball-ticket-booth/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-12-skee-ball-ticket-booth/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-12 | 스키볼 · 티켓 부스 | 민트 동전 오락실의 세로 레인에서 점수 포켓을 눌러 아홉 공의 티켓을 모으는 고전 스키볼입니다. |
+
 ### 다트 · 길찾기 표지판
 
 ![형광 연두·코발트·주홍의 커다란 도로 표지 다트판에서 301점을 정확히 비우는 다트 게임판](../daily/2026-11-11-darts-wayfinding/screenshot.png)

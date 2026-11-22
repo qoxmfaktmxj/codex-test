@@ -1,0 +1,24 @@
+const assert=require('node:assert/strict');
+const {createGame,place,select,move,resetGame}=require('./game-logic');
+
+let game=createGame();
+assert.equal(game.turn,'붉은 시계말');
+assert.equal(game.phase,'배치');
+assert.equal(game.board.length,9);
+game=place(game,0);
+assert.equal(game.board[0],'붉은 시계말');
+assert.equal(game.turn,'푸른 시계말');
+assert.equal(place(game,0).message,'이미 시계말이 있습니다');
+game={...createGame(),board:['붉은 시계말','붉은 시계말',null,'푸른 시계말','푸른 시계말',null,null,null,null],turn:'붉은 시계말',placed:{'붉은 시계말':2,'푸른 시계말':2},phase:'배치'};
+game=place(game,2);
+assert.equal(game.winner,'붉은 시계말');
+const moving={...createGame(),board:['붉은 시계말',null,'푸른 시계말','푸른 시계말','붉은 시계말',null,null,null,'붉은 시계말'],turn:'붉은 시계말',placed:{'붉은 시계말':3,'푸른 시계말':3},phase:'이동'};
+assert.equal(select(moving,0).selected,0);
+assert.equal(select(moving,2).message,'내 시계말을 고르세요');
+const moved=move(select(moving,0),1);
+assert.equal(moved.board[0],null);
+assert.equal(moved.board[1],'붉은 시계말');
+assert.equal(moved.turn,'푸른 시계말');
+assert.equal(move(select(moving,0),8).message,'이웃한 빈 칸으로만 움직입니다');
+assert.deepEqual(resetGame(),createGame());
+console.log('로타 역 시계 로직 테스트 통과');
