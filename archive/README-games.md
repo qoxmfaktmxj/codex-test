@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 공기놀이 · 겨울 마당
+
+![하늘빛 고무 코트와 먹색 분필 격자 위에서 금빛 공기알을 집는 공기놀이 게임판](../daily/2026-11-13-jacks-courtyard/screenshot.png)
+
+[게임 파일](../daily/2026-11-13-jacks-courtyard/index.html) · [모바일 화면](../daily/2026-11-13-jacks-courtyard/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-13-jacks-courtyard/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-13 | 공기놀이 · 겨울 마당 | 하늘빛 고무 코트의 공기알을 하나씩 집어 다섯 단을 완성하는 고전 공기놀이입니다. |
+
 ### 스키볼 · 티켓 부스
 
 ![민트색 동전 오락실의 크림 목재 세로 레인과 빨강·남색 점수 포켓으로 구성한 스키볼 게임판](../daily/2026-11-12-skee-ball-ticket-booth/screenshot.png)

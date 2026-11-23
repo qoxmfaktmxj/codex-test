@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-23 | [나인 맨즈 모리스 · 유리 회랑](daily/2026-11-23-nine-mens-morris-glass-cloister/index.html) | 성당의 청록·산호 색유리 회랑에서 아홉 말을 한 줄로 세워 상대 말을 걷는 고전 나인 맨즈 모리스입니다. |
 | 2026-11-22 | [로타 · 역 시계](daily/2026-11-22-rota-station-clock/index.html) | 밝은 역 시계의 아홉 눈금에서 붉은 말과 푸른 말을 이웃 칸으로 옮겨 한 줄을 먼저 만드는 고대 로타입니다. |
 | 2026-11-21 | [세네트 · 종이 극장](daily/2026-11-21-senet-paper-theater/index.html) | 크림 인쇄지 극장의 긴 30칸 무대에서 푸른 배우와 붉은 배우를 교환하며 정확히 퇴장시키는 고전 세네트입니다. |
 | 2026-11-20 | [오와레 · 베틀 작업장](daily/2026-11-20-oware-weavers-loom/index.html) | 청남색 베틀 위 씨앗 상자에서 씨앗을 뿌리고 둘·셋 알이 된 상대 칸을 거두는 서아프리카 고전 오와레입니다. |
@@ -17,9 +18,14 @@
 | 2026-11-16 | [SOS · 폭풍 등대국](daily/2026-11-16-sos-storm-lanterns/index.html) | 하늘빛 기상 전보의 5×5 신호판에 S와 O를 놓아 SOS를 더 많이 보내는 고전 SOS입니다. |
 | 2026-11-15 | [헥스 · 산호 산책로](daily/2026-11-15-hex-coral-walk/index.html) | 조개빛 수조의 육각 산책로에서 산호 해안을 위아래로 먼저 잇는 고전 헥스입니다. |
 | 2026-11-14 | [점 잇기 · 파도 우체국](daily/2026-11-14-dots-post-office/index.html) | 바랜 항공우편 종이 위에서 선을 이어 우표 칸을 더 많이 차지하는 고전 점 잇기입니다. |
-| 2026-11-13 | [공기놀이 · 겨울 마당](daily/2026-11-13-jacks-courtyard/index.html) | 하늘빛 고무 코트의 공기알을 하나씩 집어 다섯 단을 완성하는 고전 공기놀이입니다. |
 
 ## 최근 게임 화면
+
+### 나인 맨즈 모리스 · 유리 회랑
+
+![흰 석회 벽 위 청록과 산호 색유리의 세 겹 정사각 회랑에서 유리말을 정렬하는 나인 맨즈 모리스 게임판](daily/2026-11-23-nine-mens-morris-glass-cloister/screenshot.png)
+
+[게임 파일](daily/2026-11-23-nine-mens-morris-glass-cloister/index.html) · [모바일 화면](daily/2026-11-23-nine-mens-morris-glass-cloister/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-23-nine-mens-morris-glass-cloister/DESIGN.md)
 
 ### 로타 · 역 시계
 
@@ -75,19 +81,12 @@
 
 [게임 파일](daily/2026-11-14-dots-post-office/index.html) · [모바일 화면](daily/2026-11-14-dots-post-office/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-14-dots-post-office/DESIGN.md)
 
-### 공기놀이 · 겨울 마당
-
-![하늘빛 고무 코트와 먹색 분필 격자 위에서 금빛 공기알을 집는 공기놀이 게임판](daily/2026-11-13-jacks-courtyard/screenshot.png)
-
-[게임 파일](daily/2026-11-13-jacks-courtyard/index.html) · [모바일 화면](daily/2026-11-13-jacks-courtyard/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-13-jacks-courtyard/DESIGN.md)
-
-### 다트 · 길찾기 표지판
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-23-nine-mens-morris-glass-cloister/game-logic.test.js
 node daily/2026-11-22-rota-station-clock/game-logic.test.js
 node daily/2026-11-21-senet-paper-theater/game-logic.test.js
 node daily/2026-11-20-oware-weavers-loom/game-logic.test.js
