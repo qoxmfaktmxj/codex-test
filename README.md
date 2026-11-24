@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-24 | [키르캇 · 모래 탁자](daily/2026-11-24-qirkat-sand-table/index.html) | 햇빛 어린 모래 발굴판에서 청록과 적토 안료 조각으로 상대를 뛰어넘어 걷는 고대 키르캇입니다. |
 | 2026-11-23 | [나인 맨즈 모리스 · 유리 회랑](daily/2026-11-23-nine-mens-morris-glass-cloister/index.html) | 성당의 청록·산호 색유리 회랑에서 아홉 말을 한 줄로 세워 상대 말을 걷는 고전 나인 맨즈 모리스입니다. |
 | 2026-11-22 | [로타 · 역 시계](daily/2026-11-22-rota-station-clock/index.html) | 밝은 역 시계의 아홉 눈금에서 붉은 말과 푸른 말을 이웃 칸으로 옮겨 한 줄을 먼저 만드는 고대 로타입니다. |
 | 2026-11-21 | [세네트 · 종이 극장](daily/2026-11-21-senet-paper-theater/index.html) | 크림 인쇄지 극장의 긴 30칸 무대에서 푸른 배우와 붉은 배우를 교환하며 정확히 퇴장시키는 고전 세네트입니다. |
@@ -20,6 +21,12 @@
 | 2026-11-14 | [점 잇기 · 파도 우체국](daily/2026-11-14-dots-post-office/index.html) | 바랜 항공우편 종이 위에서 선을 이어 우표 칸을 더 많이 차지하는 고전 점 잇기입니다. |
 
 ## 최근 게임 화면
+
+### 키르캇 · 모래 탁자
+
+![햇빛 어린 모래 발굴 탁자의 5×5 음각선에서 청록과 적토 안료 조각을 뛰어넘는 키르캇 게임판](daily/2026-11-24-qirkat-sand-table/screenshot.png)
+
+[게임 파일](daily/2026-11-24-qirkat-sand-table/index.html) · [모바일 화면](daily/2026-11-24-qirkat-sand-table/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-24-qirkat-sand-table/DESIGN.md)
 
 ### 나인 맨즈 모리스 · 유리 회랑
 
@@ -75,17 +82,12 @@
 
 [게임 파일](daily/2026-11-15-hex-coral-walk/index.html) · [모바일 화면](daily/2026-11-15-hex-coral-walk/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-15-hex-coral-walk/DESIGN.md)
 
-### 점 잇기 · 파도 우체국
-
-![바랜 항공우편 종이 위 코발트 선과 산호 우표 칸을 이어 완성하는 점 잇기 게임판](daily/2026-11-14-dots-post-office/screenshot.png)
-
-[게임 파일](daily/2026-11-14-dots-post-office/index.html) · [모바일 화면](daily/2026-11-14-dots-post-office/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-14-dots-post-office/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-24-qirkat-sand-table/game-logic.test.js
 node daily/2026-11-23-nine-mens-morris-glass-cloister/game-logic.test.js
 node daily/2026-11-22-rota-station-clock/game-logic.test.js
 node daily/2026-11-21-senet-paper-theater/game-logic.test.js

@@ -2,6 +2,16 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 점 잇기 · 파도 우체국
+
+![바랜 항공우편 종이 위 코발트 선과 산호 우표 칸을 이어 완성하는 점 잇기 게임판](../daily/2026-11-14-dots-post-office/screenshot.png)
+
+[게임 파일](../daily/2026-11-14-dots-post-office/index.html) · [모바일 화면](../daily/2026-11-14-dots-post-office/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-14-dots-post-office/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-14 | 점 잇기 · 파도 우체국 | 바랜 항공우편 종이 위에서 선을 이어 우표 칸을 더 많이 차지하는 고전 점 잇기입니다. |
+
 ### 공기놀이 · 겨울 마당
 
 ![하늘빛 고무 코트와 먹색 분필 격자 위에서 금빛 공기알을 집는 공기놀이 게임판](../daily/2026-11-13-jacks-courtyard/screenshot.png)
