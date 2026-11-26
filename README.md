@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-26 | [바그 찰 · 조류 해도](daily/2026-11-26-konane-tide-chart/index.html) | 청록 해도 위에서 염소 스무 마리와 호랑이 네 마리가 서로 길을 막고 뛰어넘는 네팔 고전 바그 찰입니다. |
 | 2026-11-24 | [키르캇 · 모래 탁자](daily/2026-11-24-qirkat-sand-table/index.html) | 햇빛 어린 모래 발굴판에서 청록과 적토 안료 조각으로 상대를 뛰어넘어 걷는 고대 키르캇입니다. |
 | 2026-11-23 | [나인 맨즈 모리스 · 유리 회랑](daily/2026-11-23-nine-mens-morris-glass-cloister/index.html) | 성당의 청록·산호 색유리 회랑에서 아홉 말을 한 줄로 세워 상대 말을 걷는 고전 나인 맨즈 모리스입니다. |
 | 2026-11-22 | [로타 · 역 시계](daily/2026-11-22-rota-station-clock/index.html) | 밝은 역 시계의 아홉 눈금에서 붉은 말과 푸른 말을 이웃 칸으로 옮겨 한 줄을 먼저 만드는 고대 로타입니다. |
@@ -18,9 +19,14 @@
 | 2026-11-17 | [오목 · 먹빛 정원](daily/2026-11-17-gomoku-ink-garden/index.html) | 종이 섬유가 비치는 한지 격자에서 흑돌과 백돌을 놓아 다섯 알을 먼저 잇는 고전 오목입니다. |
 | 2026-11-16 | [SOS · 폭풍 등대국](daily/2026-11-16-sos-storm-lanterns/index.html) | 하늘빛 기상 전보의 5×5 신호판에 S와 O를 놓아 SOS를 더 많이 보내는 고전 SOS입니다. |
 | 2026-11-15 | [헥스 · 산호 산책로](daily/2026-11-15-hex-coral-walk/index.html) | 조개빛 수조의 육각 산책로에서 산호 해안을 위아래로 먼저 잇는 고전 헥스입니다. |
-| 2026-11-14 | [점 잇기 · 파도 우체국](daily/2026-11-14-dots-post-office/index.html) | 바랜 항공우편 종이 위에서 선을 이어 우표 칸을 더 많이 차지하는 고전 점 잇기입니다. |
 
 ## 최근 게임 화면
+
+### 바그 찰 · 조류 해도
+
+![청록 인쇄 해도 위 5×5 격자에서 산호색 호랑이와 흰 염소 말을 움직이는 바그 찰 게임판](daily/2026-11-26-konane-tide-chart/screenshot.png)
+
+[게임 파일](daily/2026-11-26-konane-tide-chart/index.html) · [모바일 화면](daily/2026-11-26-konane-tide-chart/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-26-konane-tide-chart/DESIGN.md)
 
 ### 키르캇 · 모래 탁자
 
@@ -87,6 +93,7 @@
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-26-konane-tide-chart/game-logic.test.js
 node daily/2026-11-24-qirkat-sand-table/game-logic.test.js
 node daily/2026-11-23-nine-mens-morris-glass-cloister/game-logic.test.js
 node daily/2026-11-22-rota-station-clock/game-logic.test.js
