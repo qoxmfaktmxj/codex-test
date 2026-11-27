@@ -1218,3 +1218,11 @@ node daily/2026-07-12-royal-ur/game-logic.test.js
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
 | 2026-11-05 | 코나네 · 흙빛 작업대 | 석고 작업대의 청록·백토 돌을 뛰어넘어 길을 끊는 하와이 전통 코나네 게임입니다. |
+
+### 헥스 · 산호 산책로
+
+조개빛 수조의 육각 산책로에서 산호 해안을 위아래로 먼저 잇는 고전 헥스입니다.
+
+![조개빛 수조에서 주황 산호와 청록 해초 타일로 해안을 연결하는 육각 헥스 게임판](../daily/2026-11-15-hex-coral-walk/screenshot.png)
+
+[게임 파일](../daily/2026-11-15-hex-coral-walk/index.html) · [모바일 화면](../daily/2026-11-15-hex-coral-walk/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-15-hex-coral-walk/DESIGN.md)
