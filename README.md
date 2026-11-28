@@ -8,6 +8,7 @@
 
 | 날짜 | 게임 | 설명 |
 | --- | --- | --- |
+| 2026-11-28 | [거위 게임 · 강물 인쇄소](daily/2026-11-28-goose-river-print/index.html) | 하늘빛 실크스크린 강 지도에서 주사위를 굴려 24번 강 어귀에 먼저 닿는 유럽 고전 거위 게임입니다. |
 | 2026-11-27 | [아치 · 도자기 창](daily/2026-11-27-achi-ceramic-window/index.html) | 석회 벽의 원형 도자기 창에서 푸른 유약과 살구 유약 타일을 이웃 칸으로 옮겨 세 장을 먼저 잇는 가나 고전 아치입니다. |
 | 2026-11-26 | [바그 찰 · 조류 해도](daily/2026-11-26-konane-tide-chart/index.html) | 청록 해도 위에서 염소 스무 마리와 호랑이 네 마리가 서로 길을 막고 뛰어넘는 네팔 고전 바그 찰입니다. |
 | 2026-11-24 | [키르캇 · 모래 탁자](daily/2026-11-24-qirkat-sand-table/index.html) | 햇빛 어린 모래 발굴판에서 청록과 적토 안료 조각으로 상대를 뛰어넘어 걷는 고대 키르캇입니다. |
@@ -17,10 +18,14 @@
 | 2026-11-20 | [오와레 · 베틀 작업장](daily/2026-11-20-oware-weavers-loom/index.html) | 청남색 베틀 위 씨앗 상자에서 씨앗을 뿌리고 둘·셋 알이 된 상대 칸을 거두는 서아프리카 고전 오와레입니다. |
 | 2026-11-19 | [우르 왕실 경기 · 점토 경주](daily/2026-11-19-ur-clay-race/index.html) | 테라코타 점토 경주길에서 남빛과 토빛 말을 로제트 칸으로 이끌어 일곱 말을 먼저 도착시키는 고전 우르 왕실 경기입니다. |
 | 2026-11-18 | [천점 주사위 · 세탁표 교환소](daily/2026-11-18-farkle-laundry-token/index.html) | 회백색 세탁 전표 위에서 점수 눈을 골라 보관하며 1000점을 먼저 채우는 고전 천점 주사위입니다. |
-| 2026-11-17 | [오목 · 먹빛 정원](daily/2026-11-17-gomoku-ink-garden/index.html) | 종이 섬유가 비치는 한지 격자에서 흑돌과 백돌을 놓아 다섯 알을 먼저 잇는 고전 오목입니다. |
-| 2026-11-16 | [SOS · 폭풍 등대국](daily/2026-11-16-sos-storm-lanterns/index.html) | 하늘빛 기상 전보의 5×5 신호판에 S와 O를 놓아 SOS를 더 많이 보내는 고전 SOS입니다. |
 
 ## 최근 게임 화면
+
+### 거위 게임 · 강물 인쇄소
+
+![하늘빛 강물 인쇄소의 굽이치는 24칸 수로에서 붉은 거위와 연두 거위를 강 어귀로 보내는 거위 게임판](daily/2026-11-28-goose-river-print/screenshot.png)
+
+[게임 파일](daily/2026-11-28-goose-river-print/index.html) · [모바일 화면](daily/2026-11-28-goose-river-print/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-28-goose-river-print/DESIGN.md)
 
 ### 아치 · 도자기 창
 
@@ -76,23 +81,12 @@
 
 [게임 파일](daily/2026-11-18-farkle-laundry-token/index.html) · [모바일 화면](daily/2026-11-18-farkle-laundry-token/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-18-farkle-laundry-token/DESIGN.md)
 
-### 오목 · 먹빛 정원
-
-![종이 섬유가 비치는 한지 위 먹빛과 백색 돌을 놓아 다섯 알을 잇는 9×9 오목 게임판](daily/2026-11-17-gomoku-ink-garden/screenshot.png)
-
-[게임 파일](daily/2026-11-17-gomoku-ink-garden/index.html) · [모바일 화면](daily/2026-11-17-gomoku-ink-garden/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-17-gomoku-ink-garden/DESIGN.md)
-
-### SOS · 폭풍 등대국
-
-![하늘빛 기상 전보 위에 커다란 S와 O를 놓아 SOS 신호를 만드는 5×5 게임판](daily/2026-11-16-sos-storm-lanterns/screenshot.png)
-
-[게임 파일](daily/2026-11-16-sos-storm-lanterns/index.html) · [모바일 화면](daily/2026-11-16-sos-storm-lanterns/screenshot-mobile.png) · [디자인 비교와 검증](daily/2026-11-16-sos-storm-lanterns/DESIGN.md)
-
 ## 테스트
 
 로직 테스트는 Node.js 내장 모듈만 사용합니다.
 
 ```bash
+node daily/2026-11-28-goose-river-print/game-logic.test.js
 node daily/2026-11-27-achi-ceramic-window/game-logic.test.js
 node daily/2026-11-26-konane-tide-chart/game-logic.test.js
 node daily/2026-11-24-qirkat-sand-table/game-logic.test.js
@@ -102,8 +96,6 @@ node daily/2026-11-21-senet-paper-theater/game-logic.test.js
 node daily/2026-11-20-oware-weavers-loom/game-logic.test.js
 node daily/2026-11-19-ur-clay-race/game-logic.test.js
 node daily/2026-11-18-farkle-laundry-token/game-logic.test.js
-node daily/2026-11-17-gomoku-ink-garden/game-logic.test.js
-node daily/2026-11-16-sos-storm-lanterns/game-logic.test.js
 node daily/2026-11-15-hex-coral-walk/game-logic.test.js
 node daily/2026-11-14-dots-post-office/game-logic.test.js
 node daily/2026-11-13-jacks-courtyard/game-logic.test.js

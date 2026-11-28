@@ -1,0 +1,20 @@
+const assert=require('node:assert/strict');
+const {createGame,roll,resetGame,finishAt}=require('./game-logic');
+
+let game=createGame(()=>3);
+assert.equal(game.players.length,2);
+assert.equal(game.players[0].position,0);
+assert.equal(game.turn,0);
+game=roll(game,()=>.5);
+assert.equal(game.players[0].position,4);
+assert.equal(game.turn,1);
+assert.match(game.message,/두 번째/);
+game={...createGame(),players:[{name:'첫 번째 거위',position:22},{name:'두 번째 거위',position:5}]};
+game=roll(game,()=>.99);
+assert.equal(game.players[0].position,24);
+assert.equal(game.winner,0);
+assert.match(game.message,/도착/);
+game=finishAt(createGame(),24);
+assert.equal(game.winner,0);
+assert.deepEqual(resetGame(),createGame());
+console.log('거위 게임 강물 인쇄소 로직 테스트 통과');

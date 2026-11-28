@@ -2,6 +2,26 @@
 
 메인 README가 길어지지 않도록 이전 게임 설명과 화면을 보관합니다.
 
+### 오목 · 먹빛 정원
+
+![종이 섬유가 비치는 한지 위 먹빛과 백색 돌을 놓아 다섯 알을 잇는 9×9 오목 게임판](../daily/2026-11-17-gomoku-ink-garden/screenshot.png)
+
+[게임 파일](../daily/2026-11-17-gomoku-ink-garden/index.html) · [모바일 화면](../daily/2026-11-17-gomoku-ink-garden/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-17-gomoku-ink-garden/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-17 | 오목 · 먹빛 정원 | 종이 섬유가 비치는 한지 격자에서 흑돌과 백돌을 놓아 다섯 알을 먼저 잇는 고전 오목입니다. |
+
+### SOS · 폭풍 등대국
+
+![하늘빛 기상 전보 위에 커다란 S와 O를 놓아 SOS 신호를 만드는 5×5 게임판](../daily/2026-11-16-sos-storm-lanterns/screenshot.png)
+
+[게임 파일](../daily/2026-11-16-sos-storm-lanterns/index.html) · [모바일 화면](../daily/2026-11-16-sos-storm-lanterns/screenshot-mobile.png) · [디자인 비교와 검증](../daily/2026-11-16-sos-storm-lanterns/DESIGN.md)
+
+| 날짜 | 게임 | 설명 |
+| --- | --- | --- |
+| 2026-11-16 | SOS · 폭풍 등대국 | 하늘빛 기상 전보의 5×5 신호판에 S와 O를 놓아 SOS를 더 많이 보내는 고전 SOS입니다. |
+
 ### 점 잇기 · 파도 우체국
 
 ![바랜 항공우편 종이 위 코발트 선과 산호 우표 칸을 이어 완성하는 점 잇기 게임판](../daily/2026-11-14-dots-post-office/screenshot.png)
